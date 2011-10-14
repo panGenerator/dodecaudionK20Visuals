@@ -1,0 +1,13 @@
+Visuals for the upcomming Dodecaudion concert at Kultura 2.0 [http://kultura20.pl/Community/Default.aspx] conference.
+
+--------------------------------------------------------
+- Requirements
+--------------------------------------------------------
+
+- Cinder 0.8.3 (http://libcinder.org/)
+
+--------------------------------------------------------
+- Running
+--------------------------------------------------------
+Open in XCode, in the main menu go to Project > Edit Project Settings and set CINDER_PATH to point to your Cinder installation path (at the bottom of the list)
+Then do the same thing but go to Project > Edit Active Target 
