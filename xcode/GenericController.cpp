@@ -13,9 +13,19 @@ GenericController::GenericController()
 {
 }
 
+/**
+ * Setup the controller
+ */
+void GenericController::setup()
+{
+    
+}
+
+/**
+ * Recalculate values
+ */
 void GenericController::update()
 {
-	//_value = rand();
     _values["rand"] = rand();
 }
 /**
@@ -54,5 +64,5 @@ vector<string> GenericController::keys()
  */
 string GenericController::getId()
 {
-	return std::string("genericController");
+	return std::string("generic");
 }

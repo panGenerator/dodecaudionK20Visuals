@@ -22,14 +22,14 @@ class GenericController : public Controller
 {
   public:
 	GenericController();
-	
+	void setup();
 	void update();
 	void set(string key, float value);
 	float get(string key);
     vector<string> keys();
 	string getId();
 
-  private:
+  protected:
 	string *id;
     map<string,float> _values;
 };

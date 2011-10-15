@@ -16,7 +16,8 @@
  */
 Dodecahedron::Dodecahedron()
 {
-	modelRotationZ = 0;
+	modelRotation = Vec3f(0,0,0);
+	edgesColor = ColorAf(1.0,0,0);
 	__updateVertices();
 }
 
@@ -63,12 +64,14 @@ std::string Dodecahedron::getId()
 #pragma mark Drawable interface implementation
 
 /**
- *
+ * Update the modl state
  */
 void Dodecahedron::update()
 {
-	modelRotationZ = get("framesCount");
-	//console() << modelRotationZ << std::endl;
+	radius = 200 * get( "radius" );
+	modelRotation = 64 * Vec3f( get( "rotationX" ) , get( "rotationY" ) , get( "rotationZ" ) );
+	edgesColor = ColorAf( get( "edgeColorR" ) , get( "edgeColorG" ) , get( "edgeColorB" ) );
+	
 	__updateVertices();
 }
 
@@ -77,10 +80,14 @@ void Dodecahedron::update()
  */
 void Dodecahedron::draw()
 {
+	gl::color( edgesColor );
+	
 	glPushMatrix();
 	glTranslated(getWindowWidth()/2.0f, getWindowHeight()/2.0f, 0);
 	
-	glRotated( modelRotationZ , 0, 1.0, 0 );
+	glRotated( modelRotation.y , 1.0, 0.0, 0.0 );
+	glRotated( modelRotation.z , 0.0, 1.0, 0.0 );
+	glRotated( modelRotation.x , 0.0, 0.0, 1.0 );
 	
 	/*
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
@@ -120,7 +127,7 @@ void Dodecahedron::__updateVertices()
 	double phiaa = 52.62263590; /* the two phi angles needed for generation */
 	double phibb = 10.81231754;
 	
-	float r = 200.0; /* any radius in which the polyhedron is inscribed */
+	float r = 100 + radius; /* any radius in which the polyhedron is inscribed */
 	float phia = Pi*phiaa/180.0; /* 4 sets of five points each */
 	float phib = Pi*phibb/180.0;
 	float phic = Pi*(-phibb)/180.0;

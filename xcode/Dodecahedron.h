@@ -46,7 +46,10 @@ private:
 	
 	GenericController _values;    
 
-	float modelRotationZ;
+	//Model / drawing related parameters
+	float radius;
+	Vec3f modelRotation;
+	ColorAf edgesColor;
 };
 
 #endif
