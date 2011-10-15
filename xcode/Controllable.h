@@ -11,15 +11,19 @@
 #define CONTROLLABLE_INCLUDED
 
 #include <string>
+#include <vector>
+
+using namespace std;
 
 class Controllable 
 {
   public:
 	virtual ~Controllable(){}
 	
-	virtual void set(std::string key, float value) = 0;
-	virtual float get(std::string key) = 0;
-	virtual std::string getId() = 0;
+	virtual void set(string key, float value) = 0;
+	virtual float get(string key) = 0;
+	virtual vector<string> keys() = 0;
+	virtual string getId() = 0;
 };
 
 #endif

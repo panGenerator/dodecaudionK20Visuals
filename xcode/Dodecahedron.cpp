@@ -16,7 +16,6 @@
  */
 Dodecahedron::Dodecahedron()
 {
-    _value = 0;    
 	modelRotationZ = 0;
 	__updateVertices();
 }
@@ -37,7 +36,7 @@ Dodecahedron::~Dodecahedron()
  */
 void Dodecahedron::set(std::string key, float value)
 {
-	_value = value;
+	_values.set( key , value );
 }
 
 /**
@@ -45,7 +44,15 @@ void Dodecahedron::set(std::string key, float value)
  */
 float Dodecahedron::get(std::string key)
 {
-	return _value;
+	return _values.get( key );
+}
+
+/**
+ * List all keys
+ */
+vector<string> Dodecahedron::keys()
+{
+	return _values.keys();
 }
 
 
@@ -61,7 +68,7 @@ std::string Dodecahedron::getId()
 void Dodecahedron::update()
 {
 	modelRotationZ = get("framesCount");
-	console() << modelRotationZ << std::endl;
+	//console() << modelRotationZ << std::endl;
 	__updateVertices();
 }
 

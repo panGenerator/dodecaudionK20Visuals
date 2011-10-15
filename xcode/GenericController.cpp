@@ -15,25 +15,44 @@ GenericController::GenericController()
 
 void GenericController::update()
 {
-	_value = rand();
+	//_value = rand();
+    _values["rand"] = rand();
 }
 /**
- * Set value of the controlled param
+ * Set value of the controlled param 
  */
-void GenericController::set(std::string key, float value)
+void GenericController::set(string key, float value)
 {
-    _value = value;
+    _values[key] = value;
 }
 
 /**
- * Get it's value
+ * Get value for key. Always returns a value. 0 if it's not defined
  */
-float GenericController::get(std::string key)
+float GenericController::get(string key)
 {
-    return _value;
+	return _values[key];
 }
 
-std::string GenericController::getId()
+/**
+ * List all available 
+ */
+vector<string> GenericController::keys()
+{
+    vector<string> list;
+    
+    for( map<string,float>::iterator it = _values.begin() ; it != _values.end() ; ++it ){
+        string key = it->first;
+        list.push_back(key);
+    }
+    
+    return list;
+}
+
+/**
+ * 
+ */
+string GenericController::getId()
 {
 	return std::string("genericController");
 }

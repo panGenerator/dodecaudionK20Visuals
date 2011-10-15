@@ -39,30 +39,39 @@ void dodecaudionK20Visuals::setup()
 	//init drawable objects
     dode = Dodecahedron();
 	visualObjects.push_back( &dode );
+        
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )
 {
 }
 
+/**
+ * Update all inputs
+ */
 void dodecaudionK20Visuals::update()
 {
-    //update all drawable objects
+	//update inputs
+	for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
+		(*ctrl)->update();
+		//test
+		(*ctrl)->set( "framesCount" , getElapsedFrames() );		
+	}
+    
+	//update all drawable objects
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
-		for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){
-			(*ctrl)->update();
-			
-			//test
-			(*ctrl)->set( "framesCount" , getElapsedFrames() );
-			
+		for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
+			//pass controller data to Drawable objects
 			updateDrawableByController( *vis, *ctrl );
-		}		
-		
+		}				
 		//recalculate after changing values
 		(*vis)->update();
 	}
 }
 
+/**
+ * Draw the stage
+ */
 void dodecaudionK20Visuals::draw()
 {
 	// clear out the window with black
@@ -72,9 +81,12 @@ void dodecaudionK20Visuals::draw()
 	}
 }
 
+/**
+ * Perform updating of all Drawable+Controllable object by controllers. 
+ */
 void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controller *ctrl)
 {
-	console() << "Updating vis: " << vis->getId() <<  " with ctrl: " << ctrl->getId() << std::endl;
+	//console() << "Updating vis: " << vis->getId() <<  " with ctrl: " << ctrl->getId() << std::endl;
 	//generic controller updates
 	if( ctrl->getId().compare( "genericController" ) == 0 ){
 		vis->set( "framesCount" , ctrl->get("framesCount") );

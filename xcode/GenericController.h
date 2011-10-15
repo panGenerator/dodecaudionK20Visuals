@@ -7,10 +7,16 @@
  *
  */
 
+#ifndef GENERIC_CONTROLLER_INCLUDED
+#define GENERIC_CONTROLLER_INCLUDED
+
 #include "boost/any.hpp"
 #include "Controller.h"
 #include <string>
+#include <map>
+#include <vector>
 
+using namespace std;
 
 class GenericController : public Controller 
 {
@@ -18,11 +24,14 @@ class GenericController : public Controller
 	GenericController();
 	
 	void update();
-	void set(std::string key, float value);
-	float get(std::string key);
-	std::string getId();
+	void set(string key, float value);
+	float get(string key);
+    vector<string> keys();
+	string getId();
 
   private:
-	std::string *id;
-	float _value;
+	string *id;
+    map<string,float> _values;
 };
+
+#endif
