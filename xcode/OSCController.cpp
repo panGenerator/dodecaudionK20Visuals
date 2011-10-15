@@ -8,6 +8,8 @@
 
 #include "OSCController.h"
 
+#pragma mark Constructors/destructors
+
 OSCController::OSCController()
 {
     displayMsgLog = true;

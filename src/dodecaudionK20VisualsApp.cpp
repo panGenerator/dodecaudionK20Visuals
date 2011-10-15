@@ -1,5 +1,6 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
+#include <boost/lexical_cast.hpp>
 
 #include "Drawable.h"
 #include "Controller.h"
@@ -7,7 +8,10 @@
 #include "GenericController.h"
 #include "OSCController.h"
 #include "TouchOSCController.h"
+#include "FFTController.h"
+
 #include "Dodecahedron.h"
+#include "FFTVisualiser.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -29,9 +33,11 @@ public:
 	GenericController genCtrl;
     OSCController oscCtrl;
 	TouchOSCController touchOscCtrl;
+	FFTController fftCtrl;
 	
 	//visual stuff - drawn elements
 	Dodecahedron dode;
+	FFTVisualiser fftVis;
     
 };
 
@@ -47,11 +53,14 @@ void dodecaudionK20Visuals::setup()
     touchOscCtrl.setup(10000);
     controllers.push_back( &touchOscCtrl );
 	
+	fftCtrl.setup(32);
+	controllers.push_back( &fftCtrl );
+	
 	
 	//init drawable objects
-    dode = Dodecahedron();
+	dode.setup();
 	visualObjects.push_back( &dode );
-        
+	visualObjects.push_back( &fftVis );	
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )
@@ -112,15 +121,35 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		if( vis->getId() == "dodecahedron" ){
 			vis->set( "radius" , ctrl->get( "slider4" ) );
 			
-			vis->set( "edgeColorR" , ctrl->get( "slider1" ) );
-			vis->set( "edgeColorG" , ctrl->get( "slider2" ) );
-			vis->set( "edgeColorB" , ctrl->get( "slider3" ) );
+			//0.5 + 0.5f *    <= so shape is always visible, even if no TouchOSC input
+			vis->set( "edgeColorR" , 0.5f + 0.5f * ctrl->get( "slider1" ) );
+			vis->set( "edgeColorG" , 0.5f + 0.5f * ctrl->get( "slider2" ) );
+			vis->set( "edgeColorB" , 0.5f + 0.5f * ctrl->get( "slider3" ) );
 			
 			vis->set( "rotationX" , ctrl->get( "accX" ) );
 			vis->set( "rotationY" , ctrl->get( "accY" ) );
 			vis->set( "rotationZ" , ctrl->get( "accZ" ) );
 		}
-		
+		//update fft
+		if( vis->getId() == "fftVisualiser" ){
+			vis->set( "blockSize" , ctrl->get( "slider4" ) );
+		}
+	}
+	//FFT controls mapping
+	if( ctrl->getId() == "fft" ){
+		//update dodecaudion
+		if( vis->getId() == "dodecaudion" ){
+			//vis->set( "edgeColorR" , ctrl->get( "band1" ) );
+//			vis->set( "edgeColorB" , ctrl->get( "band2" ) );
+//			vis->set( "edgeColorG" , ctrl->get( "band3" ) );
+		}
+		//update fft
+		if( vis->getId() == "fftVisualiser" ){
+			vector<string> values = ctrl->keys();
+			for( vector<string>::iterator it = values.begin() ; it != values.end() ; ++it ){
+				vis->set( *it , ctrl->get( *it ) );
+			}
+		}
 	}
 }
 

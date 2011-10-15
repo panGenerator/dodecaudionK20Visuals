@@ -19,6 +19,9 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9F16D0421449BF52001728A0 /* FFTController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0411449BF52001728A0 /* FFTController.cpp */; };
+		9F16D06E1449C417001728A0 /* FFTVisualiser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D06D1449C417001728A0 /* FFTVisualiser.cpp */; };
+		9F16D0721449C4A2001728A0 /* ValuesMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0711449C4A2001728A0 /* ValuesMap.cpp */; };
 		9F5704941449921200749B7C /* OSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704921449921200749B7C /* OSCController.cpp */; };
 		9F5704BB14499AC400749B7C /* OscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B714499AC400749B7C /* OscBundle.cpp */; };
 		9F5704BC14499AC400749B7C /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B814499AC400749B7C /* OscListener.cpp */; };
@@ -50,6 +53,12 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* dodecaudionK20Visuals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodecaudionK20Visuals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F16D0401449BF52001728A0 /* FFTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTController.h; sourceTree = "<group>"; };
+		9F16D0411449BF52001728A0 /* FFTController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTController.cpp; sourceTree = "<group>"; };
+		9F16D06C1449C417001728A0 /* FFTVisualiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTVisualiser.h; sourceTree = "<group>"; };
+		9F16D06D1449C417001728A0 /* FFTVisualiser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTVisualiser.cpp; sourceTree = "<group>"; };
+		9F16D0701449C4A2001728A0 /* ValuesMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValuesMap.h; sourceTree = "<group>"; };
+		9F16D0711449C4A2001728A0 /* ValuesMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValuesMap.cpp; sourceTree = "<group>"; };
 		9F5704921449921200749B7C /* OSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCController.cpp; sourceTree = "<group>"; };
 		9F5704931449921200749B7C /* OSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCController.h; sourceTree = "<group>"; };
 		9F5704A314499AC400749B7C /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
@@ -113,6 +122,7 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9F16D06F1449C483001728A0 /* Helpers */,
 				9FE7DCAE1448A125006BA574 /* Drawable */,
 				9FE7DCAB1448A125006BA574 /* Controller */,
 				00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */,
@@ -196,6 +206,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F16D06B1449C3FB001728A0 /* DebugItems */ = {
+			isa = PBXGroup;
+			children = (
+				9F16D06C1449C417001728A0 /* FFTVisualiser.h */,
+				9F16D06D1449C417001728A0 /* FFTVisualiser.cpp */,
+			);
+			name = DebugItems;
+			sourceTree = "<group>";
+		};
+		9F16D06F1449C483001728A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F16D0701449C4A2001728A0 /* ValuesMap.h */,
+				9F16D0711449C4A2001728A0 /* ValuesMap.cpp */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9F57049B14499A9200749B7C /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,8 +299,6 @@
 		9F5704EE1449A06000749B7C /* OSCController */ = {
 			isa = PBXGroup;
 			children = (
-				9F5704931449921200749B7C /* OSCController.h */,
-				9F5704921449921200749B7C /* OSCController.cpp */,
 				9F5704F01449A07500749B7C /* TouchOSCController.h */,
 				9F5704EF1449A07500749B7C /* TouchOSCController.cpp */,
 			);
@@ -295,6 +321,10 @@
 				9F5704EE1449A06000749B7C /* OSCController */,
 				9FE7DCAC1448A125006BA574 /* GenericController.h */,
 				9FE7DCAD1448A125006BA574 /* GenericController.cpp */,
+				9F16D0401449BF52001728A0 /* FFTController.h */,
+				9F16D0411449BF52001728A0 /* FFTController.cpp */,
+				9F5704931449921200749B7C /* OSCController.h */,
+				9F5704921449921200749B7C /* OSCController.cpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,6 +332,7 @@
 		9FE7DCAE1448A125006BA574 /* Drawable */ = {
 			isa = PBXGroup;
 			children = (
+				9F16D06B1449C3FB001728A0 /* DebugItems */,
 				9FE7DCAF1448A125006BA574 /* Dodecahedron.h */,
 				9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */,
 			);
@@ -378,6 +409,9 @@
 				9F5704BD14499AC400749B7C /* OscMessage.cpp in Sources */,
 				9F5704BE14499AC400749B7C /* OscSender.cpp in Sources */,
 				9F5704F11449A07500749B7C /* TouchOSCController.cpp in Sources */,
+				9F16D0421449BF52001728A0 /* FFTController.cpp in Sources */,
+				9F16D06E1449C417001728A0 /* FFTVisualiser.cpp in Sources */,
+				9F16D0721449C4A2001728A0 /* ValuesMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

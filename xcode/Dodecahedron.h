@@ -13,12 +13,11 @@
 #include "Drawable.h"
 #include "Controller.h"
 
-#include "GenericController.h"
+#include "ValuesMap.h"
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 
-#define VERTICES_PER_WALL 5
 
 //work in the cinder's namespace
 using namespace std;
@@ -31,20 +30,22 @@ public:
     Dodecahedron();
     ~Dodecahedron();
 	
-	void update();
 	void set(string key, float value);
 	float get(string key);	
 	vector<string> keys();
 	string getId();
-	void draw();
 
+	void setup();
+	void update();
+	void draw();	
+	
 private:
 	void __updateVertices();
 	void __drawVertices( int vIdx1 , int vIdx2 , int vIdx3 , int vIdx4 , int vIdx5 );
 
 	std::vector<Vec3f> vertices;
 	
-	GenericController _values;    
+	ValuesMap _values;    
 
 	//Model / drawing related parameters
 	float radius;

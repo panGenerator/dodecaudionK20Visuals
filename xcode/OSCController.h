@@ -9,12 +9,10 @@
 #ifndef OSC_CONTROLLER_INCLUDED
 #define OSC_CONTROLLER_INCLUDED
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/AppBasic.h"	//used for console()
 #include "OscListener.h"
 #include <string>
 #include "GenericController.h"
-
-//#define OSC_CONTROLLER_LOG_MESSAGES 1
 
 //work in the cinder's namespace
 using namespace std;

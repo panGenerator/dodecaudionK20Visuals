@@ -9,9 +9,13 @@
 
 #include "GenericController.h"
 
+#pragma mark Constructors/destructors
+
 GenericController::GenericController()
 {
 }
+
+#pragma mark Controller interface implementation
 
 /**
  * Setup the controller
@@ -26,14 +30,14 @@ void GenericController::setup()
  */
 void GenericController::update()
 {
-    _values["rand"] = rand();
+	_values.set( "rand" , rand() );
 }
 /**
  * Set value of the controlled param 
  */
 void GenericController::set(string key, float value)
 {
-    _values[key] = value;
+	_values.set( key , value );
 }
 
 /**
@@ -41,7 +45,7 @@ void GenericController::set(string key, float value)
  */
 float GenericController::get(string key)
 {
-	return _values[key];
+	return _values.get( key );
 }
 
 /**
@@ -49,14 +53,7 @@ float GenericController::get(string key)
  */
 vector<string> GenericController::keys()
 {
-    vector<string> list;
-    
-    for( map<string,float>::iterator it = _values.begin() ; it != _values.end() ; ++it ){
-        string key = it->first;
-        list.push_back(key);
-    }
-    
-    return list;
+	return _values.keys();
 }
 
 /**

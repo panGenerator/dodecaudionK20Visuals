@@ -16,8 +16,8 @@
  */
 Dodecahedron::Dodecahedron()
 {
-	modelRotation = Vec3f(0,0,0);
-	edgesColor = ColorAf(1.0,0,0);
+	set( "edgeColorR" , 1.0f );  
+	edgesColor = ColorAf(get("edgesColorR"),0,0);
 	__updateVertices();
 }
 
@@ -61,7 +61,15 @@ std::string Dodecahedron::getId()
 {
 	return "dodecahedron";
 }
+
+
+
 #pragma mark Drawable interface implementation
+
+
+void Dodecahedron::setup()
+{
+}
 
 /**
  * Update the modl state

@@ -10,8 +10,8 @@
 #ifndef GENERIC_CONTROLLER_INCLUDED
 #define GENERIC_CONTROLLER_INCLUDED
 
-#include "boost/any.hpp"
 #include "Controller.h"
+#include "ValuesMap.h"
 #include <string>
 #include <map>
 #include <vector>
@@ -31,7 +31,7 @@ class GenericController : public Controller
 
   protected:
 	string *id;
-    map<string,float> _values;
+    ValuesMap _values;
 };
 
 #endif
