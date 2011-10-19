@@ -9,6 +9,24 @@
 
 #include "Dodecahedron.h"
 
+int wallVerticeIds[WALL_COUNT][VERTICES_PER_WALL] = {
+	{0,1,2,3,4},
+	{0,1,6,10,5},
+	{1,2,7,11,6},
+	
+	{2,3,8,12,7},
+	{3,4,9,13,8},
+	{4,0,5,14,9},
+	
+	{15,16,11,6,10},
+	{16,17,12,7,11},
+	{17,18,13,8,12},
+	
+	{18,19,14,9,13},
+	{19,15,10,5,14},
+	{15,16,17,18,19},
+};
+
 #pragma mark Constructor / destructor
 
 /**
@@ -81,6 +99,8 @@ void Dodecahedron::update()
 	edgesColor = ColorAf( get( "edgeColorR" ) , get( "edgeColorG" ) , get( "edgeColorB" ) );
 	
 	__updateVertices();
+	__calcWallCenters();
+	__calcNormals();
 }
 
 /**
@@ -97,25 +117,17 @@ void Dodecahedron::draw()
 	glRotated( modelRotation.z , 0.0, 1.0, 0.0 );
 	glRotated( modelRotation.x , 0.0, 0.0, 1.0 );
 	
+	glRotated( get("framesCount"), 0, 1.0f, 0);
+	
 	/*
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
-	__drawVertices(0,1,2,3,4);
+	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+		__drawWall( wallVerticeIds[wall] );
+		
+		__drawWallCenter( wall );
+	}
 
-	__drawVertices(0,1,6,10,5);
-	__drawVertices(1,2,7,11,6);
-	__drawVertices(2,3,8,12,7);
-	__drawVertices(3,4,9,13,8);
-	__drawVertices(4,0,5,14,9);
-	
-	__drawVertices(15,16,11,6,10);
-	__drawVertices(16,17,12,7,11);
-	__drawVertices(17,18,13,8,12);
-	__drawVertices(18,19,14,9,13);
-	__drawVertices(19,15,10,5,14);
-	
-	__drawVertices(15,16,17,18,19);
-	
 	glPopMatrix();
 }
 
@@ -129,7 +141,6 @@ void Dodecahedron::__updateVertices()
 {
 	
 	//vars
-	int verticesCount = 20;
 	double Pi = 3.141592653589793238462643383279502884197;
 	
 	double phiaa = 52.62263590; /* the two phi angles needed for generation */
@@ -143,9 +154,6 @@ void Dodecahedron::__updateVertices()
 	float the72 = Pi*72.0/180;
 	float theb = the72/2.0; /* pairs of layers offset 36 degrees */
 	float the = 0.0;	
-	
-	//init vertices vector
-	vertices.reserve( verticesCount );
 	
 	//calculation of vertices positions
 	Vec3f v;
@@ -191,31 +199,72 @@ void Dodecahedron::__updateVertices()
 	}
 }
 
+#pragma mark calculations
+
+/**
+ * Calculate middle point for all of the walls
+ */
+void Dodecahedron::__calcWallCenters()
+{
+	Vec3f vCalc,v1,v2,v3;
+	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+		//This won't work... no, no
+		vCalc = vertices[ wallVerticeIds[wall][0] ];
+		for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
+			vCalc = ( vCalc + vertices[ wallVerticeIds[wall][i] ] ) / 2.0f;
+		}
+		wallCenters[wall] = vCalc;
+	}
+}
+
+/**
+ * Calculate normals for each wall
+ */
+void Dodecahedron::__calcNormals()
+{
+}
+
+#pragma mark drawing
+
 /**
  * Helper method for drawing vertices referenced by position in vertices array
- * This is an ugly method. Bad method, bad!
  */
-void Dodecahedron::__drawVertices( int vIdx1 , int vIdx2 , int vIdx3 , int vIdx4 , int vIdx5 )
+void Dodecahedron::__drawWall( int vIndices[VERTICES_PER_WALL] )
 {
 	Vec3f v;
 	
 	glBegin(GL_LINE_STRIP);	
 	
-	v = vertices[ vIdx1 ];
-	glVertex3fv(v);
+	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
+		v = vertices[ vIndices[i] ];
+		glVertex3fv( v );
+	}
+	glEnd();	
+}
 
-	v = vertices[ vIdx2 ];
-	glVertex3fv(v);
+void Dodecahedron::__drawWallCenter( int wall )
+{
+	Vec3f v = wallCenters[wall];
+	glPushMatrix();
 
-	v = vertices[ vIdx3 ];
-	glVertex3fv(v);
+	if( wall == 0 ){
+		v = vertices[wallVerticeIds[wall][0]];
+		gl::color( ColorAf(1.0,0.0,0.0,0.5f) );
+		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
 
-	v = vertices[ vIdx4 ];
-	glVertex3fv(v);
+		v = vertices[wallVerticeIds[wall][2]];
+		gl::color( ColorAf(0.0,1.0,0.0,0.5f) );
+		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
 
-	v = vertices[ vIdx5 ];
-	glVertex3fv(v);
+		v = vertices[wallVerticeIds[wall][3]];
+		gl::color( ColorAf(0.0,0.0,1.0,0.5f) );
+		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
+	}else{
+		v = wallCenters[wall];
+		gl::color( ColorAf(1.0,1.0,1.0) );
+		gl::drawCube( v , Vec3f( 3 , 3 , 3 ) );
+	}
 	
-	glEnd();
+	glPopMatrix();
 	
 }

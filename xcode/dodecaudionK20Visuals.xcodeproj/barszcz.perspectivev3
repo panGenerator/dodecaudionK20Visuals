@@ -280,7 +280,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>28</integer>
+									<integer>17</integer>
+									<integer>12</integer>
 									<integer>8</integer>
 									<integer>0</integer>
 								</array>
@@ -321,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>9FE7DC891448A094006BA574</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>dodecaudionK20VisualsApp.cpp</string>
+								<string>Dodecahedron.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>9FE7DC8A1448A094006BA574</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>dodecaudionK20VisualsApp.cpp</string>
+										<string>Dodecahedron.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F16D1CA1449D6C5001728A0</string>
+										<string>9F16D2A3144F6368001728A0</string>
 										<key>history</key>
 										<array>
 											<string>9F16CDAA14498739001728A0</string>
@@ -351,11 +352,11 @@
 											<string>9F16D1981449D4C4001728A0</string>
 											<string>9F16D19A1449D4C4001728A0</string>
 											<string>9F16D1B01449D588001728A0</string>
-											<string>9F16D1B11449D588001728A0</string>
 											<string>9F16D1B71449D5E6001728A0</string>
 											<string>9F16D1BE1449D662001728A0</string>
-											<string>9F16D1C51449D6AD001728A0</string>
-											<string>9F16D1C61449D6AD001728A0</string>
+											<string>9F16D1D0144F4C41001728A0</string>
+											<string>9F16D277144F5D1D001728A0</string>
+											<string>9F16D278144F5D1D001728A0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

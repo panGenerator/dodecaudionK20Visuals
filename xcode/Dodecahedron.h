@@ -19,6 +19,9 @@
 #include "cinder/gl/gl.h"
 
 
+#define WALL_COUNT 12
+#define VERTICES_PER_WALL 5
+
 //work in the cinder's namespace
 using namespace std;
 using namespace ci;
@@ -41,9 +44,15 @@ public:
 	
 private:
 	void __updateVertices();
-	void __drawVertices( int vIdx1 , int vIdx2 , int vIdx3 , int vIdx4 , int vIdx5 );
-
-	std::vector<Vec3f> vertices;
+	void __calcWallCenters();
+	void __calcNormals();
+	
+	void __drawWall( int vIndices[VERTICES_PER_WALL] );
+	void __drawWallCenter( int wall );
+	
+	Vec3f vertices[WALL_COUNT*VERTICES_PER_WALL];
+	Vec3f wallCenters[WALL_COUNT];
+	Vec3f normals[WALL_COUNT];
 	
 	ValuesMap _values;    
 
