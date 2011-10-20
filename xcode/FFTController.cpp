@@ -23,6 +23,14 @@ FFTController::FFTController()
 
 void FFTController::setup( int bands )
 {
+	//iterate input devices and print their names to the console
+	/*
+	const std::vector<audio::InputDeviceRef>& devices = audio::Input::getDevices();
+	for( std::vector<audio::InputDeviceRef>::const_iterator iter = devices.begin(); iter != devices.end(); ++iter ) {
+		console() << (*iter)->getName() << std::endl;
+	}
+	*/
+	
 	if( bands >= 0 ){
 		set( BANDS_COUNT_KEY , bands );
 	}	

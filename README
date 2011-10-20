@@ -11,3 +11,8 @@ Visuals for the upcomming Dodecaudion concert at Kultura 2.0 [http://kultura20.p
 --------------------------------------------------------
 Open in XCode, in the main menu go to Project > Edit Project Settings and set CINDER_PATH to point to your Cinder installation path (at the bottom of the list)
 Then do the same thing but go to Project > Edit Active Target 
+
+For proper compilation you'll need the OSC block shipped with cinder and the Cinder-MIDI block which can be found 
+at https://github.com/hecspc/Cinder-MIDI (just put it in the blocks folder of your Cinder folder.). 
+
+If You have problems with any of the block (eg. missing files) just delete the missing files and drag them from your location to xcode to update paths. A bit crude method but it works.

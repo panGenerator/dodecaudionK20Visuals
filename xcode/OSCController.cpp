@@ -29,7 +29,7 @@ void OSCController::update()
     while (listener.hasWaitingMessages()) {
 		osc::Message msg;
 		listener.getNextMessage(&msg);
-        parseMessage( msg );
+        processMessage( msg );
     }
 }
 
@@ -44,7 +44,7 @@ string OSCController::getId()
 /**
  * Process the incomming message
  */
-void OSCController::parseMessage(osc::Message msg)
+void OSCController::processMessage(osc::Message msg)
 {
     __logMessage( msg );
 }

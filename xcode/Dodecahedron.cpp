@@ -123,7 +123,7 @@ void Dodecahedron::draw()
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
-		__drawWall( wallVerticeIds[wall] );
+		__drawWall( wall );
 		
 		__drawWallCenter( wall );
 	}
@@ -208,11 +208,16 @@ void Dodecahedron::__calcWallCenters()
 {
 	Vec3f vCalc,v1,v2,v3;
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
-		//This won't work... no, no
-		vCalc = vertices[ wallVerticeIds[wall][0] ];
-		for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
-			vCalc = ( vCalc + vertices[ wallVerticeIds[wall][i] ] ) / 2.0f;
-		}
+		// Calculation of the center is based on finding the middle of height of a isosceles (...a triangle with two identical walls basically)
+		v1 = vertices[wallVerticeIds[wall][0]];
+		v2 = vertices[wallVerticeIds[wall][2]];
+		v3 = vertices[wallVerticeIds[wall][3]];
+		
+		//find half of the base
+		vCalc = (v2+v3)/2.0f;
+		//find the middle of height
+		vCalc = (vCalc+v1)/2.0f;		
+		
 		wallCenters[wall] = vCalc;
 	}
 }
@@ -229,16 +234,17 @@ void Dodecahedron::__calcNormals()
 /**
  * Helper method for drawing vertices referenced by position in vertices array
  */
-void Dodecahedron::__drawWall( int vIndices[VERTICES_PER_WALL] )
+void Dodecahedron::__drawWall( int wall )
 {
 	Vec3f v;
 	
 	glBegin(GL_LINE_STRIP);	
 	
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
-		v = vertices[ vIndices[i] ];
+		v = vertices[ wallVerticeIds[wall][i] ];
 		glVertex3fv( v );
 	}
+	
 	glEnd();	
 }
 
@@ -247,24 +253,15 @@ void Dodecahedron::__drawWallCenter( int wall )
 	Vec3f v = wallCenters[wall];
 	glPushMatrix();
 
-	if( wall == 0 ){
-		v = vertices[wallVerticeIds[wall][0]];
-		gl::color( ColorAf(1.0,0.0,0.0,0.5f) );
-		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
-
-		v = vertices[wallVerticeIds[wall][2]];
-		gl::color( ColorAf(0.0,1.0,0.0,0.5f) );
-		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
-
-		v = vertices[wallVerticeIds[wall][3]];
-		gl::color( ColorAf(0.0,0.0,1.0,0.5f) );
-		gl::drawCube( v , Vec3f( 10 , 10 , 10 ) );
-	}else{
-		v = wallCenters[wall];
-		gl::color( ColorAf(1.0,1.0,1.0) );
-		gl::drawCube( v , Vec3f( 3 , 3 , 3 ) );
-	}
+	v = wallCenters[wall];
+	gl::color( ColorAf(1.0,1.0,1.0) );
+	gl::drawCube( v , Vec3f( 3 , 3 , 3 ) );
 	
-	glPopMatrix();
+	glPopMatrix();	
+}
+
+
+void Dodecahedron::__drawWallNormal( int wall )
+{
 	
 }

@@ -47,8 +47,9 @@ private:
 	void __calcWallCenters();
 	void __calcNormals();
 	
-	void __drawWall( int vIndices[VERTICES_PER_WALL] );
+	void __drawWall( int wall );
 	void __drawWallCenter( int wall );
+	void __drawWallNormal( int wall );
 	
 	Vec3f vertices[WALL_COUNT*VERTICES_PER_WALL];
 	Vec3f wallCenters[WALL_COUNT];
@@ -60,6 +61,8 @@ private:
 	float radius;
 	Vec3f modelRotation;
 	ColorAf edgesColor;
+	
+	Vec3f __debug__vTmp;
 };
 
 #endif

@@ -9,6 +9,7 @@
 #include "OSCController.h"
 #include "TouchOSCController.h"
 #include "FFTController.h"
+#include "MIDIController.h"
 
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
@@ -34,6 +35,7 @@ public:
     OSCController oscCtrl;
 	TouchOSCController touchOscCtrl;
 	FFTController fftCtrl;
+	MIDIController midiCtrl;
 	
 	//visual stuff - drawn elements
 	Dodecahedron dode;
@@ -53,9 +55,11 @@ void dodecaudionK20Visuals::setup()
     touchOscCtrl.setup(10000);
     controllers.push_back( &touchOscCtrl );
 	
-	fftCtrl.setup(32);
+	fftCtrl.setup(512);
 	controllers.push_back( &fftCtrl );
 	
+	midiCtrl.setup(0);
+	controllers.push_back( &midiCtrl );
 	
 	//init drawable objects
 	dode.setup();

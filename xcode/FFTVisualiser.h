@@ -41,8 +41,7 @@ public:
 	
 
 private:
-	ValuesMap _values;    
-
+	ValuesMap _values;
 };
 
 #endif

@@ -65,6 +65,7 @@ void FFTVisualiser::update()
 {
 
 }
+
 void FFTVisualiser::draw()
 {
 	
@@ -76,27 +77,32 @@ void FFTVisualiser::draw()
 	
 	string bandId;
 	int bandsCount = get( "bands" );
-	float rotation = get( "framesCount" ) / 1.0f;
-	float Pi = 3.14;
-	float bandWidth = 10 + 20 * get( "blockSize" );
-	float bandHeight = 100 + 150 * get( "blockSize" );
-	float idx,x,y;
-	float val,bandValue;
+	float PI = 3.14;
+	float bandValue;
+	float radius = 100.0f;
+	float idx;
+	
+	gl::color( ColorAf( 1.0,1.0,1.0 ) );
+	glBegin(GL_TRIANGLE_FAN);
+	
 	for( int band = 0 ; band < bandsCount ; band++ ){
 		idx = (band/(float)bandsCount);
-		
-		
-		x = 0;//getWindowWidth()*idx;
-		y = 0;
-		
 		bandId = "band" + boost::lexical_cast<string>(band);
-		val = get( bandId );
-		bandValue = bandHeight * val;
+		bandValue = get(bandId);
 		
-		gl::color( ColorAf( idx , 1.0f-idx , 1.0f , 0.5f ) );
-		glRotated( rotation , sin( 4 * idx * Pi ), sin( 0.5 * idx * Pi ), cos( 8 * (1-idx) * Pi ) );
-		gl::drawCube( Vec3f( x , y , 0 ) , Vec3f( bandWidth , bandValue , bandWidth ) );
+		radius = 20 + 10 * bandValue;
+		
+		Vec3f v = Vec3f(
+			radius * sin( idx * 2*PI ),
+			radius * cos( idx * 2*PI ),
+			0//radius * sin( idx * 8*PI )
+		);
+		
+		gl::color( ColorAf( 1.0 , idx , 1-idx , 0.5f ) );
+		glVertex3fv( v );
 	}
+	
+	glEnd();
 	
 	glPopMatrix();
 	

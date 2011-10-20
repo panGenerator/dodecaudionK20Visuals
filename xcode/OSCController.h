@@ -25,11 +25,11 @@ public:
     OSCController();
     void setup(int listenPort);
     void update();
-    void parseMessage(osc::Message msg);
     string getId();
     
 protected:
-    void __logMessage( osc::Message msg );
+    void processMessage(osc::Message msg);
+    void __logMessage(osc::Message msg);
     
     osc::Listener listener;
     int port;
