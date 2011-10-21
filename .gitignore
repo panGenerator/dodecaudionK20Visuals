@@ -1,2 +1,4 @@
 .DS_Store
+*.perspectivev3
+*.pbxuser
 xcode/build/**
