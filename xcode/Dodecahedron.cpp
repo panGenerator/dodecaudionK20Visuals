@@ -335,11 +335,10 @@ void Dodecahedron::drawSonicCones( int wall )
 		radius = minRadius + idx * (maxRadius-minRadius);
 		
 		//fade out
-		gl::color( ColorAf(0.6,0.7,0.8,0.3f-0.2f*idx) );
+		gl::color( ColorAf(0.6,0.7,0.8,0.3f-0.3f*idx) );
 		
 		//draw a circle
 		glBegin(GL_LINE_LOOP);
-		//glColor4f( 0.5, 0.6, 0.7, 0.5f-0.5*idx);
 		for( int i = 0 ; i < circlePoints ; i++ ){
 			idxCircle = (float)i/circlePoints;
 			v = Vec3f( radius * sin( 2 * 3.14 * idxCircle ) , radius * cos( 2 * 3.14 * idxCircle ) , idx * length );

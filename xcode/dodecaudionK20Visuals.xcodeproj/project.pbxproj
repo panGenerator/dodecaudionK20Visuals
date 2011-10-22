@@ -28,6 +28,7 @@
 		9F16D2E214509D90001728A0 /* MidiMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D2DE14509D90001728A0 /* MidiMessage.cpp */; };
 		9F16D33E1450A287001728A0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16D33D1450A287001728A0 /* CoreFoundation.framework */; };
 		9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */; };
+		9F533E921452FF4B0086D9D5 /* GenericFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F533E911452FF4B0086D9D5 /* GenericFilter.cpp */; };
 		9F5704941449921200749B7C /* OSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704921449921200749B7C /* OSCController.cpp */; };
 		9F5704BB14499AC400749B7C /* OscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B714499AC400749B7C /* OscBundle.cpp */; };
 		9F5704BC14499AC400749B7C /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B814499AC400749B7C /* OscListener.cpp */; };
@@ -79,6 +80,31 @@
 		9F16D33D1450A287001728A0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9F16D3891450A356001728A0 /* MIDIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIController.h; sourceTree = "<group>"; };
 		9F16D38A1450A356001728A0 /* MIDIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIController.cpp; sourceTree = "<group>"; };
+		9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		9F533E901452FF4B0086D9D5 /* GenericFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericFilter.h; sourceTree = "<group>"; };
+		9F533E911452FF4B0086D9D5 /* GenericFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericFilter.cpp; sourceTree = "<group>"; };
+		9F533EDF14531B160086D9D5 /* CinderOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderOpenCV.h; sourceTree = "<group>"; };
+		9F533EE114531B160086D9D5 /* cv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv.h; sourceTree = "<group>"; };
+		9F533EE214531B160086D9D5 /* cv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cv.hpp; sourceTree = "<group>"; };
+		9F533EE314531B160086D9D5 /* cvaux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvaux.h; sourceTree = "<group>"; };
+		9F533EE414531B160086D9D5 /* cvaux.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cvaux.hpp; sourceTree = "<group>"; };
+		9F533EE514531B160086D9D5 /* cvcompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvcompat.h; sourceTree = "<group>"; };
+		9F533EE614531B160086D9D5 /* cvinternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvinternal.h; sourceTree = "<group>"; };
+		9F533EE714531B160086D9D5 /* cvtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvtypes.h; sourceTree = "<group>"; };
+		9F533EE814531B160086D9D5 /* cvver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvver.h; sourceTree = "<group>"; };
+		9F533EE914531B160086D9D5 /* cvvidsurv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cvvidsurv.hpp; sourceTree = "<group>"; };
+		9F533EEA14531B160086D9D5 /* cvwimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvwimage.h; sourceTree = "<group>"; };
+		9F533EEB14531B160086D9D5 /* cxcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cxcore.h; sourceTree = "<group>"; };
+		9F533EEC14531B160086D9D5 /* cxcore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxcore.hpp; sourceTree = "<group>"; };
+		9F533EED14531B160086D9D5 /* cxerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cxerror.h; sourceTree = "<group>"; };
+		9F533EEE14531B160086D9D5 /* cxflann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cxflann.h; sourceTree = "<group>"; };
+		9F533EEF14531B160086D9D5 /* cxmat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxmat.hpp; sourceTree = "<group>"; };
+		9F533EF014531B160086D9D5 /* cxmisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cxmisc.h; sourceTree = "<group>"; };
+		9F533EF114531B160086D9D5 /* cxoperations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxoperations.hpp; sourceTree = "<group>"; };
+		9F533EF214531B160086D9D5 /* cxtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cxtypes.h; sourceTree = "<group>"; };
+		9F533EF314531B160086D9D5 /* highgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highgui.h; sourceTree = "<group>"; };
+		9F533EF414531B160086D9D5 /* highgui.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = highgui.hpp; sourceTree = "<group>"; };
+		9F533EF514531B160086D9D5 /* ml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ml.h; sourceTree = "<group>"; };
 		9F5704921449921200749B7C /* OSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCController.cpp; sourceTree = "<group>"; };
 		9F5704931449921200749B7C /* OSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCController.h; sourceTree = "<group>"; };
 		9F5704A314499AC400749B7C /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
@@ -143,6 +169,7 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9F533E8F1452FF1D0086D9D5 /* Filter */,
 				9F16D06F1449C483001728A0 /* Helpers */,
 				9FE7DCAE1448A125006BA574 /* Drawable */,
 				9FE7DCAB1448A125006BA574 /* Controller */,
@@ -298,9 +325,65 @@
 			name = MIDIController;
 			sourceTree = "<group>";
 		};
+		9F533E8F1452FF1D0086D9D5 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				9F533E901452FF4B0086D9D5 /* GenericFilter.h */,
+				9F533E911452FF4B0086D9D5 /* GenericFilter.cpp */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		9F533EDC14531B0C0086D9D5 /* openCV */ = {
+			isa = PBXGroup;
+			children = (
+				9F533EDE14531B160086D9D5 /* include */,
+			);
+			name = openCV;
+			sourceTree = "<group>";
+		};
+		9F533EDE14531B160086D9D5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9F533EDF14531B160086D9D5 /* CinderOpenCV.h */,
+				9F533EE014531B160086D9D5 /* OpenCV */,
+			);
+			name = include;
+			path = ../../../cinder/blocks/opencv/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		9F533EE014531B160086D9D5 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				9F533EE114531B160086D9D5 /* cv.h */,
+				9F533EE214531B160086D9D5 /* cv.hpp */,
+				9F533EE314531B160086D9D5 /* cvaux.h */,
+				9F533EE414531B160086D9D5 /* cvaux.hpp */,
+				9F533EE514531B160086D9D5 /* cvcompat.h */,
+				9F533EE614531B160086D9D5 /* cvinternal.h */,
+				9F533EE714531B160086D9D5 /* cvtypes.h */,
+				9F533EE814531B160086D9D5 /* cvver.h */,
+				9F533EE914531B160086D9D5 /* cvvidsurv.hpp */,
+				9F533EEA14531B160086D9D5 /* cvwimage.h */,
+				9F533EEB14531B160086D9D5 /* cxcore.h */,
+				9F533EEC14531B160086D9D5 /* cxcore.hpp */,
+				9F533EED14531B160086D9D5 /* cxerror.h */,
+				9F533EEE14531B160086D9D5 /* cxflann.h */,
+				9F533EEF14531B160086D9D5 /* cxmat.hpp */,
+				9F533EF014531B160086D9D5 /* cxmisc.h */,
+				9F533EF114531B160086D9D5 /* cxoperations.hpp */,
+				9F533EF214531B160086D9D5 /* cxtypes.h */,
+				9F533EF314531B160086D9D5 /* highgui.h */,
+				9F533EF414531B160086D9D5 /* highgui.hpp */,
+				9F533EF514531B160086D9D5 /* ml.h */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
 		9F57049B14499A9200749B7C /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
+				9F533EDC14531B0C0086D9D5 /* openCV */,
 				9F16D2D014509D87001728A0 /* cinder-midi */,
 				9F57049C14499A9900749B7C /* osc */,
 			);
@@ -386,6 +469,7 @@
 				9FE7DCA81448A11A006BA574 /* Drawable.h */,
 				9FE7DCA91448A11B006BA574 /* Controllable.h */,
 				9FE7DCAA1448A11B006BA574 /* Controller.h */,
+				9F533E8D1452FEBE0086D9D5 /* Filter.h */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -495,6 +579,7 @@
 				9F16D2E114509D90001728A0 /* MidiIn.cpp in Sources */,
 				9F16D2E214509D90001728A0 /* MidiMessage.cpp in Sources */,
 				9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */,
+				9F533E921452FF4B0086D9D5 /* GenericFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +601,14 @@
 				GCC_VERSION = 4.2;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/ios\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/ios-sim\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/macosx\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/vc10\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/vc9\"",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-D__MACOSX_CORE__",
@@ -549,17 +641,28 @@
 				GCC_VERSION = 4.2;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CINDER_PATH)/blocks/opencv/lib/macosx",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/ios\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/ios-sim\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/macosx\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/vc10\"",
+					"\"$(SRCROOT)/../../../cinder/blocks/opencv/lib/vc9\"",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-D__MACOSX_CORE__",
 				);
 				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcv.a\"",
+					"\"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcxcore.a\"",
 					"\"$(CINDER_PATH)/lib/libcinder.a\"",
 					"$(CINDER_PATH)/blocks/osc/lib/macosx/osc.a",
 				);
 				PRODUCT_NAME = dodecaudionK20Visuals;
 				STRIP_INSTALLED_PRODUCT = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"$(CINDER_PATH)/blocks/osc/include\" \"$(CINDER_PATH)/blocks/Cinder-midi/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

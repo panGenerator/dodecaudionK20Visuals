@@ -30,7 +30,6 @@ class GenericController : public Controller
 	string getId();
 
   protected:
-	string *id;
     ValuesMap _values;
 };
 

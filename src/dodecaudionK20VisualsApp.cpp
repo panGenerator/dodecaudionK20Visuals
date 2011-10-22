@@ -1,10 +1,14 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
+#include "cinder/gl/Fbo.h"
+#include "cinder/gl/Texture.h"
 #include "cinder/Camera.h"
 #include <boost/lexical_cast.hpp>
+#include "cinder/ImageIo.h"
 
 #include "Drawable.h"
 #include "Controller.h"
+#include "Filter.h"
 
 #include "GenericController.h"
 #include "OSCController.h"
@@ -15,15 +19,20 @@
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
 
+#include "GenericFilter.h"
+
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
 
 class dodecaudionK20Visuals : public AppBasic {
 public:
+	void prepareSettings(Settings *settings);	
 	void setup();
 	void resize( ResizeEvent event );
 	void mouseDown( MouseEvent event );	
+	void keyDown( KeyEvent event );
 	void update();
 	void draw();
 	
@@ -31,7 +40,13 @@ public:
 	
 	vector<Controller *> controllers;
 	vector<Drawable *> visualObjects;
+	vector<Filter *> visualFilters;
+	
 	CameraPersp	cam;
+	
+	gl::Fbo::Format fboFormat;
+	gl::Fbo	fbo;
+	gl::Texture fboTexture;
 	
 	
 	//controllers for input (OSC, MIDI, etc.)
@@ -45,7 +60,16 @@ public:
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
     
+	GenericFilter genericFlt;
+	
 };
+
+#pragma mark CINDER_APP_BASIC methods
+	
+void dodecaudionK20Visuals::prepareSettings(Settings *settings){
+	settings->setFrameRate(60.0f);
+	settings->setWindowSize(800, 800);
+}
 
 void dodecaudionK20Visuals::setup()
 {
@@ -59,7 +83,7 @@ void dodecaudionK20Visuals::setup()
     touchOscCtrl.setup(10000);
     controllers.push_back( &touchOscCtrl );
 	
-	fftCtrl.setup(128);
+	fftCtrl.setup(64);
 	controllers.push_back( &fftCtrl );
 	
 	midiCtrl.setup(0);
@@ -70,16 +94,16 @@ void dodecaudionK20Visuals::setup()
 	visualObjects.push_back( &dode );
 	visualObjects.push_back( &fftVis );	
 	
-	cam.lookAt( Vec3f(20,0,-600) , Vec3f::zero() , Vec3f::yAxis() );
-}
-
-void dodecaudionK20Visuals::resize( ResizeEvent event )
-{
-	cam.setAspectRatio( getWindowAspectRatio() );
-}
-
-void dodecaudionK20Visuals::mouseDown( MouseEvent event )
-{
+	
+	//init filters
+	genericFlt.setup();
+	visualFilters.push_back( &genericFlt );
+	
+	//init FBO
+	fboFormat.setSamples(4);
+	fboFormat.enableMipmapping();
+	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
+	
 }
 
 /**
@@ -110,6 +134,13 @@ void dodecaudionK20Visuals::update()
  */
 void dodecaudionK20Visuals::draw()
 {
+	gl::clear( Color(0,0,0) );
+
+	//draw scene to FBO
+	fbo.bindFramebuffer();
+	
+	cam.lookAt( Vec3f(20,0,-500) , Vec3f::zero() , Vec3f::yAxis() );
+		
 	gl::enableDepthRead();
 	gl::enableDepthWrite();
 	gl::clear( Color( 0, 0, 0 ) ); 
@@ -123,11 +154,27 @@ void dodecaudionK20Visuals::draw()
 		
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
 		(*vis)->draw();
+	}	
+	fbo.unbindFramebuffer();
+
+
+	//filter the FBO
+	gl::Texture tex = fbo.getTexture(0);//gl::Texture( s );
+
+	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
+		(*flt)->apply( &tex );
 	}
 	
 	
+	//display the output FBO
+	gl::setViewport( getWindowBounds() );
+	gl::setMatricesWindow( getWindowSize() );
+	gl::color( ColorAf( 1,1,1,1 ) );
+	gl::draw( tex , tex.getBounds() );
 }
 
+#pragma mark helper methods
+	
 /**
  * Perform updating of all Drawable+Controllable object by controllers. 
  * This is where mapping of Controller values to Drawable params is done
@@ -178,5 +225,27 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		}
 	}
 }
+	
+	
+#pragma mark Application event handlers
+	
+void dodecaudionK20Visuals::resize( ResizeEvent event )
+{
+	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
+	cam.setAspectRatio( getWindowAspectRatio() );
+}
+
+void dodecaudionK20Visuals::mouseDown( MouseEvent event )
+{
+}
+
+void dodecaudionK20Visuals::keyDown( KeyEvent event ){
+	char ch = event.getChar();
+	if( ch == 'f' ){
+		setFullScreen( !isFullScreen() );
+		gl::clear(Color(0,0,0));
+	}
+}
+	
 
 CINDER_APP_BASIC( dodecaudionK20Visuals, RendererGl );
