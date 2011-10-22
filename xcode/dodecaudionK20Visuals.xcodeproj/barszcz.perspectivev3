@@ -337,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F5C8CA41452E50500749BC0</string>
+										<string>9F5C8CFC1452EB5900749BC0</string>
 										<key>history</key>
 										<array>
 											<string>9F16CDAA14498739001728A0</string>
@@ -373,10 +373,10 @@
 											<string>9F5C8A251452C03800749BC0</string>
 											<string>9F5C8C4B1452E0CA00749BC0</string>
 											<string>9F5C8C911452E48400749BC0</string>
-											<string>9F5C8C981452E4AE00749BC0</string>
 											<string>9F5C8C9F1452E4C500749BC0</string>
 											<string>9F5C8CA01452E4C500749BC0</string>
-											<string>9F5C8CA11452E4C500749BC0</string>
+											<string>9F5C8CAB1452E72600749BC0</string>
+											<string>9F5C8CAC1452E72600749BC0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -693,6 +693,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>9F5C8CFD1452EB5900749BC0</string>
 		<string>9F5C85041451545600749BC0</string>
 		<string>9F5C85051451545600749BC0</string>
 		<string>/Users/barszcz/Documents/dev/cinder/apps/dodecaudionK20Visuals/xcode/dodecaudionK20Visuals.xcodeproj</string>

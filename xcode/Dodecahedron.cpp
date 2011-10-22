@@ -36,7 +36,7 @@ Dodecahedron::Dodecahedron()
 {
 	set( "edgeColorR" , 1.0f );  
 	edgesColor = ColorAf(get("edgesColorR"),0,0);
-	__updateVertices();	
+	updateVertices();	
 }
 
 /**
@@ -98,9 +98,9 @@ void Dodecahedron::update()
 	modelRotation = 64 * Vec3f( get( "rotationX" ) , get( "rotationY" ) , get( "rotationZ" ) );
 	edgesColor = ColorAf( get( "edgeColorR" ) , get( "edgeColorG" ) , get( "edgeColorB" ) );
 	
-	__updateVertices();
-	__calcWallCenters();
-	__calcWallCoordinateSystems();
+	updateVertices();
+	calcWallCenters();
+	calcWallCoordinateSystems();
 }
 
 /**
@@ -124,9 +124,10 @@ void Dodecahedron::draw()
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
-		__drawWall( wall );
+		drawWall( wall );
 		__drawWallCenter( wall );
 		__drawWallCoordinateSystem( wall );
+		drawSonicCones( wall );
 	}
 
 	glPopMatrix();
@@ -138,7 +139,7 @@ void Dodecahedron::draw()
  * Initialize the model vertices
  * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
  */
-void Dodecahedron::__updateVertices()
+void Dodecahedron::updateVertices()
 {
 	
 	//vars
@@ -205,7 +206,7 @@ void Dodecahedron::__updateVertices()
 /**
  * Calculate middle point for all of the walls
  */
-void Dodecahedron::__calcWallCenters()
+void Dodecahedron::calcWallCenters()
 {
 	Vec3f vCalc,v1,v2,v3;
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
@@ -226,7 +227,7 @@ void Dodecahedron::__calcWallCenters()
 /**
  *
  */
-void Dodecahedron::__calcWallCoordinateSystems()
+void Dodecahedron::calcWallCoordinateSystems()
 {
 	Vec3f v1,v2,v3,vBase,vCenter,vCalc;
 	Vec3f vX,vY,vZ;
@@ -262,12 +263,39 @@ void Dodecahedron::__calcWallCoordinateSystems()
 	}
 }
 
+#pragma mark drawing helpers
+
+/**
+ * Transform the coordinate system to match the surface of the wall
+ */ 
+void Dodecahedron::transformToWallCoordinateSystem( int wall )
+{
+	Vec3f vCenter = wallCenters[wall];
+	Vec3f coordinateSystem[3] = wallCoordinateSystems[wall];
+	
+	//transform the model matrix to place (0,0,0) in the middle of the wall. this is awesome, took me a while to figure out
+	//...probably done the wrong way :)	
+	gl::pushModelView();
+	Matrix44f transformation = gl::getModelView();
+	transformation = transformation.createTranslation(vCenter);
+	transformation.rotate(Vec3f::zAxis(), coordinateSystem[2], coordinateSystem[1]);	
+	gl::multModelView(transformation);
+}
+
+/**
+ * Return to the previous coordinate system
+ */
+void Dodecahedron::popWallCoordinateSystem()
+{
+	gl::popModelView();
+}
+
 #pragma mark drawing
 
 /**
  * Helper method for drawing vertices referenced by position in vertices array
  */
-void Dodecahedron::__drawWall( int wall )
+void Dodecahedron::drawWall( int wall )
 {
 	Vec3f v;
 	
@@ -288,6 +316,44 @@ void Dodecahedron::__drawWall( int wall )
 /**
  *
  */
+void Dodecahedron::drawSonicCones( int wall )
+{	
+	transformToWallCoordinateSystem(wall);
+	
+	glLineWidth(1.3);
+	glEnable(GL_LINE_SMOOTH);
+	
+	float radius,minRadius = 10.0f, maxRadius=128.0f;
+	int step = 13,circlePoints = 16;
+	int length = 1000;
+	float idx= 0.0f,idxCircle=0.0f;
+	Vec3f v;
+	for( int ring = 0 ; ring < length ; ring+=step ){
+		idx = ring/(float)length;
+		
+		//increasing radius
+		radius = minRadius + idx * (maxRadius-minRadius);
+		
+		//fade out
+		gl::color( ColorAf(0.6,0.7,0.8,0.3f-0.2f*idx) );
+		
+		//draw a circle
+		glBegin(GL_LINE_LOOP);
+		//glColor4f( 0.5, 0.6, 0.7, 0.5f-0.5*idx);
+		for( int i = 0 ; i < circlePoints ; i++ ){
+			idxCircle = (float)i/circlePoints;
+			v = Vec3f( radius * sin( 2 * 3.14 * idxCircle ) , radius * cos( 2 * 3.14 * idxCircle ) , idx * length );
+			glVertex3fv( v );
+		}
+		glEnd();
+	}
+	
+	popWallCoordinateSystem();
+}
+
+/**
+ * Reality check - if the center is in the middle of the wall
+ */
 void Dodecahedron::__drawWallCenter( int wall )
 {
 	
@@ -302,11 +368,11 @@ void Dodecahedron::__drawWallCenter( int wall )
 }
 
 /**
- *
+ * Reality check - drawign the wall's local coordinate system
  */
 void Dodecahedron::__drawWallCoordinateSystem( int wall )
 {
-	
+	Vec3f vCenter = wallCenters[wall];
 	Vec3f coordinateSystem[3] = wallCoordinateSystems[wall];
 	float radius = 10.0;
 	
@@ -314,7 +380,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	//TEST
 	//reality check - draw the axes from the base coordinate system 
 	glLineWidth(4.0f);
-	Vec3f vCenter = wallCenters[wall];
+
 	gl::color( ColorAf(1.0,0.0,0.0,0.4f) );
 	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[0] );
 	gl::color( ColorAf(0.0,1.0,0.0,0.4f) );
@@ -323,15 +389,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[2] );
 	glLineWidth(1.0f);
 
-	
-	//transform the model matrix to place (0,0,0) in the middle of the wall. this is awesome, took me a while to figure out
-	//...probably done the wrong way :)
-	gl::pushModelView();
-	Matrix44f transformation = gl::getModelView();
-	transformation = transformation.createTranslation(vCenter);
-	transformation.rotate(Vec3f::zAxis(), coordinateSystem[2], coordinateSystem[1]);	
-	gl::multModelView(transformation);
-
+	transformToWallCoordinateSystem(wall);
 	
 	//
 	//Start drawing here...
@@ -347,9 +405,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	//yeah, it's always more fun with a flat cube at (10,20,0)
 	gl::color( ColorAf(1,1,1,0.3f) );
 	gl::drawCube( Vec3f( 10, 20 , 0 ) , Vec3f( 10, 10, 1) );
-	
-	
-
+		
 	
 	//....
 	
@@ -357,5 +413,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	//end drawing here
 	//
 	
-	gl::popModelView();
+	popWallCoordinateSystem();
+
 }
+

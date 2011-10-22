@@ -43,13 +43,19 @@ public:
 	void draw();	
 	
 private:
-	void __updateVertices();
-	void __calcWallCenters();
-	void __calcWallCoordinateSystems();
+	void updateVertices();
+	void calcWallCenters();
+	void calcWallCoordinateSystems();
 	
-	void __drawWall( int wall );
+	void transformToWallCoordinateSystem( int wall );
+	void popWallCoordinateSystem();
+	
+	void drawWall( int wall );
+	void drawSonicCones( int wall );	
+
 	void __drawWallCenter( int wall );
 	void __drawWallCoordinateSystem( int wall );
+	
 	
 	Vec3f vertices[WALL_COUNT*VERTICES_PER_WALL];
 	Vec3f wallCenters[WALL_COUNT];

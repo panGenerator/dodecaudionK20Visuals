@@ -665,6 +665,29 @@
 			9F5C8CA11452E4C500749BC0 /* PBXTextBookmark */ = 9F5C8CA11452E4C500749BC0 /* PBXTextBookmark */;
 			9F5C8CA21452E4C500749BC0 /* PBXTextBookmark */ = 9F5C8CA21452E4C500749BC0 /* PBXTextBookmark */;
 			9F5C8CA41452E50500749BC0 /* PBXTextBookmark */ = 9F5C8CA41452E50500749BC0 /* PBXTextBookmark */;
+			9F5C8CAB1452E72600749BC0 /* PBXTextBookmark */ = 9F5C8CAB1452E72600749BC0 /* PBXTextBookmark */;
+			9F5C8CAC1452E72600749BC0 /* PBXTextBookmark */ = 9F5C8CAC1452E72600749BC0 /* PBXTextBookmark */;
+			9F5C8CAD1452E72600749BC0 /* PBXTextBookmark */ = 9F5C8CAD1452E72600749BC0 /* PBXTextBookmark */;
+			9F5C8CAE1452E75F00749BC0 /* PBXTextBookmark */ = 9F5C8CAE1452E75F00749BC0 /* PBXTextBookmark */;
+			9F5C8CB31452E87700749BC0 /* PBXTextBookmark */ = 9F5C8CB31452E87700749BC0 /* PBXTextBookmark */;
+			9F5C8CB71452E8A700749BC0 /* PBXTextBookmark */ = 9F5C8CB71452E8A700749BC0 /* PBXTextBookmark */;
+			9F5C8CBD1452E8D400749BC0 /* PBXTextBookmark */ = 9F5C8CBD1452E8D400749BC0 /* PBXTextBookmark */;
+			9F5C8CC21452E91700749BC0 /* PBXTextBookmark */ = 9F5C8CC21452E91700749BC0 /* PBXTextBookmark */;
+			9F5C8CC61452E94C00749BC0 /* PBXTextBookmark */ = 9F5C8CC61452E94C00749BC0 /* PBXTextBookmark */;
+			9F5C8CCA1452E96700749BC0 /* PBXTextBookmark */ = 9F5C8CCA1452E96700749BC0 /* PBXTextBookmark */;
+			9F5C8CCE1452E98900749BC0 /* PBXTextBookmark */ = 9F5C8CCE1452E98900749BC0 /* PBXTextBookmark */;
+			9F5C8CD21452E9A500749BC0 /* PBXTextBookmark */ = 9F5C8CD21452E9A500749BC0 /* PBXTextBookmark */;
+			9F5C8CD61452E9DD00749BC0 /* PBXTextBookmark */ = 9F5C8CD61452E9DD00749BC0 /* PBXTextBookmark */;
+			9F5C8CDA1452EA1100749BC0 /* PBXTextBookmark */ = 9F5C8CDA1452EA1100749BC0 /* PBXTextBookmark */;
+			9F5C8CDE1452EA4800749BC0 /* PBXTextBookmark */ = 9F5C8CDE1452EA4800749BC0 /* PBXTextBookmark */;
+			9F5C8CE21452EA6900749BC0 /* PBXTextBookmark */ = 9F5C8CE21452EA6900749BC0 /* PBXTextBookmark */;
+			9F5C8CE61452EA7600749BC0 /* PBXTextBookmark */ = 9F5C8CE61452EA7600749BC0 /* PBXTextBookmark */;
+			9F5C8CE81452EA8000749BC0 /* PBXTextBookmark */ = 9F5C8CE81452EA8000749BC0 /* PBXTextBookmark */;
+			9F5C8CED1452EAEB00749BC0 /* PBXTextBookmark */ = 9F5C8CED1452EAEB00749BC0 /* PBXTextBookmark */;
+			9F5C8CF01452EB0000749BC0 /* PBXTextBookmark */ = 9F5C8CF01452EB0000749BC0 /* PBXTextBookmark */;
+			9F5C8CF31452EB2D00749BC0 /* PBXTextBookmark */ = 9F5C8CF31452EB2D00749BC0 /* PBXTextBookmark */;
+			9F5C8CF71452EB4500749BC0 /* PBXTextBookmark */ = 9F5C8CF71452EB4500749BC0 /* PBXTextBookmark */;
+			9F5C8CFC1452EB5900749BC0 /* PBXTextBookmark */ = 9F5C8CFC1452EB5900749BC0 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 9FE7DC8F1448A095006BA574 /* Source Control */;
 		userBuildSettings = {
@@ -959,7 +982,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 244";
 		rLen = 0;
-		rLoc = 5493;
+		rLoc = 6304;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 3804;
@@ -1409,7 +1432,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 53";
 		rLen = 0;
-		rLoc = 965;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 1070;
 		vrLoc = 241;
@@ -1441,7 +1464,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 234";
 		rLen = 0;
-		rLoc = 4461;
+		rLoc = 4471;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 4261;
@@ -1451,7 +1474,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 5128;
+		rLoc = 5138;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 4229;
@@ -1461,7 +1484,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 5128;
+		rLoc = 5138;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 4229;
@@ -1481,7 +1504,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 251";
 		rLen = 0;
-		rLoc = 5105;
+		rLoc = 5115;
 		rType = 0;
 		vrLen = 417;
 		vrLoc = 4678;
@@ -1491,7 +1514,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 241";
 		rLen = 0;
-		rLoc = 4771;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 4229;
@@ -1501,7 +1524,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 241";
 		rLen = 0;
-		rLoc = 4771;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 4229;
@@ -1511,7 +1534,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 5127;
+		rLoc = 5137;
 		rType = 0;
 		vrLen = 417;
 		vrLoc = 4696;
@@ -1521,7 +1544,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 308";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 4117;
@@ -1531,7 +1554,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 299";
 		rLen = 0;
-		rLoc = 5950;
+		rLoc = 7788;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 5260;
@@ -1541,7 +1564,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 240";
 		rLen = 0;
-		rLoc = 4750;
+		rLoc = 4760;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 4271;
@@ -1551,7 +1574,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 241";
 		rLen = 0;
-		rLoc = 4615;
+		rLoc = 4625;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 3991;
@@ -1561,7 +1584,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 248";
 		rLen = 0;
-		rLoc = 4751;
+		rLoc = 4761;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 4033;
@@ -1571,7 +1594,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 53";
 		rLen = 0;
-		rLoc = 965;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 202;
@@ -1581,7 +1604,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 236";
 		rLen = 0;
-		rLoc = 4470;
+		rLoc = 4480;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 4033;
@@ -1591,7 +1614,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 97";
 		rLen = 0;
-		rLoc = 1258;
+		rLoc = 1256;
 		rType = 0;
 		vrLen = 797;
 		vrLoc = 826;
@@ -1601,7 +1624,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 149";
 		rLen = 0;
-		rLoc = 2506;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 1878;
@@ -1611,7 +1634,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1806;
+		rLoc = 1798;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 1070;
@@ -1621,7 +1644,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1802;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 1070;
@@ -1631,7 +1654,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1802;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 1070;
@@ -1641,7 +1664,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1802;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 545;
 		vrLoc = 1623;
@@ -1780,7 +1803,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1802;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 1070;
@@ -1850,7 +1873,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 120";
 		rLen = 0;
-		rLoc = 1802;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 1070;
@@ -1860,7 +1883,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 5298;
@@ -1870,7 +1893,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -1880,7 +1903,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -1924,7 +1947,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		rLen = 0;
-		rLoc = 277;
+		rLoc = 305;
 		rType = 1;
 	};
 	9F5C856A1451571D00749BC0 /* PBXTextBookmark */ = {
@@ -1932,7 +1955,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 4861;
@@ -1942,7 +1965,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -1952,7 +1975,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -1962,7 +1985,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -1972,7 +1995,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 5298;
@@ -2070,7 +2093,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 5298;
@@ -2080,7 +2103,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 1543;
@@ -2090,7 +2113,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 1543;
@@ -2100,7 +2123,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 1543;
@@ -2120,7 +2143,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 685;
 		vrLoc = 2339;
@@ -2130,7 +2153,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5154;
+		rLoc = 5967;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 2027;
@@ -2140,7 +2163,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 113";
 		rLen = 0;
-		rLoc = 1623;
+		rLoc = 1615;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 1543;
@@ -2260,7 +2283,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 113";
 		rLen = 0;
-		rLoc = 1623;
+		rLoc = 1615;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 1543;
@@ -2270,7 +2293,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 269";
 		rLen = 0;
-		rLoc = 5414;
+		rLoc = 6225;
 		rType = 0;
 		vrLen = 734;
 		vrLoc = 5128;
@@ -2280,7 +2303,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 284";
 		rLen = 0;
-		rLoc = 5628;
+		rLoc = 7373;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 4998;
@@ -2290,7 +2313,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 270";
 		rLen = 0;
-		rLoc = 5415;
+		rLoc = 6226;
 		rType = 0;
 		vrLen = 706;
 		vrLoc = 4998;
@@ -2300,7 +2323,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 275";
 		rLen = 0;
-		rLoc = 5530;
+		rLoc = 6341;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 4998;
@@ -2310,7 +2333,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 268";
 		rLen = 0;
-		rLoc = 5341;
+		rLoc = 6152;
 		rType = 0;
 		vrLen = 615;
 		vrLoc = 5130;
@@ -2320,7 +2343,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 268";
 		rLen = 0;
-		rLoc = 5325;
+		rLoc = 6136;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 5130;
@@ -2330,7 +2353,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 268";
 		rLen = 0;
-		rLoc = 5325;
+		rLoc = 6136;
 		rType = 0;
 		vrLen = 701;
 		vrLoc = 5130;
@@ -2370,7 +2393,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 268";
 		rLen = 0;
-		rLoc = 5325;
+		rLoc = 6136;
 		rType = 0;
 		vrLen = 701;
 		vrLoc = 5130;
@@ -2380,7 +2403,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 5833;
@@ -2390,7 +2413,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 325";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 5713;
@@ -2400,7 +2423,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 5366;
@@ -2410,7 +2433,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 5473;
@@ -2420,7 +2443,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 251";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1070;
 		vrLoc = 4207;
@@ -2430,7 +2453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 4943;
+		rLoc = 4953;
 		rType = 0;
 		vrLen = 1080;
 		vrLoc = 4207;
@@ -2440,7 +2463,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 252";
 		rLen = 0;
-		rLoc = 4932;
+		rLoc = 4942;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 4207;
@@ -2460,7 +2483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 230";
 		rLen = 5;
-		rLoc = 4327;
+		rLoc = 4337;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 4207;
@@ -2470,7 +2493,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 252";
 		rLen = 0;
-		rLoc = 4897;
+		rLoc = 4907;
 		rType = 0;
 		vrLen = 1122;
 		vrLoc = 4207;
@@ -2480,7 +2503,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 252";
 		rLen = 0;
-		rLoc = 4900;
+		rLoc = 4910;
 		rType = 0;
 		vrLen = 1122;
 		vrLoc = 4207;
@@ -2500,7 +2523,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 252";
 		rLen = 0;
-		rLoc = 4900;
+		rLoc = 4910;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 4207;
@@ -2510,7 +2533,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 118";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1712;
 		rType = 0;
 		vrLen = 1294;
 		vrLoc = 1179;
@@ -2520,7 +2543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 118";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1712;
 		rType = 0;
 		vrLen = 1297;
 		vrLoc = 1179;
@@ -2530,7 +2553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 118";
 		rLen = 0;
-		rLoc = 1732;
+		rLoc = 1724;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 1213;
@@ -2540,7 +2563,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 239";
 		rLen = 0;
-		rLoc = 4609;
+		rLoc = 4619;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 4177;
@@ -2550,7 +2573,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 239";
 		rLen = 0;
-		rLoc = 4609;
+		rLoc = 4619;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 4177;
@@ -2560,7 +2583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 239";
 		rLen = 0;
-		rLoc = 4609;
+		rLoc = 4619;
 		rType = 0;
 		vrLen = 1203;
 		vrLoc = 4207;
@@ -2570,7 +2593,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 239";
 		rLen = 0;
-		rLoc = 4609;
+		rLoc = 4619;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 3745;
@@ -2580,7 +2603,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 261";
 		rLen = 0;
-		rLoc = 5128;
+		rLoc = 5138;
 		rType = 0;
 		vrLen = 603;
 		vrLoc = 4734;
@@ -2617,7 +2640,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 261";
 		rLen = 0;
-		rLoc = 5128;
+		rLoc = 5138;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 4373;
@@ -2627,7 +2650,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 4900;
+		rLoc = 4910;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 4373;
@@ -2637,7 +2660,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 253";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 4373;
@@ -2647,7 +2670,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5125;
+		rLoc = 5135;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 4207;
@@ -2657,7 +2680,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 5125;
+		rLoc = 5135;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 4207;
@@ -2667,7 +2690,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1138;
 		vrLoc = 5320;
@@ -2699,7 +2722,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 313";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 5547;
@@ -2709,7 +2732,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 348";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 5675;
@@ -2719,7 +2742,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 5675;
@@ -2729,7 +2752,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 316";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 5675;
@@ -2739,7 +2762,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 331";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 5675;
@@ -2749,7 +2772,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 5675;
@@ -2759,7 +2782,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 315";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 5675;
@@ -2779,7 +2802,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 313";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 5675;
@@ -2789,7 +2812,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 5551;
@@ -2799,7 +2822,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 315";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 5551;
@@ -2829,7 +2852,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 5547;
@@ -2839,7 +2862,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 5547;
@@ -2849,7 +2872,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1395;
 		vrLoc = 5547;
@@ -2859,7 +2882,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 5547;
@@ -2879,7 +2902,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 5547;
@@ -2889,7 +2912,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 5547;
@@ -2899,7 +2922,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 5547;
@@ -2909,7 +2932,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 343";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 5771;
@@ -2919,7 +2942,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 5771;
@@ -2929,7 +2952,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 356";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 5773;
@@ -2939,7 +2962,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 5773;
@@ -2949,7 +2972,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 325";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 5773;
@@ -2959,7 +2982,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 325";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 5773;
@@ -2969,7 +2992,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 5773;
@@ -2979,7 +3002,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 5773;
@@ -2989,7 +3012,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 5773;
@@ -2999,7 +3022,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5773;
@@ -3009,7 +3032,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 5773;
@@ -3019,7 +3042,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1651;
 		vrLoc = 5773;
@@ -3029,7 +3052,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5773;
@@ -3039,7 +3062,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1739;
 		vrLoc = 5773;
@@ -3049,7 +3072,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 310";
 		rLen = 0;
-		rLoc = 5931;
+		rLoc = 7769;
 		rType = 0;
 		vrLen = 1777;
 		vrLoc = 5773;
@@ -3081,7 +3104,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 309";
 		rLen = 0;
-		rLoc = 5931;
+		rLoc = 7769;
 		rType = 0;
 		vrLen = 1777;
 		vrLoc = 5773;
@@ -3091,7 +3114,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 5773;
@@ -3101,7 +3124,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 5773;
@@ -3111,7 +3134,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 312";
 		rLen = 0;
-		rLoc = 5954;
+		rLoc = 7792;
 		rType = 0;
 		vrLen = 1721;
 		vrLoc = 5773;
@@ -3121,7 +3144,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 327";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1888;
 		vrLoc = 5773;
@@ -3131,7 +3154,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 114";
 		rLen = 0;
-		rLoc = 1624;
+		rLoc = 1616;
 		rType = 0;
 		vrLen = 1226;
 		vrLoc = 1175;
@@ -3141,7 +3164,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 349";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1891;
 		vrLoc = 5777;
@@ -3151,7 +3174,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 349";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1894;
 		vrLoc = 5777;
@@ -3161,7 +3184,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 330";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 5777;
@@ -3171,7 +3194,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 5777;
@@ -3181,7 +3204,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 121";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1814;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 4392;
@@ -3211,7 +3234,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 329";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2003;
 		vrLoc = 5677;
@@ -3221,7 +3244,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2154;
 		vrLoc = 5677;
@@ -3231,7 +3254,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 328";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2202;
 		vrLoc = 5677;
@@ -3241,7 +3264,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 328";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2148;
 		vrLoc = 5677;
@@ -3251,7 +3274,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 308";
 		rLen = 0;
-		rLoc = 5874;
+		rLoc = 7712;
 		rType = 0;
 		vrLen = 380;
 		vrLoc = 5677;
@@ -3261,7 +3284,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2148;
 		vrLoc = 5677;
@@ -3281,7 +3304,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2202;
 		vrLoc = 5677;
@@ -3291,7 +3314,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2162;
 		vrLoc = 5677;
@@ -3301,7 +3324,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2406;
 		vrLoc = 5776;
@@ -3321,7 +3344,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2341;
 		vrLoc = 5776;
@@ -3331,7 +3354,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2364;
 		vrLoc = 5776;
@@ -3341,7 +3364,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 316";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2447;
 		vrLoc = 5776;
@@ -3383,7 +3406,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1815;
 		vrLoc = 5542;
@@ -3393,7 +3416,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1817;
 		vrLoc = 5542;
@@ -3403,7 +3426,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 315";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1739;
 		vrLoc = 5542;
@@ -3413,7 +3436,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2584;
 		vrLoc = 5883;
@@ -3422,7 +3445,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		rLen = 1;
-		rLoc = 306;
+		rLoc = 372;
 		rType = 1;
 	};
 	9F5C87451451A99700749BC0 /* PBXTextBookmark */ = {
@@ -3430,7 +3453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1553;
 		vrLoc = 5780;
@@ -3440,7 +3463,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1385;
 		vrLoc = 5653;
@@ -3450,7 +3473,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 314";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 5549;
@@ -3460,7 +3483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 5549;
@@ -3470,7 +3493,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1466;
 		vrLoc = 5549;
@@ -3480,7 +3503,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 316";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 5553;
@@ -3490,7 +3513,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 311";
 		rLen = 0;
-		rLoc = 5931;
+		rLoc = 7769;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 5553;
@@ -3510,7 +3533,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 311";
 		rLen = 0;
-		rLoc = 5931;
+		rLoc = 7769;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 5553;
@@ -3520,7 +3543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 311";
 		rLen = 0;
-		rLoc = 5931;
+		rLoc = 7769;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 5553;
@@ -3530,7 +3553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 255";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1090;
 		vrLoc = 4476;
@@ -3540,7 +3563,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 5665;
@@ -3550,7 +3573,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 324";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1461;
 		vrLoc = 5665;
@@ -3560,7 +3583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 5665;
@@ -3570,7 +3593,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 5665;
@@ -3580,7 +3603,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 5665;
@@ -3610,7 +3633,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 329";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 5690;
@@ -3620,7 +3643,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 330";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 5690;
@@ -3630,7 +3653,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1358;
 		vrLoc = 5562;
@@ -3640,7 +3663,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 121";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1814;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1179;
@@ -3650,7 +3673,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 5520;
@@ -3660,7 +3683,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1332;
 		vrLoc = 5520;
@@ -3670,7 +3693,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 322";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 5520;
@@ -3690,7 +3713,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 5523;
@@ -3700,7 +3723,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 324";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 5523;
@@ -3710,7 +3733,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 324";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1117;
 		vrLoc = 5523;
@@ -3720,7 +3743,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 324";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 5523;
@@ -3730,7 +3753,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 5523;
@@ -3740,7 +3763,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 5340;
@@ -3750,7 +3773,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 5562;
@@ -3760,7 +3783,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 5562;
@@ -3770,7 +3793,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 5562;
@@ -3780,7 +3803,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 5562;
@@ -3790,7 +3813,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 5843;
@@ -3800,7 +3823,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1279;
 		vrLoc = 5562;
@@ -3810,7 +3833,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 327";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1499;
 		vrLoc = 5769;
@@ -3820,7 +3843,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 5939;
@@ -3830,7 +3853,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 343";
 		rLen = 0;
-		rLoc = 7461;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 5810;
@@ -3840,7 +3863,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 331";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 5810;
@@ -3860,7 +3883,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 114";
 		rLen = 0;
-		rLoc = 1624;
+		rLoc = 1616;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 1146;
@@ -3870,7 +3893,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 5693;
@@ -3880,7 +3903,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 5693;
@@ -4010,7 +4033,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 706;
 		vrLoc = 6107;
@@ -4299,7 +4322,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1400;
 		vrLoc = 5710;
@@ -4309,7 +4332,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 5812;
@@ -4319,7 +4342,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 122";
 		rLen = 0;
-		rLoc = 1875;
+		rLoc = 1867;
 		rType = 0;
 		vrLen = 1122;
 		vrLoc = 4634;
@@ -4328,7 +4351,7 @@
 		isa = PBXTextBookmark;
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		rLen = 1;
-		rLoc = 306;
+		rLoc = 372;
 		rType = 1;
 	};
 	9F5C889F1451B95300749BC0 /* PBXTextBookmark */ = {
@@ -4336,7 +4359,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 355";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1175;
 		vrLoc = 3208;
@@ -4346,7 +4369,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 347";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 5797;
@@ -4356,7 +4379,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1528;
 		vrLoc = 5797;
@@ -4366,7 +4389,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1408;
 		vrLoc = 5797;
@@ -4376,7 +4399,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 5816;
@@ -4386,7 +4409,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 5816;
@@ -4396,7 +4419,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1373;
 		vrLoc = 5592;
@@ -4416,7 +4439,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 5592;
@@ -4426,7 +4449,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 317";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 5592;
@@ -4436,7 +4459,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 331";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 5592;
@@ -4456,7 +4479,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 5592;
@@ -4466,7 +4489,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1303;
 		vrLoc = 5592;
@@ -4476,7 +4499,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 5592;
@@ -4496,7 +4519,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 5592;
@@ -4506,7 +4529,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1285;
 		vrLoc = 5592;
@@ -4516,7 +4539,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 325";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1249;
 		vrLoc = 5592;
@@ -4526,7 +4549,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1260;
 		vrLoc = 5592;
@@ -4536,7 +4559,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 5592;
@@ -4546,7 +4569,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1265;
 		vrLoc = 5592;
@@ -4566,7 +4589,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 5596;
@@ -4576,7 +4599,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 5596;
@@ -4586,7 +4609,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 327";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 5596;
@@ -4596,7 +4619,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1576;
 		vrLoc = 5596;
@@ -4606,7 +4629,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 5596;
@@ -4626,7 +4649,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 328";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1699;
 		vrLoc = 5596;
@@ -4636,7 +4659,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 5596;
@@ -4646,7 +4669,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 5596;
@@ -4656,7 +4679,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 5596;
@@ -4676,7 +4699,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1577;
 		vrLoc = 5596;
@@ -4686,7 +4709,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 5596;
@@ -4696,7 +4719,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 5596;
@@ -4706,7 +4729,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 5596;
@@ -4726,7 +4749,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1520;
 		vrLoc = 5596;
@@ -4736,7 +4759,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 5646;
@@ -4746,7 +4769,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1645;
 		vrLoc = 5756;
@@ -4756,7 +4779,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 339";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1623;
 		vrLoc = 5756;
@@ -4776,7 +4799,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 53";
 		rLen = 0;
-		rLoc = 965;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 202;
@@ -4786,7 +4809,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1613;
 		vrLoc = 5797;
@@ -4796,7 +4819,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1646;
 		vrLoc = 5797;
@@ -4806,7 +4829,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 5797;
@@ -4826,7 +4849,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1654;
 		vrLoc = 5756;
@@ -4836,7 +4859,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1723;
 		vrLoc = 5696;
@@ -4846,7 +4869,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1724;
 		vrLoc = 5696;
@@ -4856,7 +4879,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 5696;
@@ -4866,7 +4889,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 338";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1858;
 		vrLoc = 5696;
@@ -4876,7 +4899,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 338";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1859;
 		vrLoc = 5696;
@@ -4886,7 +4909,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 338";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1956;
 		vrLoc = 6016;
@@ -4896,7 +4919,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 338";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1957;
 		vrLoc = 6016;
@@ -4906,7 +4929,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 356";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1974;
 		vrLoc = 6016;
@@ -4916,7 +4939,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7458;
+		rLoc = 8888;
 		rType = 0;
 		vrLen = 2025;
 		vrLoc = 6014;
@@ -4936,7 +4959,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 363";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 2024;
 		vrLoc = 6040;
@@ -4946,7 +4969,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 328";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1947;
 		vrLoc = 5819;
@@ -4956,7 +4979,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1900;
 		vrLoc = 5819;
@@ -4966,7 +4989,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 328";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1923;
 		vrLoc = 5819;
@@ -4976,7 +4999,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 326";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1931;
 		vrLoc = 5819;
@@ -4986,7 +5009,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 255";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1174;
 		vrLoc = 4470;
@@ -4996,7 +5019,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 338";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 5678;
@@ -5016,7 +5039,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 5678;
@@ -5026,7 +5049,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 5678;
@@ -5036,7 +5059,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 321";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 5678;
@@ -5046,7 +5069,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 320";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 5678;
@@ -5056,7 +5079,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1373;
 		vrLoc = 5678;
@@ -5066,7 +5089,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1376;
 		vrLoc = 5678;
@@ -5076,7 +5099,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 318";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1402;
 		vrLoc = 5678;
@@ -5086,7 +5109,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 5678;
@@ -5096,7 +5119,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 5678;
@@ -5106,7 +5129,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 314";
 		rLen = 0;
-		rLoc = 6426;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 5582;
@@ -5116,7 +5139,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 255";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 4329;
@@ -5126,7 +5149,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 256";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 4329;
@@ -5136,7 +5159,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 4965;
+		rLoc = 4975;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 4329;
@@ -5146,7 +5169,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7481;
+		rLoc = 8919;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 5696;
@@ -5156,7 +5179,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 5584;
@@ -5166,7 +5189,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1251;
 		vrLoc = 5584;
@@ -5186,7 +5209,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 5584;
@@ -5196,7 +5219,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 5584;
@@ -5206,7 +5229,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 5646;
@@ -5226,7 +5249,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 331";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1486;
 		vrLoc = 5648;
@@ -5236,7 +5259,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1450;
 		vrLoc = 5648;
@@ -5246,7 +5269,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1471;
 		vrLoc = 5648;
@@ -5256,7 +5279,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1471;
 		vrLoc = 5648;
@@ -5266,7 +5289,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1472;
 		vrLoc = 5648;
@@ -5276,7 +5299,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 255";
 		rLen = 0;
-		rLoc = 4962;
+		rLoc = 4972;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 5722;
@@ -5296,7 +5319,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1477;
 		vrLoc = 5756;
@@ -5306,7 +5329,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 5756;
@@ -5336,7 +5359,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 5756;
@@ -5346,7 +5369,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 344";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 5756;
@@ -5356,7 +5379,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1514;
 		vrLoc = 5890;
@@ -5366,7 +5389,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 353";
 		rLen = 0;
-		rLoc = 7459;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 1451;
 		vrLoc = 5756;
@@ -5376,7 +5399,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 5756;
@@ -5386,7 +5409,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 5756;
@@ -5396,7 +5419,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 5756;
@@ -5406,7 +5429,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5756;
@@ -5426,7 +5449,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1547;
 		vrLoc = 5756;
@@ -5436,7 +5459,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5756;
@@ -5446,7 +5469,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 5756;
@@ -5456,7 +5479,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 5756;
@@ -5476,7 +5499,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 332";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 5797;
@@ -5486,7 +5509,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 5797;
@@ -5496,7 +5519,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 5797;
@@ -5506,7 +5529,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 5756;
@@ -5516,7 +5539,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 5756;
@@ -5526,7 +5549,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 5756;
@@ -5536,7 +5559,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 5756;
@@ -5546,7 +5569,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 5756;
@@ -5556,7 +5579,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 5756;
@@ -5566,7 +5589,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1390;
 		vrLoc = 5756;
@@ -5576,7 +5599,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 5756;
@@ -5586,7 +5609,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 5756;
@@ -5596,7 +5619,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 5756;
@@ -5606,7 +5629,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 5756;
@@ -5616,7 +5639,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1578;
 		vrLoc = 5756;
@@ -5626,7 +5649,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 335";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1413;
 		vrLoc = 5756;
@@ -5636,7 +5659,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 5756;
@@ -5646,7 +5669,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5756;
@@ -5656,7 +5679,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 5756;
@@ -5666,7 +5689,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1561;
 		vrLoc = 5816;
@@ -5676,7 +5699,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 5799;
@@ -5686,7 +5709,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 336";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 5859;
@@ -5696,7 +5719,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 348";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 5880;
@@ -5706,7 +5729,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 348";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 5799;
@@ -5726,7 +5749,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 348";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 730;
 		vrLoc = 6730;
@@ -5736,7 +5759,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1629;
 		vrLoc = 5830;
@@ -5746,7 +5769,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 5830;
@@ -5756,7 +5779,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1673;
 		vrLoc = 5830;
@@ -5766,7 +5789,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 5830;
@@ -5776,7 +5799,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1662;
 		vrLoc = 5830;
@@ -5786,7 +5809,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1662;
 		vrLoc = 5830;
@@ -5796,7 +5819,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1662;
 		vrLoc = 5830;
@@ -5806,7 +5829,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1658;
 		vrLoc = 5890;
@@ -5816,7 +5839,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 5890;
@@ -5826,7 +5849,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6069;
@@ -5836,7 +5859,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6069;
@@ -5846,7 +5869,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 670;
 		vrLoc = 6822;
@@ -5856,7 +5879,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 6036;
@@ -5866,7 +5889,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1649;
 		vrLoc = 6034;
@@ -5876,7 +5899,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 6036;
@@ -5886,7 +5909,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 6036;
@@ -5896,7 +5919,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 5830;
@@ -5906,7 +5929,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1561;
 		vrLoc = 5830;
@@ -5916,7 +5939,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 6602;
@@ -5953,7 +5976,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1663;
 		vrLoc = 6185;
@@ -5963,7 +5986,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1668;
 		vrLoc = 6185;
@@ -5973,7 +5996,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 6185;
@@ -5983,7 +6006,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1664;
 		vrLoc = 6185;
@@ -5993,7 +6016,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1615;
 		vrLoc = 6250;
@@ -6003,7 +6026,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1675;
 		vrLoc = 6185;
@@ -6013,7 +6036,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6195;
@@ -6023,7 +6046,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 6144;
@@ -6033,7 +6056,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1758;
 		vrLoc = 6185;
@@ -6043,7 +6066,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1741;
 		vrLoc = 6185;
@@ -6053,7 +6076,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1787;
 		vrLoc = 6144;
@@ -6063,7 +6086,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1633;
 		vrLoc = 6077;
@@ -6073,7 +6096,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 356";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 6638;
@@ -6110,7 +6133,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 6077;
@@ -6120,7 +6143,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 6077;
@@ -6130,7 +6153,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 6077;
@@ -6140,7 +6163,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 6250;
@@ -6150,7 +6173,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 6250;
@@ -6160,7 +6183,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1717;
 		vrLoc = 6250;
@@ -6170,7 +6193,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 6250;
@@ -6180,7 +6203,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1752;
 		vrLoc = 6185;
@@ -6190,7 +6213,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 6185;
@@ -6200,7 +6223,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 6185;
@@ -6210,7 +6233,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 6250;
@@ -6220,7 +6243,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 6461;
@@ -6230,7 +6253,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 67";
 		rLen = 0;
-		rLoc = 1264;
+		rLoc = 1380;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 242;
@@ -6240,7 +6263,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1759;
 		vrLoc = 6185;
@@ -6250,7 +6273,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1786;
 		vrLoc = 6304;
@@ -6260,7 +6283,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6405;
@@ -6270,7 +6293,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6342;
@@ -6280,7 +6303,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1808;
 		vrLoc = 6263;
@@ -6290,7 +6313,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1823;
 		vrLoc = 6263;
@@ -6300,7 +6323,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1882;
 		vrLoc = 6261;
@@ -6310,7 +6333,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1882;
 		vrLoc = 6263;
@@ -6320,7 +6343,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1912;
 		vrLoc = 6278;
@@ -6330,7 +6353,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1929;
 		vrLoc = 6319;
@@ -6340,7 +6363,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1820;
 		vrLoc = 6319;
@@ -6350,7 +6373,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 6384;
@@ -6360,7 +6383,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1774;
 		vrLoc = 6384;
@@ -6370,7 +6393,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 6384;
@@ -6380,7 +6403,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 6371;
@@ -6390,7 +6413,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1796;
 		vrLoc = 6371;
@@ -6400,7 +6423,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1796;
 		vrLoc = 6371;
@@ -6410,7 +6433,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1796;
 		vrLoc = 6371;
@@ -6420,7 +6443,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 6371;
@@ -6430,7 +6453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 6371;
@@ -6440,7 +6463,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1774;
 		vrLoc = 6371;
@@ -6450,7 +6473,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1801;
 		vrLoc = 6412;
@@ -6460,7 +6483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 6412;
@@ -6470,7 +6493,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 6412;
@@ -6480,7 +6503,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 6447;
@@ -6490,7 +6513,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1867;
 		vrLoc = 6412;
@@ -6500,7 +6523,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6426;
@@ -6510,7 +6533,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1816;
 		vrLoc = 6479;
@@ -6520,7 +6543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1176;
 		vrLoc = 6489;
@@ -6530,7 +6553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1176;
 		vrLoc = 6468;
@@ -6540,7 +6563,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1920;
 		vrLoc = 6412;
@@ -6550,7 +6573,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 49";
 		rLen = 0;
-		rLoc = 864;
+		rLoc = 858;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 717;
@@ -6560,7 +6583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1358;
 		vrLoc = 6532;
@@ -6597,7 +6620,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1994;
 		vrLoc = 6009;
@@ -6607,7 +6630,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1994;
 		vrLoc = 6009;
@@ -6617,7 +6640,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1985;
 		vrLoc = 6009;
@@ -6627,7 +6650,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 359";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1902;
 		vrLoc = 6009;
@@ -6637,7 +6660,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2014;
 		vrLoc = 6228;
@@ -6647,7 +6670,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 6342;
@@ -6657,7 +6680,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2058;
 		vrLoc = 6187;
@@ -6667,7 +6690,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2030;
 		vrLoc = 6228;
@@ -6677,7 +6700,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2030;
 		vrLoc = 6228;
@@ -6687,7 +6710,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2069;
 		vrLoc = 6185;
@@ -6697,7 +6720,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2071;
 		vrLoc = 6185;
@@ -6707,7 +6730,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 343";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1171;
 		vrLoc = 6538;
@@ -6744,7 +6767,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 343";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 2071;
 		vrLoc = 6185;
@@ -6754,7 +6777,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 344";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1812;
 		vrLoc = 6011;
@@ -6774,7 +6797,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 337";
 		rLen = 0;
-		rLoc = 6588;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 5918;
@@ -6784,7 +6807,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 342";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 2070;
 		vrLoc = 6228;
@@ -6794,7 +6817,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 343";
 		rLen = 0;
-		rLoc = 7457;
+		rLoc = 8887;
 		rType = 0;
 		vrLen = 1990;
 		vrLoc = 6793;
@@ -6804,7 +6827,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 250";
 		rLen = 0;
-		rLoc = 4700;
+		rLoc = 4710;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 4631;
@@ -6814,7 +6837,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 346";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1527;
 		vrLoc = 5815;
@@ -6824,7 +6847,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 346";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 5815;
@@ -6834,7 +6857,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 315";
 		rLen = 0;
-		rLoc = 5874;
+		rLoc = 7712;
 		rType = 0;
 		vrLen = 1528;
 		vrLoc = 5839;
@@ -6844,7 +6867,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 319";
 		rLen = 0;
-		rLoc = 5949;
+		rLoc = 7787;
 		rType = 0;
 		vrLen = 1641;
 		vrLoc = 5949;
@@ -6854,7 +6877,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 346";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 5949;
@@ -6864,7 +6887,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 346";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 5949;
@@ -6874,7 +6897,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 349";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 5875;
@@ -6884,7 +6907,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 349";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 5875;
@@ -6894,7 +6917,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1567;
 		vrLoc = 5875;
@@ -6904,7 +6927,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 355";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1810;
 		vrLoc = 6137;
@@ -6924,7 +6947,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 351";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1812;
 		vrLoc = 6137;
@@ -6934,7 +6957,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 355";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1823;
 		vrLoc = 6137;
@@ -6944,7 +6967,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 355";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1814;
 		vrLoc = 6137;
@@ -6954,7 +6977,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 353";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 5938;
@@ -6964,7 +6987,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 353";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 5938;
@@ -6974,7 +6997,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 352";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1797;
 		vrLoc = 6159;
@@ -6984,7 +7007,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 350";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1823;
 		vrLoc = 6159;
@@ -6994,7 +7017,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 349";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1827;
 		vrLoc = 6159;
@@ -7004,7 +7027,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 354";
 		rLen = 0;
-		rLoc = 6836;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1835;
 		vrLoc = 6159;
@@ -7014,7 +7037,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 6799;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 5949;
@@ -7024,7 +7047,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 6799;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 5949;
@@ -7034,7 +7057,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 341";
 		rLen = 0;
-		rLoc = 6797;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1613;
 		vrLoc = 5949;
@@ -7044,7 +7067,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 261";
 		rLen = 0;
-		rLoc = 4961;
+		rLoc = 4971;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 3857;
@@ -7054,7 +7077,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 261";
 		rLen = 0;
-		rLoc = 4952;
+		rLoc = 4962;
 		rType = 0;
 		vrLen = 1430;
 		vrLoc = 3857;
@@ -7064,7 +7087,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 259";
 		rLen = 0;
-		rLoc = 4939;
+		rLoc = 4949;
 		rType = 0;
 		vrLen = 1426;
 		vrLoc = 3857;
@@ -7074,7 +7097,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 334";
 		rLen = 0;
-		rLoc = 6426;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 5689;
@@ -7094,7 +7117,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 115";
 		rLen = 0;
-		rLoc = 1627;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 1185;
@@ -7104,7 +7127,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 63";
 		rLen = 0;
-		rLoc = 1205;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 1056;
 		vrLoc = 241;
@@ -7114,7 +7137,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 48";
 		rLen = 0;
-		rLoc = 828;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 1065;
 		vrLoc = 202;
@@ -7124,7 +7147,7 @@
 		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
 		name = "Dodecahedron.h: 48";
 		rLen = 0;
-		rLoc = 828;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 1066;
 		vrLoc = 202;
@@ -7134,7 +7157,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 311";
 		rLen = 0;
-		rLoc = 5949;
+		rLoc = 7787;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1007;
@@ -7184,7 +7207,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 311";
 		rLen = 0;
-		rLoc = 5949;
+		rLoc = 7787;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 1007;
@@ -7194,7 +7217,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 342";
 		rLen = 0;
-		rLoc = 7350;
+		rLoc = 8782;
 		rType = 0;
 		vrLen = 1637;
 		vrLoc = 5798;
@@ -7204,10 +7227,240 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 347";
 		rLen = 0;
-		rLoc = 7277;
+		rLoc = 8709;
 		rType = 0;
 		vrLen = 1660;
 		vrLoc = 5800;
+	};
+	9F5C8CAB1452E72600749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCAF1448A125006BA574 /* Dodecahedron.h */;
+		name = "Dodecahedron.h: 51";
+		rLen = 0;
+		rLoc = 918;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 264;
+	};
+	9F5C8CAC1452E72600749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 388";
+		rLen = 0;
+		rLoc = 8919;
+		rType = 0;
+		vrLen = 1562;
+		vrLoc = 6677;
+	};
+	9F5C8CAD1452E72600749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 320";
+		rLen = 0;
+		rLoc = 7216;
+		rType = 0;
+		vrLen = 1274;
+		vrLoc = 5414;
+	};
+	9F5C8CAE1452E75F00749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 325";
+		rLen = 0;
+		rLoc = 6901;
+		rType = 0;
+		vrLen = 1311;
+		vrLoc = 5414;
+	};
+	9F5C8CB31452E87700749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 39";
+		rLen = 0;
+		rLoc = 626;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 6056;
+	};
+	9F5C8CB71452E8A700749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 332";
+		rLen = 0;
+		rLoc = 6898;
+		rType = 0;
+		vrLen = 1134;
+		vrLoc = 6200;
+	};
+	9F5C8CBD1452E8D400749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 321";
+		rLen = 0;
+		rLoc = 6475;
+		rType = 0;
+		vrLen = 1153;
+		vrLoc = 5923;
+	};
+	9F5C8CC21452E91700749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 344";
+		rLen = 21;
+		rLoc = 7181;
+		rType = 0;
+		vrLen = 1211;
+		vrLoc = 5973;
+	};
+	9F5C8CC61452E94C00749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 323";
+		rLen = 0;
+		rLoc = 6528;
+		rType = 0;
+		vrLen = 1228;
+		vrLoc = 6138;
+	};
+	9F5C8CCA1452E96700749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 323";
+		rLen = 0;
+		rLoc = 6528;
+		rType = 0;
+		vrLen = 1268;
+		vrLoc = 6138;
+	};
+	9F5C8CCE1452E98900749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 352";
+		rLen = 0;
+		rLoc = 7221;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 6138;
+	};
+	9F5C8CD21452E9A500749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 350";
+		rLen = 0;
+		rLoc = 7208;
+		rType = 0;
+		vrLen = 1305;
+		vrLoc = 6522;
+	};
+	9F5C8CD61452E9DD00749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 347";
+		rLen = 0;
+		rLoc = 7196;
+		rType = 0;
+		vrLen = 1349;
+		vrLoc = 6480;
+	};
+	9F5C8CDA1452EA1100749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 323";
+		rLen = 0;
+		rLoc = 6528;
+		rType = 0;
+		vrLen = 1195;
+		vrLoc = 6375;
+	};
+	9F5C8CDE1452EA4800749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 335";
+		rLen = 0;
+		rLoc = 6850;
+		rType = 0;
+		vrLen = 1175;
+		vrLoc = 6375;
+	};
+	9F5C8CE21452EA6900749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 330";
+		rLen = 0;
+		rLoc = 6747;
+		rType = 0;
+		vrLen = 1185;
+		vrLoc = 6375;
+	};
+	9F5C8CE61452EA7600749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 330";
+		rLen = 0;
+		rLoc = 6735;
+		rType = 0;
+		vrLen = 1178;
+		vrLoc = 6375;
+	};
+	9F5C8CE81452EA8000749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 324";
+		rLen = 0;
+		rLoc = 6593;
+		rType = 0;
+		vrLen = 1238;
+		vrLoc = 6375;
+	};
+	9F5C8CED1452EAEB00749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 341";
+		rLen = 0;
+		rLoc = 7198;
+		rType = 0;
+		vrLen = 1228;
+		vrLoc = 5944;
+	};
+	9F5C8CF01452EB0000749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 333";
+		rLen = 0;
+		rLoc = 6898;
+		rType = 0;
+		vrLen = 1216;
+		vrLoc = 5944;
+	};
+	9F5C8CF31452EB2D00749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 324";
+		rLen = 0;
+		rLoc = 6525;
+		rType = 0;
+		vrLen = 1218;
+		vrLoc = 5944;
+	};
+	9F5C8CF71452EB4500749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 335";
+		rLen = 0;
+		rLoc = 6779;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 5946;
+	};
+	9F5C8CFC1452EB5900749BC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 327";
+		rLen = 0;
+		rLoc = 6605;
+		rType = 0;
+		vrLen = 1260;
+		vrLoc = 5946;
 	};
 	9FE7DC821448A07D006BA574 /* dodecaudionK20Visuals */ = {
 		isa = PBXExecutable;
@@ -7292,16 +7545,16 @@
 	};
 	9FE7DCAF1448A125006BA574 /* Dodecahedron.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 884}}";
-			sepNavSelRange = "{828, 0}";
-			sepNavVisRange = "{202, 1066}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 962}}";
+			sepNavSelRange = "{918, 0}";
+			sepNavVisRange = "{264, 1093}";
 		};
 	};
 	9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 4459}}";
-			sepNavSelRange = "{7277, 0}";
-			sepNavVisRange = "{5800, 1660}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 5239}}";
+			sepNavSelRange = "{6605, 0}";
+			sepNavVisRange = "{5946, 1260}";
 		};
 	};
 }
