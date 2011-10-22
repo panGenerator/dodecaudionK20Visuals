@@ -10,20 +10,27 @@
 #ifndef GENERIC_FILTER_INCLUDED
 #define GENERIC_FILTER_INCLUDED
 
-
 #include "Filter.h"
 #include "ValuesMap.h"
+#include "cinder/app/AppBasic.h"
+#include "cinder/gl/gl.h"
+#include "cinder/gl/GlslProg.h"
+#include "cinder/CinderResources.h"
 
+
+//work in the cinder's namespace
+using namespace std;
 using namespace ci;
+using namespace ci::app;
 
-
-class GenericFilter : public Filter
+class ShaderFilter : public Filter
 {
 public:
-	GenericFilter();
-	void setup();
+	ShaderFilter();
+	void setup(DataSourceRef vertShader, DataSourceRef fragShader);
 	void update();
-	void apply(gl::Texture *texture);
+	void bind();
+	void unbind();
 	void set(string key, float value);
 	float get(string key);
     vector<string> keys();
@@ -31,7 +38,7 @@ public:
 	
 protected:
     ValuesMap _values;
-	
+	gl::GlslProg shader;
 };
 
 #endif

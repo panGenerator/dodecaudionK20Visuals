@@ -7,11 +7,11 @@
  *
  */
 
-#include "GenericFilter.h"
+#include "ShaderFilter.h"
 
 #pragma mark Constructors/destructors
 
-GenericFilter::GenericFilter()
+ShaderFilter::ShaderFilter()
 {
 }
 
@@ -20,28 +20,35 @@ GenericFilter::GenericFilter()
 /**
  * Setup the controller
  */
-void GenericFilter::setup()
+void ShaderFilter::setup(DataSourceRef vertShader, DataSourceRef fragShader)
 {
-    
+	shader = gl::GlslProg( vertShader , fragShader );
 }
 
 /**
  * Recalculate values
  */
-void GenericFilter::update()
+void ShaderFilter::update()
 {
-	_values.set( "rand" , rand() );
+	_values.set( "rand" , rand() );	
 }
 
-void GenericFilter::apply(gl::Texture *texture)
+void ShaderFilter::bind()
 {
-	
+	shader.bind();
+	shader.uniform("tex0",0);
+}
+
+
+void ShaderFilter::unbind()
+{
+	shader.unbind();
 }
 
 /**
  * Set value of the controlled param 
  */
-void GenericFilter::set(string key, float value)
+void ShaderFilter::set(string key, float value)
 {
 	_values.set( key , value );
 }
@@ -49,7 +56,7 @@ void GenericFilter::set(string key, float value)
 /**
  * Get value for key. Always returns a value. 0 if it's not defined
  */
-float GenericFilter::get(string key)
+float ShaderFilter::get(string key)
 {
 	return _values.get( key );
 }
@@ -57,7 +64,7 @@ float GenericFilter::get(string key)
 /**
  * List all available 
  */
-vector<string> GenericFilter::keys()
+vector<string> ShaderFilter::keys()
 {
 	return _values.keys();
 }
@@ -65,7 +72,7 @@ vector<string> GenericFilter::keys()
 /**
  * 
  */
-string GenericFilter::getId()
+string ShaderFilter::getId()
 {
 	return std::string("generic");
 }

@@ -19,7 +19,12 @@
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
 
-#include "GenericFilter.h"
+#include "ShaderFilter.h"
+
+
+#define RES_GENERIC_FILTER_SHADER_VERT		CINDER_RESOURCE( ../resources/, passThru_vert.glsl, 128, GLSL )
+#define RES_GENERIC_FILTER_SHADER_FRAG		CINDER_RESOURCE( ../resources/, simpleNoise_frag.glsl, 129, GLSL )
+
 
 
 using namespace ci;
@@ -60,7 +65,7 @@ public:
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
     
-	GenericFilter genericFlt;
+	ShaderFilter shaderFlt;
 	
 };
 
@@ -96,12 +101,13 @@ void dodecaudionK20Visuals::setup()
 	
 	
 	//init filters
-	genericFlt.setup();
-	visualFilters.push_back( &genericFlt );
+	shaderFlt.setup(loadResource(RES_GENERIC_FILTER_SHADER_VERT),loadResource(RES_GENERIC_FILTER_SHADER_FRAG));
+	visualFilters.push_back( &shaderFlt );
 	
 	//init FBO
 	fboFormat.setSamples(4);
-	fboFormat.enableMipmapping();
+	fboFormat.enableMipmapping(false);
+	fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 	
 }
@@ -148,7 +154,7 @@ void dodecaudionK20Visuals::draw()
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	
+	gl::enableAdditiveBlending();
 	glLoadIdentity();
 	gl::setMatrices( cam );
 		
@@ -159,10 +165,9 @@ void dodecaudionK20Visuals::draw()
 
 
 	//filter the FBO
-	gl::Texture tex = fbo.getTexture(0);//gl::Texture( s );
-
+	fbo.bindTexture(0);
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
-		(*flt)->apply( &tex );
+		(*flt)->bind();
 	}
 	
 	
@@ -170,7 +175,14 @@ void dodecaudionK20Visuals::draw()
 	gl::setViewport( getWindowBounds() );
 	gl::setMatricesWindow( getWindowSize() );
 	gl::color( ColorAf( 1,1,1,1 ) );
-	gl::draw( tex , tex.getBounds() );
+	gl::drawSolidRect( getWindowBounds() );
+	
+	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
+		(*flt)->unbind();
+	}
+	
+	fbo.unbindTexture();
+	
 }
 
 #pragma mark helper methods
