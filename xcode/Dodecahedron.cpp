@@ -36,7 +36,7 @@ Dodecahedron::Dodecahedron()
 {
 	set( "edgeColorR" , 1.0f );  
 	edgesColor = ColorAf(get("edgesColorR"),0,0);
-	__updateVertices();
+	__updateVertices();	
 }
 
 /**
@@ -94,13 +94,13 @@ void Dodecahedron::setup()
  */
 void Dodecahedron::update()
 {
-	radius = 200 * get( "radius" );
+	radius = 300 * get( "radius" );
 	modelRotation = 64 * Vec3f( get( "rotationX" ) , get( "rotationY" ) , get( "rotationZ" ) );
 	edgesColor = ColorAf( get( "edgeColorR" ) , get( "edgeColorG" ) , get( "edgeColorB" ) );
 	
 	__updateVertices();
 	__calcWallCenters();
-	__calcNormals();
+	__calcWallCoordinateSystems();
 }
 
 /**
@@ -111,21 +111,22 @@ void Dodecahedron::draw()
 	gl::color( edgesColor );
 	
 	glPushMatrix();
-	glTranslated(getWindowWidth()/2.0f, getWindowHeight()/2.0f, 0);
 	
 	glRotated( modelRotation.y , 1.0, 0.0, 0.0 );
 	glRotated( modelRotation.z , 0.0, 1.0, 0.0 );
 	glRotated( modelRotation.x , 0.0, 0.0, 1.0 );
 	
-	glRotated( get("framesCount"), 0, 1.0f, 0);
+	glRotated( get("framesCount")/10.0f , 0, 1.0f, 0);
+	
+	glRotated( get("framesCount")/10.0f , 0, 1.0f, 0);
 	
 	/*
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
 		__drawWall( wall );
-		
 		__drawWallCenter( wall );
+		__drawWallCoordinateSystem( wall );
 	}
 
 	glPopMatrix();
@@ -146,7 +147,7 @@ void Dodecahedron::__updateVertices()
 	double phiaa = 52.62263590; /* the two phi angles needed for generation */
 	double phibb = 10.81231754;
 	
-	float r = 100 + radius; /* any radius in which the polyhedron is inscribed */
+	float r = 200 + radius; /* any radius in which the polyhedron is inscribed */
 	float phia = Pi*phiaa/180.0; /* 4 sets of five points each */
 	float phib = Pi*phibb/180.0;
 	float phic = Pi*(-phibb)/180.0;
@@ -223,10 +224,42 @@ void Dodecahedron::__calcWallCenters()
 }
 
 /**
- * Calculate normals for each wall
+ *
  */
-void Dodecahedron::__calcNormals()
+void Dodecahedron::__calcWallCoordinateSystems()
 {
+	Vec3f v1,v2,v3,vBase,vCenter,vCalc;
+	Vec3f vX,vY,vZ;
+	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+		vCenter = wallCenters[wall];		
+		
+		v1 = vertices[wallVerticeIds[wall][0]];
+		v2 = vertices[wallVerticeIds[wall][2]];
+		v3 = vertices[wallVerticeIds[wall][3]];
+
+		vX = (v3-v2);
+		vX.normalize();
+		
+		//middle point of the triangle base
+		vBase = (v2+v3)/2.0f;
+		vY = (v1-vBase);
+		vY.normalize();
+		
+		vZ = vY.cross(vX);
+		vZ.normalize();
+
+		//if the z is pointing inside then rotate the system arond Y axis
+		vCalc = vCenter+vZ;
+		if( vCalc.distance(Vec3f::zero()) < vCenter.distance(Vec3f::zero()) ){
+			vZ *= -1;
+			vX *= -1;
+		}
+		
+		wallCoordinateSystems[wall][0] = vX.normalized();
+		wallCoordinateSystems[wall][1] = vY.normalized();
+		wallCoordinateSystems[wall][2] = vZ.normalized();
+		
+	}
 }
 
 #pragma mark drawing
@@ -238,18 +271,26 @@ void Dodecahedron::__drawWall( int wall )
 {
 	Vec3f v;
 	
-	glBegin(GL_LINE_STRIP);	
-	
+	glEnable(GL_LINE_SMOOTH);	
+	glLineWidth(4.0f);
+	gl::color( ColorAf(1.0,1.0,1.0,0.3f) );
+
+	glBegin(GL_LINE_STRIP);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 		v = vertices[ wallVerticeIds[wall][i] ];
 		glVertex3fv( v );
 	}
-	
 	glEnd();	
+	
+	glLineWidth(1.0f);
 }
 
+/**
+ *
+ */
 void Dodecahedron::__drawWallCenter( int wall )
 {
+	
 	Vec3f v = wallCenters[wall];
 	glPushMatrix();
 
@@ -260,8 +301,61 @@ void Dodecahedron::__drawWallCenter( int wall )
 	glPopMatrix();	
 }
 
-
-void Dodecahedron::__drawWallNormal( int wall )
+/**
+ *
+ */
+void Dodecahedron::__drawWallCoordinateSystem( int wall )
 {
 	
+	Vec3f coordinateSystem[3] = wallCoordinateSystems[wall];
+	float radius = 10.0;
+	
+	
+	//TEST
+	//reality check - draw the axes from the base coordinate system 
+	glLineWidth(4.0f);
+	Vec3f vCenter = wallCenters[wall];
+	gl::color( ColorAf(1.0,0.0,0.0,0.4f) );
+	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[0] );
+	gl::color( ColorAf(0.0,1.0,0.0,0.4f) );
+	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[1] );
+	gl::color( ColorAf(0.0,0.0,1.0,0.4f) );
+	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[2] );
+	glLineWidth(1.0f);
+
+	
+	//transform the model matrix to place (0,0,0) in the middle of the wall. this is awesome, took me a while to figure out
+	//...probably done the wrong way :)
+	gl::pushModelView();
+	Matrix44f transformation = gl::getModelView();
+	transformation = transformation.createTranslation(vCenter);
+	transformation.rotate(Vec3f::zAxis(), coordinateSystem[2], coordinateSystem[1]);	
+	gl::multModelView(transformation);
+
+	
+	//
+	//Start drawing here...
+	//	
+	//TEST
+	//reality check - draw the axes in the walls in the wall's coordinate system
+	gl::color( ColorAf(1.0,0.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 2*radius*Vec3f::xAxis() );
+	gl::color( ColorAf(0.0,1.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 2*radius*Vec3f::yAxis() );
+	gl::color( ColorAf(0.0,0.0,1.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 2*radius*Vec3f::zAxis() );
+	//yeah, it's always more fun with a flat cube at (10,20,0)
+	gl::color( ColorAf(1,1,1,0.3f) );
+	gl::drawCube( Vec3f( 10, 20 , 0 ) , Vec3f( 10, 10, 1) );
+	
+	
+
+	
+	//....
+	
+	//
+	//end drawing here
+	//
+	
+	gl::popModelView();
 }

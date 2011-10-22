@@ -72,8 +72,20 @@ void FFTVisualiser::draw()
 	gl::color( ColorAf( 1.0 , 1.0 , 1.0 ) );
 	
 	glPushMatrix();
+	//glTranslated( getWindowWidth()/2.0f, getWindowHeight()/2.0f , 0 );
 	
-	glTranslated( getWindowWidth()/2.0f, getWindowHeight()/2.0f , 0 );
+	
+	glLineWidth(5.0f);
+	gl::color( ColorAf(1.0,0.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::xAxis() );
+	
+	gl::color( ColorAf(0.0,1.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::yAxis() );
+	
+	gl::color( ColorAf(0.0,0.0,1.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::zAxis() );
+	
+	glLineWidth(1.0f);
 	
 	string bandId;
 	int bandsCount = get( "bands" );
@@ -103,6 +115,7 @@ void FFTVisualiser::draw()
 	}
 	
 	glEnd();
+	
 	
 	glPopMatrix();
 	

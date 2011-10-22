@@ -45,15 +45,16 @@ public:
 private:
 	void __updateVertices();
 	void __calcWallCenters();
-	void __calcNormals();
+	void __calcWallCoordinateSystems();
 	
 	void __drawWall( int wall );
 	void __drawWallCenter( int wall );
-	void __drawWallNormal( int wall );
+	void __drawWallCoordinateSystem( int wall );
 	
 	Vec3f vertices[WALL_COUNT*VERTICES_PER_WALL];
 	Vec3f wallCenters[WALL_COUNT];
-	Vec3f normals[WALL_COUNT];
+	//Vec3f wallNormals[WALL_COUNT];
+	Vec3f wallCoordinateSystems[WALL_COUNT][3];
 	
 	ValuesMap _values;    
 
@@ -62,7 +63,6 @@ private:
 	Vec3f modelRotation;
 	ColorAf edgesColor;
 	
-	Vec3f __debug__vTmp;
 };
 
 #endif

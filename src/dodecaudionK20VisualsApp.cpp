@@ -1,5 +1,6 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
+#include "cinder/Camera.h"
 #include <boost/lexical_cast.hpp>
 
 #include "Drawable.h"
@@ -21,6 +22,7 @@ using namespace std;
 class dodecaudionK20Visuals : public AppBasic {
 public:
 	void setup();
+	void resize( ResizeEvent event );
 	void mouseDown( MouseEvent event );	
 	void update();
 	void draw();
@@ -29,6 +31,8 @@ public:
 	
 	vector<Controller *> controllers;
 	vector<Drawable *> visualObjects;
+	CameraPersp	cam;
+	
 	
 	//controllers for input (OSC, MIDI, etc.)
 	GenericController genCtrl;
@@ -55,7 +59,7 @@ void dodecaudionK20Visuals::setup()
     touchOscCtrl.setup(10000);
     controllers.push_back( &touchOscCtrl );
 	
-	fftCtrl.setup(512);
+	fftCtrl.setup(128);
 	controllers.push_back( &fftCtrl );
 	
 	midiCtrl.setup(0);
@@ -65,6 +69,13 @@ void dodecaudionK20Visuals::setup()
 	dode.setup();
 	visualObjects.push_back( &dode );
 	visualObjects.push_back( &fftVis );	
+	
+	cam.lookAt( Vec3f(20,0,-600) , Vec3f::zero() , Vec3f::yAxis() );
+}
+
+void dodecaudionK20Visuals::resize( ResizeEvent event )
+{
+	cam.setAspectRatio( getWindowAspectRatio() );
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )
@@ -99,11 +110,22 @@ void dodecaudionK20Visuals::update()
  */
 void dodecaudionK20Visuals::draw()
 {
-	// clear out the window with black
+	gl::enableDepthRead();
+	gl::enableDepthWrite();
 	gl::clear( Color( 0, 0, 0 ) ); 
+
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
+	glLoadIdentity();
+	gl::setMatrices( cam );
+		
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
 		(*vis)->draw();
 	}
+	
+	
 }
 
 /**
