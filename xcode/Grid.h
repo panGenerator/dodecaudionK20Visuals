@@ -37,7 +37,7 @@ public:
 	void draw();
 	
 private:
-	void drawGrid(float size = 2000.0f, float step = 23.0f);
+	void drawGrid(float size = 5000.0f, float step = 100.0f);
 	
 	ValuesMap _values; 	
 };

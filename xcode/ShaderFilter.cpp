@@ -47,6 +47,12 @@ void ShaderFilter::resize(Vec2i size)
 void ShaderFilter::update()
 {
 	_values.set( "rand" , (float)rand()/RAND_MAX );	
+	
+	if( get( "value" ) > 0 ){
+		float value = get( "value" );
+		value *= get( "ease" );
+		set( "value" , value );
+	}
 }
 
 /**
@@ -67,7 +73,7 @@ void ShaderFilter::apply(gl::Texture *texture)
 	
 	shader.uniform("tex0",0);
 	shader.uniform("seed", get("rand"));
-	shader.uniform("framesCount", get("framesCount"));
+	shader.uniform("value", get("value"));
 	
 	gl::clear( ColorAf(0,0,0) );
 	gl::setViewport( getWindowBounds() );

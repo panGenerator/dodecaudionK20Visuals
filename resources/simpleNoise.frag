@@ -11,5 +11,5 @@ float rand(float seed, vec2 co){
 void main()
 {
 	gl_FragColor.rgb = texture2D( tex0 , gl_TexCoord[0].st ).rgb;
-	gl_FragColor.a = 1.0 - 0.2*rand( seed, gl_TexCoord[0].st );
+	gl_FragColor.a = 1.0 - 0.3*rand( seed, gl_TexCoord[0].st );
 }

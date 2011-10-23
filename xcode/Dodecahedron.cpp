@@ -300,6 +300,7 @@ void Dodecahedron::drawWall( int wall )
 	Vec3f v;
 	
 	//draw the walls
+	/*
 	gl::color( ColorAf(0.5f,0.5f,0.5f,0.55f) );
 	glBegin(GL_POLYGON);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
@@ -307,7 +308,8 @@ void Dodecahedron::drawWall( int wall )
 		glVertex3fv( v );
 	}
 	glEnd();	
-
+	*/
+	
 	//draw the edges
 	glEnable(GL_LINE_SMOOTH);	
 	glLineWidth(1.0f);

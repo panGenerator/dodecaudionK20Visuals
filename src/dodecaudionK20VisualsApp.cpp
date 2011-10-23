@@ -2,7 +2,6 @@
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Fbo.h"
 #include "cinder/gl/Texture.h"
-#include "cinder/Camera.h"
 #include <boost/lexical_cast.hpp>
 #include "cinder/ImageIo.h"
 
@@ -16,9 +15,11 @@
 #include "FFTController.h"
 #include "MIDIController.h"
 
+#include "CameraDrawer.h"
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
 #include "Grid.h"
+
 
 #include "ShaderFilter.h"
 
@@ -26,7 +27,11 @@
 #define RES_PASS_THRU_SHADER_VERT			CINDER_RESOURCE( ../resources/, passThru.vert, 128, GLSL )
 #define RES_SIMPLE_NOISE_SHADER_FRAG		CINDER_RESOURCE( ../resources/, simpleNoise.frag, 129, GLSL )
 #define RES_VIGNETTE_SHADER_FRAG			CINDER_RESOURCE( ../resources/, vignette.frag, 130, GLSL )
-#define RES_INVERT_SHADER_FRAG				CINDER_RESOURCE( ../resources/, invert.frag, 130, GLSL )
+#define RES_INVERT_SHADER_FRAG				CINDER_RESOURCE( ../resources/, invert.frag, 131, GLSL )
+#define RES_BLUR__HORIZONTAL_SHADER_FRAG	CINDER_RESOURCE( ../resources/, blur-horizontal.frag, 132, GLSL )
+#define RES_BLUR__VERTICAL_SHADER_FRAG		CINDER_RESOURCE( ../resources/, blur-vertical.frag, 133, GLSL )
+#define RES_MULTIPLY_SHADER_FRAG			CINDER_RESOURCE( ../resources/, multiply.frag, 134, GLSL )
+
 
 
 
@@ -51,8 +56,8 @@ public:
 	vector<Drawable *> visualObjects;
 	vector<Filter *> visualFilters;
 	
-	CameraPersp	cam;
-	Vec3f camPosition;
+	//CameraPersp	cam;
+	//Vec3f camPosition;
 	
 	gl::Fbo::Format fboFormat;
 	gl::Fbo	fbo;
@@ -67,11 +72,12 @@ public:
 	MIDIController midiCtrl;
 	
 	//visual stuff - drawn elements
+	CameraDrawer cam;
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
 	Grid grid;
     
-	ShaderFilter noiseFlt,vignetteFlt,invertFlt;
+	ShaderFilter noiseFlt,vignetteFlt,invertFlt,blurVFlt,blurHFlt,multFlt;
 	
 };
 
@@ -84,7 +90,9 @@ void dodecaudionK20Visuals::prepareSettings(Settings *settings){
 
 void dodecaudionK20Visuals::setup()
 {
+	//
 	//init controllers
+	//
 	genCtrl.setup();
 	controllers.push_back( &genCtrl );
     
@@ -100,7 +108,11 @@ void dodecaudionK20Visuals::setup()
 	midiCtrl.setup(0);
 	controllers.push_back( &midiCtrl );
 	
+	//
 	//init drawable objects
+	//
+	cam.setup();
+	visualObjects.push_back( &cam );
 	dode.setup();
 	visualObjects.push_back( &dode );
 	fftVis.setup();
@@ -108,25 +120,37 @@ void dodecaudionK20Visuals::setup()
 	grid.setup();
 	visualObjects.push_back( &grid );	
 	
-	
+	//
 	//init filters
-	//invertFlt.setup("invert", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_INVERT_SHADER_FRAG), getWindowSize());	
-	//visualFilters.push_back( &invertFlt );
-//	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
-//	visualFilters.push_back( &vignetteFlt );
-//	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
-//	visualFilters.push_back( &noiseFlt );
+	//
+	//
+	//Important stuff: always add a %2 amount of filters. Otherwise output will be upside down.
+	//
+	invertFlt.setup("invert", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_INVERT_SHADER_FRAG), getWindowSize());	
+	visualFilters.push_back( &invertFlt );
+	multFlt.setup("multiply", loadResource(RES_PASS_THRU_SHADER_VERT), loadResource(RES_MULTIPLY_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &multFlt );
+
+//Blur kills the GPU in fulscreen
+//	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &blurHFlt );
+//	blurVFlt.setup("blur-vertical", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__VERTICAL_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &blurVFlt );
+
+	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &vignetteFlt );
+	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &noiseFlt );
 
 	
+	//
 	//init FBO
-	fboFormat.setSamples(4);
+	//
+	fboFormat.setSamples(1);
 	fboFormat.enableMipmapping(false);
-	fboFormat.setCoverageSamples(16);
+	//fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 
-	
-	camPosition = Vec3f(20,120,-750);
-	cam.setFarClip( 2500 );
 }
 
 /**
@@ -160,7 +184,6 @@ void dodecaudionK20Visuals::update()
 		(*flt)->update();
 	}
 	
-	camPosition = Vec3f( 500 * sin( getElapsedFrames() / 100.0f ) , 120 , -750 );
 }
 
 /**
@@ -173,7 +196,7 @@ void dodecaudionK20Visuals::draw()
 	//draw scene to FBO for later filter processing
 	fbo.bindFramebuffer();
 	
-	cam.lookAt( camPosition , Vec3f::zero() , -Vec3f::yAxis() );
+	//cam.lookAt( camPosition , Vec3f::zero() , -Vec3f::yAxis() );
 		
 	gl::enableDepthRead();
 	gl::enableDepthWrite();
@@ -181,16 +204,19 @@ void dodecaudionK20Visuals::draw()
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
+	
+	//setup fog
+	glEnable(GL_FOG);
+	glFogi(GL_FOG_MODE,GL_EXP);
+	glFogfv(GL_FOG_COLOR,Vec3f(0.0f,0.75f,0.0f));
+	glFogf(GL_FOG_DENSITY,0.0004f);
+	glHint(GL_FOG_HINT, GL_NICEST);
 	
 	gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
 	glLoadIdentity();
-	gl::setMatrices( cam );
 		
-	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
-		(*vis)->draw();
-	}	
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
 		(*vis)->draw();
 	}	
@@ -223,12 +249,26 @@ void dodecaudionK20Visuals::draw()
  */
 void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controller *ctrl)
 {
-	//console() << "Updating vis: " << vis->getId() <<  " with ctrl: " << ctrl->getId() << std::endl;
+
+	//
 	//generic controller updates
+	//
 	if( ctrl->getId() ==  "generic" ){
 		vis->set( "framesCount" , ctrl->get("framesCount") );
+		
+		//update camera settings
+		if( vis->getId() == "camera" ){
+			//Vec3f camPosition = Vec3f( 500 * sin( getElapsedFrames() / 100.0f ) , 120 , -750 );	
+			/*
+			vis->set( "camPositionX" , camPosition.x );
+			vis->set( "camPositionY" , camPosition.y );
+			vis->set( "camPositionZ" , camPosition.z );
+			 */
+		}
 	}
+	//
 	//touchOSC controls mapping
+	//
 	if( ctrl->getId() == "touchOsc" ){
 		//Dodecaudion
 		if( vis->getId() == "dodecahedron" ){
@@ -248,7 +288,9 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( "blockSize" , ctrl->get( "slider4" ) );
 		}
 	}
+	//
 	//FFT controls mapping
+	//
 	if( ctrl->getId() == "fft" ){
 		//update dodecaudion
 		if( vis->getId() == "dodecaudion" ){
@@ -264,6 +306,37 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			}
 		}
 	}
+	//TODO: MIDI controls mapping
+	if( ctrl->getId() == "midi:nanoPAD PAD" ){
+		if( vis->getId() == "camera" ){
+			//console() << " state: " << ctrl->get( "key39" ) << ", " << ctrl->get( "key48" ) << ", " << ctrl->get( "key45" ) << ", " << std::endl;
+			//switch between predefined positions
+			if( ctrl->get( "key39" ) > 0 ){
+				vis->set( "camPredefinedPosition" , 0 );
+				vis->set( "camAutonomous" , 0 );	
+			}
+			else if( ctrl->get( "key48" ) > 0 ){
+				vis->set( "camPredefinedPosition" , 1 );
+				vis->set( "camAutonomous" , 0 );	
+			}
+			else if( ctrl->get( "key45" ) > 0 ){
+				vis->set( "camPredefinedPosition" , 2 );
+				vis->set( "camAutonomous" , 0 );				
+			}
+			else if( ctrl->get( "key36" ) > 0 ){
+				vis->set( "camAutonomous" , 1 );
+			}
+			//FOV change
+			if( ctrl->get( "key44" ) > 0 ){
+				vis->set( "camPredefinedFOV" , 0 );
+			}
+			else if( ctrl->get( "key46" ) > 0 ){
+				vis->set( "camPredefinedFOV" , 1 );
+			}
+			
+		}
+	}
+	
 }
 	
 /**
@@ -276,6 +349,16 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 	if( ctrl->getId() == "generic" ){
 		flt->set( "framesCount" , ctrl->get( "framesCount" ) );
 	}
+
+	//MIDI: Nano Pad
+	if( ctrl->getId() == "midi:nanoPAD PAD" ){
+		if( flt->getId() == "invert" ){
+			if( ctrl->get( "key49" ) > 0 ){
+				flt->set( "value" , 1.0 );
+				flt->set( "ease" , 0.97 );
+			}
+		}
+	}
 }
 
 #pragma mark Application event handlers
@@ -283,7 +366,7 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 void dodecaudionK20Visuals::resize( ResizeEvent event )
 {
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
-	cam.setAspectRatio( getWindowAspectRatio() );
+	cam.set( "aspectRatio" , getWindowAspectRatio() );
 	
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
 		(*flt)->resize( getWindowSize() );
@@ -297,7 +380,7 @@ void dodecaudionK20Visuals::mouseDown( MouseEvent event )
 void dodecaudionK20Visuals::keyDown( KeyEvent event ){
 	char ch = event.getChar();
 	if( ch == 'f' ){
-		setFullScreen( !isFullScreen() );
+		setFullScreen( !isFullScreen() );			
 		gl::clear(Color(0,0,0));
 	}
 }
