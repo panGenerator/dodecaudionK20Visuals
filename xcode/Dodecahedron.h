@@ -11,8 +11,6 @@
 #define DRAWABLE_DODECAHEDRON_INCLUDED
 
 #include "Drawable.h"
-#include "Controller.h"
-
 #include "ValuesMap.h"
 
 #include "cinder/app/AppBasic.h"

@@ -15,12 +15,11 @@ void main(){
 	
 	vec2 center = vec2(0.5,0.5);
 	float radius = 1.5;
-	radius *= (1.0+rand(seed,vTexCoord));
 	float dist = distance(center, vTexCoord) * radius;
 	vec3 color = texture2D(tex0, vTexCoord).rgb;
 	float alpha = texture2D(tex0, vTexCoord).a;
 	
-	alpha = (1.0 - dist);
+	alpha = (1.0 - dist*dist);
 	
 	gl_FragColor.rgb = texture2D( tex0, vTexCoord ).rgb;
 	gl_FragColor.a = alpha;

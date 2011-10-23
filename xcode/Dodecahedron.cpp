@@ -94,7 +94,7 @@ void Dodecahedron::setup()
  */
 void Dodecahedron::update()
 {
-	radius = 300 * get( "radius" );
+	radius = 10 * get( "radius" );
 	modelRotation = 64 * Vec3f( get( "rotationX" ) , get( "rotationY" ) , get( "rotationZ" ) );
 	edgesColor = ColorAf( get( "edgeColorR" ) , get( "edgeColorG" ) , get( "edgeColorB" ) );
 	
@@ -148,7 +148,7 @@ void Dodecahedron::updateVertices()
 	double phiaa = 52.62263590; /* the two phi angles needed for generation */
 	double phibb = 10.81231754;
 	
-	float r = 200 + radius; /* any radius in which the polyhedron is inscribed */
+	float r = 100 + radius; /* any radius in which the polyhedron is inscribed */
 	float phia = Pi*phiaa/180.0; /* 4 sets of five points each */
 	float phib = Pi*phibb/180.0;
 	float phic = Pi*(-phibb)/180.0;
@@ -299,16 +299,27 @@ void Dodecahedron::drawWall( int wall )
 {
 	Vec3f v;
 	
-	glEnable(GL_LINE_SMOOTH);	
-	glLineWidth(4.0f);
-	gl::color( ColorAf(1.0,1.0,1.0,0.3f) );
-
-	glBegin(GL_LINE_STRIP);		
+	//draw the walls
+	gl::color( ColorAf(0.5f,0.5f,0.5f,0.55f) );
+	glBegin(GL_POLYGON);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 		v = vertices[ wallVerticeIds[wall][i] ];
 		glVertex3fv( v );
 	}
 	glEnd();	
+
+	//draw the edges
+	glEnable(GL_LINE_SMOOTH);	
+	glLineWidth(1.0f);
+
+	gl::color( ColorAf(1.0,1.0,1.0,1.0f) );	
+	glBegin(GL_LINE_LOOP);		
+	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
+		v = vertices[ wallVerticeIds[wall][i] ];
+		glVertex3fv( v );
+	}
+	glEnd();	
+	
 	
 	glLineWidth(1.0f);
 }
@@ -335,7 +346,7 @@ void Dodecahedron::drawSonicCones( int wall )
 		radius = minRadius + idx * (maxRadius-minRadius);
 		
 		//fade out
-		gl::color( ColorAf(0.6,0.7,0.8,0.3f-0.3f*idx) );
+		gl::color( ColorAf(0.6,0.7,1.0f,0.5f-0.3f*idx) );
 		
 		//draw a circle
 		glBegin(GL_LINE_LOOP);
@@ -378,6 +389,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	
 	//TEST
 	//reality check - draw the axes from the base coordinate system 
+	/*
 	glLineWidth(4.0f);
 
 	gl::color( ColorAf(1.0,0.0,0.0,0.4f) );
@@ -387,7 +399,8 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	gl::color( ColorAf(0.0,0.0,1.0,0.4f) );
 	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[2] );
 	glLineWidth(1.0f);
-
+	*/
+	
 	transformToWallCoordinateSystem(wall);
 	
 	//
@@ -403,7 +416,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	gl::drawVector( Vec3f(0,0,0) , 2*radius*Vec3f::zAxis() );
 	//yeah, it's always more fun with a flat cube at (10,20,0)
 	gl::color( ColorAf(1,1,1,0.3f) );
-	gl::drawCube( Vec3f( 10, 20 , 0 ) , Vec3f( 10, 10, 1) );
+	gl::drawCube( Vec3f( 10, 20 , 0 ) , Vec3f( 2, 2, 1) );
 		
 	
 	//....

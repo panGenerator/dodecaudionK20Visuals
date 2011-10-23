@@ -18,6 +18,7 @@
 
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
+#include "Grid.h"
 
 #include "ShaderFilter.h"
 
@@ -51,6 +52,7 @@ public:
 	vector<Filter *> visualFilters;
 	
 	CameraPersp	cam;
+	Vec3f camPosition;
 	
 	gl::Fbo::Format fboFormat;
 	gl::Fbo	fbo;
@@ -67,6 +69,7 @@ public:
 	//visual stuff - drawn elements
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
+	Grid grid;
     
 	ShaderFilter noiseFlt,vignetteFlt,invertFlt;
 	
@@ -100,16 +103,19 @@ void dodecaudionK20Visuals::setup()
 	//init drawable objects
 	dode.setup();
 	visualObjects.push_back( &dode );
+	fftVis.setup();
 	visualObjects.push_back( &fftVis );	
+	grid.setup();
+	visualObjects.push_back( &grid );	
 	
 	
 	//init filters
 	//invertFlt.setup("invert", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_INVERT_SHADER_FRAG), getWindowSize());	
 	//visualFilters.push_back( &invertFlt );
-	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
-	visualFilters.push_back( &vignetteFlt );
-	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
-	visualFilters.push_back( &noiseFlt );
+//	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &vignetteFlt );
+//	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &noiseFlt );
 
 	
 	//init FBO
@@ -117,7 +123,10 @@ void dodecaudionK20Visuals::setup()
 	fboFormat.enableMipmapping(false);
 	fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
+
 	
+	camPosition = Vec3f(20,120,-750);
+	cam.setFarClip( 2500 );
 }
 
 /**
@@ -150,6 +159,8 @@ void dodecaudionK20Visuals::update()
 		}				
 		(*flt)->update();
 	}
+	
+	camPosition = Vec3f( 500 * sin( getElapsedFrames() / 100.0f ) , 120 , -750 );
 }
 
 /**
@@ -159,10 +170,10 @@ void dodecaudionK20Visuals::draw()
 {
 	gl::clear( Color(0,0,0) );
 
-	//draw scene to FBO
+	//draw scene to FBO for later filter processing
 	fbo.bindFramebuffer();
 	
-	cam.lookAt( Vec3f(20,0,-500) , Vec3f::zero() , Vec3f::yAxis() );
+	cam.lookAt( camPosition , Vec3f::zero() , -Vec3f::yAxis() );
 		
 	gl::enableDepthRead();
 	gl::enableDepthWrite();
@@ -171,13 +182,19 @@ void dodecaudionK20Visuals::draw()
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
 	gl::enableAdditiveBlending();
+	gl::enableAlphaBlending();
 	glLoadIdentity();
 	gl::setMatrices( cam );
 		
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
 		(*vis)->draw();
 	}	
+	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
+		(*vis)->draw();
+	}	
+	
 	fbo.unbindFramebuffer();
 
 
@@ -187,15 +204,14 @@ void dodecaudionK20Visuals::draw()
 		(*flt)->apply(&tex);
 	}	
 	
-	//draw the filtered output
-	tex.bind(0);
+	
+	//draw the filtered output on the screen
+	tex.enableAndBind();
 	gl::setViewport( getWindowBounds() );
 	gl::setMatricesWindow( getWindowSize() );
 	gl::color( ColorAf( 1,1,1,1 ) );
 	gl::drawSolidRect( getWindowBounds() );
 	tex.unbind();
-	
-	
 }
 
 #pragma mark helper methods

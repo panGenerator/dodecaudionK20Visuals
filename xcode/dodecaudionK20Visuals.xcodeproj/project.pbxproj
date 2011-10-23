@@ -21,6 +21,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		9F1277D41454281D000C7F8F /* invert.frag in Sources */ = {isa = PBXBuildFile; fileRef = 9F1277D31454281D000C7F8F /* invert.frag */; };
 		9F1277D7145428B6000C7F8F /* invert.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F1277D31454281D000C7F8F /* invert.frag */; };
+		9F12784B14542D58000C7F8F /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F12784A14542D58000C7F8F /* Grid.cpp */; };
 		9F16D0421449BF52001728A0 /* FFTController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0411449BF52001728A0 /* FFTController.cpp */; };
 		9F16D06E1449C417001728A0 /* FFTVisualiser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D06D1449C417001728A0 /* FFTVisualiser.cpp */; };
 		9F16D0721449C4A2001728A0 /* ValuesMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0711449C4A2001728A0 /* ValuesMap.cpp */; };
@@ -66,6 +67,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* dodecaudionK20Visuals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodecaudionK20Visuals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1277D31454281D000C7F8F /* invert.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = invert.frag; path = ../resources/invert.frag; sourceTree = SOURCE_ROOT; };
+		9F12784914542D58000C7F8F /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		9F12784A14542D58000C7F8F /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
 		9F16D0401449BF52001728A0 /* FFTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTController.h; sourceTree = "<group>"; };
 		9F16D0411449BF52001728A0 /* FFTController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTController.cpp; sourceTree = "<group>"; };
 		9F16D06C1449C417001728A0 /* FFTVisualiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTVisualiser.h; sourceTree = "<group>"; };
@@ -441,6 +444,8 @@
 				9F16D06B1449C3FB001728A0 /* DebugItems */,
 				9FE7DCAF1448A125006BA574 /* Dodecahedron.h */,
 				9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */,
+				9F12784914542D58000C7F8F /* Grid.h */,
+				9F12784A14542D58000C7F8F /* Grid.cpp */,
 			);
 			name = Drawable;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */,
 				9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */,
 				9F1277D41454281D000C7F8F /* invert.frag in Sources */,
+				9F12784B14542D58000C7F8F /* Grid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

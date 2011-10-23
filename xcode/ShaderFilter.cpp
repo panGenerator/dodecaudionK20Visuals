@@ -33,6 +33,9 @@ void ShaderFilter::setup(string id, DataSourceRef vertShader, DataSourceRef frag
 	resize(size);
 }
 
+/**
+ * Inform that the application size changed
+ */
 void ShaderFilter::resize(Vec2i size)
 {
 	fbo = gl::Fbo( size.x , size.y ,fboFormat);	
@@ -51,7 +54,12 @@ void ShaderFilter::update()
  */
 void ShaderFilter::apply(gl::Texture *texture)
 {
-	
+	/*
+	 * All drawing is done int an FBO since this is the only way i found to execute
+	 * many GLSL fragment programs on one (not exactly the same memory-wise) texture
+	 * as a sequence of effects. Does seem far from opitmal but i haven't noticed any 
+	 * performance drops
+	 */
 	
 	fbo.bindFramebuffer();
 	(*texture).enableAndBind();
