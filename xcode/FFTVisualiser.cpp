@@ -72,8 +72,22 @@ void FFTVisualiser::draw()
 	gl::color( ColorAf( 1.0 , 1.0 , 1.0 ) );
 	
 	glPushMatrix();
+	//glTranslated( getWindowWidth()/2.0f, getWindowHeight()/2.0f , 0 );
 	
-	glTranslated( getWindowWidth()/2.0f, getWindowHeight()/2.0f , 0 );
+	glRotated( get("framesCount") , 0, 1, 0);
+	/*
+	glLineWidth(5.0f);
+	gl::color( ColorAf(1.0,0.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::xAxis() );
+	
+	gl::color( ColorAf(0.0,1.0,0.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::yAxis() );
+	
+	gl::color( ColorAf(0.0,0.0,1.0,0.6f) );
+	gl::drawVector( Vec3f(0,0,0) , 20*Vec3f::zAxis() );
+	
+	glLineWidth(1.0f);
+	*/
 	
 	string bandId;
 	int bandsCount = get( "bands" );
@@ -82,7 +96,7 @@ void FFTVisualiser::draw()
 	float radius = 100.0f;
 	float idx;
 	
-	gl::color( ColorAf( 1.0,1.0,1.0 ) );
+	gl::color( ColorAf( 1.0,1.0,1.0,1.0 ) );
 	glBegin(GL_TRIANGLE_FAN);
 	
 	for( int band = 0 ; band < bandsCount ; band++ ){
@@ -90,19 +104,20 @@ void FFTVisualiser::draw()
 		bandId = "band" + boost::lexical_cast<string>(band);
 		bandValue = get(bandId);
 		
-		radius = 20 + 10 * bandValue;
+		radius = 20;
 		
 		Vec3f v = Vec3f(
 			radius * sin( idx * 2*PI ),
-			radius * cos( idx * 2*PI ),
-			0//radius * sin( idx * 8*PI )
+			(1-0.01*bandValue) * radius * cos( idx * 2*PI ),
+			bandValue * radius// * sin( idx * 2*PI )
 		);
 		
-		gl::color( ColorAf( 1.0 , idx , 1-idx , 0.5f ) );
+		gl::color( ColorAf( 1.0 , idx , 1-idx , 0.75f ) );
 		glVertex3fv( v );
 	}
 	
 	glEnd();
+	
 	
 	glPopMatrix();
 	
