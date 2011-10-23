@@ -11,6 +11,7 @@
 #define FILTER_INCLUDED
 
 #include "cinder/DataSource.h"
+#include "cinder/gl/Texture.h"
 #include "Controllable.h"
 
 using namespace ci;
@@ -21,11 +22,10 @@ class Filter : public Controllable{
 public: 
 	virtual ~Filter(){}
 	
-	virtual void setup(DataSourceRef vertShader, DataSourceRef fragShader) = 0;
+	virtual void setup(string id, DataSourceRef vertShader, DataSourceRef fragShader, Vec2i size) = 0;
+	virtual void resize(Vec2i size) = 0;
 	virtual void update() = 0;
-	virtual void bind() = 0;
-	virtual void unbind() = 0;
-	
+	virtual void apply(gl::Texture *texture) = 0;	
 };
 
 #endif

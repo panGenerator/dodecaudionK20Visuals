@@ -14,6 +14,7 @@
 #include "ValuesMap.h"
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
+#include "cinder/gl/Fbo.h"
 #include "cinder/gl/GlslProg.h"
 #include "cinder/CinderResources.h"
 
@@ -27,18 +28,21 @@ class ShaderFilter : public Filter
 {
 public:
 	ShaderFilter();
-	void setup(DataSourceRef vertShader, DataSourceRef fragShader);
+	void setup(string id,DataSourceRef vertShader, DataSourceRef fragShader, Vec2i size);
+	void resize(Vec2i size);
 	void update();
-	void bind();
-	void unbind();
+	void apply(gl::Texture *texture);
 	void set(string key, float value);
 	float get(string key);
     vector<string> keys();
 	string getId();
 	
 protected:
-    ValuesMap _values;
+	std::string _id;
+	ValuesMap _values;
 	gl::GlslProg shader;
+	gl::Fbo fbo;
+	gl::Fbo::Format fboFormat;
 };
 
 #endif

@@ -22,8 +22,10 @@
 #include "ShaderFilter.h"
 
 
-#define RES_GENERIC_FILTER_SHADER_VERT		CINDER_RESOURCE( ../resources/, passThru_vert.glsl, 128, GLSL )
-#define RES_GENERIC_FILTER_SHADER_FRAG		CINDER_RESOURCE( ../resources/, simpleNoise_frag.glsl, 129, GLSL )
+#define RES_PASS_THRU_SHADER_VERT			CINDER_RESOURCE( ../resources/, passThru.vert, 128, GLSL )
+#define RES_SIMPLE_NOISE_SHADER_FRAG		CINDER_RESOURCE( ../resources/, simpleNoise.frag, 129, GLSL )
+#define RES_VIGNETTE_SHADER_FRAG			CINDER_RESOURCE( ../resources/, vignette.frag, 130, GLSL )
+#define RES_INVERT_SHADER_FRAG				CINDER_RESOURCE( ../resources/, invert.frag, 130, GLSL )
 
 
 
@@ -42,6 +44,7 @@ public:
 	void draw();
 	
 	void updateDrawableByController(Drawable *vis , Controller *ctrl);
+	void updateFilterByController(Filter *flt , Controller *ctrl);
 	
 	vector<Controller *> controllers;
 	vector<Drawable *> visualObjects;
@@ -65,7 +68,7 @@ public:
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
     
-	ShaderFilter shaderFlt;
+	ShaderFilter noiseFlt,vignetteFlt,invertFlt;
 	
 };
 
@@ -101,8 +104,13 @@ void dodecaudionK20Visuals::setup()
 	
 	
 	//init filters
-	shaderFlt.setup(loadResource(RES_GENERIC_FILTER_SHADER_VERT),loadResource(RES_GENERIC_FILTER_SHADER_FRAG));
-	visualFilters.push_back( &shaderFlt );
+	//invertFlt.setup("invert", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_INVERT_SHADER_FRAG), getWindowSize());	
+	//visualFilters.push_back( &invertFlt );
+	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &vignetteFlt );
+	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &noiseFlt );
+
 	
 	//init FBO
 	fboFormat.setSamples(4);
@@ -132,6 +140,15 @@ void dodecaudionK20Visuals::update()
 		}				
 		//recalculate after changing values
 		(*vis)->update();
+	}
+	
+	//update all filters
+	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
+		for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
+			//pass controller data to Drawable objects
+			updateFilterByController( *flt, *ctrl );
+		}				
+		(*flt)->update();
 	}
 }
 
@@ -164,24 +181,20 @@ void dodecaudionK20Visuals::draw()
 	fbo.unbindFramebuffer();
 
 
+	gl::Texture tex = fbo.getTexture();
 	//filter the FBO
-	fbo.bindTexture(0);
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
-		(*flt)->bind();
-	}
+		(*flt)->apply(&tex);
+	}	
 	
-	
-	//display the output FBO
+	//draw the filtered output
+	tex.bind(0);
 	gl::setViewport( getWindowBounds() );
 	gl::setMatricesWindow( getWindowSize() );
 	gl::color( ColorAf( 1,1,1,1 ) );
 	gl::drawSolidRect( getWindowBounds() );
+	tex.unbind();
 	
-	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
-		(*flt)->unbind();
-	}
-	
-	fbo.unbindTexture();
 	
 }
 
@@ -192,7 +205,6 @@ void dodecaudionK20Visuals::draw()
  * This is where mapping of Controller values to Drawable params is done
  * TODO: Replace this by some way of mapping the controls to visuals - maybe a file?
  */
-
 void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controller *ctrl)
 {
 	//console() << "Updating vis: " << vis->getId() <<  " with ctrl: " << ctrl->getId() << std::endl;
@@ -238,13 +250,28 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 	}
 }
 	
-	
+/**
+ * Perform updating of all Filter+Controllable object by controllers. 
+ * This is where mapping of Controller values to Filter params is done
+ * TODO: Replace this by some way of mapping the controls to visuals - maybe a file?
+ */
+void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *ctrl)
+{
+	if( ctrl->getId() == "generic" ){
+		flt->set( "framesCount" , ctrl->get( "framesCount" ) );
+	}
+}
+
 #pragma mark Application event handlers
 	
 void dodecaudionK20Visuals::resize( ResizeEvent event )
 {
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
 	cam.setAspectRatio( getWindowAspectRatio() );
+	
+	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
+		(*flt)->resize( getWindowSize() );
+	}
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )

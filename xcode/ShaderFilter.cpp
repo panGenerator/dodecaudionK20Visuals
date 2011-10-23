@@ -20,9 +20,22 @@ ShaderFilter::ShaderFilter()
 /**
  * Setup the controller
  */
-void ShaderFilter::setup(DataSourceRef vertShader, DataSourceRef fragShader)
+void ShaderFilter::setup(string id, DataSourceRef vertShader, DataSourceRef fragShader, Vec2i size)
 {
+	_id = id;
 	shader = gl::GlslProg( vertShader , fragShader );
+	
+	//init FBO
+	fboFormat.setSamples(4);
+	fboFormat.enableMipmapping(false);
+	fboFormat.setCoverageSamples(16);
+	
+	resize(size);
+}
+
+void ShaderFilter::resize(Vec2i size)
+{
+	fbo = gl::Fbo( size.x , size.y ,fboFormat);	
 }
 
 /**
@@ -30,19 +43,35 @@ void ShaderFilter::setup(DataSourceRef vertShader, DataSourceRef fragShader)
  */
 void ShaderFilter::update()
 {
-	_values.set( "rand" , rand() );	
+	_values.set( "rand" , (float)rand()/RAND_MAX );	
 }
 
-void ShaderFilter::bind()
+/**
+ * Perform filtering
+ */
+void ShaderFilter::apply(gl::Texture *texture)
 {
+	
+	
+	fbo.bindFramebuffer();
+	(*texture).enableAndBind();
 	shader.bind();
+	
 	shader.uniform("tex0",0);
-}
+	shader.uniform("seed", get("rand"));
+	shader.uniform("framesCount", get("framesCount"));
+	
+	gl::clear( ColorAf(0,0,0) );
+	gl::setViewport( getWindowBounds() );
+	gl::setMatricesWindow( getWindowSize() );
+	gl::color( ColorAf( 1,1,1,1 ) );
+	gl::drawSolidRect( getWindowBounds() );
+	
 
-
-void ShaderFilter::unbind()
-{
 	shader.unbind();
+	(*texture).unbind(0);	
+	fbo.unbindFramebuffer();
+	*texture = fbo.getTexture();
 }
 
 /**
@@ -74,5 +103,5 @@ vector<string> ShaderFilter::keys()
  */
 string ShaderFilter::getId()
 {
-	return std::string("generic");
+	return _id;
 }

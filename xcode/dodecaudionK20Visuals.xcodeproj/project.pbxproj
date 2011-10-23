@@ -19,6 +19,8 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9F1277D41454281D000C7F8F /* invert.frag in Sources */ = {isa = PBXBuildFile; fileRef = 9F1277D31454281D000C7F8F /* invert.frag */; };
+		9F1277D7145428B6000C7F8F /* invert.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F1277D31454281D000C7F8F /* invert.frag */; };
 		9F16D0421449BF52001728A0 /* FFTController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0411449BF52001728A0 /* FFTController.cpp */; };
 		9F16D06E1449C417001728A0 /* FFTVisualiser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D06D1449C417001728A0 /* FFTVisualiser.cpp */; };
 		9F16D0721449C4A2001728A0 /* ValuesMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D0711449C4A2001728A0 /* ValuesMap.cpp */; };
@@ -29,8 +31,9 @@
 		9F16D33E1450A287001728A0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16D33D1450A287001728A0 /* CoreFoundation.framework */; };
 		9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */; };
 		9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */; };
-		9F53415E14533AAA0086D9D5 /* simpleNoise_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415C14533AAA0086D9D5 /* simpleNoise_frag.glsl */; };
-		9F53415F14533AAA0086D9D5 /* passThru_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415D14533AAA0086D9D5 /* passThru_vert.glsl */; };
+		9F53415E14533AAA0086D9D5 /* simpleNoise.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415C14533AAA0086D9D5 /* simpleNoise.frag */; };
+		9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415D14533AAA0086D9D5 /* passThru.vert */; };
+		9F53448714540BF90086D9D5 /* vignette.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F53448214540BC30086D9D5 /* vignette.frag */; };
 		9F5704941449921200749B7C /* OSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704921449921200749B7C /* OSCController.cpp */; };
 		9F5704BB14499AC400749B7C /* OscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B714499AC400749B7C /* OscBundle.cpp */; };
 		9F5704BC14499AC400749B7C /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704B814499AC400749B7C /* OscListener.cpp */; };
@@ -62,6 +65,7 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* dodecaudionK20Visuals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodecaudionK20Visuals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1277D31454281D000C7F8F /* invert.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = invert.frag; path = ../resources/invert.frag; sourceTree = SOURCE_ROOT; };
 		9F16D0401449BF52001728A0 /* FFTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTController.h; sourceTree = "<group>"; };
 		9F16D0411449BF52001728A0 /* FFTController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTController.cpp; sourceTree = "<group>"; };
 		9F16D06C1449C417001728A0 /* FFTVisualiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTVisualiser.h; sourceTree = "<group>"; };
@@ -85,8 +89,9 @@
 		9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		9F533E901452FF4B0086D9D5 /* ShaderFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderFilter.h; sourceTree = "<group>"; };
 		9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderFilter.cpp; sourceTree = "<group>"; };
-		9F53415C14533AAA0086D9D5 /* simpleNoise_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = simpleNoise_frag.glsl; path = ../resources/simpleNoise_frag.glsl; sourceTree = SOURCE_ROOT; };
-		9F53415D14533AAA0086D9D5 /* passThru_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = passThru_vert.glsl; path = ../resources/passThru_vert.glsl; sourceTree = SOURCE_ROOT; };
+		9F53415C14533AAA0086D9D5 /* simpleNoise.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simpleNoise.frag; path = ../resources/simpleNoise.frag; sourceTree = SOURCE_ROOT; };
+		9F53415D14533AAA0086D9D5 /* passThru.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = passThru.vert; path = ../resources/passThru.vert; sourceTree = SOURCE_ROOT; };
+		9F53448214540BC30086D9D5 /* vignette.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vignette.frag; path = ../resources/vignette.frag; sourceTree = SOURCE_ROOT; };
 		9F5704921449921200749B7C /* OSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCController.cpp; sourceTree = "<group>"; };
 		9F5704931449921200749B7C /* OSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCController.h; sourceTree = "<group>"; };
 		9F5704A314499AC400749B7C /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
@@ -222,8 +227,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9F53415C14533AAA0086D9D5 /* simpleNoise_frag.glsl */,
-				9F53415D14533AAA0086D9D5 /* passThru_vert.glsl */,
+				9F1277D31454281D000C7F8F /* invert.frag */,
+				9F53448214540BC30086D9D5 /* vignette.frag */,
+				9F53415C14533AAA0086D9D5 /* simpleNoise.frag */,
+				9F53415D14533AAA0086D9D5 /* passThru.vert */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				00CCAF14116A9FEE008396D5 /* CinderApp.icns */,
 			);
@@ -489,8 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
-				9F53415E14533AAA0086D9D5 /* simpleNoise_frag.glsl in Resources */,
-				9F53415F14533AAA0086D9D5 /* passThru_vert.glsl in Resources */,
+				9F1277D7145428B6000C7F8F /* invert.frag in Resources */,
+				9F53448714540BF90086D9D5 /* vignette.frag in Resources */,
+				9F53415E14533AAA0086D9D5 /* simpleNoise.frag in Resources */,
+				9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +528,7 @@
 				9F16D2E214509D90001728A0 /* MidiMessage.cpp in Sources */,
 				9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */,
 				9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */,
+				9F1277D41454281D000C7F8F /* invert.frag in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
