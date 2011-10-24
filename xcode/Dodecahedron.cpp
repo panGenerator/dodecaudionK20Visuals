@@ -128,6 +128,7 @@ void Dodecahedron::draw()
 		__drawWallCenter( wall );
 		__drawWallCoordinateSystem( wall );
 		drawSonicCones( wall );
+		drawEye( wall );
 	}
 
 	glPopMatrix();
@@ -300,15 +301,13 @@ void Dodecahedron::drawWall( int wall )
 	Vec3f v;
 	
 	//draw the walls
-	/*
-	gl::color( ColorAf(0.5f,0.5f,0.5f,0.55f) );
+	gl::color( ColorAf(0.5f,0.5f,0.5f,0.25f) );
 	glBegin(GL_POLYGON);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 		v = vertices[ wallVerticeIds[wall][i] ];
 		glVertex3fv( v );
 	}
 	glEnd();	
-	*/
 	
 	//draw the edges
 	glEnable(GL_LINE_SMOOTH);	
@@ -336,7 +335,8 @@ void Dodecahedron::drawSonicCones( int wall )
 	glLineWidth(1.3);
 	glEnable(GL_LINE_SMOOTH);
 	
-	float radius,minRadius = 10.0f, maxRadius=128.0f;
+	string wallId = "wall" + boost::lexical_cast<string>( wall );
+	float radius,minRadius = 10.0f, maxRadius=minRadius + 128 * get(wallId);
 	int step = 13,circlePoints = 16;
 	int length = 1000;
 	float idx= 0.0f,idxCircle=0.0f;
@@ -359,6 +359,41 @@ void Dodecahedron::drawSonicCones( int wall )
 		}
 		glEnd();
 	}
+	
+	popWallCoordinateSystem();
+}
+
+/**
+ *
+ */
+void Dodecahedron::drawEye( int wall )
+{ 
+	string wallId = "wall" + boost::lexical_cast<string>( wall );
+	int verticesPerEyelid = 16;
+	float idx,x,y;
+	float width=60.0f,height,heightMin = 1.0,heightMax = 10 * (1+get( wallId ));
+	
+	transformToWallCoordinateSystem(wall);
+	
+	glBegin(GL_LINE_LOOP);
+	gl::color( ColorAf(1,1,1) );
+	for( int i = 0 ; i <= verticesPerEyelid ; i++ ){
+		idx = i/(float)verticesPerEyelid;
+		x = -width/2.0 + width * idx; 
+		y = heightMin + heightMax * sin( idx * 3.14 ); 
+		
+		glVertex3f( x, y, 1);
+	}
+	
+	for( int i = 0 ; i <= verticesPerEyelid	; i++ ){
+		idx = 1.0f - i/(float)verticesPerEyelid;
+		x = -width/2.0 + width * idx; 
+		y = heightMin + heightMax * sin( idx * 3.14 ); 
+		
+		glVertex3f( x, -y, 1);		
+	}
+	
+	glEnd();
 	
 	popWallCoordinateSystem();
 }

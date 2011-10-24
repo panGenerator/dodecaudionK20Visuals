@@ -191,7 +191,7 @@ void CameraDrawer::setCameraTargetTo(Vec3f position)
 void CameraDrawer::setCameraFOVTarget( float newFOV )
 {
 	//change only on significant difference
-	if( abs( targetCamFOV - newFOV ) > 5.0f ){
+	if( abs( targetCamFOV - newFOV ) > 0.5f ){
 		if( newFOV < 20 ){ newFOV = 60.0f; }
 		targetCamFOV = newFOV;
 		camFOVLerpIndex = 0.0f;

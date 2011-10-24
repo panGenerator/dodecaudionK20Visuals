@@ -15,7 +15,7 @@
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
-
+#include <boost/lexical_cast.hpp>
 
 #define WALL_COUNT 12
 #define VERTICES_PER_WALL 5
@@ -49,6 +49,7 @@ private:
 	void popWallCoordinateSystem();
 	
 	void drawWall( int wall );
+	void drawEye( int wall );
 	void drawSonicCones( int wall );	
 
 	void __drawWallCenter( int wall );

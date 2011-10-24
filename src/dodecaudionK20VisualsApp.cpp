@@ -288,6 +288,14 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( "camPositionZ" , camPosition.z );
 			 */
 		}
+		if( vis->getId() == "dodecahedron" ){
+			//for testing only
+			string wallId;
+			for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+				wallId = "wall" + boost::lexical_cast<string>( wall );
+				vis->set( wallId , ( (getElapsedFrames() - wall * 10) % 120 ) / 120.0f );
+			}
+		}
 	}
 	//
 	//touchOSC controls mapping
@@ -402,6 +410,17 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 			}
 		}
 	}
+	
+	//Midi slider mapping
+	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){	
+		//blur filters manipulation
+		if( flt->getId() == "blur-horizontal" || flt->getId() == "blur-vertical" ){
+			console() << "Set blur to " << ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ) << ", " << ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ) << endl;
+			flt->set( FILTER_SHADER_PARAM_1 , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ) );
+			flt->set( FILTER_SHADER_PARAM_2 , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ) );
+		}
+	}
+	
 }
 
 #pragma mark Application event handlers

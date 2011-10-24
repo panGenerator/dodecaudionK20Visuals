@@ -64,13 +64,13 @@ void MIDINanoKontrolController::processMessage( midi::Message* msg )
 			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_4 , val ); break;
 		case 6:
 			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_5 , val ); break;
-		case 7:
-			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_6 , val ); break;
 		case 8:
-			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_7 , val ); break;
+			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_6 , val ); break;
 		case 9:
+			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_7 , val ); break;
+		case 12:
 			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 , val ); break;
-		case 10:
+		case 13:
 			set( MIDI_KORG_NANO_KONTROL_SLIDER_1_9 , val ); break;
 		//Scene #1 knobs
 		case 14:

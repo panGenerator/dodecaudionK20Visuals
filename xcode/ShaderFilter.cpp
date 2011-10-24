@@ -76,10 +76,22 @@ void ShaderFilter::apply(gl::Texture *texture)
 	(*_fbo).bindFramebuffer();
 	(*texture).enableAndBind();
 	shader.bind();
-	
+
+	//this is necessary - texture reference
 	shader.uniform("tex0",0);
+	//this is also needed for randomness
 	shader.uniform("seed", get("rand"));
-	shader.uniform("value", get("value"));
+	
+	//pass parameters to shaders
+	shader.uniform(FILTER_SHADER_PARAM_1, get(FILTER_SHADER_PARAM_1));
+	shader.uniform(FILTER_SHADER_PARAM_2, get(FILTER_SHADER_PARAM_2));
+	shader.uniform(FILTER_SHADER_PARAM_3, get(FILTER_SHADER_PARAM_3));
+	shader.uniform(FILTER_SHADER_PARAM_4, get(FILTER_SHADER_PARAM_4));
+	shader.uniform(FILTER_SHADER_PARAM_5, get(FILTER_SHADER_PARAM_5));
+	shader.uniform(FILTER_SHADER_PARAM_6, get(FILTER_SHADER_PARAM_6));
+	shader.uniform(FILTER_SHADER_PARAM_7, get(FILTER_SHADER_PARAM_7));
+	shader.uniform(FILTER_SHADER_PARAM_8, get(FILTER_SHADER_PARAM_8));
+	shader.uniform(FILTER_SHADER_PARAM_9, get(FILTER_SHADER_PARAM_9));
 	
 	gl::clear( ColorAf(0,0,0) );
 	gl::setViewport( getWindowBounds() );

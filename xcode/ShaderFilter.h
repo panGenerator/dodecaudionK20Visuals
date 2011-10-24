@@ -17,6 +17,16 @@
 #include "cinder/gl/GlslProg.h"
 #include "cinder/CinderResources.h"
 
+#define FILTER_SHADER_PARAM_1 "param1"
+#define FILTER_SHADER_PARAM_2 "param2"
+#define FILTER_SHADER_PARAM_3 "param3"
+#define FILTER_SHADER_PARAM_4 "param4"
+#define FILTER_SHADER_PARAM_5 "param5"
+#define FILTER_SHADER_PARAM_6 "param6"
+#define FILTER_SHADER_PARAM_7 "param7"
+#define FILTER_SHADER_PARAM_8 "param8"
+#define FILTER_SHADER_PARAM_9 "param9"
+
 
 //work in the cinder's namespace
 using namespace std;
