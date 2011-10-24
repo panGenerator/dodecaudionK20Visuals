@@ -60,7 +60,7 @@ public:
 	//Vec3f camPosition;
 	
 	gl::Fbo::Format fboFormat;
-	gl::Fbo	fbo;
+	gl::Fbo	fbo,fboFilterA,fboFilterB;
 	gl::Texture fboTexture;
 	
 	
@@ -131,11 +131,11 @@ void dodecaudionK20Visuals::setup()
 	multFlt.setup("multiply", loadResource(RES_PASS_THRU_SHADER_VERT), loadResource(RES_MULTIPLY_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &multFlt );
 
-//Blur kills the GPU in fulscreen
-//	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
-//	visualFilters.push_back( &blurHFlt );
-//	blurVFlt.setup("blur-vertical", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__VERTICAL_SHADER_FRAG), getWindowSize());
-//	visualFilters.push_back( &blurVFlt );
+	//Blur kills the GPU in fulscreen
+	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &blurHFlt );
+	blurVFlt.setup("blur-vertical", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__VERTICAL_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &blurVFlt );
 
 	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &vignetteFlt );
@@ -151,6 +151,21 @@ void dodecaudionK20Visuals::setup()
 	//fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 
+	fboFilterA = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
+	fboFilterB = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
+
+	
+	//pass the FBO to filters for later usage
+	int counter = 0;
+	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
+		//if( counter % 2 == 0 ){
+		//	(*flt)->setFBO( &fboFilterA );
+		//}else{
+			(*flt)->setFBO( &fbo );
+		//}
+		//counter++;
+	}
+	
 }
 
 /**
@@ -366,11 +381,16 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 void dodecaudionK20Visuals::resize( ResizeEvent event )
 {
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
-	cam.set( "aspectRatio" , getWindowAspectRatio() );
+	fboFilterA = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
+	fboFilterB = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
+
 	
+	cam.set( "aspectRatio" , getWindowAspectRatio() );
+	/*
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
 		(*flt)->resize( getWindowSize() );
 	}
+	*/
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )

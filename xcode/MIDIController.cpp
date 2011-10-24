@@ -38,7 +38,10 @@ void MIDIController::update()
 
 string MIDIController::getId()
 {
-	string portName = midiIn.mPortNames[_port];
+	string portName;
+	if( _port != 0 ){
+		portName = midiIn.mPortNames[_port];
+	}
 	return "midi:" + portName;//boost::lexical_cast<string>( _port );
 }
 

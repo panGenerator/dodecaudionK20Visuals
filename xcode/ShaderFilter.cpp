@@ -26,20 +26,26 @@ void ShaderFilter::setup(string id, DataSourceRef vertShader, DataSourceRef frag
 	shader = gl::GlslProg( vertShader , fragShader );
 	
 	//init FBO
-	fboFormat.setSamples(4);
-	fboFormat.enableMipmapping(false);
-	fboFormat.setCoverageSamples(16);
+//	fboFormat.setSamples(4);
+//	fboFormat.enableMipmapping(false);
+//	fboFormat.setCoverageSamples(16);
 	
-	resize(size);
 }
 
 /**
  * Inform that the application size changed
  */
+/*
 void ShaderFilter::resize(Vec2i size)
 {
 	fbo = gl::Fbo( size.x , size.y ,fboFormat);	
 }
+*/
+
+void ShaderFilter::setFBO(gl::Fbo *fbo)
+{
+	_fbo = fbo;
+}	
 
 /**
  * Recalculate values
@@ -67,7 +73,7 @@ void ShaderFilter::apply(gl::Texture *texture)
 	 * performance drops
 	 */
 	
-	fbo.bindFramebuffer();
+	(*_fbo).bindFramebuffer();
 	(*texture).enableAndBind();
 	shader.bind();
 	
@@ -84,8 +90,8 @@ void ShaderFilter::apply(gl::Texture *texture)
 
 	shader.unbind();
 	(*texture).unbind(0);	
-	fbo.unbindFramebuffer();
-	*texture = fbo.getTexture();
+	(*_fbo).unbindFramebuffer();
+	*texture = (*_fbo).getTexture();
 }
 
 /**

@@ -2,9 +2,9 @@
 {
 	00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 5122}}";
-			sepNavSelRange = "{3544, 0}";
-			sepNavVisRange = "{2816, 1516}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 5356}}";
+			sepNavSelRange = "{4310, 0}";
+			sepNavVisRange = "{3083, 1748}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -17,7 +17,7 @@
 		breakpoints = (
 			9F16D11B1449CD62001728A0 /* FFTController.cpp:73 */,
 			9F16D1581449D1A6001728A0 /* FFTVisualiser.cpp:118 */,
-			9F05BC4814549353000DDDFA /* dodecaudionK20VisualsApp.cpp:368 */,
+			9F05BC4814549353000DDDFA /* dodecaudionK20VisualsApp.cpp:386 */,
 		);
 		codeSenseManager = 9FE7DC901448A095006BA574 /* Code sense */;
 		executables = (
@@ -238,6 +238,65 @@
 			9F05BD8C14549C6F000DDDFA /* PBXTextBookmark */ = 9F05BD8C14549C6F000DDDFA /* PBXTextBookmark */;
 			9F05BD8D14549C6F000DDDFA /* PBXTextBookmark */ = 9F05BD8D14549C6F000DDDFA /* PBXTextBookmark */;
 			9F05BD8E14549C6F000DDDFA /* PBXTextBookmark */ = 9F05BD8E14549C6F000DDDFA /* PBXTextBookmark */;
+			9F05BD98145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD98145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD99145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD99145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD9A145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD9A145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD9B145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD9B145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD9C145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD9C145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD9D145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD9D145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BD9E145529B6000DDDFA /* PBXTextBookmark */ = 9F05BD9E145529B6000DDDFA /* PBXTextBookmark */;
+			9F05BDA7145529CD000DDDFA /* PBXTextBookmark */ = 9F05BDA7145529CD000DDDFA /* PBXTextBookmark */;
+			9F05BDA8145529D1000DDDFA /* PBXTextBookmark */ = 9F05BDA8145529D1000DDDFA /* PBXTextBookmark */;
+			9F05BDA9145529D1000DDDFA /* PBXTextBookmark */ = 9F05BDA9145529D1000DDDFA /* PBXTextBookmark */;
+			9F05BDAA145529D1000DDDFA /* PBXTextBookmark */ = 9F05BDAA145529D1000DDDFA /* PBXTextBookmark */;
+			9F05BDAC145529D1000DDDFA /* PBXTextBookmark */ = 9F05BDAC145529D1000DDDFA /* PBXTextBookmark */;
+			9F05BDB414552A50000DDDFA /* PBXTextBookmark */ = 9F05BDB414552A50000DDDFA /* PBXTextBookmark */;
+			9F05BDB514552A50000DDDFA /* PBXTextBookmark */ = 9F05BDB514552A50000DDDFA /* PBXTextBookmark */;
+			9F05BDB614552A50000DDDFA /* PBXTextBookmark */ = 9F05BDB614552A50000DDDFA /* PBXTextBookmark */;
+			9F05BDB914552A53000DDDFA /* PBXTextBookmark */ = 9F05BDB914552A53000DDDFA /* PBXTextBookmark */;
+			9F05BDBC14552A81000DDDFA /* PBXTextBookmark */ = 9F05BDBC14552A81000DDDFA /* PBXTextBookmark */;
+			9F05BDBD14552A81000DDDFA /* PBXTextBookmark */ = 9F05BDBD14552A81000DDDFA /* PBXTextBookmark */;
+			9F05BDBE14552A81000DDDFA /* PBXTextBookmark */ = 9F05BDBE14552A81000DDDFA /* PBXTextBookmark */;
+			9F05BDC114552A9C000DDDFA /* PBXTextBookmark */ = 9F05BDC114552A9C000DDDFA /* PBXTextBookmark */;
+			9F05BDC214552A9C000DDDFA /* PBXTextBookmark */ = 9F05BDC214552A9C000DDDFA /* PBXTextBookmark */;
+			9F05BDC314552A9C000DDDFA /* PBXTextBookmark */ = 9F05BDC314552A9C000DDDFA /* PBXTextBookmark */;
+			9F05BDC814552AB5000DDDFA /* PBXTextBookmark */ = 9F05BDC814552AB5000DDDFA /* PBXTextBookmark */;
+			9F05BDCB14552AB7000DDDFA /* PBXTextBookmark */ = 9F05BDCB14552AB7000DDDFA /* PBXTextBookmark */;
+			9F05BDCE14552AC0000DDDFA /* PBXTextBookmark */ = 9F05BDCE14552AC0000DDDFA /* PBXTextBookmark */;
+			9F05BDD014552AC9000DDDFA /* PBXTextBookmark */ = 9F05BDD014552AC9000DDDFA /* PBXTextBookmark */;
+			9F05BDD114552AC9000DDDFA /* PBXTextBookmark */ = 9F05BDD114552AC9000DDDFA /* PBXTextBookmark */;
+			9F05BDD414552AEA000DDDFA /* PBXTextBookmark */ = 9F05BDD414552AEA000DDDFA /* PBXTextBookmark */;
+			9F05BDD514552AEA000DDDFA /* PBXTextBookmark */ = 9F05BDD514552AEA000DDDFA /* PBXTextBookmark */;
+			9F05BDD614552AEA000DDDFA /* PBXTextBookmark */ = 9F05BDD614552AEA000DDDFA /* PBXTextBookmark */;
+			9F05BDD714552AEA000DDDFA /* PBXTextBookmark */ = 9F05BDD714552AEA000DDDFA /* PBXTextBookmark */;
+			9F05BDDE14552B03000DDDFA /* PBXTextBookmark */ = 9F05BDDE14552B03000DDDFA /* PBXTextBookmark */;
+			9F05BDDF14552B03000DDDFA /* PBXTextBookmark */ = 9F05BDDF14552B03000DDDFA /* PBXTextBookmark */;
+			9F05BDE014552B03000DDDFA /* PBXTextBookmark */ = 9F05BDE014552B03000DDDFA /* PBXTextBookmark */;
+			9F05BDE214552B07000DDDFA /* PBXTextBookmark */ = 9F05BDE214552B07000DDDFA /* PBXTextBookmark */;
+			9F05BDE514552B12000DDDFA /* PBXTextBookmark */ = 9F05BDE514552B12000DDDFA /* PBXTextBookmark */;
+			9F05BDE614552B12000DDDFA /* PBXTextBookmark */ = 9F05BDE614552B12000DDDFA /* PBXTextBookmark */;
+			9F05BDE714552B12000DDDFA /* PBXTextBookmark */ = 9F05BDE714552B12000DDDFA /* PBXTextBookmark */;
+			9F05BDEB14552B1D000DDDFA /* PBXTextBookmark */ = 9F05BDEB14552B1D000DDDFA /* PBXTextBookmark */;
+			9F05BDEF14552B45000DDDFA /* PBXTextBookmark */ = 9F05BDEF14552B45000DDDFA /* PBXTextBookmark */;
+			9F05BDF014552B45000DDDFA /* PBXTextBookmark */ = 9F05BDF014552B45000DDDFA /* PBXTextBookmark */;
+			9F05BDF114552B45000DDDFA /* PBXTextBookmark */ = 9F05BDF114552B45000DDDFA /* PBXTextBookmark */;
+			9F05BDF414552B48000DDDFA /* PBXTextBookmark */ = 9F05BDF414552B48000DDDFA /* PBXTextBookmark */;
+			9F05BDF714552B50000DDDFA /* PBXTextBookmark */ = 9F05BDF714552B50000DDDFA /* PBXTextBookmark */;
+			9F05BDF914552B5B000DDDFA /* PBXTextBookmark */ = 9F05BDF914552B5B000DDDFA /* PBXTextBookmark */;
+			9F05BDFA14552B5B000DDDFA /* PBXTextBookmark */ = 9F05BDFA14552B5B000DDDFA /* PBXTextBookmark */;
+			9F05BDFD14552B68000DDDFA /* PBXTextBookmark */ = 9F05BDFD14552B68000DDDFA /* PBXTextBookmark */;
+			9F05BDFE14552B68000DDDFA /* PBXTextBookmark */ = 9F05BDFE14552B68000DDDFA /* PBXTextBookmark */;
+			9F05BDFF14552B68000DDDFA /* PBXTextBookmark */ = 9F05BDFF14552B68000DDDFA /* PBXTextBookmark */;
+			9F05BE0314552B93000DDDFA /* PBXTextBookmark */ = 9F05BE0314552B93000DDDFA /* PBXTextBookmark */;
+			9F05BE0414552B93000DDDFA /* PBXTextBookmark */ = 9F05BE0414552B93000DDDFA /* PBXTextBookmark */;
+			9F05BE0514552B93000DDDFA /* PBXTextBookmark */ = 9F05BE0514552B93000DDDFA /* PBXTextBookmark */;
+			9F05BE0914552BAB000DDDFA /* PBXTextBookmark */ = 9F05BE0914552BAB000DDDFA /* PBXTextBookmark */;
+			9F05BE0A14552BAB000DDDFA /* PBXTextBookmark */ = 9F05BE0A14552BAB000DDDFA /* PBXTextBookmark */;
+			9F05BE0B14552BAB000DDDFA /* PBXTextBookmark */ = 9F05BE0B14552BAB000DDDFA /* PBXTextBookmark */;
+			9F05BE0C14552BAB000DDDFA /* PBXTextBookmark */ = 9F05BE0C14552BAB000DDDFA /* PBXTextBookmark */;
+			9F05BE1014552BBA000DDDFA /* PBXTextBookmark */ = 9F05BE1014552BBA000DDDFA /* PBXTextBookmark */;
+			9F05BE1414552BCC000DDDFA /* PBXTextBookmark */ = 9F05BE1414552BCC000DDDFA /* PBXTextBookmark */;
+			9F05BE1614552BD3000DDDFA /* PBXTextBookmark */ = 9F05BE1614552BD3000DDDFA /* PBXTextBookmark */;
 			9F127705145421DE000C7F8F = 9F127705145421DE000C7F8F /* PBXTextBookmark */;
 			9F12771014542213000C7F8F = 9F12771014542213000C7F8F /* PBXTextBookmark */;
 			9F12771414542241000C7F8F = 9F12771414542241000C7F8F /* PBXTextBookmark */;
@@ -1013,7 +1072,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 1176;
 		vrLoc = 265;
@@ -1023,7 +1082,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 60";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1095;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 638;
@@ -1033,7 +1092,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 132";
 		rLen = 0;
-		rLoc = 3510;
+		rLoc = 3532;
 		rType = 0;
 		vrLen = 1811;
 		vrLoc = 2655;
@@ -1043,7 +1102,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 146";
 		rLen = 0;
-		rLoc = 4269;
+		rLoc = 4284;
 		rType = 0;
 		vrLen = 1811;
 		vrLoc = 2655;
@@ -1053,7 +1112,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3080;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 2339;
 		vrLoc = 3077;
@@ -1063,7 +1122,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3080;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 3077;
@@ -1073,7 +1132,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 52;
-		rLoc = 66;
+		rLoc = 86;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -1083,7 +1142,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1001;
+		rLoc = 998;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -1094,7 +1153,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 60;
+		rLoc = 66;
 		rType = 1;
 	};
 	9F05BC2C14549233000DDDFA /* PBXTextBookmark */ = {
@@ -1102,7 +1161,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 645;
@@ -1112,7 +1171,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 645;
@@ -1122,7 +1181,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 645;
@@ -1132,7 +1191,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 733;
@@ -1142,7 +1201,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 900;
 		vrLoc = 645;
@@ -1152,7 +1211,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3080;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 3077;
@@ -1162,12 +1221,12 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 137";
 		rLen = 0;
-		rLoc = 3870;
+		rLoc = 3885;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 3077;
 	};
-	9F05BC4814549353000DDDFA /* dodecaudionK20VisualsApp.cpp:368 */ = {
+	9F05BC4814549353000DDDFA /* dodecaudionK20VisualsApp.cpp:386 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1179,7 +1238,7 @@
 		functionName = "dodecaudionK20Visuals::resize( ResizeEvent event )";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 368;
+		lineNumber = 386;
 		location = dodecaudionK20Visuals;
 		modificationTime = 341087118.759538;
 		originalNumberOfMultipleMatches = 1;
@@ -1190,7 +1249,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 381";
 		rLen = 0;
-		rLoc = 10954;
+		rLoc = 11559;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 10114;
@@ -1200,7 +1259,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 381";
 		rLen = 0;
-		rLoc = 10954;
+		rLoc = 11559;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 10111;
@@ -1210,7 +1269,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 381";
 		rLen = 0;
-		rLoc = 10954;
+		rLoc = 11559;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 10111;
@@ -1230,7 +1289,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 381";
 		rLen = 0;
-		rLoc = 10954;
+		rLoc = 11559;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 10053;
@@ -1240,7 +1299,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 365";
 		rLen = 0;
-		rLoc = 10488;
+		rLoc = 10938;
 		rType = 0;
 		vrLen = 992;
 		vrLoc = 10018;
@@ -1250,7 +1309,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 365";
 		rLen = 0;
-		rLoc = 10488;
+		rLoc = 10938;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 10018;
@@ -1260,7 +1319,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 733;
@@ -1270,7 +1329,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 363";
 		rLen = 0;
-		rLoc = 10484;
+		rLoc = 10934;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 10018;
@@ -1279,8 +1338,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 3061;
@@ -1289,8 +1348,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 3061;
@@ -1299,8 +1358,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 3655;
@@ -1310,7 +1369,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 114";
 		rLen = 0;
-		rLoc = 2852;
+		rLoc = 2874;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 2469;
@@ -1320,7 +1379,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 133";
 		rLen = 0;
-		rLoc = 3510;
+		rLoc = 3532;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 2851;
@@ -1330,7 +1389,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 137";
 		rLen = 0;
-		rLoc = 3870;
+		rLoc = 3885;
 		rType = 0;
 		vrLen = 1547;
 		vrLoc = 2851;
@@ -1340,7 +1399,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 137";
 		rLen = 0;
-		rLoc = 3870;
+		rLoc = 3885;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 2851;
@@ -1350,7 +1409,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 135";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1550;
 		vrLoc = 2851;
@@ -1360,7 +1419,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 52;
-		rLoc = 66;
+		rLoc = 86;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -1370,7 +1429,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 17";
 		rLen = 0;
-		rLoc = 649;
+		rLoc = 651;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 0;
@@ -1390,7 +1449,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 21";
 		rLen = 0;
-		rLoc = 894;
+		rLoc = 882;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 0;
@@ -1400,7 +1459,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 21";
 		rLen = 0;
-		rLoc = 894;
+		rLoc = 882;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 0;
@@ -1410,7 +1469,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 17";
 		rLen = 0;
-		rLoc = 649;
+		rLoc = 651;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 0;
@@ -1420,7 +1479,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 24";
 		rLen = 0;
-		rLoc = 1211;
+		rLoc = 1199;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -1430,7 +1489,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 19";
 		rLen = 0;
-		rLoc = 890;
+		rLoc = 887;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 0;
@@ -1440,7 +1499,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 21";
 		rLen = 0;
-		rLoc = 894;
+		rLoc = 882;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 0;
@@ -1450,7 +1509,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 721;
 		rType = 0;
 		vrLen = 993;
 		vrLoc = 0;
@@ -1460,7 +1519,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 728;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 1001;
 		vrLoc = 0;
@@ -1480,7 +1539,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 141;
+		rLoc = 140;
 		rType = 0;
 		vrLen = 1001;
 		vrLoc = 0;
@@ -1490,7 +1549,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 141;
+		rLoc = 140;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1500,7 +1559,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 141;
+		rLoc = 140;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1509,8 +1568,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 16";
-		rLen = 12;
-		rLoc = 571;
+		rLen = 7;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1520,7 +1579,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 19";
 		rLen = 0;
-		rLoc = 890;
+		rLoc = 887;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 0;
@@ -1530,7 +1589,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1031;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1560,7 +1619,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1031;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1569,8 +1628,8 @@
 		isa = PBXTextBookmark;
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 16";
-		rLen = 12;
-		rLoc = 571;
+		rLen = 7;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1580,7 +1639,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 728;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1590,7 +1649,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 728;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1600,7 +1659,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 135";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1550;
 		vrLoc = 2851;
@@ -1610,7 +1669,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 132";
 		rLen = 0;
-		rLoc = 3472;
+		rLoc = 3494;
 		rType = 0;
 		vrLen = 1542;
 		vrLoc = 2851;
@@ -1620,7 +1679,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 328;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 2851;
@@ -1629,8 +1688,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 2851;
@@ -1639,8 +1698,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 2851;
@@ -1649,8 +1708,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 2851;
@@ -1660,7 +1719,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 2851;
@@ -1670,7 +1729,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 2851;
@@ -1680,7 +1739,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1459;
 		vrLoc = 2949;
@@ -1690,7 +1749,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 328;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 9479;
@@ -1700,7 +1759,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 817;
 		vrLoc = 621;
@@ -1710,7 +1769,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 366";
 		rLen = 0;
-		rLoc = 10554;
+		rLoc = 11151;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 10092;
@@ -1720,7 +1779,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 148";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4308;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 3306;
@@ -1730,7 +1789,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 379";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 10238;
@@ -1740,7 +1799,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 379";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 10238;
@@ -1750,7 +1809,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 378";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 10080;
@@ -1760,7 +1819,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 378";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 10250;
@@ -1770,7 +1829,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 6236;
@@ -1780,7 +1839,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 6107;
@@ -1790,7 +1849,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 815;
 		vrLoc = 623;
@@ -1800,7 +1859,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 141;
+		rLoc = 140;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1810,7 +1869,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1031;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1820,7 +1879,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 215;
+		rLoc = 214;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1830,7 +1889,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 215;
+		rLoc = 214;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1840,7 +1899,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 52;
-		rLoc = 66;
+		rLoc = 86;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -1850,7 +1909,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 141;
+		rLoc = 140;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 0;
@@ -1870,7 +1929,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 6107;
@@ -1880,7 +1939,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 6107;
@@ -1890,7 +1949,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1143;
 		vrLoc = 6107;
@@ -1900,7 +1959,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 215;
+		rLoc = 214;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 0;
@@ -1930,7 +1989,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 728;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 0;
@@ -1940,7 +1999,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 214;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 0;
@@ -1950,7 +2009,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1031;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -1960,7 +2019,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 21";
 		rLen = 0;
-		rLoc = 1039;
+		rLoc = 1031;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 0;
@@ -1970,7 +2029,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 18";
 		rLen = 0;
-		rLoc = 728;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 0;
@@ -1980,7 +2039,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 16";
 		rLen = 0;
-		rLoc = 582;
+		rLoc = 579;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 0;
@@ -1990,7 +2049,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 16";
 		rLen = 0;
-		rLoc = 582;
+		rLoc = 579;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 0;
@@ -2000,7 +2059,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 228";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1143;
 		vrLoc = 6107;
@@ -2010,7 +2069,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 229";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 6107;
@@ -2020,7 +2079,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 229";
 		rLen = 0;
-		rLoc = 6471;
+		rLoc = 6921;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 6107;
@@ -2030,7 +2089,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 378";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 616;
 		vrLoc = 10451;
@@ -2040,7 +2099,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 153";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 3178;
@@ -2050,7 +2109,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6078;
+		rLoc = 6528;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 5441;
@@ -2060,7 +2119,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 212";
 		rLen = 0;
-		rLoc = 6039;
+		rLoc = 6489;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 5441;
@@ -2070,7 +2129,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 212";
 		rLen = 0;
-		rLoc = 6039;
+		rLoc = 6489;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 5441;
@@ -2080,7 +2139,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 212";
 		rLen = 0;
-		rLoc = 6040;
+		rLoc = 6490;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 5441;
@@ -2090,7 +2149,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 5441;
@@ -2100,7 +2159,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 213";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 970;
 		vrLoc = 5441;
@@ -2110,7 +2169,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 210";
 		rLen = 0;
-		rLoc = 5961;
+		rLoc = 6411;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 5441;
@@ -2120,7 +2179,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 210";
 		rLen = 0;
-		rLoc = 5961;
+		rLoc = 6411;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 5441;
@@ -2130,7 +2189,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 213";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 5441;
@@ -2140,7 +2199,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 212";
 		rLen = 0;
-		rLoc = 6012;
+		rLoc = 6462;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 5441;
@@ -2150,7 +2209,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 5441;
@@ -2160,7 +2219,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 5441;
@@ -2200,7 +2259,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 384";
 		rLen = 0;
-		rLoc = 10812;
+		rLoc = 11417;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 10468;
@@ -2230,7 +2289,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6044;
+		rLoc = 6494;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 5441;
@@ -2240,7 +2299,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 211";
 		rLen = 0;
-		rLoc = 5998;
+		rLoc = 6448;
 		rType = 0;
 		vrLen = 926;
 		vrLoc = 5441;
@@ -2250,7 +2309,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 211";
 		rLen = 0;
-		rLoc = 6007;
+		rLoc = 6457;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 5441;
@@ -2260,7 +2319,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 212";
 		rLen = 0;
-		rLoc = 6040;
+		rLoc = 6490;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 5441;
@@ -2270,7 +2329,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 211";
 		rLen = 0;
-		rLoc = 6001;
+		rLoc = 6451;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 3081;
@@ -2280,7 +2339,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 18";
 		rLen = 0;
-		rLoc = 730;
+		rLoc = 732;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -2290,7 +2349,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 16";
 		rLen = 0;
-		rLoc = 582;
+		rLoc = 579;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 0;
@@ -2300,7 +2359,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 15";
 		rLen = 0;
-		rLoc = 425;
+		rLoc = 427;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 0;
@@ -2310,7 +2369,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 15";
 		rLen = 0;
-		rLoc = 425;
+		rLoc = 427;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 0;
@@ -2320,7 +2379,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 211";
 		rLen = 0;
-		rLoc = 6001;
+		rLoc = 6451;
 		rType = 0;
 		vrLen = 1597;
 		vrLoc = 3077;
@@ -2329,8 +2388,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 7901;
@@ -2340,7 +2399,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 226";
 		rLen = 0;
-		rLoc = 6333;
+		rLoc = 6783;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 5543;
@@ -2350,7 +2409,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 815;
 		vrLoc = 623;
@@ -2360,7 +2419,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 71";
 		rLen = 0;
-		rLoc = 1409;
+		rLoc = 1469;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 1010;
@@ -2370,7 +2429,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 77";
 		rLen = 0;
-		rLoc = 1545;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 1010;
@@ -2380,7 +2439,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 70";
 		rLen = 0;
-		rLoc = 1385;
+		rLoc = 1445;
 		rType = 0;
 		vrLen = 531;
 		vrLoc = 1734;
@@ -2390,7 +2449,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 226";
 		rLen = 0;
-		rLoc = 6333;
+		rLoc = 6783;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 5543;
@@ -2400,7 +2459,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
 		rLen = 0;
-		rLoc = 3544;
+		rLoc = 3567;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 2816;
@@ -2410,7 +2469,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 134";
 		rLen = 0;
-		rLoc = 3544;
+		rLoc = 3567;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 2816;
@@ -2444,6 +2503,604 @@
 		rType = 0;
 		vrLen = 648;
 		vrLoc = 90;
+	};
+	9F05BD98145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F12784914542D58000C7F8F /* Grid.h */;
+		name = "Grid.h: 40";
+		rLen = 0;
+		rLoc = 681;
+		rType = 0;
+		vrLen = 655;
+		vrLoc = 90;
+	};
+	9F05BD99145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F16D0711449C4A2001728A0 /* ValuesMap.cpp */;
+		name = "ValuesMap.cpp: 14";
+		rLen = 0;
+		rLoc = 214;
+		rType = 0;
+		vrLen = 600;
+		vrLoc = 0;
+	};
+	9F05BD9A145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E8D1452FEBE0086D9D5 /* Filter.h */;
+		name = "Filter.h: 14";
+		rLen = 0;
+		rLoc = 269;
+		rType = 0;
+		vrLen = 682;
+		vrLoc = 0;
+	};
+	9F05BD9B145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 156";
+		rLen = 0;
+		rLoc = 4803;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 3909;
+	};
+	9F05BD9C145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E901452FF4B0086D9D5 /* ShaderFilter.h */;
+		name = "ShaderFilter.h: 44";
+		rLen = 0;
+		rLoc = 946;
+		rType = 0;
+		vrLen = 801;
+		vrLoc = 161;
+	};
+	9F05BD9D145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 77";
+		rLen = 0;
+		rLoc = 1429;
+		rType = 0;
+		vrLen = 945;
+		vrLoc = 1238;
+	};
+	9F05BD9E145529B6000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 47";
+		rLen = 0;
+		rLoc = 833;
+		rType = 0;
+		vrLen = 631;
+		vrLoc = 267;
+	};
+	9F05BDA7145529CD000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 47";
+		rLen = 0;
+		rLoc = 833;
+		rType = 0;
+		vrLen = 631;
+		vrLoc = 267;
+	};
+	9F05BDA8145529D1000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F12784914542D58000C7F8F /* Grid.h */;
+		name = "Grid.h: 41";
+		rLen = 0;
+		rLoc = 712;
+		rType = 0;
+		vrLen = 470;
+		vrLoc = 265;
+	};
+	9F05BDA9145529D1000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 47";
+		rLen = 0;
+		rLoc = 833;
+		rType = 0;
+		vrLen = 388;
+		vrLoc = 510;
+	};
+	9F05BDAA145529D1000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F05BDAB145529D1000DDDFA /* asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c */;
+		name = "asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	9F05BDAB145529D1000DDDFA /* asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		path = "asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c";
+		sourceTree = "<group>";
+	};
+	9F05BDAC145529D1000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F05BDAD145529D1000DDDFA /* asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c */;
+		name = "asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	9F05BDAD145529D1000DDDFA /* asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c */ = {
+		isa = PBXFileReference;
+		path = "asm std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string  0x9826cb1c";
+		sourceTree = "<group>";
+	};
+	9F05BDB414552A50000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 47";
+		rLen = 0;
+		rLoc = 833;
+		rType = 0;
+		vrLen = 693;
+		vrLoc = 342;
+	};
+	9F05BDB514552A50000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 156";
+		rLen = 0;
+		rLoc = 4803;
+		rType = 0;
+		vrLen = 1201;
+		vrLoc = 4039;
+	};
+	9F05BDB614552A50000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 159";
+		rLen = 0;
+		rLoc = 4646;
+		rType = 0;
+		vrLen = 1035;
+		vrLoc = 4276;
+	};
+	9F05BDB914552A53000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 159";
+		rLen = 0;
+		rLoc = 4646;
+		rType = 0;
+		vrLen = 1035;
+		vrLoc = 4276;
+	};
+	9F05BDBC14552A81000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 159";
+		rLen = 0;
+		rLoc = 4646;
+		rType = 0;
+		vrLen = 901;
+		vrLoc = 7229;
+	};
+	9F05BDBD14552A81000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
+		rLen = 0;
+		rLoc = 43;
+		rType = 1;
+	};
+	9F05BDBE14552A81000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
+		name = "MIDIController.cpp: 43";
+		rLen = 0;
+		rLoc = 708;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 465;
+	};
+	9F05BDC114552A9C000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
+		name = "MIDIController.cpp: 43";
+		rLen = 0;
+		rLoc = 708;
+		rType = 0;
+		vrLen = 764;
+		vrLoc = 381;
+	};
+	9F05BDC214552A9C000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 159";
+		rLen = 0;
+		rLoc = 4646;
+		rType = 0;
+		vrLen = 1189;
+		vrLoc = 4276;
+	};
+	9F05BDC314552A9C000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 155";
+		rLen = 0;
+		rLoc = 4521;
+		rType = 0;
+		vrLen = 1038;
+		vrLoc = 4276;
+	};
+	9F05BDC814552AB5000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 138";
+		rLen = 0;
+		rLoc = 3885;
+		rType = 0;
+		vrLen = 1701;
+		vrLoc = 3083;
+	};
+	9F05BDCB14552AB7000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 138";
+		rLen = 0;
+		rLoc = 3885;
+		rType = 0;
+		vrLen = 1701;
+		vrLoc = 3083;
+	};
+	9F05BDCE14552AC0000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 138";
+		rLen = 0;
+		rLoc = 3885;
+		rType = 0;
+		vrLen = 1623;
+		vrLoc = 3083;
+	};
+	9F05BDD014552AC9000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
+		name = "MIDIController.cpp: 43";
+		rLen = 0;
+		rLoc = 708;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 465;
+	};
+	9F05BDD114552AC9000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 149";
+		rLen = 0;
+		rLoc = 4310;
+		rType = 0;
+		vrLen = 1287;
+		vrLoc = 3368;
+	};
+	9F05BDD414552AEA000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 149";
+		rLen = 0;
+		rLoc = 4310;
+		rType = 0;
+		vrLen = 1748;
+		vrLoc = 3083;
+	};
+	9F05BDD514552AEA000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 21";
+		rLen = 0;
+		rLoc = 1031;
+		rType = 0;
+		vrLen = 1297;
+		vrLoc = 0;
+	};
+	9F05BDD614552AEA000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 15";
+		rLen = 0;
+		rLoc = 427;
+		rType = 0;
+		vrLen = 995;
+		vrLoc = 0;
+	};
+	9F05BDD714552AEA000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 18";
+		rLen = 0;
+		rLoc = 720;
+		rType = 0;
+		vrLen = 977;
+		vrLoc = 0;
+	};
+	9F05BDDE14552B03000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 5";
+		rLen = 0;
+		rLoc = 137;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 0;
+	};
+	9F05BDDF14552B03000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 21";
+		rLen = 0;
+		rLoc = 1031;
+		rType = 0;
+		vrLen = 1297;
+		vrLoc = 0;
+	};
+	9F05BDE014552B03000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 8";
+		rLen = 0;
+		rLoc = 213;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 0;
+	};
+	9F05BDE214552B07000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 7";
+		rLen = 0;
+		rLoc = 213;
+		rType = 0;
+		vrLen = 1295;
+		vrLoc = 0;
+	};
+	9F05BDE514552B12000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 7";
+		rLen = 0;
+		rLoc = 213;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 0;
+	};
+	9F05BDE614552B12000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 5";
+		rLen = 0;
+		rLoc = 137;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 0;
+	};
+	9F05BDE714552B12000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 5";
+		rLen = 0;
+		rLoc = 137;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	9F05BDEB14552B1D000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 5";
+		rLen = 0;
+		rLoc = 140;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	9F05BDEF14552B45000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 21";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 0;
+	};
+	9F05BDF014552B45000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 7";
+		rLen = 0;
+		rLoc = 213;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 0;
+	};
+	9F05BDF114552B45000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 24";
+		rLen = 0;
+		rLoc = 1282;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	9F05BDF414552B48000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 24";
+		rLen = 0;
+		rLoc = 1282;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	9F05BDF714552B50000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 24";
+		rLen = 0;
+		rLoc = 1282;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	9F05BDF914552B5B000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 149";
+		rLen = 0;
+		rLoc = 4310;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 3494;
+	};
+	9F05BDFA14552B5B000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 1";
+		rLen = 1310;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1310;
+		vrLoc = 0;
+	};
+	9F05BDFD14552B68000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
+		name = "blur-horizontal.frag: 1";
+		rLen = 1310;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1310;
+		vrLoc = 0;
+	};
+	9F05BDFE14552B68000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 21";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 0;
+	};
+	9F05BDFF14552B68000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 21";
+		rLen = 0;
+		rLoc = 964;
+		rType = 0;
+		vrLen = 990;
+		vrLoc = 0;
+	};
+	9F05BE0314552B93000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
+		name = "blur-vertical.frag: 21";
+		rLen = 0;
+		rLoc = 964;
+		rType = 0;
+		vrLen = 990;
+		vrLoc = 0;
+	};
+	9F05BE0414552B93000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 5";
+		rLen = 52;
+		rLoc = 86;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	9F05BE0514552B93000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 3";
+		rLen = 0;
+		rLoc = 71;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	9F05BE0914552BAB000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
+		name = "ShaderFilter.cpp: 47";
+		rLen = 0;
+		rLoc = 833;
+		rType = 0;
+		vrLen = 597;
+		vrLoc = 552;
+	};
+	9F05BE0A14552BAB000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 149";
+		rLen = 0;
+		rLoc = 4310;
+		rType = 0;
+		vrLen = 1748;
+		vrLoc = 3083;
+	};
+	9F05BE0B14552BAB000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 3";
+		rLen = 0;
+		rLoc = 71;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	9F05BE0C14552BAB000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 8";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 0;
+	};
+	9F05BE1014552BBA000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 8";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 0;
+	};
+	9F05BE1414552BCC000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 9";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	9F05BE1614552BD3000DDDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
+		name = "multiply.frag: 7";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
 	};
 	9F127705145421DE000C7F8F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2590,7 +3247,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 111";
 		rLen = 0;
-		rLoc = 4209;
+		rLoc = 4224;
 		rType = 0;
 		vrLen = 1817;
 		vrLoc = 2302;
@@ -2600,7 +3257,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 45";
 		rLen = 0;
-		rLoc = 1040;
+		rLoc = 1096;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 346;
@@ -2790,7 +3447,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 45";
 		rLen = 0;
-		rLoc = 1040;
+		rLoc = 1096;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 346;
@@ -2800,7 +3457,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 62";
 		rLen = 0;
-		rLoc = 1687;
+		rLoc = 1747;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 346;
@@ -2810,7 +3467,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 62";
 		rLen = 0;
-		rLoc = 1687;
+		rLoc = 1747;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 346;
@@ -2820,7 +3477,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 111";
 		rLen = 0;
-		rLoc = 4209;
+		rLoc = 4224;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 2302;
@@ -2830,7 +3487,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 199";
 		rLen = 0;
-		rLoc = 6676;
+		rLoc = 7126;
 		rType = 0;
 		vrLen = 1578;
 		vrLoc = 4234;
@@ -2840,7 +3497,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 199";
 		rLen = 0;
-		rLoc = 6676;
+		rLoc = 7126;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 4234;
@@ -2850,7 +3507,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 62";
 		rLen = 0;
-		rLoc = 1687;
+		rLoc = 1747;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 346;
@@ -2860,7 +3517,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 52";
 		rLen = 0;
-		rLoc = 1370;
+		rLoc = 1429;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 160;
@@ -2890,7 +3547,7 @@
 		fRef = 9F533E901452FF4B0086D9D5 /* ShaderFilter.h */;
 		name = "ShaderFilter.h: 32";
 		rLen = 0;
-		rLoc = 691;
+		rLoc = 666;
 		rType = 0;
 		vrLen = 873;
 		vrLoc = 0;
@@ -2900,7 +3557,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2179;
+		rLoc = 2201;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 1318;
@@ -2910,7 +3567,7 @@
 		fRef = 9F533E8D1452FEBE0086D9D5 /* Filter.h */;
 		name = "Filter.h: 28";
 		rLen = 0;
-		rLoc = 601;
+		rLoc = 670;
 		rType = 0;
 		vrLen = 613;
 		vrLoc = 0;
@@ -2920,7 +3577,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 53";
 		rLen = 0;
-		rLoc = 1437;
+		rLoc = 1497;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 916;
@@ -2930,7 +3587,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 54";
 		rLen = 0;
-		rLoc = 1368;
+		rLoc = 1424;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 679;
@@ -2940,7 +3597,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 189";
 		rLen = 0;
-		rLoc = 6543;
+		rLoc = 6993;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 4448;
@@ -2950,7 +3607,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 54";
 		rLen = 0;
-		rLoc = 1366;
+		rLoc = 1422;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 679;
@@ -2960,7 +3617,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 38";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 739;
 		rType = 0;
 		vrLen = 726;
 		vrLoc = 524;
@@ -2970,7 +3627,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 38";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 739;
 		rType = 0;
 		vrLen = 728;
 		vrLoc = 524;
@@ -3070,7 +3727,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 260";
 		rLen = 0;
-		rLoc = 10175;
+		rLoc = 10625;
 		rType = 0;
 		vrLen = 1243;
 		vrLoc = 6590;
@@ -3080,7 +3737,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 62";
 		rLen = 0;
-		rLoc = 1545;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 524;
@@ -3287,7 +3944,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 107";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 2210;
@@ -3297,7 +3954,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 2171;
@@ -3307,7 +3964,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 2171;
@@ -3327,7 +3984,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 975;
 		vrLoc = 2242;
@@ -3369,7 +4026,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 2171;
@@ -3621,7 +4278,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 62";
 		rLen = 0;
-		rLoc = 1545;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 524;
@@ -3631,7 +4288,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 2145;
@@ -3658,9 +4315,9 @@
 	};
 	9F12784914542D58000C7F8F /* Grid.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 585}}";
-			sepNavSelRange = "{681, 0}";
-			sepNavVisRange = "{90, 648}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 585}}";
+			sepNavSelRange = "{712, 0}";
+			sepNavVisRange = "{265, 470}";
 		};
 	};
 	9F12784A14542D58000C7F8F /* Grid.cpp */ = {
@@ -3675,7 +4332,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 61";
 		rLen = 0;
-		rLoc = 1361;
+		rLoc = 1417;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 342;
@@ -3785,7 +4442,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 107";
 		rLen = 0;
-		rLoc = 3005;
+		rLoc = 3027;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 2019;
@@ -3795,7 +4452,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3020;
+		rLoc = 3042;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 2019;
@@ -3805,7 +4462,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3020;
+		rLoc = 3042;
 		rType = 0;
 		vrLen = 1125;
 		vrLoc = 2019;
@@ -3835,7 +4492,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3020;
+		rLoc = 3042;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 2019;
@@ -3875,7 +4532,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 108";
 		rLen = 0;
-		rLoc = 3020;
+		rLoc = 3042;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 2055;
@@ -3885,7 +4542,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 114";
 		rLen = 39;
-		rLoc = 4208;
+		rLoc = 4223;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 2094;
@@ -3895,7 +4552,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 4817;
@@ -3905,7 +4562,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 3326;
@@ -3965,7 +4622,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1186;
 		vrLoc = 3347;
@@ -3975,7 +4632,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 4431;
@@ -3985,7 +4642,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1001;
 		vrLoc = 4431;
@@ -4005,7 +4662,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 4372;
@@ -4015,7 +4672,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 4342;
@@ -4085,7 +4742,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 4372;
@@ -4125,7 +4782,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 4431;
@@ -4195,7 +4852,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 4459;
@@ -4205,7 +4862,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 192";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 4459;
@@ -4215,7 +4872,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 168";
 		rLen = 0;
-		rLoc = 5627;
+		rLoc = 6077;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 4365;
@@ -4225,7 +4882,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 196";
 		rLen = 0;
-		rLoc = 6501;
+		rLoc = 6951;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 4786;
@@ -4235,7 +4892,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 193";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 947;
 		vrLoc = 4431;
@@ -4245,7 +4902,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 193";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 4431;
@@ -4417,7 +5074,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 193";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1070;
 		vrLoc = 7272;
@@ -4697,7 +5354,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 193";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 7270;
@@ -4707,7 +5364,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 170";
 		rLen = 0;
-		rLoc = 5667;
+		rLoc = 6117;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 3608;
@@ -4717,7 +5374,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 3379;
@@ -4727,7 +5384,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 3379;
@@ -4737,7 +5394,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 3697;
@@ -4947,7 +5604,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 3800;
@@ -4957,7 +5614,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 176";
 		rLen = 0;
-		rLoc = 5698;
+		rLoc = 6148;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 4392;
@@ -4967,7 +5624,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 4071;
@@ -5087,7 +5744,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 4071;
@@ -5127,7 +5784,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 163";
 		rLen = 0;
-		rLoc = 5481;
+		rLoc = 5931;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 4071;
@@ -5227,7 +5884,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 176";
 		rLen = 6;
-		rLoc = 5659;
+		rLoc = 6109;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 4071;
@@ -5237,7 +5894,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 2600;
@@ -5247,7 +5904,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 2600;
@@ -5257,7 +5914,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 2600;
@@ -5267,7 +5924,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 726;
 		vrLoc = 414;
@@ -5497,7 +6154,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 2636;
@@ -5507,7 +6164,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 129";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 1018;
@@ -5517,7 +6174,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 185";
 		rLen = 0;
-		rLoc = 6080;
+		rLoc = 6530;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 4089;
@@ -5527,7 +6184,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5829;
+		rLoc = 6279;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 4089;
@@ -5537,7 +6194,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 185";
 		rLen = 0;
-		rLoc = 6080;
+		rLoc = 6530;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 4089;
@@ -5547,7 +6204,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 186";
 		rLen = 0;
-		rLoc = 6137;
+		rLoc = 6587;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 4089;
@@ -5557,7 +6214,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 179";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 6194;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 4089;
@@ -5567,7 +6224,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 185";
 		rLen = 0;
-		rLoc = 6080;
+		rLoc = 6530;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 4089;
@@ -5607,7 +6264,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 185";
 		rLen = 0;
-		rLoc = 6080;
+		rLoc = 6530;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 4092;
@@ -5617,7 +6274,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 6278;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 4092;
@@ -5627,7 +6284,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 6278;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 4092;
@@ -5667,7 +6324,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 6278;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 4092;
@@ -5677,7 +6334,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 115";
 		rLen = 0;
-		rLoc = 3910;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 1119;
 		vrLoc = 2358;
@@ -5687,7 +6344,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 115";
 		rLen = 337;
-		rLoc = 3910;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 2221;
@@ -5697,7 +6354,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 115";
 		rLen = 337;
-		rLoc = 3910;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 1189;
 		vrLoc = 2221;
@@ -5707,7 +6364,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 115";
 		rLen = 337;
-		rLoc = 3910;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 2221;
@@ -5727,7 +6384,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 115";
 		rLen = 337;
-		rLoc = 3910;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 2455;
@@ -5737,7 +6394,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 110";
 		rLen = 0;
-		rLoc = 3056;
+		rLoc = 3078;
 		rType = 0;
 		vrLen = 1119;
 		vrLoc = 2292;
@@ -5747,7 +6404,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 118";
 		rLen = 0;
-		rLoc = 4208;
+		rLoc = 4223;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 2292;
@@ -5757,7 +6414,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 182";
 		rLen = 0;
-		rLoc = 5803;
+		rLoc = 6253;
 		rType = 0;
 		vrLen = 907;
 		vrLoc = 4537;
@@ -5767,7 +6424,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 6278;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 4537;
@@ -5777,7 +6434,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 183";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 6278;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 4537;
@@ -5787,7 +6444,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 184";
 		rLen = 0;
-		rLoc = 5898;
+		rLoc = 6348;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 4537;
@@ -5797,7 +6454,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 186";
 		rLen = 19;
-		rLoc = 6115;
+		rLoc = 6565;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 4537;
@@ -5834,7 +6491,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 186";
 		rLen = 19;
-		rLoc = 6115;
+		rLoc = 6565;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 4535;
@@ -5844,7 +6501,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 186";
 		rLen = 0;
-		rLoc = 6109;
+		rLoc = 6559;
 		rType = 0;
 		vrLen = 931;
 		vrLoc = 4456;
@@ -5854,7 +6511,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 184";
 		rLen = 0;
-		rLoc = 5898;
+		rLoc = 6348;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 4456;
@@ -5864,7 +6521,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 214";
 		rLen = 0;
-		rLoc = 6738;
+		rLoc = 7188;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 4564;
@@ -5874,7 +6531,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 193";
 		rLen = 0;
-		rLoc = 6160;
+		rLoc = 6610;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 4564;
@@ -5884,7 +6541,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 197";
 		rLen = 0;
-		rLoc = 6285;
+		rLoc = 6735;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 4564;
@@ -5894,7 +6551,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 186";
 		rLen = 0;
-		rLoc = 6079;
+		rLoc = 6529;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 4564;
@@ -5904,7 +6561,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 198";
 		rLen = 0;
-		rLoc = 6288;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 4537;
@@ -5914,7 +6571,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 182";
 		rLen = 0;
-		rLoc = 5827;
+		rLoc = 6277;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 4537;
@@ -5924,7 +6581,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 118";
 		rLen = 0;
-		rLoc = 4208;
+		rLoc = 4223;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 2530;
@@ -5934,7 +6591,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 118";
 		rLen = 0;
-		rLoc = 4208;
+		rLoc = 4223;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 2530;
@@ -5944,7 +6601,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 71";
 		rLen = 0;
-		rLoc = 1546;
+		rLoc = 1606;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 733;
@@ -5972,8 +6629,8 @@
 	9F127AB8145472B4000C7F8F /* blur-vertical.frag */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1069, 509}}";
-			sepNavSelRange = "{425, 0}";
-			sepNavVisRange = "{0, 995}";
+			sepNavSelRange = "{964, 0}";
+			sepNavVisRange = "{0, 990}";
 			sepNavWindowFrame = "{{15, 185}, {1179, 688}}";
 		};
 	};
@@ -5992,7 +6649,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -6002,7 +6659,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -6012,7 +6669,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -6022,7 +6679,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 4358;
+		rLoc = 4373;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 2530;
@@ -6032,7 +6689,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 414;
@@ -6042,7 +6699,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 467;
@@ -6052,7 +6709,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 467;
@@ -6062,7 +6719,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 119";
 		rLen = 0;
-		rLoc = 4247;
+		rLoc = 4262;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 2824;
@@ -6136,7 +6793,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 190";
 		rLen = 0;
-		rLoc = 6156;
+		rLoc = 6606;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 4557;
@@ -6196,7 +6853,7 @@
 		comments = "No matching function for call to 'Drawable::getId(const char [7])'";
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		rLen = 1;
-		rLoc = 259;
+		rLoc = 274;
 		rType = 1;
 	};
 	9F127ADA145475A7000C7F8F /* PBXTextBookmark */ = {
@@ -6204,7 +6861,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 234";
 		rLen = 0;
-		rLoc = 7292;
+		rLoc = 7742;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 5709;
@@ -6214,7 +6871,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7539;
+		rLoc = 7989;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 5709;
@@ -6224,7 +6881,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7539;
+		rLoc = 7989;
 		rType = 0;
 		vrLen = 1087;
 		vrLoc = 5738;
@@ -6244,7 +6901,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7539;
+		rLoc = 7989;
 		rType = 0;
 		vrLen = 757;
 		vrLoc = 6068;
@@ -6254,7 +6911,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 107";
 		rLen = 0;
-		rLoc = 2898;
+		rLoc = 2920;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 2218;
@@ -6264,7 +6921,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 107";
 		rLen = 0;
-		rLoc = 2898;
+		rLoc = 2920;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 2218;
@@ -6274,7 +6931,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 107";
 		rLen = 0;
-		rLoc = 2898;
+		rLoc = 2920;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 2218;
@@ -6284,7 +6941,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 114";
 		rLen = 0;
-		rLoc = 3056;
+		rLoc = 3078;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 2417;
@@ -6304,7 +6961,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 132";
 		rLen = 0;
-		rLoc = 4434;
+		rLoc = 4884;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 2709;
@@ -6314,7 +6971,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 309";
 		rLen = 0;
-		rLoc = 10750;
+		rLoc = 11355;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 7791;
@@ -6324,7 +6981,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 309";
 		rLen = 0;
-		rLoc = 10750;
+		rLoc = 11355;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 7791;
@@ -6334,7 +6991,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 307";
 		rLen = 0;
-		rLoc = 10745;
+		rLoc = 11346;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 7791;
@@ -6344,7 +7001,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 311";
 		rLen = 0;
-		rLoc = 10779;
+		rLoc = 11384;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 7933;
@@ -6364,7 +7021,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 873;
+		rLoc = 907;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 470;
@@ -6374,7 +7031,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 307";
 		rLen = 0;
-		rLoc = 10745;
+		rLoc = 11346;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 7791;
@@ -6384,7 +7041,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 873;
+		rLoc = 907;
 		rType = 0;
 		vrLen = 544;
 		vrLoc = 596;
@@ -6394,7 +7051,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 873;
+		rLoc = 907;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 470;
@@ -6404,7 +7061,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 54";
 		rLen = 0;
-		rLoc = 1287;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 470;
@@ -6414,7 +7071,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 54";
 		rLen = 0;
-		rLoc = 1287;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 544;
 		vrLoc = 596;
@@ -6424,7 +7081,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 54";
 		rLen = 0;
-		rLoc = 895;
+		rLoc = 929;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 470;
@@ -6434,7 +7091,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 54";
 		rLen = 0;
-		rLoc = 895;
+		rLoc = 929;
 		rType = 0;
 		vrLen = 681;
 		vrLoc = 469;
@@ -6444,7 +7101,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 57";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 625;
@@ -6454,7 +7111,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 57";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 772;
 		vrLoc = 469;
@@ -6464,7 +7121,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 311";
 		rLen = 0;
-		rLoc = 10779;
+		rLoc = 11384;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 7791;
@@ -6474,7 +7131,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 311";
 		rLen = 0;
-		rLoc = 10779;
+		rLoc = 11384;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 7219;
@@ -6484,7 +7141,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 5691;
@@ -6494,7 +7151,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 5691;
@@ -6504,7 +7161,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1250;
 		vrLoc = 5691;
@@ -6514,7 +7171,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 57";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 625;
@@ -6524,7 +7181,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 5959;
@@ -6534,7 +7191,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 5691;
@@ -6544,7 +7201,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 57";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 470;
@@ -6584,7 +7241,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 5959;
@@ -6624,7 +7281,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 42";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 275;
@@ -6634,7 +7291,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 42";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 680;
 		vrLoc = 272;
@@ -6644,7 +7301,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 5691;
@@ -6654,7 +7311,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 5691;
@@ -6664,7 +7321,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 42";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 275;
@@ -6674,7 +7331,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 227";
 		rLen = 0;
-		rLoc = 7101;
+		rLoc = 7551;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 5691;
@@ -6684,7 +7341,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 284";
 		rLen = 0;
-		rLoc = 8842;
+		rLoc = 9292;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 7346;
@@ -6694,7 +7351,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 286";
 		rLen = 0;
-		rLoc = 9747;
+		rLoc = 10197;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 7283;
@@ -6704,7 +7361,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 286";
 		rLen = 0;
-		rLoc = 9747;
+		rLoc = 10197;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 7227;
@@ -6714,7 +7371,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 286";
 		rLen = 0;
-		rLoc = 9747;
+		rLoc = 10197;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 7111;
@@ -6724,7 +7381,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 42";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 414;
@@ -6734,7 +7391,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 1268;
+		rLoc = 1302;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 465;
@@ -6744,7 +7401,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 465;
@@ -6754,7 +7411,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 465;
@@ -6764,7 +7421,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 465;
@@ -6774,7 +7431,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 286";
 		rLen = 0;
-		rLoc = 9747;
+		rLoc = 10197;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 7255;
@@ -6784,7 +7441,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 55";
 		rLen = 0;
-		rLoc = 977;
+		rLoc = 1011;
 		rType = 0;
 		vrLen = 487;
 		vrLoc = 655;
@@ -6794,7 +7451,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 64";
 		rLen = 0;
-		rLoc = 1199;
+		rLoc = 1233;
 		rType = 0;
 		vrLen = 600;
 		vrLoc = 594;
@@ -6804,7 +7461,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 290";
 		rLen = 0;
-		rLoc = 9303;
+		rLoc = 9753;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 7167;
@@ -6874,7 +7531,7 @@
 		comments = "'camPosition' was not declared in this scope";
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		rLen = 1;
-		rLoc = 262;
+		rLoc = 277;
 		rType = 1;
 	};
 	9F127B4814547D99000C7F8F /* PBXTextBookmark */ = {
@@ -6882,7 +7539,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7538;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 6089;
@@ -6892,7 +7549,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7538;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 6089;
@@ -6902,7 +7559,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 241";
 		rLen = 0;
-		rLoc = 7538;
+		rLoc = 7988;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 6089;
@@ -6912,7 +7569,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 55";
 		rLen = 0;
-		rLoc = 977;
+		rLoc = 1011;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 655;
@@ -6922,7 +7579,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 242";
 		rLen = 0;
-		rLoc = 7543;
+		rLoc = 7993;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 6093;
@@ -6942,7 +7599,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 237";
 		rLen = 153;
-		rLoc = 7386;
+		rLoc = 7836;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 6089;
@@ -6952,7 +7609,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 7123;
@@ -6962,7 +7619,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 7123;
@@ -6972,7 +7629,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 294";
 		rLen = 0;
-		rLoc = 9379;
+		rLoc = 9829;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 7302;
@@ -6982,7 +7639,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 21;
-		rLoc = 9149;
+		rLoc = 9599;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 7138;
@@ -7022,7 +7679,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 294";
 		rLen = 0;
-		rLoc = 9379;
+		rLoc = 9829;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 7302;
@@ -7052,7 +7709,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 9032;
+		rLoc = 9482;
 		rType = 0;
 		vrLen = 1707;
 		vrLoc = 7138;
@@ -7062,7 +7719,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 64";
 		rLen = 0;
-		rLoc = 1199;
+		rLoc = 1233;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 364;
@@ -7072,7 +7729,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 65";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1078;
 		vrLoc = 364;
@@ -7082,7 +7739,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 65";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1078;
 		vrLoc = 364;
@@ -7092,7 +7749,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 65";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 364;
@@ -7102,7 +7759,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 67";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 364;
@@ -7122,7 +7779,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 644;
 		vrLoc = 872;
@@ -7132,7 +7789,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 414;
@@ -7142,7 +7799,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 9032;
+		rLoc = 9482;
 		rType = 0;
 		vrLen = 1707;
 		vrLoc = 7138;
@@ -7152,7 +7809,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 7138;
@@ -7162,7 +7819,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1653;
 		vrLoc = 7138;
@@ -7172,7 +7829,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1653;
 		vrLoc = 7138;
@@ -7182,7 +7839,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 644;
 		vrLoc = 872;
@@ -7192,7 +7849,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9098;
+		rLoc = 9548;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 7526;
@@ -7202,7 +7859,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9098;
+		rLoc = 9548;
 		rType = 0;
 		vrLen = 1872;
 		vrLoc = 6439;
@@ -7232,7 +7889,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1267;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 414;
@@ -7242,7 +7899,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 996;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 414;
@@ -7252,7 +7909,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 53";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 996;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 414;
@@ -7262,7 +7919,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9098;
+		rLoc = 9548;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 7526;
@@ -7272,7 +7929,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 772;
@@ -7282,7 +7939,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 414;
@@ -7292,7 +7949,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9098;
+		rLoc = 9548;
 		rType = 0;
 		vrLen = 1825;
 		vrLoc = 6486;
@@ -7302,7 +7959,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1818;
 		vrLoc = 6486;
@@ -7312,7 +7969,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1818;
 		vrLoc = 6486;
@@ -7322,7 +7979,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 772;
@@ -7332,7 +7989,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8924;
+		rLoc = 9374;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 7271;
@@ -7342,7 +7999,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8955;
+		rLoc = 9405;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 6537;
@@ -7352,7 +8009,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8955;
+		rLoc = 9405;
 		rType = 0;
 		vrLen = 1793;
 		vrLoc = 6537;
@@ -7362,7 +8019,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8955;
+		rLoc = 9405;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 7271;
@@ -7401,7 +8058,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8955;
+		rLoc = 9405;
 		rType = 0;
 		vrLen = 1793;
 		vrLoc = 6537;
@@ -7411,7 +8068,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 287";
 		rLen = 0;
-		rLoc = 8955;
+		rLoc = 9405;
 		rType = 0;
 		vrLen = 1793;
 		vrLoc = 6537;
@@ -7421,7 +8078,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 7271;
@@ -7431,7 +8088,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 6537;
@@ -7441,7 +8098,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 414;
@@ -7451,7 +8108,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 61";
 		rLen = 1;
-		rLoc = 1128;
+		rLoc = 1162;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 414;
@@ -7461,7 +8118,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 61";
 		rLen = 1;
-		rLoc = 1128;
+		rLoc = 1162;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 414;
@@ -7471,7 +8128,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 61";
 		rLen = 1;
-		rLoc = 1128;
+		rLoc = 1162;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 414;
@@ -7481,7 +8138,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 7271;
@@ -7491,7 +8148,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 814;
@@ -7501,7 +8158,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 414;
@@ -7511,7 +8168,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1763;
 		vrLoc = 6573;
@@ -7551,7 +8208,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 289";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9573;
 		rType = 0;
 		vrLen = 1763;
 		vrLoc = 6573;
@@ -7561,7 +8218,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9063;
+		rLoc = 9513;
 		rType = 0;
 		vrLen = 1761;
 		vrLoc = 6573;
@@ -7571,7 +8228,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9063;
+		rLoc = 9513;
 		rType = 0;
 		vrLen = 1761;
 		vrLoc = 6573;
@@ -7581,7 +8238,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 288";
 		rLen = 0;
-		rLoc = 9063;
+		rLoc = 9513;
 		rType = 0;
 		vrLen = 1761;
 		vrLoc = 6573;
@@ -7591,7 +8248,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 814;
@@ -7601,7 +8258,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 290";
 		rLen = 0;
-		rLoc = 9177;
+		rLoc = 9627;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 7530;
@@ -7611,7 +8268,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 290";
 		rLen = 0;
-		rLoc = 9177;
+		rLoc = 9627;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 6573;
@@ -7621,7 +8278,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 414;
@@ -7661,7 +8318,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 290";
 		rLen = 0;
-		rLoc = 9177;
+		rLoc = 9627;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 7530;
@@ -7711,7 +8368,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 329";
 		rLen = 0;
-		rLoc = 10778;
+		rLoc = 11383;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 7872;
@@ -7721,7 +8378,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 68";
 		rLen = 0;
-		rLoc = 1208;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 414;
@@ -7771,7 +8428,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 329";
 		rLen = 0;
-		rLoc = 10778;
+		rLoc = 11383;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 7872;
@@ -7781,7 +8438,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 331";
 		rLen = 0;
-		rLoc = 10813;
+		rLoc = 11418;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 7872;
@@ -7801,7 +8458,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 331";
 		rLen = 0;
-		rLoc = 10813;
+		rLoc = 11418;
 		rType = 0;
 		vrLen = 704;
 		vrLoc = 8754;
@@ -7811,7 +8468,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 331";
 		rLen = 0;
-		rLoc = 10813;
+		rLoc = 11418;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 7872;
@@ -7871,7 +8528,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 331";
 		rLen = 0;
-		rLoc = 10813;
+		rLoc = 11418;
 		rType = 0;
 		vrLen = 704;
 		vrLoc = 8754;
@@ -7901,7 +8558,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 331";
 		rLen = 0;
-		rLoc = 10813;
+		rLoc = 11418;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 7872;
@@ -7911,7 +8568,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 300";
 		rLen = 0;
-		rLoc = 9601;
+		rLoc = 10051;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 7236;
@@ -7931,7 +8588,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 303";
 		rLen = 0;
-		rLoc = 9738;
+		rLoc = 10188;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 7545;
@@ -7951,7 +8608,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 303";
 		rLen = 0;
-		rLoc = 9738;
+		rLoc = 10188;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 7364;
@@ -7961,7 +8618,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 301";
 		rLen = 0;
-		rLoc = 9650;
+		rLoc = 10100;
 		rType = 0;
 		vrLen = 1151;
 		vrLoc = 7364;
@@ -7971,7 +8628,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 301";
 		rLen = 0;
-		rLoc = 9650;
+		rLoc = 10100;
 		rType = 0;
 		vrLen = 1153;
 		vrLoc = 7364;
@@ -8021,7 +8678,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -8031,16 +8688,16 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
 	};
 	9F127C0B14548489000C7F8F /* blur-horizontal.frag */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1237, 486}}";
-			sepNavSelRange = "{730, 0}";
-			sepNavVisRange = "{0, 1315}";
+			sepNavIntBoundsRect = "{{0, 0}, {1230, 509}}";
+			sepNavSelRange = "{0, 1310}";
+			sepNavVisRange = "{0, 1310}";
 		};
 	};
 	9F127C0F14548493000C7F8F /* PBXTextBookmark */ = {
@@ -8048,7 +8705,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 1";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -8058,7 +8715,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 1";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -8068,7 +8725,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 1";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -8078,7 +8735,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 4";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 0;
@@ -8098,7 +8755,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 13";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 0;
@@ -8108,7 +8765,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 301";
 		rLen = 0;
-		rLoc = 9650;
+		rLoc = 10100;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 7545;
@@ -8118,7 +8775,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 301";
 		rLen = 0;
-		rLoc = 9650;
+		rLoc = 10100;
 		rType = 0;
 		vrLen = 684;
 		vrLoc = 1794;
@@ -8128,7 +8785,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2238;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 1435;
@@ -8138,7 +8795,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2238;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 1435;
@@ -8148,7 +8805,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 13";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 0;
@@ -8158,7 +8815,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 12";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 0;
@@ -8168,7 +8825,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 0;
@@ -8178,7 +8835,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1283;
 		vrLoc = 0;
@@ -8188,7 +8845,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 12";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8198,7 +8855,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 23";
 		rLen = 0;
-		rLoc = 995;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 0;
@@ -8208,7 +8865,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 19";
 		rLen = 0;
-		rLoc = 840;
+		rLoc = 842;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 0;
@@ -8218,7 +8875,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 2669;
@@ -8228,7 +8885,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 2831;
@@ -8238,7 +8895,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 2831;
@@ -8248,7 +8905,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 2937;
@@ -8290,7 +8947,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 2831;
@@ -8300,7 +8957,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 2937;
@@ -8342,7 +8999,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 19";
 		rLen = 0;
-		rLoc = 840;
+		rLoc = 842;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 0;
@@ -8352,7 +9009,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 14";
 		rLen = 0;
-		rLoc = 462;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 0;
@@ -8362,7 +9019,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 2831;
@@ -8372,7 +9029,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3871;
+		rLoc = 3886;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 2831;
@@ -8382,7 +9039,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3871;
+		rLoc = 3886;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 2886;
@@ -8392,7 +9049,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3871;
+		rLoc = 3886;
 		rType = 0;
 		vrLen = 1316;
 		vrLoc = 2937;
@@ -8402,7 +9059,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3871;
+		rLoc = 3886;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 2708;
@@ -8441,7 +9098,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 12";
 		rLen = 63;
-		rLoc = 404;
+		rLoc = 403;
 		rType = 0;
 		vrLen = 1283;
 		vrLoc = 0;
@@ -8451,7 +9108,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 10";
 		rLen = 0;
-		rLoc = 198;
+		rLoc = 197;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -8461,7 +9118,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 125";
 		rLen = 0;
-		rLoc = 3871;
+		rLoc = 3886;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 2669;
@@ -8471,7 +9128,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 2669;
@@ -8481,7 +9138,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 2669;
@@ -8491,7 +9148,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 2796;
@@ -8501,7 +9158,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1332;
 		vrLoc = 2669;
@@ -8511,7 +9168,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 24";
 		rLen = 0;
-		rLoc = 1252;
+		rLoc = 1240;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8521,7 +9178,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 5";
 		rLen = 0;
-		rLoc = 144;
+		rLoc = 143;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 0;
@@ -8531,7 +9188,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 21";
 		rLen = 0;
-		rLoc = 948;
+		rLoc = 936;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 0;
@@ -8541,7 +9198,7 @@
 		fRef = 9F127AB8145472B4000C7F8F /* blur-vertical.frag */;
 		name = "blur-vertical.frag: 21";
 		rLen = 0;
-		rLoc = 948;
+		rLoc = 936;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 0;
@@ -8551,7 +9208,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 2796;
@@ -8581,7 +9238,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 24";
 		rLen = 0;
-		rLoc = 1252;
+		rLoc = 1240;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8591,7 +9248,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 214;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8601,7 +9258,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 214;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8611,7 +9268,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 214;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8651,7 +9308,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 214;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8661,7 +9318,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 212;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 0;
@@ -8671,16 +9328,16 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 212;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
 	};
 	9F127C82145487E6000C7F8F /* multiply.frag */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 486}}";
-			sepNavSelRange = "{66, 52}";
-			sepNavVisRange = "{0, 278}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 509}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 298}";
 		};
 	};
 	9F127C8714548858000C7F8F /* PBXTextBookmark */ = {
@@ -8688,7 +9345,7 @@
 		fRef = 9F127C0B14548489000C7F8F /* blur-horizontal.frag */;
 		name = "blur-horizontal.frag: 7";
 		rLen = 0;
-		rLoc = 212;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 0;
@@ -8708,7 +9365,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 236;
 		rType = 0;
 		vrLen = 231;
 		vrLoc = 0;
@@ -8718,7 +9375,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 2669;
@@ -8728,7 +9385,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3506;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 2810;
@@ -8738,7 +9395,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3506;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 2810;
@@ -8748,7 +9405,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 236;
 		rType = 0;
 		vrLen = 231;
 		vrLoc = 0;
@@ -8758,7 +9415,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 6";
 		rLen = 0;
-		rLoc = 142;
+		rLoc = 162;
 		rType = 0;
 		vrLen = 275;
 		vrLoc = 0;
@@ -8768,7 +9425,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 6";
 		rLen = 0;
-		rLoc = 142;
+		rLoc = 162;
 		rType = 0;
 		vrLen = 275;
 		vrLoc = 0;
@@ -8778,7 +9435,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 6";
 		rLen = 0;
-		rLoc = 142;
+		rLoc = 162;
 		rType = 0;
 		vrLen = 276;
 		vrLoc = 0;
@@ -8788,7 +9445,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 6";
 		rLen = 0;
-		rLoc = 142;
+		rLoc = 162;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -8808,7 +9465,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 10";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 236;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -8818,7 +9475,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 10";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 236;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -8828,7 +9485,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3506;
+		rLoc = 3528;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 2835;
@@ -8838,7 +9495,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 2849;
@@ -8848,7 +9505,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 2849;
@@ -8858,7 +9515,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 10";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 236;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -8868,7 +9525,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1320;
 		vrLoc = 2950;
@@ -8910,7 +9567,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1379;
 		vrLoc = 2898;
@@ -8920,7 +9577,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1038;
 		vrLoc = 8486;
@@ -8930,7 +9587,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 8610;
@@ -8940,7 +9597,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 337";
 		rLen = 0;
-		rLoc = 10271;
+		rLoc = 10721;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 9453;
@@ -8950,7 +9607,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 338";
 		rLen = 0;
-		rLoc = 10298;
+		rLoc = 10748;
 		rType = 0;
 		vrLen = 1602;
 		vrLoc = 8727;
@@ -8960,7 +9617,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 339";
 		rLen = 0;
-		rLoc = 10335;
+		rLoc = 10785;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 9694;
@@ -8970,7 +9627,7 @@
 		fRef = 9F533E901452FF4B0086D9D5 /* ShaderFilter.h */;
 		name = "ShaderFilter.h: 32";
 		rLen = 0;
-		rLoc = 691;
+		rLoc = 666;
 		rType = 0;
 		vrLen = 985;
 		vrLoc = 0;
@@ -8980,7 +9637,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 78";
 		rLen = 0;
-		rLoc = 1545;
+		rLoc = 1605;
 		rType = 0;
 		vrLen = 1171;
 		vrLoc = 621;
@@ -9000,7 +9657,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 340";
 		rLen = 0;
-		rLoc = 10361;
+		rLoc = 10811;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 9267;
@@ -9010,7 +9667,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 336";
 		rLen = 0;
-		rLoc = 10238;
+		rLoc = 10688;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 9267;
@@ -9020,7 +9677,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 336";
 		rLen = 0;
-		rLoc = 10238;
+		rLoc = 10688;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 9312;
@@ -9030,7 +9687,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 336";
 		rLen = 0;
-		rLoc = 10238;
+		rLoc = 10688;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 9694;
@@ -9040,7 +9697,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 336";
 		rLen = 0;
-		rLoc = 10238;
+		rLoc = 10688;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 9312;
@@ -9100,7 +9757,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 340";
 		rLen = 0;
-		rLoc = 10369;
+		rLoc = 10819;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 9082;
@@ -9140,7 +9797,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 336";
 		rLen = 0;
-		rLoc = 10238;
+		rLoc = 10688;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 9694;
@@ -9170,7 +9827,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 248";
 		rLen = 65;
-		rLoc = 7318;
+		rLoc = 7768;
 		rType = 0;
 		vrLen = 1798;
 		vrLoc = 6583;
@@ -9250,7 +9907,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 248";
 		rLen = 65;
-		rLoc = 7318;
+		rLoc = 7768;
 		rType = 0;
 		vrLen = 1798;
 		vrLoc = 6583;
@@ -9260,7 +9917,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 122";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1774;
 		vrLoc = 2394;
@@ -9270,7 +9927,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 121";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 2394;
@@ -9330,7 +9987,7 @@
 		fRef = 9F127C82145487E6000C7F8F /* multiply.frag */;
 		name = "multiply.frag: 5";
 		rLen = 52;
-		rLoc = 66;
+		rLoc = 86;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 0;
@@ -9370,7 +10027,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 121";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 2394;
@@ -9380,7 +10037,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3473;
+		rLoc = 3495;
 		rType = 0;
 		vrLen = 1829;
 		vrLoc = 2430;
@@ -9390,7 +10047,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 124";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1871;
 		vrLoc = 2433;
@@ -9400,7 +10057,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 123";
 		rLen = 0;
-		rLoc = 3182;
+		rLoc = 3204;
 		rType = 0;
 		vrLen = 1836;
 		vrLoc = 2471;
@@ -9410,7 +10067,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 95";
 		rLen = 0;
-		rLoc = 2498;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 1630;
 		vrLoc = 2362;
@@ -9420,7 +10077,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 95";
 		rLen = 0;
-		rLoc = 2498;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 1630;
 		vrLoc = 2362;
@@ -9430,7 +10087,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 95";
 		rLen = 0;
-		rLoc = 2498;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 1731;
 		vrLoc = 2430;
@@ -9450,7 +10107,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 95";
 		rLen = 0;
-		rLoc = 2498;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 503;
 		vrLoc = 2362;
@@ -9460,7 +10117,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 33";
 		rLen = 0;
-		rLoc = 636;
+		rLoc = 629;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 267;
@@ -9470,7 +10127,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 95";
 		rLen = 0;
-		rLoc = 2498;
+		rLoc = 2520;
 		rType = 0;
 		vrLen = 1931;
 		vrLoc = 3506;
@@ -9480,7 +10137,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 226";
 		rLen = 0;
-		rLoc = 6472;
+		rLoc = 6922;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 5579;
@@ -9489,8 +10146,8 @@
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 133";
-		rLen = 364;
-		rLoc = 3545;
+		rLen = 356;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 2655;
@@ -9500,7 +10157,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 135";
 		rLen = 0;
-		rLoc = 3545;
+		rLoc = 3568;
 		rType = 0;
 		vrLen = 1720;
 		vrLoc = 2699;
@@ -9510,7 +10167,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 132";
 		rLen = 0;
-		rLoc = 3510;
+		rLoc = 3532;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 2699;
@@ -9520,7 +10177,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 33";
 		rLen = 0;
-		rLoc = 636;
+		rLoc = 629;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 267;
@@ -9530,7 +10187,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 56";
 		rLen = 0;
-		rLoc = 1009;
+		rLoc = 1065;
 		rType = 0;
 		vrLen = 1125;
 		vrLoc = 268;
@@ -9572,7 +10229,7 @@
 	};
 	9F16D0711449C4A2001728A0 /* ValuesMap.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 741}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 509}}";
 			sepNavSelRange = "{214, 0}";
 			sepNavVisRange = "{0, 600}";
 		};
@@ -9722,9 +10379,9 @@
 	};
 	9F16D38A1450A356001728A0 /* MIDIController.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 1040}}";
-			sepNavSelRange = "{1208, 0}";
-			sepNavVisRange = "{414, 1136}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1144}}";
+			sepNavSelRange = "{708, 0}";
+			sepNavVisRange = "{465, 443}";
 		};
 	};
 	9F16D3911450A594001728A0 /* PBXTextBookmark */ = {
@@ -9776,23 +10433,23 @@
 	};
 	9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 486}}";
-			sepNavSelRange = "{601, 0}";
-			sepNavVisRange = "{0, 613}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 509}}";
+			sepNavSelRange = "{269, 0}";
+			sepNavVisRange = "{0, 682}";
 		};
 	};
 	9F533E901452FF4B0086D9D5 /* ShaderFilter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 693}}";
-			sepNavSelRange = "{691, 0}";
-			sepNavVisRange = "{0, 985}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 611}}";
+			sepNavSelRange = "{946, 0}";
+			sepNavVisRange = "{161, 801}";
 		};
 	};
 	9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 1586}}";
-			sepNavSelRange = "{1385, 0}";
-			sepNavVisRange = "{1734, 531}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 1677}}";
+			sepNavSelRange = "{833, 0}";
+			sepNavVisRange = "{552, 597}";
 		};
 	};
 	9F533E9C145307FD0086D9D5 /* PBXTextBookmark */ = {
@@ -10184,7 +10841,7 @@
 		fRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */;
 		name = "MIDIController.cpp: 43";
 		rLen = 0;
-		rLoc = 769;
+		rLoc = 803;
 		rType = 0;
 		vrLen = 613;
 		vrLoc = 438;
@@ -10206,7 +10863,7 @@
 		rLen = 0;
 		rLoc = 269;
 		rType = 0;
-		vrLen = 618;
+		vrLen = 613;
 		vrLoc = 0;
 	};
 	9F53467E14541FAF0086D9D5 /* PBXTextBookmark */ = {
@@ -10214,7 +10871,7 @@
 		fRef = 9F533E901452FF4B0086D9D5 /* ShaderFilter.h */;
 		name = "ShaderFilter.h: 40";
 		rLen = 0;
-		rLoc = 861;
+		rLoc = 864;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 0;
@@ -10224,7 +10881,7 @@
 		fRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */;
 		name = "ShaderFilter.cpp: 67";
 		rLen = 0;
-		rLoc = 1775;
+		rLoc = 1835;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 434;
@@ -10244,7 +10901,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
 		name = "dodecaudionK20VisualsApp.cpp: 111";
 		rLen = 0;
-		rLoc = 4209;
+		rLoc = 4224;
 		rType = 0;
 		vrLen = 1797;
 		vrLoc = 2304;

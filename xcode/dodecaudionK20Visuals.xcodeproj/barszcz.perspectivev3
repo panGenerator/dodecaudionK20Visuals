@@ -286,14 +286,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>24</integer>
-									<integer>18</integer>
-									<integer>11</integer>
+									<integer>40</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 4}, {288, 760}}</string>
+							<string>{{0, 5}, {288, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -328,7 +326,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>9FE7DC891448A094006BA574</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Grid.h</string>
+								<string>multiply.frag</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,11 +334,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>9FE7DC8A1448A094006BA574</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Grid.h</string>
+										<string>multiply.frag</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F05BD8E14549C6F000DDDFA</string>
+										<string>9F05BE1614552BD3000DDDFA</string>
 										<key>history</key>
 										<array>
 											<string>9F16D0961449C6FA001728A0</string>
@@ -385,30 +383,30 @@
 											<string>9F53449914540C1A0086D9D5</string>
 											<string>9F53467C14541FAF0086D9D5</string>
 											<string>9F12777F145425F8000C7F8F</string>
-											<string>9F127780145425F8000C7F8F</string>
-											<string>9F127783145425F8000C7F8F</string>
 											<string>9F12786014543026000C7F8F</string>
 											<string>9F1279FB14544420000C7F8F</string>
 											<string>9F127A8F145448F2000C7F8F</string>
 											<string>9F127ABB145472C9000C7F8F</string>
 											<string>9F127B1D1454791C000C7F8F</string>
 											<string>9F127B1E1454791C000C7F8F</string>
-											<string>9F127BDD145482AB000C7F8F</string>
 											<string>9F127BEB14548359000C7F8F</string>
-											<string>9F127CBB14548A5B000C7F8F</string>
 											<string>9F127CDD14548C76000C7F8F</string>
 											<string>9F127CF214548D1F000C7F8F</string>
 											<string>9F127D0814548E5E000C7F8F</string>
 											<string>9F05BC5814549399000DDDFA</string>
 											<string>9F05BCA614549567000DDDFA</string>
-											<string>9F05BCF0145497C3000DDDFA</string>
 											<string>9F05BCF2145497C3000DDDFA</string>
-											<string>9F05BD6B14549B2B000DDDFA</string>
-											<string>9F05BD7114549B45000DDDFA</string>
-											<string>9F05BD8514549C4D000DDDFA</string>
-											<string>9F05BD8B14549C6F000DDDFA</string>
 											<string>9F05BD8C14549C6F000DDDFA</string>
-											<string>9F05BD8D14549C6F000DDDFA</string>
+											<string>9F05BD98145529B6000DDDFA</string>
+											<string>9F05BD99145529B6000DDDFA</string>
+											<string>9F05BD9A145529B6000DDDFA</string>
+											<string>9F05BD9C145529B6000DDDFA</string>
+											<string>9F05BDC114552A9C000DDDFA</string>
+											<string>9F05BDFD14552B68000DDDFA</string>
+											<string>9F05BE0314552B93000DDDFA</string>
+											<string>9F05BE0914552BAB000DDDFA</string>
+											<string>9F05BE0A14552BAB000DDDFA</string>
+											<string>9F05BE0B14552BAB000DDDFA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -448,8 +446,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1130, 205}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1440 819 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -504,6 +500,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1130, 205}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1440 819 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -725,7 +723,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>9F05BD8F14549C6F000DDDFA</string>
 		<string>9F05BC3414549233000DDDFA</string>
 		<string>9F05BC3514549233000DDDFA</string>
 		<string>/Users/barszcz/Documents/dev/cinder/apps/dodecaudionK20Visuals/xcode/dodecaudionK20Visuals.xcodeproj</string>

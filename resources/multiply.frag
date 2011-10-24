@@ -1,5 +1,6 @@
 uniform sampler2D tex0;
 uniform float framesCount;
+uniform float rand;
 
 void main(){
 	vec3 rgb = texture2D( tex0, gl_TexCoord[0].st ).rgb;
