@@ -310,6 +310,30 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		if( vis->getId() == "fftVisualiser" ){
 			vis->set( "blockSize" , ctrl->get( "slider4" ) );
 		}
+		if( vis->getId() == "camera" ){
+			
+			//START:: THIS IS FOR TESTING WITOUT MIDI
+			if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1 ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 1 );
+			}
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_5 ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 1 );
+			}
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_3 ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_START , 1 );
+			}
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_2 ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_STOP , 1 );
+			}
+			
+			//other variables
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( TOUCH_OSC_SLIDER_2 ) );
+			
+			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( TOUCH_OSC_SLIDER_3 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( TOUCH_OSC_SLIDER_4 ) );			
+			//END::THIS IS FOR TESTING WITOUT MIDI
+		}
 	}
 	//
 	//FFT controls mapping
@@ -329,11 +353,10 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			}
 		}
 	}
-	//TODO: MIDI controls mapping
+	//Midi slider mapping
 	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){
 		if( vis->getId() == "camera" ){
-			console() << "Updating camera by sliders" << endl;
-			//console() << " state: " << ctrl->get( "key39" ) << ", " << ctrl->get( "key48" ) << ", " << ctrl->get( "key45" ) << ", " << std::endl;
+
 			//switch between predefined positions
 			if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_FWD ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 1 );
@@ -342,24 +365,18 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 1 );
 			}
 			else if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_LOOP ) > 0 ){
-				vis->set( DRAWABLE_CAMERA_VAR_CAM_RUN_PREDEFINED_LOOP , 1 );
+				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_START , 1 );
+			}
+			else if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_STOP ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_STOP , 1 );
 			}
 			
+			//other variables
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_1 ) );
-			vis->set( DRAWABLE_CAMERA_VAR_FOV , -1.0f + 2.0f * ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
-			
-			/*
-			else if( ctrl->get( "key36" ) > 0 ){
-				vis->set( "camAutonomous" , 1 );
-			}
-			//FOV change
-			if( ctrl->get( "key44" ) > 0 ){
-				vis->set( "camPredefinedFOV" , 0 );
-			}
-			else if( ctrl->get( "key46" ) > 0 ){
-				vis->set( "camPredefinedFOV" , 1 );
-			}
-			*/
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
+
+			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_2 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_2 ) );			
 		}
 	}
 	

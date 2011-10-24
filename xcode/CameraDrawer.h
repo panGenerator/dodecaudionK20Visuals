@@ -20,7 +20,8 @@
 //flags - need action when set to 1 and are set to 0 immediately after
 #define DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT "camPredefinedPositionNextFlag"
 #define DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV "camPredefinedPositionPrevFlag"
-#define DRAWABLE_CAMERA_VAR_CAM_RUN_PREDEFINED_LOOP "camIsAutonomous"
+#define DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_START "camStartAutonomousLoop"
+#define DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_STOP "camStopAutonomousLoop"
 #define DRAWABLE_CAMERA_VAR_CAM_PREDEFINED_POSITION "camPredefinedPosition"
 
 #define DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED "camPositionLerpSpeed"
@@ -53,9 +54,16 @@ private:
 	CameraPersp	cam;
 	Vec3f camPosition,targetCamPosition;
 
+	bool isAutonomous;
+	
 	int currentPredefinedCamPositionIndex;
 	float camPredefinedPositionLerpIndex, camPredefinedPositionLerpSpeed;
 	vector<Vec3f> predefinedCamPositions;
+	
+	float camShakeFactor;
+	float camShakeLerpIndex;
+	Vec3f camShakeOffset,targetCamShakeOffset;
+	
 	vector<Vec3f> predefinedCamTargets;
 	
 	int currentPredefinedCamFOVIndex;
@@ -70,6 +78,7 @@ private:
 	void setCameraTargetToPredefinedPosition( int positionIdx );
 	void setCameraTargetTo(Vec3f position);
 	void setCameraFOVTarget( float newFOV );
+	void setCameraShakeOffsetTarget( float shakeFactor );
 };
 
 #endif

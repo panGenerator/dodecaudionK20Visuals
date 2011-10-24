@@ -73,12 +73,12 @@ void CameraDrawer::setup()
 	//predefined targets
 	//TODO:
 	
-	//predefined FOVs
-	//predefinedFOV.push_back( 60 );
-	//predefinedFOV.push_back( 90 );
 	currentPredefinedCamFOVIndex = 0;
-	//camFOV = targetCamFOV = predefinedFOV[currentPredefinedCamFOVIndex];
 	camFOVLerpIndex = 0.0f;
+
+	camShakeLerpIndex = 0.0f;
+	
+	isAutonomous = false;
 }
 
 /**
@@ -91,42 +91,57 @@ void CameraDrawer::update()
 	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT ) == 1 ){
 		console() << "NextPos" << endl;
 		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex + 1 );
-		//currentPredefinedCamPositionIndex += 1;
-		//currentPredefinedCamPositionIndex %= predefinedCamPositions.size();
-		//camPredefinedFOVLerpIndex = 0.0f;
+		isAutonomous = false;
 		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 0 );
-		set( "camAutonomous" , 0 );
 	}
 	
 	//go to prev predefined position flag set
 	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV ) == 1 ){
 		console() << "PrevPos" << endl;
-		//currentPredefinedCamPositionIndex -= 1;
 		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex - 1 );
+		isAutonomous = false;
 		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 0 );
-		set( "camAutonomous" , 0 );
+	}
+	//start autonomous playback
+	if( get( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_START ) == 1 ){
+		isAutonomous = true;
+	}
+	if( get( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_STOP ) == 1 ){
+		isAutonomous = false;
 	}
 	
-	
 	//update FOV 
-	setCameraFOVTarget( 60 + 30 * get( DRAWABLE_CAMERA_VAR_FOV ) );
+	setCameraFOVTarget( 60 + 30 * ( -1.0f + 2.0f * get( DRAWABLE_CAMERA_VAR_FOV ) ) );
 	
-	camPredefinedPositionLerpSpeed = 0.0001 + get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
-	camFOVLerpSpeed = 0.05 + get( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED );
+	camShakeFactor = get( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR );
+	
+	camPredefinedPositionLerpSpeed = 0.001 + 0.01 * get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
+	camFOVLerpSpeed = 0.05 + 0.01 * get( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED );
 	
 	
 	cam.setAspectRatio( get( "aspectRatio" ) );
 	cam.setFarClip( get( "cameraFarClip" ) );
-	
-	//TODO
-	//set to autonomous mode
 
+	
 	//update the camera position
-	camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition );
 	if( camPredefinedPositionLerpIndex < 1.0f ){
 		camPredefinedPositionLerpIndex += camPredefinedPositionLerpSpeed;
 	}	
+	//if in autonomous mode, when transition is finished go to next position
+	if( camPredefinedPositionLerpIndex >= 1.0f && isAutonomous ){
+		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex + 1 );
+	}
 	
+	//shake
+	camShakeLerpIndex += 2.0f * camPredefinedPositionLerpSpeed;
+	camShakeOffset = camShakeOffset.lerp( camShakeLerpIndex , targetCamShakeOffset );
+	if( camShakeLerpIndex >= 1.0f ){
+		setCameraShakeOffsetTarget( camShakeFactor );
+		camShakeLerpIndex = 0.0f;
+	}
+	
+	
+	camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition ) + camShakeOffset;
 	
 	
 	//update camera target
@@ -181,4 +196,13 @@ void CameraDrawer::setCameraFOVTarget( float newFOV )
 		targetCamFOV = newFOV;
 		camFOVLerpIndex = 0.0f;
 	}
+}
+
+void CameraDrawer::setCameraShakeOffsetTarget( float shakeFactor ){
+	shakeFactor *= 10.0f;
+	shakeFactor *= shakeFactor;
+	
+	targetCamShakeOffset = Vec3f(shakeFactor * (-1.0 + 2.0f*rand()/(float)RAND_MAX ) ,
+				 shakeFactor * (-1.0 + 2.0f*rand()/(float)RAND_MAX ) , 
+				 shakeFactor * (-1.0 + 2.0f*rand()/(float)RAND_MAX ) );	
 }

@@ -55,24 +55,36 @@ void TouchOSCController::parseMessage(osc::Message msg)
 		this->__logMessage( msg );
 	}
 	
+	val = msg.getArgAsFloat(0);
 	//slider values
-	//TODO: Replace the following conditions by a regexp
-	if( msg.getAddress() == "/1/fader1" ){
-		val = msg.getArgAsFloat(0);
-		this->set( "slider1" , val );
+	if( msg.getAddress() == "/1/fader1"){
+		this->set( TOUCH_OSC_SLIDER_1 , val ); 
 	}
-	if( msg.getAddress() == "/1/fader2" ){
-		val = msg.getArgAsFloat(0);
-		this->set( "slider2" , val );
+	if( msg.getAddress() == "/1/fader2"){
+		this->set( TOUCH_OSC_SLIDER_2 , val ); 
 	}
-	if( msg.getAddress() == "/1/fader3" ){
-		val = msg.getArgAsFloat(0);
-		this->set( "slider3" , val );
+	if( msg.getAddress() == "/1/fader3"){
+		this->set( TOUCH_OSC_SLIDER_3 , val ); 
 	}
-	if( msg.getAddress() == "/1/fader4" ){
-		val = msg.getArgAsFloat(0);
-		this->set( "slider4" , val );
+	if( msg.getAddress() == "/1/fader4"){
+		this->set( TOUCH_OSC_SLIDER_4 , val ); 
 	}
+	//buttons
+	if( msg.getAddress() == "/1/push1"){
+		this->set( TOUCH_OSC_PUSH_BUTTON_1 , val ); 
+	}
+	if( msg.getAddress() == "/1/push2"){
+		this->set( TOUCH_OSC_PUSH_BUTTON_2 , val ); 
+	}
+	if( msg.getAddress() == "/1/push3"){
+		this->set( TOUCH_OSC_PUSH_BUTTON_3 , val ); 
+	}
+	if( msg.getAddress() == "/1/push4"){
+		this->set( TOUCH_OSC_PUSH_BUTTON_4 , val ); 
+	}
+	if( msg.getAddress() == "/1/push5" ){
+		this->set( TOUCH_OSC_PUSH_BUTTON_5 , val ); 
+	}		
 	
 
 }

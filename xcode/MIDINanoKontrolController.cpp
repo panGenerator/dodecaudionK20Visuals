@@ -75,21 +75,21 @@ void MIDINanoKontrolController::processMessage( midi::Message* msg )
 		//Scene #1 knobs
 		case 14:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_1 , val ); break;
-		case 32:
+		case 15:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_2 , val ); break;
-		case 43:
+		case 16:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_3 , val ); break;
-		case 54:
+		case 17:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_4 , val ); break;
-		case 65:
+		case 18:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_5 , val ); break;
-		case 76:
+		case 19:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_6 , val ); break;
-		case 87:
+		case 20:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_7 , val ); break;
-		case 988:
+		case 21:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_8 , val ); break;
-		case 108:
+		case 22:
 			set( MIDI_KORG_NANO_KONTROL_KNOB_1_9 , val ); break;			
 		//Scene * - transport buttons (play,stop, etc.)
 		case 47:
