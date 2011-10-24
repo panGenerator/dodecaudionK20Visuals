@@ -19,6 +19,7 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9F05BE691455AF2C000DDDFA /* MIDINanoKontrolController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F05BE681455AF2C000DDDFA /* MIDINanoKontrolController.cpp */; };
 		9F1277D7145428B6000C7F8F /* invert.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F1277D31454281D000C7F8F /* invert.frag */; };
 		9F12784B14542D58000C7F8F /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F12784A14542D58000C7F8F /* Grid.cpp */; };
 		9F127ACA14547390000C7F8F /* CameraDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F127AC914547390000C7F8F /* CameraDrawer.cpp */; };
@@ -46,6 +47,8 @@
 		9F5704E514499BAA00749B7C /* osc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5704E414499BAA00749B7C /* osc.a */; };
 		9F5704ED14499C5D00749B7C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5704EC14499C5D00749B7C /* CoreMIDI.framework */; };
 		9F5704F11449A07500749B7C /* TouchOSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704EF1449A07500749B7C /* TouchOSCController.cpp */; };
+		9FB63DF11455B2EA006095B9 /* MIDINanoPadController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB63DEF1455B2EA006095B9 /* MIDINanoPadController.cpp */; };
+		9FB63E111455B3DA006095B9 /* DodecaudionOSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB63E0F1455B3DA006095B9 /* DodecaudionOSCController.cpp */; };
 		9FE7DCB11448A125006BA574 /* GenericController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCAD1448A125006BA574 /* GenericController.cpp */; };
 		9FE7DCB21448A125006BA574 /* Dodecahedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,8 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* dodecaudionK20Visuals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodecaudionK20Visuals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F05BE671455AF2C000DDDFA /* MIDINanoKontrolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDINanoKontrolController.h; sourceTree = "<group>"; };
+		9F05BE681455AF2C000DDDFA /* MIDINanoKontrolController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDINanoKontrolController.cpp; sourceTree = "<group>"; };
 		9F1277D31454281D000C7F8F /* invert.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = invert.frag; path = ../resources/invert.frag; sourceTree = SOURCE_ROOT; };
 		9F12784914542D58000C7F8F /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
 		9F12784A14542D58000C7F8F /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
@@ -131,6 +136,10 @@
 		9F5704EC14499C5D00749B7C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		9F5704EF1449A07500749B7C /* TouchOSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchOSCController.cpp; sourceTree = "<group>"; };
 		9F5704F01449A07500749B7C /* TouchOSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOSCController.h; sourceTree = "<group>"; };
+		9FB63DEF1455B2EA006095B9 /* MIDINanoPadController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDINanoPadController.cpp; sourceTree = "<group>"; };
+		9FB63DF01455B2EA006095B9 /* MIDINanoPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDINanoPadController.h; sourceTree = "<group>"; };
+		9FB63E0F1455B3DA006095B9 /* DodecaudionOSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DodecaudionOSCController.cpp; sourceTree = "<group>"; };
+		9FB63E101455B3DA006095B9 /* DodecaudionOSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DodecaudionOSCController.h; sourceTree = "<group>"; };
 		9FE7DCA81448A11A006BA574 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
 		9FE7DCA91448A11B006BA574 /* Controllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controllable.h; sourceTree = "<group>"; };
 		9FE7DCAA1448A11B006BA574 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
@@ -326,6 +335,10 @@
 		9F16D3B41450A7B9001728A0 /* MIDIController */ = {
 			isa = PBXGroup;
 			children = (
+				9F05BE671455AF2C000DDDFA /* MIDINanoKontrolController.h */,
+				9F05BE681455AF2C000DDDFA /* MIDINanoKontrolController.cpp */,
+				9FB63DF01455B2EA006095B9 /* MIDINanoPadController.h */,
+				9FB63DEF1455B2EA006095B9 /* MIDINanoPadController.cpp */,
 			);
 			name = MIDIController;
 			sourceTree = "<group>";
@@ -415,6 +428,8 @@
 		9F5704EE1449A06000749B7C /* OSCController */ = {
 			isa = PBXGroup;
 			children = (
+				9FB63E101455B3DA006095B9 /* DodecaudionOSCController.h */,
+				9FB63E0F1455B3DA006095B9 /* DodecaudionOSCController.cpp */,
 				9F5704F01449A07500749B7C /* TouchOSCController.h */,
 				9F5704EF1449A07500749B7C /* TouchOSCController.cpp */,
 			);
@@ -551,6 +566,9 @@
 				9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */,
 				9F12784B14542D58000C7F8F /* Grid.cpp in Sources */,
 				9F127ACA14547390000C7F8F /* CameraDrawer.cpp in Sources */,
+				9F05BE691455AF2C000DDDFA /* MIDINanoKontrolController.cpp in Sources */,
+				9FB63DF11455B2EA006095B9 /* MIDINanoPadController.cpp in Sources */,
+				9FB63E111455B3DA006095B9 /* DodecaudionOSCController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,13 @@ void GenericController::set(string key, float value)
 {
 	_values.set( key , value );
 }
+/**
+ * Set transitory value of the controlled param 
+ */
+void GenericController::transitorySet(string key, float value)
+{
+	_values.transitorySet( key , value );
+}
 
 /**
  * Get value for key. Always returns a value. 0 if it's not defined

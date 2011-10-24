@@ -22,12 +22,15 @@ class ValuesMap
 public:
 	ValuesMap();
 	void set(string key, float value);
+	void transitorySet(string key, float value);
+	void markAsTransitory(string key, bool transitory);
 	float get(string key);
+	float getTransitory(string key);
     vector<string> keys();
 	
 private: 
 	map<string,float> _values;
-
+	map<string,bool> _transitoryValuesFlag;
 };
 
 #endif

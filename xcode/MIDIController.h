@@ -28,6 +28,7 @@ class MIDIController : public GenericController
 public:
 	MIDIController();
 	void setup();
+	void setup( string portName );
 	void setup( int port );
     void update();
     string getId();	

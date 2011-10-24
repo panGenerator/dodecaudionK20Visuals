@@ -25,6 +25,7 @@ class GenericController : public Controller
 	void setup();
 	void update();
 	void set(string key, float value);
+	void transitorySet(string key, float value);
 	float get(string key);
     vector<string> keys();
 	string getId();

@@ -17,6 +17,20 @@ MIDIController::MIDIController()
 
 #pragma mark Controller interface implementation
 
+void MIDIController::setup( string portName )
+{
+	//Never remove this line. mPortNames is populated during requesting listing of port names... which only outputs the list. strange.
+	midiIn.listPorts();
+	int portCount = midiIn.getNumPorts();
+	for( int port = 0 ; port < portCount ; port++ ){
+		string _portName = midiIn.mPortNames[port];
+		if( _portName == portName ){
+			console() << "Midi will open : " << _portName << ", requested " << portName << std::endl;
+			setup( port );
+		}
+	}
+}
+
 void MIDIController::setup( int port )
 {
 	_port = port;
@@ -53,23 +67,6 @@ string MIDIController::getId()
 void MIDIController::processMessage( midi::Message* msg )
 {
 	__logMessage( msg );	
-	string key = "key" + boost::lexical_cast<string>( msg->byteOne );
-	float val;
-	
-	val = (float)msg->byteTwo / (float)127.0f;
-	//twaks for nano pad
-	
-	if( getId() == "midi:nanoPAD PAD" ){
-		//64 is sent on note off
-		if( msg->byteTwo == 64 ){
-			val = 0;
-		}else{
-			val = (float)msg->byteTwo/127.0;
-		}
-	}
-	
-	//console() << key << " will be set to " << val << std::endl;
-	set( key , val );
 }
 
 /**

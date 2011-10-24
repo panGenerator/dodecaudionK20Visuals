@@ -1,15 +1,4 @@
 /*
- *  Camera.cpp
- *  dodecaudionK20Visuals
- *
- *  Created by Piotr Barszczewski on 10/23/11.
- *  Copyright 2011 __MyCompanyName__. All rights reserved.
- *
- */
-
-#include "CameraDrawer.h"
-
-/*
  *  CameraDrawer.cpp
  *  dodecaudionK20Visuals
  *
@@ -85,11 +74,11 @@ void CameraDrawer::setup()
 	//TODO:
 	
 	//predefined FOVs
-	predefinedFOV.push_back( 60 );
-	predefinedFOV.push_back( 90 );
+	//predefinedFOV.push_back( 60 );
+	//predefinedFOV.push_back( 90 );
 	currentPredefinedCamFOVIndex = 0;
-	camFOV = targetCamFOV = predefinedFOV[currentPredefinedCamFOVIndex];
-	camPredefinedFOVLerpIndex = 0.0f;
+	//camFOV = targetCamFOV = predefinedFOV[currentPredefinedCamFOVIndex];
+	camFOVLerpIndex = 0.0f;
 }
 
 /**
@@ -97,28 +86,43 @@ void CameraDrawer::setup()
  */
 void CameraDrawer::update()
 {
+	
+	//go to next predefined position flag set. 
+	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT ) == 1 ){
+		console() << "NextPos" << endl;
+		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex + 1 );
+		//currentPredefinedCamPositionIndex += 1;
+		//currentPredefinedCamPositionIndex %= predefinedCamPositions.size();
+		//camPredefinedFOVLerpIndex = 0.0f;
+		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 0 );
+		set( "camAutonomous" , 0 );
+	}
+	
+	//go to prev predefined position flag set
+	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV ) == 1 ){
+		console() << "PrevPos" << endl;
+		//currentPredefinedCamPositionIndex -= 1;
+		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex - 1 );
+		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 0 );
+		set( "camAutonomous" , 0 );
+	}
+	
+	
+	//update FOV 
+	setCameraFOVTarget( 60 + 30 * get( DRAWABLE_CAMERA_VAR_FOV ) );
+	
+	camPredefinedPositionLerpSpeed = 0.0001 + get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
+	camFOVLerpSpeed = 0.05 + get( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED );
+	
+	
 	cam.setAspectRatio( get( "aspectRatio" ) );
 	cam.setFarClip( get( "cameraFarClip" ) );
 	
-	camPredefinedPositionLerpSpeed = 0.05 + get( "camPositionLerpSpeed" );
-	camPredefinedFOVLerpSpeed = 0.05 + get( "camFOVLerpSpeed" );
-	
+	//TODO
 	//set to autonomous mode
-	if( get( "camAutonomous" ) == 1 ){
-		targetCamPosition = Vec3f( 500 * sin( get( "framesCount" ) / 100.0f ) , 120 , -750 );
-		camPredefinedPositionLerpIndex = 0.5f;
-	}else{	
-		//update camera position
-		if( currentPredefinedCamPositionIndex != get( "camPredefinedPosition" ) ){
-			currentPredefinedCamPositionIndex = (int) get( "camPredefinedPosition" );
-			targetCamPosition = predefinedCamPositions[ currentPredefinedCamPositionIndex % predefinedCamPositions.size() ];
-			camPredefinedPositionLerpIndex = 0.0;
-		}
-	}
-	
-	//see if there's a request to change the camera position...
+
+	//update the camera position
 	camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition );
-	
 	if( camPredefinedPositionLerpIndex < 1.0f ){
 		camPredefinedPositionLerpIndex += camPredefinedPositionLerpSpeed;
 	}	
@@ -130,16 +134,9 @@ void CameraDrawer::update()
 	
 	
 	//update camera FOV
-	if( currentPredefinedCamFOVIndex != get( "camPredefinedFOV" ) ){
-		currentPredefinedCamFOVIndex = (int) get( "camPredefinedFOV" );
-		targetCamFOV = predefinedFOV[ currentPredefinedCamFOVIndex ];
-		camPredefinedFOVLerpIndex = 0.0f;
-	}
-	
-	camFOV = lerp( camFOV , targetCamFOV , camPredefinedFOVLerpIndex );
-	
-	if( camPredefinedFOVLerpIndex < 1.0f ){
-		camPredefinedFOVLerpIndex += camPredefinedFOVLerpSpeed;
+	camFOV = lerp( camFOV , targetCamFOV , camFOVLerpIndex );
+	if( camFOVLerpIndex < 1.0f ){
+		camFOVLerpIndex += camFOVLerpSpeed;
 	}
 }
 
@@ -155,3 +152,33 @@ void CameraDrawer::draw()
 
 
 #pragma mark instance methods
+/**
+ * Set camera target to predefined position (determined by position in array)
+ */
+void CameraDrawer::setCameraTargetToPredefinedPosition( int positionIdx )
+{
+	currentPredefinedCamPositionIndex = positionIdx % predefinedCamPositions.size();
+	setCameraTargetTo( predefinedCamPositions[currentPredefinedCamPositionIndex] );
+}
+
+/**
+ * Set new target position for camera
+ */
+void CameraDrawer::setCameraTargetTo(Vec3f position)
+{
+	targetCamPosition = position;
+	camPredefinedPositionLerpIndex = 0.0f;		
+}
+
+/**
+ * Set target camera FOV
+ */
+void CameraDrawer::setCameraFOVTarget( float newFOV )
+{
+	//change only on significant difference
+	if( abs( targetCamFOV - newFOV ) > 5.0f ){
+		if( newFOV < 20 ){ newFOV = 60.0f; }
+		targetCamFOV = newFOV;
+		camFOVLerpIndex = 0.0f;
+	}
+}

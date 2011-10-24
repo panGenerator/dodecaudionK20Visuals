@@ -10,10 +10,13 @@
 #include "Filter.h"
 
 #include "GenericController.h"
-#include "OSCController.h"
+//#include "OSCController.h"
+#include "DodecaudionOSCController.h"
 #include "TouchOSCController.h"
 #include "FFTController.h"
-#include "MIDIController.h"
+//#include "MIDIController.h"
+#include "MIDINanoKontrolController.h"
+#include "MIDINanoPadController.h"
 
 #include "CameraDrawer.h"
 #include "Dodecahedron.h"
@@ -66,10 +69,11 @@ public:
 	
 	//controllers for input (OSC, MIDI, etc.)
 	GenericController genCtrl;
-    OSCController oscCtrl;
+    DodecaudionOSCController dodecaudionOscCtrl;
 	TouchOSCController touchOscCtrl;
 	FFTController fftCtrl;
-	MIDIController midiCtrl;
+	MIDINanoKontrolController midiCtrlKontrol;
+	MIDINanoPadController midiCtrlPad;
 	
 	//visual stuff - drawn elements
 	CameraDrawer cam;
@@ -96,8 +100,8 @@ void dodecaudionK20Visuals::setup()
 	genCtrl.setup();
 	controllers.push_back( &genCtrl );
     
-    oscCtrl.setup(10001);
-    controllers.push_back( &oscCtrl );
+    dodecaudionOscCtrl.setup(10001);
+    controllers.push_back( &dodecaudionOscCtrl );
 
     touchOscCtrl.setup(10000);
     controllers.push_back( &touchOscCtrl );
@@ -105,8 +109,11 @@ void dodecaudionK20Visuals::setup()
 	fftCtrl.setup(64);
 	controllers.push_back( &fftCtrl );
 	
-	midiCtrl.setup(0);
-	controllers.push_back( &midiCtrl );
+	midiCtrlKontrol.setup("nanoKONTROL SLIDER/KNOB");
+	controllers.push_back( &midiCtrlKontrol );
+
+	midiCtrlPad.setup("nanoPAD PAD");
+	controllers.push_back( &midiCtrlPad );
 	
 	//
 	//init drawable objects
@@ -265,6 +272,7 @@ void dodecaudionK20Visuals::draw()
 void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controller *ctrl)
 {
 
+	//console() << ctrl->getId() << std::endl;
 	//
 	//generic controller updates
 	//
@@ -322,22 +330,25 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		}
 	}
 	//TODO: MIDI controls mapping
-	if( ctrl->getId() == "midi:nanoPAD PAD" ){
+	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){
 		if( vis->getId() == "camera" ){
+			console() << "Updating camera by sliders" << endl;
 			//console() << " state: " << ctrl->get( "key39" ) << ", " << ctrl->get( "key48" ) << ", " << ctrl->get( "key45" ) << ", " << std::endl;
 			//switch between predefined positions
-			if( ctrl->get( "key39" ) > 0 ){
-				vis->set( "camPredefinedPosition" , 0 );
-				vis->set( "camAutonomous" , 0 );	
+			if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_FWD ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 1 );
 			}
-			else if( ctrl->get( "key48" ) > 0 ){
-				vis->set( "camPredefinedPosition" , 1 );
-				vis->set( "camAutonomous" , 0 );	
+			else if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_REW ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 1 );
 			}
-			else if( ctrl->get( "key45" ) > 0 ){
-				vis->set( "camPredefinedPosition" , 2 );
-				vis->set( "camAutonomous" , 0 );				
+			else if( ctrl->get( MIDI_KORG_NANO_KONTROL_BUTTON_LOOP ) > 0 ){
+				vis->set( DRAWABLE_CAMERA_VAR_CAM_RUN_PREDEFINED_LOOP , 1 );
 			}
+			
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_1 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_FOV , -1.0f + 2.0f * ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
+			
+			/*
 			else if( ctrl->get( "key36" ) > 0 ){
 				vis->set( "camAutonomous" , 1 );
 			}
@@ -348,7 +359,7 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			else if( ctrl->get( "key46" ) > 0 ){
 				vis->set( "camPredefinedFOV" , 1 );
 			}
-			
+			*/
 		}
 	}
 	

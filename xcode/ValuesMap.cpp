@@ -18,9 +18,33 @@ void ValuesMap::set(string key, float value)
 	_values[ key ] = value;
 }
 
+/**
+ * Set value as transitory - readable only once
+ */
+void ValuesMap::transitorySet(string key, float value)
+{
+	markAsTransitory(key,true);
+	set( key , value );	
+}
+
+/**
+ * Mark variable as readable only once. Useful for all kind of triggers
+ */
+void ValuesMap::markAsTransitory(string key, bool transitory)
+{
+	_transitoryValuesFlag[ key ] = transitory;
+}
+
 float ValuesMap::get(string key)
 {
-	return _values[ key ];
+	float returnValue = _values[ key ]; 
+	
+	if( _transitoryValuesFlag[ key ] ){
+		_values[ key ] = 0;
+		markAsTransitory(key,false);
+	}
+	
+	return returnValue;
 }
 
 vector<string> ValuesMap::keys()
