@@ -13,6 +13,9 @@
 
 Grid::Grid()
 {
+	startWave = false;
+	gridSize = 5000.0f;
+	cellSize = 20.0f;
 }
 
 Grid::~Grid()
@@ -48,7 +51,7 @@ vector<string> Grid::keys()
 
 std::string Grid::getId()
 {
-	return "dodecahedron";
+	return "grid";
 }
 
 
@@ -65,6 +68,20 @@ void Grid::setup()
  */
 void Grid::update()
 {
+	cellSize = 20 + 50.0f * get( DRAWABLE_GRID_VAR_CELL_SIZE );
+	brightness = get( DRAWABLE_GRID_VAR_BRIGTNESS );
+	startWave = get( DRAWABLE_GRID_FLAG_START_WAVE );
+	if( startWave ){
+		waveTimeIndex = 0;
+		waveFadeoutSpeed = 0.001 + get( DRAWABLE_GRID_VAR_WAVE_FADEOUT_SPEED );
+		waveAmplitude = 100.0f * get( DRAWABLE_GRID_VAR_WAVE_AMPLITUDE );
+		waveFrequency = get( DRAWABLE_GRID_VAR_WAVE_FREQUENCY );	
+		console() << "StartWave" << endl;
+	}
+	
+	if( waveTimeIndex < 1.0f ){
+		waveTimeIndex += waveFadeoutSpeed;
+	}
 }
 
 /**
@@ -76,13 +93,13 @@ void Grid::draw()
 	
 	glTranslated(-500, -300, 500);
 	
-	drawGrid();
+	drawGrid(gridSize,cellSize);
 	
 	glRotated(-90, 1, 0, 0);
-	drawGrid();
+	drawGrid(gridSize,cellSize);
 	
 	glRotated(-90, 0, 1, 0);
-	drawGrid();		
+	drawGrid(gridSize,cellSize);		
 	glPopMatrix();
 }
 
@@ -92,12 +109,13 @@ void Grid::draw()
 void Grid::drawGrid(float size, float step)
 {
 	glPushMatrix();
-	gl::color( Colorf(0.3f, 0.3f, 0.3f) );
+	gl::color( Colorf(brightness,brightness,brightness) );	
+	
 	for(float x = 0 ; x <= size ; x+=step ){
 		gl::drawLine( Vec3f(x, 0, 0) , Vec3f(x, size, 0) );
 	}
 	for(float y = 0 ; y <= size ; y+=step ){
 		gl::drawLine( Vec3f(0, y, 0) , Vec3f(size, y, 0) );		
-	}	
+	}
 	glPopMatrix();
 }

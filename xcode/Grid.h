@@ -16,6 +16,14 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 
+
+#define DRAWABLE_GRID_VAR_CELL_SIZE "cellSize"
+#define DRAWABLE_GRID_VAR_BRIGTNESS "brightness"
+#define DRAWABLE_GRID_VAR_WAVE_FADEOUT_SPEED "wavefFadeout"
+#define DRAWABLE_GRID_FLAG_START_WAVE "starWaveFlag"
+#define DRAWABLE_GRID_VAR_WAVE_AMPLITUDE "waveAmplitude"
+#define DRAWABLE_GRID_VAR_WAVE_FREQUENCY "waveFrequency"
+
 //work in the cinder's namespace
 using namespace std;
 using namespace ci;
@@ -40,6 +48,11 @@ private:
 	void drawGrid(float size = 5000.0f, float step = 100.0f);
 	
 	ValuesMap _values; 	
+	
+	float brightness;
+	float gridSize,cellSize;
+	float waveTimeIndex,waveAmplitude,waveFadeoutSpeed,waveFrequency;
+	bool startWave;
 };
 
 #endif

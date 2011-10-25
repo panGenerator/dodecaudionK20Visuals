@@ -35,6 +35,17 @@ void ValuesMap::markAsTransitory(string key, bool transitory)
 	_transitoryValuesFlag[ key ] = transitory;
 }
 
+/**
+ * Release all transitory variables
+ */
+void ValuesMap::releaseTransitory()
+{
+    for( map<string,float>::iterator it = _values.begin() ; it != _values.end() ; ++it ){
+        string key = it->first;
+        get( key ); //into the void
+    }	
+}
+
 float ValuesMap::get(string key)
 {
 	float returnValue = _values[ key ]; 
@@ -45,6 +56,13 @@ float ValuesMap::get(string key)
 	}
 	
 	return returnValue;
+}
+
+float ValuesMap::get(string key, bool persistTransitory)
+{
+	float val = _values[key];
+	transitorySet(key, val);
+	return val;	
 }
 
 vector<string> ValuesMap::keys()

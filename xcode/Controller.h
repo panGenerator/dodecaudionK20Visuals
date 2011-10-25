@@ -22,6 +22,8 @@ class Controller
 	virtual void update() = 0;
 	virtual void set(string key, float value) = 0;
 	virtual float get(string key) = 0;	
+	virtual float get(string key, bool persistTransitory) = 0;
+	virtual void releaseTransitory() = 0;
     virtual vector<string> keys() = 0;
 
 	virtual string getId() = 0;	

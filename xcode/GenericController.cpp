@@ -56,6 +56,22 @@ float GenericController::get(string key)
 }
 
 /**
+ * Get a variable and persist it if it's transitory
+ */
+float GenericController::get(string key, bool persistTransitory)
+{
+	return _values.get( key , persistTransitory );
+}
+
+/**
+ * Release all transitory variables
+ */
+void GenericController::releaseTransitory()
+{
+	_values.releaseTransitory();
+}
+
+/**
  * List all available 
  */
 vector<string> GenericController::keys()

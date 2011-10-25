@@ -205,6 +205,11 @@ void dodecaudionK20Visuals::update()
 		}				
 		(*flt)->update();
 	}
+
+	//release all transitory vars if they were persisted
+	for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
+		(*ctrl)->releaseTransitory();
+	}
 	
 }
 
@@ -321,26 +326,35 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		if( vis->getId() == "camera" ){
 			
 			//START:: THIS IS FOR TESTING WITOUT MIDI
-			if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1 ) > 0 ){
+			if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_1 , true ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 1 );
 			}
-			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_5 ) > 0 ){
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_5 , true ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 1 );
 			}
-			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_3 ) > 0 ){
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_3 , true ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_START , 1 );
 			}
-			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_2 ) > 0 ){
+			else if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_2 , true ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_CAM_PREDEFINED_LOOP_STOP , 1 );
 			}
 			
 			//other variables
-			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1 ) );
-			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( TOUCH_OSC_SLIDER_2 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
 			
-			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( TOUCH_OSC_SLIDER_3 ) );
-			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( TOUCH_OSC_SLIDER_4 ) );			
+			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_3 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( TOUCH_OSC_SLIDER_1_4 ) );			
 			//END::THIS IS FOR TESTING WITOUT MIDI
+		}
+		//update grid
+		if( vis->getId() == "grid" ){
+			vis->set( DRAWABLE_GRID_VAR_BRIGTNESS , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+			vis->set( DRAWABLE_GRID_VAR_CELL_SIZE , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+			vis->set( DRAWABLE_GRID_VAR_WAVE_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
+			vis->set( DRAWABLE_GRID_VAR_WAVE_FREQUENCY , ctrl->get( TOUCH_OSC_SLIDER_1_3 ) );
+			vis->set( DRAWABLE_GRID_VAR_WAVE_FADEOUT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_4 ) );
+			vis->set( DRAWABLE_GRID_FLAG_START_WAVE , ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_5 , true ) );
 		}
 	}
 	//
@@ -415,7 +429,6 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){	
 		//blur filters manipulation
 		if( flt->getId() == "blur-horizontal" || flt->getId() == "blur-vertical" ){
-			console() << "Set blur to " << ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ) << ", " << ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ) << endl;
 			flt->set( FILTER_SHADER_PARAM_1 , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ) );
 			flt->set( FILTER_SHADER_PARAM_2 , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ) );
 		}

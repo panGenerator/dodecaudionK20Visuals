@@ -52,40 +52,99 @@ void TouchOSCController::parseMessage(osc::Message msg)
 	}
 	//don't log accelerometer values since they are comming all the time
 	else{
-		this->__logMessage( msg );
+		//this->__logMessage( msg );
 	}
 	
 	val = msg.getArgAsFloat(0);
 	//slider values
 	if( msg.getAddress() == "/1/fader1"){
-		this->set( TOUCH_OSC_SLIDER_1 , val ); 
+		set( TOUCH_OSC_SLIDER_1_1 , val ); 
 	}
 	if( msg.getAddress() == "/1/fader2"){
-		this->set( TOUCH_OSC_SLIDER_2 , val ); 
+		set( TOUCH_OSC_SLIDER_1_2 , val ); 
 	}
 	if( msg.getAddress() == "/1/fader3"){
-		this->set( TOUCH_OSC_SLIDER_3 , val ); 
+		set( TOUCH_OSC_SLIDER_1_3 , val ); 
 	}
 	if( msg.getAddress() == "/1/fader4"){
-		this->set( TOUCH_OSC_SLIDER_4 , val ); 
+		set( TOUCH_OSC_SLIDER_1_4 , val ); 
 	}
-	//buttons
+	if( msg.getAddress() == "/2/fader1"){
+		set( TOUCH_OSC_SLIDER_2_1 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader2"){
+		set( TOUCH_OSC_SLIDER_2_2 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader3"){
+		set( TOUCH_OSC_SLIDER_2_3 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader4"){
+		set( TOUCH_OSC_SLIDER_2_4 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader5"){
+		set( TOUCH_OSC_SLIDER_2_5 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader6"){
+		set( TOUCH_OSC_SLIDER_2_6 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader7"){
+		set( TOUCH_OSC_SLIDER_2_7 , val ); 
+	}
+	if( msg.getAddress() == "/2/fader8"){
+		set( TOUCH_OSC_SLIDER_2_8 , val ); 
+	}
+	
+	//push buttons
 	if( msg.getAddress() == "/1/push1"){
-		this->set( TOUCH_OSC_PUSH_BUTTON_1 , val ); 
+		transitorySet( TOUCH_OSC_PUSH_BUTTON_1_1 , val ); 
 	}
 	if( msg.getAddress() == "/1/push2"){
-		this->set( TOUCH_OSC_PUSH_BUTTON_2 , val ); 
+		transitorySet( TOUCH_OSC_PUSH_BUTTON_1_2 , val ); 
 	}
 	if( msg.getAddress() == "/1/push3"){
-		this->set( TOUCH_OSC_PUSH_BUTTON_3 , val ); 
+		transitorySet( TOUCH_OSC_PUSH_BUTTON_1_3 , val ); 
 	}
 	if( msg.getAddress() == "/1/push4"){
-		this->set( TOUCH_OSC_PUSH_BUTTON_4 , val ); 
+		transitorySet( TOUCH_OSC_PUSH_BUTTON_1_4 , val ); 
 	}
 	if( msg.getAddress() == "/1/push5" ){
-		this->set( TOUCH_OSC_PUSH_BUTTON_5 , val ); 
+		transitorySet( TOUCH_OSC_PUSH_BUTTON_1_5 , val ); 
 	}		
-	
+
+	//toggle buttons
+	if( msg.getAddress() == "/1/toggle1"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_1_1 , val ); 
+	}
+	if( msg.getAddress() == "/1/toggle2"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_1_2 , val ); 
+	}
+	if( msg.getAddress() == "/1/toggle3"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_1_3 , val ); 
+	}	
+	if( msg.getAddress() == "/2/toggle1"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_1 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle2"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_2 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle3"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_3 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle4"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_4 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle5" ){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_5 , val ); 
+	}		
+	if( msg.getAddress() == "/2/toggle6"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_6 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle7"){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_7 , val ); 
+	}
+	if( msg.getAddress() == "/2/toggle8" ){
+		set( TOUCH_OSC_TOGGLE_BUTTON_2_8 , val ); 
+	}		
 
 }
 

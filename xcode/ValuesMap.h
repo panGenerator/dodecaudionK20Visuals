@@ -25,7 +25,9 @@ public:
 	void transitorySet(string key, float value);
 	void markAsTransitory(string key, bool transitory);
 	float get(string key);
-	float getTransitory(string key);
+	float get(string key, bool persistTransitory);
+	//float getTransitory(string key);
+	void releaseTransitory();
     vector<string> keys();
 	
 private: 
