@@ -109,7 +109,7 @@ void Grid::draw()
 void Grid::drawGrid(float size, float step)
 {
 	glPushMatrix();
-	gl::color( Colorf(brightness,brightness,brightness) );	
+	gl::color( Colorf(brightness,brightness,brightness) );
 	
 	for(float x = 0 ; x <= size ; x+=step ){
 		gl::drawLine( Vec3f(x, 0, 0) , Vec3f(x, size, 0) );
@@ -117,5 +117,6 @@ void Grid::drawGrid(float size, float step)
 	for(float y = 0 ; y <= size ; y+=step ){
 		gl::drawLine( Vec3f(0, y, 0) , Vec3f(size, y, 0) );		
 	}
+
 	glPopMatrix();
 }

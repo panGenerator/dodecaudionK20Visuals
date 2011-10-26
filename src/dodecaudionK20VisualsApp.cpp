@@ -34,6 +34,9 @@
 #define RES_BLUR__HORIZONTAL_SHADER_FRAG	CINDER_RESOURCE( ../resources/, blur-horizontal.frag, 132, GLSL )
 #define RES_BLUR__VERTICAL_SHADER_FRAG		CINDER_RESOURCE( ../resources/, blur-vertical.frag, 133, GLSL )
 #define RES_MULTIPLY_SHADER_FRAG			CINDER_RESOURCE( ../resources/, multiply.frag, 134, GLSL )
+#define RES_GLITCH_SHADER_FRAG				CINDER_RESOURCE( ../resources/, glitch.frag, 135, GLSL )
+#define RES_PASS_THRU_SHADER_FRAG			CINDER_RESOURCE( ../resources/, passThru.frag, 136, GLSL )
+
 
 
 
@@ -59,11 +62,8 @@ public:
 	vector<Drawable *> visualObjects;
 	vector<Filter *> visualFilters;
 	
-	//CameraPersp	cam;
-	//Vec3f camPosition;
-	
 	gl::Fbo::Format fboFormat;
-	gl::Fbo	fbo,fboFilterA,fboFilterB;
+	gl::Fbo	fbo;
 	gl::Texture fboTexture;
 	
 	
@@ -81,7 +81,7 @@ public:
 	FFTVisualiser fftVis;
 	Grid grid;
     
-	ShaderFilter noiseFlt,vignetteFlt,invertFlt,blurVFlt,blurHFlt,multFlt;
+	ShaderFilter noiseFlt,vignetteFlt,glitchFlt,passThruFlt,invertFlt,blurVFlt,blurHFlt,multFlt;
 	
 };
 
@@ -120,12 +120,12 @@ void dodecaudionK20Visuals::setup()
 	//
 	cam.setup();
 	visualObjects.push_back( &cam );
-	dode.setup();
-	visualObjects.push_back( &dode );
 	fftVis.setup();
 	visualObjects.push_back( &fftVis );	
 	grid.setup();
 	visualObjects.push_back( &grid );	
+	dode.setup();
+	visualObjects.push_back( &dode );
 	
 	//
 	//init filters
@@ -138,6 +138,11 @@ void dodecaudionK20Visuals::setup()
 	multFlt.setup("multiply", loadResource(RES_PASS_THRU_SHADER_VERT), loadResource(RES_MULTIPLY_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &multFlt );
 
+	passThruFlt.setup("passThru", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_PASS_THRU_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &passThruFlt );
+	glitchFlt.setup("glitch", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_GLITCH_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &glitchFlt );
+	
 	//Blur kills the GPU in fulscreen
 	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &blurHFlt );
@@ -158,19 +163,10 @@ void dodecaudionK20Visuals::setup()
 	//fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 
-	fboFilterA = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
-	fboFilterB = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
-
-	
 	//pass the FBO to filters for later usage
 	int counter = 0;
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
-		//if( counter % 2 == 0 ){
-		//	(*flt)->setFBO( &fboFilterA );
-		//}else{
-			(*flt)->setFBO( &fbo );
-		//}
-		//counter++;
+		(*flt)->setFBO( &fbo );
 	}
 	
 }
@@ -229,7 +225,7 @@ void dodecaudionK20Visuals::draw()
 	gl::enableDepthWrite();
 	gl::clear( Color( 0, 0, 0 ) ); 
 
-	glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
 	
@@ -240,7 +236,13 @@ void dodecaudionK20Visuals::draw()
 	glFogf(GL_FOG_DENSITY,0.0004f);
 	glHint(GL_FOG_HINT, GL_NICEST);
 	
-	gl::enableAdditiveBlending();
+	glClearDepth(1.0);
+	glDepthFunc(GL_LESS);
+	glAlphaFunc(GL_GREATER, 0.1f);
+	glEnable(GL_ALPHA_TEST);
+	glEnable(GL_AUTO_NORMAL);
+	
+	//gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
 	glLoadIdentity();
 		
@@ -418,9 +420,8 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 	//MIDI: Nano Pad
 	if( ctrl->getId() == "midi:nanoPAD PAD" ){
 		if( flt->getId() == "invert" ){
-			if( ctrl->get( "key49" ) > 0 ){
-				flt->set( "value" , 1.0 );
-				flt->set( "ease" , 0.97 );
+			if( ctrl->get( MIDI_KORG_PAD_TRIGGER_1_6 ) > 0 ){
+				flt->set( FILTER_SHADER_PARAM_1 , ctrl->get( MIDI_KORG_PAD_TRIGGER_1_6 ) );
 			}
 		}
 	}
@@ -429,8 +430,21 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){	
 		//blur filters manipulation
 		if( flt->getId() == "blur-horizontal" || flt->getId() == "blur-vertical" ){
-			flt->set( FILTER_SHADER_PARAM_1 , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ) );
-			flt->set( FILTER_SHADER_PARAM_2 , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ) );
+			flt->set( FILTER_SHADER_PARAM_1 , pow( ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_8 ),4) );
+			flt->set( FILTER_SHADER_PARAM_2 , pow( ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_8 ),4) );
+		}
+		//glitch
+		if( flt->getId() == "glitch" ){
+			flt->set( FILTER_SHADER_PARAM_1 , pow( ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_7 ),4) );
+			flt->set( FILTER_SHADER_PARAM_2 , pow( ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_7 ),4) );
+		}
+		//vignette
+		if( flt->getId() == "vignette" ){
+			flt->set( FILTER_SHADER_PARAM_1 , 1.0 - pow( ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_9 ),4) );
+		}		
+		if( flt->getId() == "invert" ){
+			//aply easing by slider
+			flt->set( FILTER_SHADER_EASE_PARAM_1 , 1.0 - pow( ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_6 ) , 3 ) );
 		}
 	}
 	
@@ -440,17 +454,8 @@ void dodecaudionK20Visuals::updateFilterByController(Filter *flt , Controller *c
 	
 void dodecaudionK20Visuals::resize( ResizeEvent event )
 {
-	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
-	fboFilterA = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
-	fboFilterB = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );
-
-	
+	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(), fboFormat );	
 	cam.set( "aspectRatio" , getWindowAspectRatio() );
-	/*
-	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
-		(*flt)->resize( getWindowSize() );
-	}
-	*/
 }
 
 void dodecaudionK20Visuals::mouseDown( MouseEvent event )

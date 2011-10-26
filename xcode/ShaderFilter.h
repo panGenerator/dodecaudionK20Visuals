@@ -26,7 +26,8 @@
 #define FILTER_SHADER_PARAM_7 "param7"
 #define FILTER_SHADER_PARAM_8 "param8"
 #define FILTER_SHADER_PARAM_9 "param9"
-
+#define FILTER_SHADER_PARAM_23 "param23"
+#define FILTER_SHADER_EASE_PARAM_1 "ease1"
 
 //work in the cinder's namespace
 using namespace std;

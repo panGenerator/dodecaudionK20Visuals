@@ -49,6 +49,8 @@
 		9F5704F11449A07500749B7C /* TouchOSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F5704EF1449A07500749B7C /* TouchOSCController.cpp */; };
 		9FB63DF11455B2EA006095B9 /* MIDINanoPadController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB63DEF1455B2EA006095B9 /* MIDINanoPadController.cpp */; };
 		9FB63E111455B3DA006095B9 /* DodecaudionOSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB63E0F1455B3DA006095B9 /* DodecaudionOSCController.cpp */; };
+		9FD6807814586DEC00E46FB7 /* glitch.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6807714586DEC00E46FB7 /* glitch.frag */; };
+		9FD6807C14586E8700E46FB7 /* passThru.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6807B14586E8700E46FB7 /* passThru.frag */; };
 		9FE7DCB11448A125006BA574 /* GenericController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCAD1448A125006BA574 /* GenericController.cpp */; };
 		9FE7DCB21448A125006BA574 /* Dodecahedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */; };
 /* End PBXBuildFile section */
@@ -140,6 +142,8 @@
 		9FB63DF01455B2EA006095B9 /* MIDINanoPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDINanoPadController.h; sourceTree = "<group>"; };
 		9FB63E0F1455B3DA006095B9 /* DodecaudionOSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DodecaudionOSCController.cpp; sourceTree = "<group>"; };
 		9FB63E101455B3DA006095B9 /* DodecaudionOSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DodecaudionOSCController.h; sourceTree = "<group>"; };
+		9FD6807714586DEC00E46FB7 /* glitch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glitch.frag; sourceTree = "<group>"; };
+		9FD6807B14586E8700E46FB7 /* passThru.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passThru.frag; sourceTree = "<group>"; };
 		9FE7DCA81448A11A006BA574 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
 		9FE7DCA91448A11B006BA574 /* Controllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controllable.h; sourceTree = "<group>"; };
 		9FE7DCAA1448A11B006BA574 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
@@ -251,11 +255,13 @@
 				9F127C82145487E6000C7F8F /* multiply.frag */,
 				9F127AB8145472B4000C7F8F /* blur-vertical.frag */,
 				9F1277D31454281D000C7F8F /* invert.frag */,
+				9FD6807714586DEC00E46FB7 /* glitch.frag */,
 				9F53448214540BC30086D9D5 /* vignette.frag */,
 				9F53415C14533AAA0086D9D5 /* simpleNoise.frag */,
 				9F53415D14533AAA0086D9D5 /* passThru.vert */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				00CCAF14116A9FEE008396D5 /* CinderApp.icns */,
+				9FD6807B14586E8700E46FB7 /* passThru.frag */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -535,7 +541,9 @@
 				9F1277D7145428B6000C7F8F /* invert.frag in Resources */,
 				9F53448714540BF90086D9D5 /* vignette.frag in Resources */,
 				9F53415E14533AAA0086D9D5 /* simpleNoise.frag in Resources */,
+				9FD6807814586DEC00E46FB7 /* glitch.frag in Resources */,
 				9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */,
+				9FD6807C14586E8700E46FB7 /* passThru.frag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

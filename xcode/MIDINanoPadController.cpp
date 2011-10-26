@@ -57,5 +57,21 @@ void MIDINanoPadController::processMessage( midi::Message* msg )
 		val = val/127.0;
 	}
 	
-	set( key , val );
+	switch( keyId ){
+		case 39:
+			set( MIDI_KORG_PAD_TRIGGER_1_1 , val ); break;
+		case 48:
+			set( MIDI_KORG_PAD_TRIGGER_1_2 , val ); break;
+		case 45:
+			set( MIDI_KORG_PAD_TRIGGER_1_3 , val ); break;
+		case 43:
+			set( MIDI_KORG_PAD_TRIGGER_1_4 , val ); break;
+		case 51:
+			set( MIDI_KORG_PAD_TRIGGER_1_5 , val ); break;
+		case 49:
+			set( MIDI_KORG_PAD_TRIGGER_1_6 , val ); break;
+		
+	}
+	
+	//set( key , val );
 }

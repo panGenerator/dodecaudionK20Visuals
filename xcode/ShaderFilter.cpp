@@ -52,13 +52,13 @@ void ShaderFilter::setFBO(gl::Fbo *fbo)
  */
 void ShaderFilter::update()
 {
-	_values.set( "rand" , (float)rand()/RAND_MAX );	
-	
-	if( get( "value" ) > 0 ){
-		float value = get( "value" );
-		value *= get( "ease" );
-		set( "value" , value );
+	//this will ease some values to 0 if easing multiplier is set to anything other than zero
+	if( get( FILTER_SHADER_EASE_PARAM_1 ) > 0.0 ){
+		float value = get( FILTER_SHADER_PARAM_1 );
+		value *= get( FILTER_SHADER_EASE_PARAM_1 );
+		set( FILTER_SHADER_PARAM_1 , value );
 	}
+	//...copy and add for other params if necessary
 }
 
 /**
@@ -79,9 +79,7 @@ void ShaderFilter::apply(gl::Texture *texture)
 
 	//this is necessary - texture reference
 	shader.uniform("tex0",0);
-	//this is also needed for randomness
-	shader.uniform("seed", get("rand"));
-	
+
 	//pass parameters to shaders
 	shader.uniform(FILTER_SHADER_PARAM_1, get(FILTER_SHADER_PARAM_1));
 	shader.uniform(FILTER_SHADER_PARAM_2, get(FILTER_SHADER_PARAM_2));
@@ -92,6 +90,7 @@ void ShaderFilter::apply(gl::Texture *texture)
 	shader.uniform(FILTER_SHADER_PARAM_7, get(FILTER_SHADER_PARAM_7));
 	shader.uniform(FILTER_SHADER_PARAM_8, get(FILTER_SHADER_PARAM_8));
 	shader.uniform(FILTER_SHADER_PARAM_9, get(FILTER_SHADER_PARAM_9));
+	shader.uniform(FILTER_SHADER_PARAM_23, rand()/(float)RAND_MAX);
 	
 	gl::clear( ColorAf(0,0,0) );
 	gl::setViewport( getWindowBounds() );
