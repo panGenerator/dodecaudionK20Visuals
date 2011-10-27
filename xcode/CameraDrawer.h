@@ -28,7 +28,6 @@
 #define DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR "camShake"
 
 #define DRAWABLE_CAMERA_VAR_FOV "fov" 
-#define DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED "fovChangeSpeed"
 
 //work in the cinder's namespace
 using namespace std;
@@ -67,8 +66,7 @@ private:
 	vector<Vec3f> predefinedCamTargets;
 	
 	int currentPredefinedCamFOVIndex;
-	float camFOVLerpIndex, camFOVLerpSpeed;
-	float camFOV,targetCamFOV;
+	float camFOV;
 	vector<float> targetFOV;
 	
 	
@@ -77,7 +75,6 @@ private:
 	
 	void setCameraTargetToPredefinedPosition( int positionIdx );
 	void setCameraTargetTo(Vec3f position);
-	void setCameraFOVTarget( float newFOV );
 	void setCameraShakeOffsetTarget( float shakeFactor );
 };
 

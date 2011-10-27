@@ -74,7 +74,6 @@ void CameraDrawer::setup()
 	//TODO:
 	
 	currentPredefinedCamFOVIndex = 0;
-	camFOVLerpIndex = 0.0f;
 
 	camShakeLerpIndex = 0.0f;
 	
@@ -111,14 +110,12 @@ void CameraDrawer::update()
 	}
 	
 	//update FOV 
-	setCameraFOVTarget( 60 + 30 * ( -1.0f + 2.0f * get( DRAWABLE_CAMERA_VAR_FOV ) ) );
+	camFOV = ( 60 + 30 * ( -1.0f + 2.0f * get( DRAWABLE_CAMERA_VAR_FOV ) ) );
 	
 	camShakeFactor = get( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR );
 	
 	camPredefinedPositionLerpSpeed = 0.001 + 0.01 * get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
-	camFOVLerpSpeed = 0.05 + 0.01 * get( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED );
-	
-	
+
 	cam.setAspectRatio( get( "aspectRatio" ) );
 	cam.setFarClip( get( "cameraFarClip" ) );
 
@@ -149,10 +146,10 @@ void CameraDrawer::update()
 	
 	
 	//update camera FOV
-	camFOV = lerp( camFOV , targetCamFOV , camFOVLerpIndex );
-	if( camFOVLerpIndex < 1.0f ){
-		camFOVLerpIndex += camFOVLerpSpeed;
-	}
+	//camFOV = lerp( camFOV , targetCamFOV , camFOVLerpIndex );
+	//if( camFOVLerpIndex < 1.0f ){
+	//	camFOVLerpIndex += camFOVLerpSpeed;
+	//}
 }
 
 /**
@@ -188,15 +185,16 @@ void CameraDrawer::setCameraTargetTo(Vec3f position)
 /**
  * Set target camera FOV
  */
+/*
 void CameraDrawer::setCameraFOVTarget( float newFOV )
 {
 	//change only on significant difference
 	if( abs( targetCamFOV - newFOV ) > 0.5f ){
 		if( newFOV < 20 ){ newFOV = 60.0f; }
-		targetCamFOV = newFOV;
-		camFOVLerpIndex = 0.0f;
+		cam = newFOV;
 	}
 }
+*/
 
 void CameraDrawer::setCameraShakeOffsetTarget( float shakeFactor ){
 	shakeFactor *= 10.0f;

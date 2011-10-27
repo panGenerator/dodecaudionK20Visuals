@@ -112,13 +112,8 @@ void Dodecahedron::draw()
 	
 	glPushMatrix();
 	
-	glRotated( modelRotation.y , 1.0, 0.0, 0.0 );
-	glRotated( modelRotation.z , 0.0, 1.0, 0.0 );
-	glRotated( modelRotation.x , 0.0, 0.0, 1.0 );
+	//glRotated( 23.0 , 0.0, 0.0, 1.0 );
 	
-	glRotated( get("framesCount")/10.0f , 0, 1.0f, 0);
-	
-	glRotated( get("framesCount")/10.0f , 0, 1.0f, 0);
 	
 	/*
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron

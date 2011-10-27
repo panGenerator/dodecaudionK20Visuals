@@ -52,7 +52,7 @@ void TouchOSCController::parseMessage(osc::Message msg)
 	}
 	//don't log accelerometer values since they are comming all the time
 	else{
-		//this->__logMessage( msg );
+		this->__logMessage( msg );
 	}
 	
 	val = msg.getArgAsFloat(0);

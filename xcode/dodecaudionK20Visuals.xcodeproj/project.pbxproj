@@ -35,6 +35,8 @@
 		9F16D2E214509D90001728A0 /* MidiMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D2DE14509D90001728A0 /* MidiMessage.cpp */; };
 		9F16D33E1450A287001728A0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16D33D1450A287001728A0 /* CoreFoundation.framework */; };
 		9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */; };
+		9F3A74801459DEE400D0FFA8 /* ParticlesHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */; };
+		9F3A74841459E9EA00D0FFA8 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A74831459E9EA00D0FFA8 /* Particle.cpp */; };
 		9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */; };
 		9F53415E14533AAA0086D9D5 /* simpleNoise.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415C14533AAA0086D9D5 /* simpleNoise.frag */; };
 		9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415D14533AAA0086D9D5 /* passThru.vert */; };
@@ -104,6 +106,10 @@
 		9F16D33D1450A287001728A0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9F16D3891450A356001728A0 /* MIDIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIController.h; sourceTree = "<group>"; };
 		9F16D38A1450A356001728A0 /* MIDIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIController.cpp; sourceTree = "<group>"; };
+		9F3A747E1459DEE400D0FFA8 /* ParticlesHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticlesHolder.h; sourceTree = "<group>"; };
+		9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticlesHolder.cpp; sourceTree = "<group>"; };
+		9F3A74821459E9EA00D0FFA8 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		9F3A74831459E9EA00D0FFA8 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		9F533E901452FF4B0086D9D5 /* ShaderFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderFilter.h; sourceTree = "<group>"; };
 		9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderFilter.cpp; sourceTree = "<group>"; };
@@ -480,6 +486,10 @@
 				9F12784A14542D58000C7F8F /* Grid.cpp */,
 				9F127AC814547390000C7F8F /* CameraDrawer.h */,
 				9F127AC914547390000C7F8F /* CameraDrawer.cpp */,
+				9F3A747E1459DEE400D0FFA8 /* ParticlesHolder.h */,
+				9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */,
+				9F3A74821459E9EA00D0FFA8 /* Particle.h */,
+				9F3A74831459E9EA00D0FFA8 /* Particle.cpp */,
 			);
 			name = Drawable;
 			sourceTree = "<group>";
@@ -577,6 +587,8 @@
 				9F05BE691455AF2C000DDDFA /* MIDINanoKontrolController.cpp in Sources */,
 				9FB63DF11455B2EA006095B9 /* MIDINanoPadController.cpp in Sources */,
 				9FB63E111455B3DA006095B9 /* DodecaudionOSCController.cpp in Sources */,
+				9F3A74801459DEE400D0FFA8 /* ParticlesHolder.cpp in Sources */,
+				9F3A74841459E9EA00D0FFA8 /* Particle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

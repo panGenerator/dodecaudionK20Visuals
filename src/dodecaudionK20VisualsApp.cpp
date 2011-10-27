@@ -89,7 +89,7 @@ public:
 	
 void dodecaudionK20Visuals::prepareSettings(Settings *settings){
 	settings->setFrameRate(60.0f);
-	settings->setWindowSize(800, 800);
+	settings->setWindowSize(1280, 720);
 }
 
 void dodecaudionK20Visuals::setup()
@@ -100,10 +100,10 @@ void dodecaudionK20Visuals::setup()
 	genCtrl.setup();
 	controllers.push_back( &genCtrl );
     
-    dodecaudionOscCtrl.setup(10001);
+    dodecaudionOscCtrl.setup(10000);
     controllers.push_back( &dodecaudionOscCtrl );
 
-    touchOscCtrl.setup(10000);
+    touchOscCtrl.setup(10001);
     controllers.push_back( &touchOscCtrl );
 	
 	fftCtrl.setup(64);
@@ -122,8 +122,8 @@ void dodecaudionK20Visuals::setup()
 	visualObjects.push_back( &cam );
 	fftVis.setup();
 	visualObjects.push_back( &fftVis );	
-	grid.setup();
-	visualObjects.push_back( &grid );	
+	//grid.setup();
+	//visualObjects.push_back( &grid );	
 	dode.setup();
 	visualObjects.push_back( &dode );
 	
@@ -238,9 +238,9 @@ void dodecaudionK20Visuals::draw()
 	
 	glClearDepth(1.0);
 	glDepthFunc(GL_LESS);
-	glAlphaFunc(GL_GREATER, 0.1f);
-	glEnable(GL_ALPHA_TEST);
-	glEnable(GL_AUTO_NORMAL);
+	glAlphaFunc(GL_GREATER, 0.5f);
+	//glEnable(GL_ALPHA_TEST);
+	//glEnable(GL_AUTO_NORMAL);
 	
 	//gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
@@ -345,7 +345,6 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
 			
-			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_3 ) );
 			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( TOUCH_OSC_SLIDER_1_4 ) );			
 			//END::THIS IS FOR TESTING WITOUT MIDI
 		}
@@ -399,7 +398,6 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_1 ) );
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
 
-			vis->set( DRAWABLE_CAMERA_VAR_FOV_CHANGE_SPEED , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_2 ) );
 			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_2 ) );			
 		}
 	}
