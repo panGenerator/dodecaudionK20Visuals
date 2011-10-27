@@ -21,8 +21,8 @@
 #include "CameraDrawer.h"
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
-#include "Grid.h"
-
+//#include "Grid.h"
+#include "ParticlesHolder.h"
 
 #include "ShaderFilter.h"
 
@@ -79,8 +79,9 @@ public:
 	CameraDrawer cam;
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
-	Grid grid;
-    
+//	Grid grid;
+    ParticlesHolder particlesHolder;
+	
 	ShaderFilter noiseFlt,vignetteFlt,glitchFlt,passThruFlt,invertFlt,blurVFlt,blurHFlt,multFlt;
 	
 };
@@ -127,6 +128,9 @@ void dodecaudionK20Visuals::setup()
 	dode.setup();
 	visualObjects.push_back( &dode );
 	
+	//particlesHolder.setup();
+	//visualObjects.push_back( &particlesHolder );
+	
 	//
 	//init filters
 	//
@@ -153,7 +157,6 @@ void dodecaudionK20Visuals::setup()
 	visualFilters.push_back( &vignetteFlt );
 	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &noiseFlt );
-
 	
 	//
 	//init FBO
@@ -164,7 +167,6 @@ void dodecaudionK20Visuals::setup()
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 
 	//pass the FBO to filters for later usage
-	int counter = 0;
 	for( vector<Filter *>::iterator flt = visualFilters.begin() ; flt != visualFilters.end() ; ++flt ){
 		(*flt)->setFBO( &fbo );
 	}
@@ -349,14 +351,14 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			//END::THIS IS FOR TESTING WITOUT MIDI
 		}
 		//update grid
-		if( vis->getId() == "grid" ){
-			vis->set( DRAWABLE_GRID_VAR_BRIGTNESS , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
-			vis->set( DRAWABLE_GRID_VAR_CELL_SIZE , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
-			vis->set( DRAWABLE_GRID_VAR_WAVE_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
-			vis->set( DRAWABLE_GRID_VAR_WAVE_FREQUENCY , ctrl->get( TOUCH_OSC_SLIDER_1_3 ) );
-			vis->set( DRAWABLE_GRID_VAR_WAVE_FADEOUT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_4 ) );
-			vis->set( DRAWABLE_GRID_FLAG_START_WAVE , ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_5 , true ) );
-		}
+//		if( vis->getId() == "grid" ){
+//			vis->set( DRAWABLE_GRID_VAR_BRIGTNESS , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+//			vis->set( DRAWABLE_GRID_VAR_CELL_SIZE , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+//			vis->set( DRAWABLE_GRID_VAR_WAVE_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
+//			vis->set( DRAWABLE_GRID_VAR_WAVE_FREQUENCY , ctrl->get( TOUCH_OSC_SLIDER_1_3 ) );
+//			vis->set( DRAWABLE_GRID_VAR_WAVE_FADEOUT_SPEED , ctrl->get( TOUCH_OSC_SLIDER_1_4 ) );
+//			vis->set( DRAWABLE_GRID_FLAG_START_WAVE , ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_5 , true ) );
+//		}
 	}
 	//
 	//FFT controls mapping

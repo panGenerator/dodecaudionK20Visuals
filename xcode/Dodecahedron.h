@@ -20,6 +20,20 @@
 #define WALL_COUNT 12
 #define VERTICES_PER_WALL 5
 
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_ "dodecahedronWall"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_1 "dodecahedronWall1"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_2 "dodecahedronWall2"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_3 "dodecahedronWall3"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_4 "dodecahedronWall4"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_5 "dodecahedronWall5"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_6 "dodecahedronWall6"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_7 "dodecahedronWall7"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_8 "dodecahedronWall8"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_9 "dodecahedronWall9"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_10 "dodecahedronWall10"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_11 "dodecahedronWall11"
+#define DRAWABLE_DODECAHEDRON_VAR_WALL_12 "dodecahedronWall12"
+
 //work in the cinder's namespace
 using namespace std;
 using namespace ci;
@@ -35,7 +49,7 @@ public:
 	float get(string key);	
 	vector<string> keys();
 	string getId();
-
+	
 	void setup();
 	void update();
 	void draw();	
@@ -51,7 +65,7 @@ private:
 	void drawWall( int wall );
 	void drawEye( int wall );
 	void drawSonicCones( int wall );	
-
+	
 	void __drawWallCenter( int wall );
 	void __drawWallCoordinateSystem( int wall );
 	
@@ -62,7 +76,7 @@ private:
 	Vec3f wallCoordinateSystems[WALL_COUNT][3];
 	
 	ValuesMap _values;    
-
+	
 	//Model / drawing related parameters
 	float radius;
 	Vec3f modelRotation;

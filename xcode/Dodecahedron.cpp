@@ -44,7 +44,7 @@ Dodecahedron::Dodecahedron()
  */
 Dodecahedron::~Dodecahedron()
 {
-
+	
 }
 
 
@@ -125,7 +125,7 @@ void Dodecahedron::draw()
 		drawSonicCones( wall );
 		drawEye( wall );
 	}
-
+	
 	glPopMatrix();
 }
 
@@ -233,7 +233,7 @@ void Dodecahedron::calcWallCoordinateSystems()
 		v1 = vertices[wallVerticeIds[wall][0]];
 		v2 = vertices[wallVerticeIds[wall][2]];
 		v3 = vertices[wallVerticeIds[wall][3]];
-
+		
 		vX = (v3-v2);
 		vX.normalize();
 		
@@ -244,7 +244,7 @@ void Dodecahedron::calcWallCoordinateSystems()
 		
 		vZ = vY.cross(vX);
 		vZ.normalize();
-
+		
 		//if the z is pointing inside then rotate the system arond Y axis
 		vCalc = vCenter+vZ;
 		if( vCalc.distance(Vec3f::zero()) < vCenter.distance(Vec3f::zero()) ){
@@ -307,7 +307,7 @@ void Dodecahedron::drawWall( int wall )
 	//draw the edges
 	glEnable(GL_LINE_SMOOTH);	
 	glLineWidth(1.0f);
-
+	
 	gl::color( ColorAf(1.0,1.0,1.0,1.0f) );	
 	glBegin(GL_LINE_LOOP);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
@@ -330,17 +330,17 @@ void Dodecahedron::drawSonicCones( int wall )
 	glLineWidth(1.3);
 	glEnable(GL_LINE_SMOOTH);
 	
-	string wallId = "wall" + boost::lexical_cast<string>( wall );
-	float radius,minRadius = 10.0f, maxRadius=minRadius + 128 * get(wallId);
+	string wallId = DRAWABLE_DODECAHEDRON_VAR_WALL_ + boost::lexical_cast<string>( wall );
+	float radius,minRadius = 1.0f, maxRadius=minRadius + 64 * get(wallId);
 	int step = 13,circlePoints = 16;
-	int length = 1000;
+	int length = 1000.0 * get(wallId);
 	float idx= 0.0f,idxCircle=0.0f;
 	Vec3f v;
 	for( int ring = 0 ; ring < length ; ring+=step ){
 		idx = ring/(float)length;
 		
 		//increasing radius
-		radius = minRadius + idx * (maxRadius-minRadius);
+		radius = minRadius + pow(idx,2) * (maxRadius-minRadius);
 		
 		//fade out
 		gl::color( ColorAf(0.6,0.7,1.0f,0.5f-0.3f*idx) );
@@ -401,7 +401,7 @@ void Dodecahedron::__drawWallCenter( int wall )
 	
 	Vec3f v = wallCenters[wall];
 	glPushMatrix();
-
+	
 	v = wallCenters[wall];
 	gl::color( ColorAf(1.0,1.0,1.0) );
 	gl::drawCube( v , Vec3f( 3 , 3 , 3 ) );
@@ -415,23 +415,23 @@ void Dodecahedron::__drawWallCenter( int wall )
 void Dodecahedron::__drawWallCoordinateSystem( int wall )
 {
 	Vec3f vCenter = wallCenters[wall];
-	Vec3f coordinateSystem[3] = wallCoordinateSystems[wall];
+	//Vec3f coordinateSystem[3] = wallCoordinateSystems[wall];
 	float radius = 10.0;
 	
 	
 	//TEST
 	//reality check - draw the axes from the base coordinate system 
 	/*
-	glLineWidth(4.0f);
-
-	gl::color( ColorAf(1.0,0.0,0.0,0.4f) );
-	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[0] );
-	gl::color( ColorAf(0.0,1.0,0.0,0.4f) );
-	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[1] );
-	gl::color( ColorAf(0.0,0.0,1.0,0.4f) );
-	gl::drawVector( vCenter , vCenter+radius*coordinateSystem[2] );
-	glLineWidth(1.0f);
-	*/
+	 glLineWidth(4.0f);
+	 
+	 gl::color( ColorAf(1.0,0.0,0.0,0.4f) );
+	 gl::drawVector( vCenter , vCenter+radius*coordinateSystem[0] );
+	 gl::color( ColorAf(0.0,1.0,0.0,0.4f) );
+	 gl::drawVector( vCenter , vCenter+radius*coordinateSystem[1] );
+	 gl::color( ColorAf(0.0,0.0,1.0,0.4f) );
+	 gl::drawVector( vCenter , vCenter+radius*coordinateSystem[2] );
+	 glLineWidth(1.0f);
+	 */
 	
 	transformToWallCoordinateSystem(wall);
 	
@@ -449,7 +449,7 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	//yeah, it's always more fun with a flat cube at (10,20,0)
 	gl::color( ColorAf(1,1,1,0.3f) );
 	gl::drawCube( Vec3f( 10, 20 , 0 ) , Vec3f( 2, 2, 1) );
-		
+	
 	
 	//....
 	
@@ -458,6 +458,6 @@ void Dodecahedron::__drawWallCoordinateSystem( int wall )
 	//
 	
 	popWallCoordinateSystem();
-
+	
 }
 

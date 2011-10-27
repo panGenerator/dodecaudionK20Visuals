@@ -18,11 +18,12 @@ using namespace ci;
 using namespace ci::app;
 
 
-class Particle : public Drawable {
+class Particle {
 	
 public:
-	Particle();
+	Particle( Vec3f pos );
 	
+	void setup();
 	void update();
 	void draw();
 	
@@ -32,6 +33,7 @@ public:
 	float pRotationSpeed;
 	Vec3f position;
 	Vec3f rotation;
+	
 	
 	
 	
