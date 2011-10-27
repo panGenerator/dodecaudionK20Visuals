@@ -64,6 +64,7 @@ void CameraDrawer::setup()
 	predefinedCamPositions.push_back( Vec3f( 0,0,-750) );
 	predefinedCamPositions.push_back( Vec3f( -200,0,750) );
 	predefinedCamPositions.push_back( Vec3f( -200,500,-950) );
+	predefinedCamPositions.push_back( Vec3f( 500,500,-500) );
 
 	//init defaults
 	currentPredefinedCamPositionIndex = 0;

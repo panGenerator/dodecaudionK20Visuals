@@ -161,9 +161,9 @@ void dodecaudionK20Visuals::setup()
 	//
 	//init FBO
 	//
-	fboFormat.setSamples(1);
+	fboFormat.setSamples(4);
 	fboFormat.enableMipmapping(false);
-	//fboFormat.setCoverageSamples(16);
+	fboFormat.setCoverageSamples(16);
 	fbo = gl::Fbo( getWindowWidth(), getWindowHeight(),fboFormat);
 
 	//pass the FBO to filters for later usage
@@ -401,6 +401,10 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
 
 			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_2 ) );			
+		}
+		if( vis->getId() == "dodecahedron" ){
+			vis->set( "param2" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_4 ) );
+			vis->set( "param1" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_5 ) );
 		}
 	}
 	

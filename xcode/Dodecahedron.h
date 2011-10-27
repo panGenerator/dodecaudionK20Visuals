@@ -34,6 +34,8 @@
 #define DRAWABLE_DODECAHEDRON_VAR_WALL_11 "dodecahedronWall11"
 #define DRAWABLE_DODECAHEDRON_VAR_WALL_12 "dodecahedronWall12"
 
+#define DEBUG_WALL 1
+
 //work in the cinder's namespace
 using namespace std;
 using namespace ci;
