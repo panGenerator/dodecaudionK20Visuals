@@ -232,6 +232,7 @@ void dodecaudionK20Visuals::draw()
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
 	
 	//setup fog
+	/*
 	glEnable(GL_FOG);
 	glFogi(GL_FOG_MODE,GL_EXP);
 	glFogfv(GL_FOG_COLOR,Vec3f(0.0f,0.75f,0.0f));
@@ -241,10 +242,11 @@ void dodecaudionK20Visuals::draw()
 	glClearDepth(1.0);
 	glDepthFunc(GL_LESS);
 	glAlphaFunc(GL_GREATER, 0.5f);
-	//glEnable(GL_ALPHA_TEST);
-	//glEnable(GL_AUTO_NORMAL);
+	*/
+	glEnable(GL_ALPHA_TEST);
+	glEnable(GL_AUTO_NORMAL);
 	
-	//gl::enableAdditiveBlending();
+	gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
 	glLoadIdentity();
 		
@@ -401,10 +403,17 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_1 ) );
 
 			vis->set( DRAWABLE_CAMERA_VAR_FOV , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_2 ) );			
+
+			//camera position
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_POSITION_X , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_4 ) );
+			vis->set( DRAWABLE_CAMERA_VAR_CAM_POSITION_Y , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_5 ) );
+			//vis->set( DRAWABLE_CAMERA_VAR_CAM_DISTANCE , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_6 ) );
 		}
 		if( vis->getId() == "dodecahedron" ){
-			vis->set( "param2" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_4 ) );
-			vis->set( "param1" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_5 ) );
+			vis->set( "param2" , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_6 ) );
+			vis->set( "param1" , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_7 ) );
+			
+			vis->set( "debugWall" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_7 ));
 		}
 	}
 	

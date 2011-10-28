@@ -39,7 +39,7 @@ string MIDINanoKontrolController::getId()
  */
 void MIDINanoKontrolController::processMessage( midi::Message* msg )
 {
-	console() << "Slider" << std::endl;
+	//console() << "Slider" << std::endl;
 	__logMessage( msg );	
 	
 

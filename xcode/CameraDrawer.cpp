@@ -89,7 +89,7 @@ void CameraDrawer::update()
 	
 	//go to next predefined position flag set. 
 	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT ) == 1 ){
-		console() << "NextPos" << endl;
+		//console() << "NextPos" << endl;
 		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex + 1 );
 		isAutonomous = false;
 		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 0 );
@@ -97,7 +97,7 @@ void CameraDrawer::update()
 	
 	//go to prev predefined position flag set
 	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV ) == 1 ){
-		console() << "PrevPos" << endl;
+		//console() << "PrevPos" << endl;
 		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex - 1 );
 		isAutonomous = false;
 		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 0 );
@@ -138,9 +138,29 @@ void CameraDrawer::update()
 		camShakeLerpIndex = 0.0f;
 	}
 	
+	//TMP
+	//camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition ) + camShakeOffset;
 	
-	camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition ) + camShakeOffset;
+	//for manual camera 
+	Quatf quat,camRotationX,camRotationY;
+	float rotationAngleX,rotationAngleY,distance;
 	
+	rotationAngleX = 3.14 * get( DRAWABLE_CAMERA_VAR_CAM_POSITION_X );
+	rotationAngleY = 3.14 * get( DRAWABLE_CAMERA_VAR_CAM_POSITION_Y );
+	distance = -500 -750 * get( DRAWABLE_CAMERA_VAR_CAM_DISTANCE );
+
+	
+	camRotationX = Quatf( Vec3f::xAxis() , rotationAngleX );	
+	camRotationY = Quatf( Vec3f::yAxis() , rotationAngleY );
+	quat = camRotationX * camRotationY;
+		
+	//console() << "Cam rotation: " << "x: " << rotationAngleX << ", y:" << rotationAngleY << ", dst: " << distance << endl;
+	
+	camPosition = predefinedCamPositions[0];
+	camPosition.z = distance;
+	camPosition = camPosition * quat;
+	
+	console() << "Cam position" << camPosition << endl;
 	
 	//update camera target
 	//TODO

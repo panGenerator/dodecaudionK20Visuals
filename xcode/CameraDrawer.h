@@ -29,6 +29,10 @@
 
 #define DRAWABLE_CAMERA_VAR_FOV "fov" 
 
+#define DRAWABLE_CAMERA_VAR_CAM_POSITION_X "camPositionX"
+#define DRAWABLE_CAMERA_VAR_CAM_POSITION_Y "camPositionY"
+#define DRAWABLE_CAMERA_VAR_CAM_DISTANCE "camDistance"
+
 //work in the cinder's namespace
 using namespace std;
 using namespace ci;

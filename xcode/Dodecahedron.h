@@ -57,6 +57,8 @@ public:
 	void draw();	
 	
 private:
+	int __debugSelectedWall;
+	std::vector<Vec3f> getWallAnchorVertices( int wall );
 	void updateVertices();
 	void calcWallCenters();
 	void calcWallCoordinateSystems();
@@ -72,6 +74,7 @@ private:
 	void __drawWallCoordinateSystem( int wall );
 	
 	
+	int wallsToDodecahedronFacesMap[WALL_COUNT];
 	Vec3f vertices[WALL_COUNT*VERTICES_PER_WALL];
 	Vec3f wallCenters[WALL_COUNT];
 	//Vec3f wallNormals[WALL_COUNT];

@@ -39,7 +39,7 @@ string DodecaudionOSCController::getId()
  */
 void DodecaudionOSCController::parseMessage(osc::Message msg)
 {
-	this->__logMessage( msg );
+	//this->__logMessage( msg );
 	
 	if( msg.getAddress() == "/Instrument01" ){
 		set( DODECAUDION_OSC_WALL_1 , msg.getArgAsFloat(0) );

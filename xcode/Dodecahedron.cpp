@@ -37,6 +37,22 @@ Dodecahedron::Dodecahedron()
 	set( "edgeColorR" , 1.0f );  
 	edgesColor = ColorAf(get("edgesColorR"),0,0);
 	updateVertices();	
+	__debugSelectedWall = 0;
+
+	wallsToDodecahedronFacesMap[0] = 0;
+	wallsToDodecahedronFacesMap[1] = 1;
+	wallsToDodecahedronFacesMap[2] = 2;
+	wallsToDodecahedronFacesMap[3] = 3;
+	wallsToDodecahedronFacesMap[4] = 4;
+	wallsToDodecahedronFacesMap[5] = 5;
+	wallsToDodecahedronFacesMap[6] = 10; //7 wall is 11
+	wallsToDodecahedronFacesMap[7] = 6; //8 is 9
+	wallsToDodecahedronFacesMap[8] = 7; //9 is 10  
+	wallsToDodecahedronFacesMap[9] = 8; //10 is 11
+	wallsToDodecahedronFacesMap[10] = 9; //11 is 7
+	wallsToDodecahedronFacesMap[11] = 11; //ok
+	
+
 }
 
 /**
@@ -101,6 +117,9 @@ void Dodecahedron::update()
 	updateVertices();
 	calcWallCenters();
 	calcWallCoordinateSystems();
+
+	__debugSelectedWall = round( WALL_COUNT * get( "debugWall" ) );
+	__debugSelectedWall %= WALL_COUNT;
 }
 
 /**
@@ -115,8 +134,8 @@ void Dodecahedron::draw()
 	Quatf quat,quat2;
 	Vec3f rotationAxis = Vec3f::zAxis();
 	Vec3f rotationAxis2 = Vec3f::xAxis();
-	float rotation = -2.20898;// + -0.5 + get( "param1" );
-	float rotation2 = 2.02108;// + -0.5 + get( "param2" );
+	float rotation = 3.46142; //2.0 * 3.14 * get( "param1" );
+	float rotation2 = 3.11528; //2.0 * 3.14 * get( "param2" );
 	
 	quat = Quatf( rotationAxis , rotation );
 	quat2 = Quatf( rotationAxis2 , rotation2 );
@@ -131,11 +150,14 @@ void Dodecahedron::draw()
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
-		drawWall( wall );
-		__drawWallCenter( wall );
-		__drawWallCoordinateSystem( wall );
-		drawSonicCones( wall );
-		drawEye( wall );
+		if( wall == 0 || wall == __debugSelectedWall ){
+			int wallMapped = wallsToDodecahedronFacesMap[wall];		
+			drawWall( wallMapped );
+			__drawWallCenter( wallMapped );
+			__drawWallCoordinateSystem( wallMapped );
+			drawSonicCones( wallMapped );
+			drawEye( wallMapped );
+		}
 	}
 	
 	glPopMatrix();
@@ -218,20 +240,12 @@ void Dodecahedron::calcWallCenters()
 {
 	Vec3f vCalc,v1,v2,v3;
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+		std::vector<Vec3f> _vertices = getWallAnchorVertices( wall );
+		v1 = _vertices[0];
+		v2 = _vertices[1];
+		v3 = _vertices[2];
+
 		// Calculation of the center is based on finding the middle of height of a isosceles (...a triangle with two identical walls basically)
-		//switch( wall ){
-//			case 1:
-				v1 = vertices[wallVerticeIds[wall][3]];
-				v2 = vertices[wallVerticeIds[wall][0]];
-				v3 = vertices[wallVerticeIds[wall][1]];				
-		//		break;
-//			default:
-//				v1 = vertices[wallVerticeIds[wall][0]];
-//				v2 = vertices[wallVerticeIds[wall][2]];
-//				v3 = vertices[wallVerticeIds[wall][3]];				
-//				break;
-//		}
-		
 		//find half of the base
 		vCalc = (v2+v3)/2.0f;
 		//find the middle of height
@@ -241,6 +255,79 @@ void Dodecahedron::calcWallCenters()
 	}
 }
 
+std::vector<Vec3f> Dodecahedron::getWallAnchorVertices( int wall )
+{
+	std::vector<Vec3f> _vertices;
+	Vec3f v1,v2,v3;
+	
+	switch( wall ){
+		case 0:
+			v1 = vertices[wallVerticeIds[wall][1]];
+			v2 = vertices[wallVerticeIds[wall][4]];
+			v3 = vertices[wallVerticeIds[wall][3]];				
+			break;			
+		case 1:
+			v1 = vertices[wallVerticeIds[wall][2]];
+			v2 = vertices[wallVerticeIds[wall][0]];
+			v3 = vertices[wallVerticeIds[wall][4]];				
+			break;
+		case 2:
+			v1 = vertices[wallVerticeIds[wall][4]];
+			v2 = vertices[wallVerticeIds[wall][1]];
+			v3 = vertices[wallVerticeIds[wall][2]];				
+			break;			
+		case 3:
+			v1 = vertices[wallVerticeIds[wall][4]];
+			v2 = vertices[wallVerticeIds[wall][1]];
+			v3 = vertices[wallVerticeIds[wall][2]];				
+			break;						
+		case 4:
+			v1 = vertices[wallVerticeIds[wall][3]];
+			v2 = vertices[wallVerticeIds[wall][1]];
+			v3 = vertices[wallVerticeIds[wall][0]];				
+			break;								
+		case 5:
+			v1 = vertices[wallVerticeIds[wall][2]];
+			v2 = vertices[wallVerticeIds[wall][0]];
+			v3 = vertices[wallVerticeIds[wall][4]];				
+			break;									
+		case 6:
+			v1 = vertices[wallVerticeIds[wall][3]];
+			v2 = vertices[wallVerticeIds[wall][0]];
+			v3 = vertices[wallVerticeIds[wall][1]];				
+			break;				
+		case 7:
+			v1 = vertices[wallVerticeIds[wall][4]];
+			v2 = vertices[wallVerticeIds[wall][1]];
+			v3 = vertices[wallVerticeIds[wall][2]];				
+			break;							
+		case 8:
+			v1 = vertices[wallVerticeIds[wall][2]];
+			v2 = vertices[wallVerticeIds[wall][4]];
+			v3 = vertices[wallVerticeIds[wall][0]];				
+			break;
+		case 9:
+			v1 = vertices[wallVerticeIds[wall][2]];
+			v2 = vertices[wallVerticeIds[wall][4]];
+			v3 = vertices[wallVerticeIds[wall][0]];				
+			break;			
+		case 10:
+			v1 = vertices[wallVerticeIds[wall][2]];
+			v2 = vertices[wallVerticeIds[wall][0]];
+			v3 = vertices[wallVerticeIds[wall][4]];				
+			break;	
+		case 11:
+			v1 = vertices[wallVerticeIds[wall][3]];
+			v2 = vertices[wallVerticeIds[wall][0]];
+			v3 = vertices[wallVerticeIds[wall][1]];				
+			break;			
+	}
+	
+	_vertices.push_back(v1);
+	_vertices.push_back(v2);
+	_vertices.push_back(v3);
+	return _vertices;
+}
 
 /**
  *
@@ -250,20 +337,13 @@ void Dodecahedron::calcWallCoordinateSystems()
 	Vec3f v1,v2,v3,vBase,vCenter,vCalc;
 	Vec3f vX,vY,vZ;
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
+		std::vector<Vec3f> _vertices = getWallAnchorVertices( wall );
+		v1 = _vertices[0];
+		v2 = _vertices[1];
+		v3 = _vertices[2];
+		
 		vCenter = wallCenters[wall];		
 		
-//		switch( wall ){
-//			case 1:
-				v1 = vertices[wallVerticeIds[wall][3]];
-				v2 = vertices[wallVerticeIds[wall][0]];
-				v3 = vertices[wallVerticeIds[wall][1]];				
-//				break;
-//			default:
-//				v1 = vertices[wallVerticeIds[wall][0]];
-//				v2 = vertices[wallVerticeIds[wall][2]];
-//				v3 = vertices[wallVerticeIds[wall][3]];				
-//				break;
-//		}
 		
 		vX = (v3-v2);
 		vX.normalize();
@@ -350,11 +430,16 @@ void Dodecahedron::drawWall( int wall )
 	
 	glEnd();	
 
-	if( wall == DEBUG_WALL ){
+	if( wall == __debugSelectedWall || wall == 0 ){
 		for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 			v = vertices[ wallVerticeIds[wall][i] ];
-			gl::color( ColorAf( i/(float)VERTICES_PER_WALL , i/(float)VERTICES_PER_WALL , i/(float)VERTICES_PER_WALL ) );
-			gl::drawCube( v , Vec3f( 10 , i*10 , 10 ) );
+			if( wall == 0 ){
+				gl::color( ColorAf( i/(float)VERTICES_PER_WALL , 0.2 , 0.2 ) );
+				gl::drawSphere( v , 3 + 2 * i );
+			}else{				
+				gl::color( ColorAf( i/(float)VERTICES_PER_WALL , i/(float)VERTICES_PER_WALL , i/(float)VERTICES_PER_WALL ) );
+				gl::drawCube( v , Vec3f( 10 , i*10 , 10 ) );
+			}
 		}
 	}
 	
@@ -405,7 +490,6 @@ void Dodecahedron::drawSonicCones( int wall )
  */
 void Dodecahedron::drawEye( int wall )
 { 
-//	if( wall != DEBUG_WALL ){ return; }
 	
 	string wallId = "wall" + boost::lexical_cast<string>( wall );
 	int verticesPerEyelid = 16;
@@ -413,8 +497,6 @@ void Dodecahedron::drawEye( int wall )
 	float width=60.0f,height,heightMin = 1.0,heightMax = 10 * (1+get( wallId ));
 	
 	transformToWallCoordinateSystem(wall);
-	
-
 	
 	glBegin(GL_LINE_LOOP);
 	gl::color( ColorAf(1,1,1) );
