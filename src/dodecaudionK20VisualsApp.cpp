@@ -21,6 +21,7 @@
 #include "CameraDrawer.h"
 #include "Dodecahedron.h"
 #include "FFTVisualiser.h"
+#include "JKDrawer.h"
 //#include "Grid.h"
 #include "ParticlesHolder.h"
 
@@ -65,7 +66,7 @@ public:
 	gl::Fbo::Format fboFormat;
 	gl::Fbo	fbo;
 	gl::Texture fboTexture;
-	
+	gl::Texture mBg;
 	
 	//controllers for input (OSC, MIDI, etc.)
 	GenericController genCtrl;
@@ -80,6 +81,7 @@ public:
 	Dodecahedron dode;
 	FFTVisualiser fftVis;
 //	Grid grid;
+	JKDrawer jkDrawer;
     ParticlesHolder particlesHolder;
 	
 	ShaderFilter noiseFlt,vignetteFlt,glitchFlt,passThruFlt,invertFlt,blurVFlt,blurHFlt,multFlt;
@@ -121,12 +123,15 @@ void dodecaudionK20Visuals::setup()
 	//
 	cam.setup();
 	visualObjects.push_back( &cam );
+	jkDrawer.setup();
+	visualObjects.push_back( &jkDrawer );
 	fftVis.setup();
 	visualObjects.push_back( &fftVis );	
 	//grid.setup();
 	//visualObjects.push_back( &grid );	
 	dode.setup();
 	visualObjects.push_back( &dode );
+
 	
 	//particlesHolder.setup();
 	//visualObjects.push_back( &particlesHolder );
@@ -137,6 +142,13 @@ void dodecaudionK20Visuals::setup()
 	//
 	//Important stuff: always add a %2 amount of filters. Otherwise output will be upside down.
 	//
+/*	
+	passThruFlt.setup("passThru", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_PASS_THRU_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &passThruFlt );
+	passThruFlt.setup("passThru", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_PASS_THRU_SHADER_FRAG), getWindowSize());
+	visualFilters.push_back( &passThruFlt );
+	
+	/*
 	invertFlt.setup("invert", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_INVERT_SHADER_FRAG), getWindowSize());	
 	visualFilters.push_back( &invertFlt );
 	multFlt.setup("multiply", loadResource(RES_PASS_THRU_SHADER_VERT), loadResource(RES_MULTIPLY_SHADER_FRAG), getWindowSize());
@@ -148,16 +160,16 @@ void dodecaudionK20Visuals::setup()
 	visualFilters.push_back( &glitchFlt );
 	
 	//Blur kills the GPU in fulscreen
-	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
-	visualFilters.push_back( &blurHFlt );
-	blurVFlt.setup("blur-vertical", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__VERTICAL_SHADER_FRAG), getWindowSize());
-	visualFilters.push_back( &blurVFlt );
+//	blurHFlt.setup("blur-horizontal", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__HORIZONTAL_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &blurHFlt );
+//	blurVFlt.setup("blur-vertical", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_BLUR__VERTICAL_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &blurVFlt );
 
 	vignetteFlt.setup("vignette", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_VIGNETTE_SHADER_FRAG), getWindowSize());
 	visualFilters.push_back( &vignetteFlt );
-	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
-	visualFilters.push_back( &noiseFlt );
-	
+//	noiseFlt.setup("noise", loadResource(RES_PASS_THRU_SHADER_VERT),loadResource(RES_SIMPLE_NOISE_SHADER_FRAG), getWindowSize());
+//	visualFilters.push_back( &noiseFlt );
+	*/
 	//
 	//init FBO
 	//
@@ -171,6 +183,8 @@ void dodecaudionK20Visuals::setup()
 		(*flt)->setFBO( &fbo );
 	}
 	
+	
+	mBg = gl::Texture( loadImage( loadResource( "bg2.png") ) );	
 }
 
 /**
@@ -178,6 +192,7 @@ void dodecaudionK20Visuals::setup()
  */
 void dodecaudionK20Visuals::update()
 {
+	console() << "Update" << endl;
 	//update inputs
 	for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
 		(*ctrl)->update();
@@ -208,7 +223,6 @@ void dodecaudionK20Visuals::update()
 	for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
 		(*ctrl)->releaseTransitory();
 	}
-	
 }
 
 /**
@@ -218,18 +232,21 @@ void dodecaudionK20Visuals::draw()
 {
 	gl::clear( Color(0,0,0) );
 
+	mBg.enableAndBind();
+	gl::draw( mBg , getWindowBounds() );
+	mBg.unbind();	
+	
+	//§return;
 	//draw scene to FBO for later filter processing
 	fbo.bindFramebuffer();
-	
-	//cam.lookAt( camPosition , Vec3f::zero() , -Vec3f::yAxis() );
 		
-	gl::enableDepthRead();
-	gl::enableDepthWrite();
-	gl::clear( Color( 0, 0, 0 ) ); 
+	//gl::enableDepthRead();
+	//gl::enableDepthWrite();
+	gl::clear( ColorAf( 0, 0, 0, 0 ) ); 
 
 	//glEnable(GL_DEPTH_TEST);
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
+	//glEnable(GL_BLEND);
+	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
 	
 	//setup fog
 	/*
@@ -243,8 +260,8 @@ void dodecaudionK20Visuals::draw()
 	glDepthFunc(GL_LESS);
 	glAlphaFunc(GL_GREATER, 0.5f);
 	*/
-	glEnable(GL_ALPHA_TEST);
-	glEnable(GL_AUTO_NORMAL);
+	//glEnable(GL_ALPHA_TEST);
+	//glEnable(GL_AUTO_NORMAL);
 	
 	gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
@@ -268,6 +285,7 @@ void dodecaudionK20Visuals::draw()
 	tex.enableAndBind();
 	gl::setViewport( getWindowBounds() );
 	gl::setMatricesWindow( getWindowSize() );
+	glTranslated(0, 0, 1);
 	gl::color( ColorAf( 1,1,1,1 ) );
 	gl::drawSolidRect( getWindowBounds() );
 	tex.unbind();
@@ -328,6 +346,11 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		//update fft
 		if( vis->getId() == "fftVisualiser" ){
 			vis->set( "blockSize" , ctrl->get( "slider4" ) );
+		}
+		if( vis->getId() == "JKDrawer" ){
+			vis->set( DRAWABLE_JKDRAWER_TORUS_FREQ , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+			vis->set( DRAWABLE_JKDRAWER_TORUS_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
+
 		}
 		if( vis->getId() == "camera" ){
 			
@@ -479,7 +502,7 @@ void dodecaudionK20Visuals::keyDown( KeyEvent event ){
 	char ch = event.getChar();
 	if( ch == 'f' ){
 		setFullScreen( !isFullScreen() );			
-		gl::clear(Color(0,0,0));
+		gl::clear(ColorAf(0,0,0,0));
 	}
 }
 	

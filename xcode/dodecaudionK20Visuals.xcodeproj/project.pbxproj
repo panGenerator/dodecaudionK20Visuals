@@ -37,6 +37,8 @@
 		9F16D38B1450A356001728A0 /* MIDIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F16D38A1450A356001728A0 /* MIDIController.cpp */; };
 		9F3A74801459DEE400D0FFA8 /* ParticlesHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */; };
 		9F3A74841459E9EA00D0FFA8 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A74831459E9EA00D0FFA8 /* Particle.cpp */; };
+		9F3A7CE6145AE66600D0FFA8 /* JKDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A7CE5145AE66500D0FFA8 /* JKDrawer.cpp */; };
+		9F4ABE5D145AE95C000CB0B9 /* Tri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F4ABE5B145AE95C000CB0B9 /* Tri.cpp */; };
 		9F533E921452FF4B0086D9D5 /* ShaderFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */; };
 		9F53415E14533AAA0086D9D5 /* simpleNoise.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415C14533AAA0086D9D5 /* simpleNoise.frag */; };
 		9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9F53415D14533AAA0086D9D5 /* passThru.vert */; };
@@ -55,6 +57,7 @@
 		9FD6807C14586E8700E46FB7 /* passThru.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6807B14586E8700E46FB7 /* passThru.frag */; };
 		9FE7DCB11448A125006BA574 /* GenericController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCAD1448A125006BA574 /* GenericController.cpp */; };
 		9FE7DCB21448A125006BA574 /* Dodecahedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */; };
+		9FFBDEB8145AF1AC000F452F /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFBDEB7145AF1AC000F452F /* bg2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,10 @@
 		9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticlesHolder.cpp; sourceTree = "<group>"; };
 		9F3A74821459E9EA00D0FFA8 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		9F3A74831459E9EA00D0FFA8 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		9F3A7CE4145AE66500D0FFA8 /* JKDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDrawer.h; sourceTree = "<group>"; };
+		9F3A7CE5145AE66500D0FFA8 /* JKDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JKDrawer.cpp; sourceTree = "<group>"; };
+		9F4ABE5B145AE95C000CB0B9 /* Tri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tri.cpp; sourceTree = "<group>"; };
+		9F4ABE5C145AE95C000CB0B9 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tri.h; sourceTree = "<group>"; };
 		9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		9F533E901452FF4B0086D9D5 /* ShaderFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderFilter.h; sourceTree = "<group>"; };
 		9F533E911452FF4B0086D9D5 /* ShaderFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderFilter.cpp; sourceTree = "<group>"; };
@@ -157,6 +164,7 @@
 		9FE7DCAD1448A125006BA574 /* GenericController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericController.cpp; sourceTree = "<group>"; };
 		9FE7DCAF1448A125006BA574 /* Dodecahedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dodecahedron.h; sourceTree = "<group>"; };
 		9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dodecahedron.cpp; sourceTree = "<group>"; };
+		9FFBDEB7145AF1AC000F452F /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = ../resources/bg2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +265,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9FFBDEB7145AF1AC000F452F /* bg2.png */,
 				9F127C0B14548489000C7F8F /* blur-horizontal.frag */,
 				9F127C82145487E6000C7F8F /* multiply.frag */,
 				9F127AB8145472B4000C7F8F /* blur-vertical.frag */,
@@ -353,6 +362,15 @@
 				9FB63DEF1455B2EA006095B9 /* MIDINanoPadController.cpp */,
 			);
 			name = MIDIController;
+			sourceTree = "<group>";
+		};
+		9F3A7CFA145AE74D00D0FFA8 /* JKDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				9F4ABE5B145AE95C000CB0B9 /* Tri.cpp */,
+				9F4ABE5C145AE95C000CB0B9 /* Tri.h */,
+			);
+			name = JKDrawer;
 			sourceTree = "<group>";
 		};
 		9F533E8F1452FF1D0086D9D5 /* Filter */ = {
@@ -479,6 +497,7 @@
 		9FE7DCAE1448A125006BA574 /* Drawable */ = {
 			isa = PBXGroup;
 			children = (
+				9F3A7CFA145AE74D00D0FFA8 /* JKDrawer */,
 				9F16D06B1449C3FB001728A0 /* DebugItems */,
 				9FE7DCAF1448A125006BA574 /* Dodecahedron.h */,
 				9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */,
@@ -490,6 +509,8 @@
 				9F3A747F1459DEE400D0FFA8 /* ParticlesHolder.cpp */,
 				9F3A74821459E9EA00D0FFA8 /* Particle.h */,
 				9F3A74831459E9EA00D0FFA8 /* Particle.cpp */,
+				9F3A7CE4145AE66500D0FFA8 /* JKDrawer.h */,
+				9F3A7CE5145AE66500D0FFA8 /* JKDrawer.cpp */,
 			);
 			name = Drawable;
 			sourceTree = "<group>";
@@ -554,6 +575,7 @@
 				9FD6807814586DEC00E46FB7 /* glitch.frag in Resources */,
 				9F53415F14533AAA0086D9D5 /* passThru.vert in Resources */,
 				9FD6807C14586E8700E46FB7 /* passThru.frag in Resources */,
+				9FFBDEB8145AF1AC000F452F /* bg2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +611,8 @@
 				9FB63E111455B3DA006095B9 /* DodecaudionOSCController.cpp in Sources */,
 				9F3A74801459DEE400D0FFA8 /* ParticlesHolder.cpp in Sources */,
 				9F3A74841459E9EA00D0FFA8 /* Particle.cpp in Sources */,
+				9F3A7CE6145AE66600D0FFA8 /* JKDrawer.cpp in Sources */,
+				9F4ABE5D145AE95C000CB0B9 /* Tri.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
