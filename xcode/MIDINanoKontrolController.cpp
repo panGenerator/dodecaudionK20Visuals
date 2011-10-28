@@ -40,7 +40,7 @@ string MIDINanoKontrolController::getId()
 void MIDINanoKontrolController::processMessage( midi::Message* msg )
 {
 	//console() << "Slider" << std::endl;
-	__logMessage( msg );	
+	//__logMessage( msg );	
 	
 
 	int keyId = (int)msg->byteOne;

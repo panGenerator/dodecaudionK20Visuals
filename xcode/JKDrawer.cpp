@@ -75,9 +75,8 @@ void JKDrawer::update()
 {
 	//torus
 	torusAmplitude = 100.0f * get( DRAWABLE_JKDRAWER_TORUS_AMPLITUDE );
-	torusFrequency = 10.0 * get( DRAWABLE_JKDRAWER_TORUS_FREQ );
-
-	console() << "Torus: amplitude: " << torusAmplitude << ", freq: " << torusFrequency << endl;
+	torusAngleOffset = 3.14 * get( DRAWABLE_JKDRAWER_TORUS_OFFSET );
+	sphereRadius = 5.0f + 50 * get( DRAWABLE_JKDRAWER_SPHERE_RADIUS ); 
 }
 
 /**
@@ -118,7 +117,7 @@ void JKDrawer::draw()
 
 void JKDrawer::setupTorus(){
 	torusAmplitude = 5.0f;
-	torusFrequency = 1.0f;
+	torusAngleOffset = 0.0f;
 }
 
 
@@ -177,7 +176,7 @@ void JKDrawer::drawSphere(){
 	int i, j;
 	
 	float noiseFactor = 10;
-	float oscilatedR = r + sin( getElapsedSeconds() / 2.0 ) * 50;
+	float oscilatedR = sphereRadius;//r + sin( getElapsedSeconds() / 2.0 ) * 50;
 	
 	
 	glPushMatrix();
@@ -230,8 +229,8 @@ void JKDrawer::drawSphere(){
 void JKDrawer::drawTorus(){
 	
 	glPushMatrix();
-	glRotated( 90, 1.0, 0.0, 0.0);
-	
+	glRotated( 90 , 1.0, 0.0, 0.0);
+	glRotated( get( "framesCount" ) , 0 , 0,  1 );
 	//glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	glColor4f( 0.0, 0.95, 0.9, 0.5 );
 	
@@ -248,11 +247,12 @@ void JKDrawer::drawTorus(){
 		float idx = i/(float)segments;
 		float sinA = sin( angle );
 		float cosA = cos( angle );
-		float x = sinA * radius1;
-		float y = cosA * radius1;
-		float z = torusAmplitude * sin( torusFrequency * idx * 3.14 );
-		float z2 = torusAmplitude * sin( torusFrequency * (idx + (-0.1 + 0.2 * rand() / (float)RAND_MAX ) ) ); 
+		float x = sinA * radius1 + 0.01 * radius1 * cosA;
+		float y = cosA * radius1 + 0.01 * radius1 * sinA;
 		
+		float f = 12.0f * idx * 3.14;
+		float z = torusAmplitude * (sin( f ) );
+		float z2 = torusAmplitude * (sin( f ) );		
 		
 		gl::vertex( Vec3f( x, y, z ) );
 		
@@ -299,7 +299,7 @@ void JKDrawer::drawParticles(){
 	
 	glPushMatrix();
 	
-	glTranslated( app::getWindowWidth()/2, app::getWindowHeight()/2, 0);
+	//glTranslated( app::getWindowWidth()/2, app::getWindowHeight()/2, 0);
 	glRotated( getElapsedFrames()/10.0, 0.0, 1.0, 0.0 );
 	
 	// draw tris

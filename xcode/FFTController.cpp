@@ -56,6 +56,7 @@ void FFTController::readFFT()
 {
 	pcmBuffer = audioInput.getPcmBuffer();
 	if( pcmBuffer ){
+		float avg;
 		int bandsCount = (int) get( BANDS_COUNT_KEY );
 		string bandId;
 		float bandVal;
@@ -68,9 +69,13 @@ void FFTController::readFFT()
 				bandId = "band" + boost::lexical_cast<string>( band );
 				
 				//easing
-				bandVal = 0.6 * get( bandId ) + 0.4 * fftFloatData[band];
-				
+				bandVal = 0.5 * get( bandId ) + 0.4 * fftFloatData[band];
+				avg += bandVal;
 				set( bandId , bandVal );			
+			}
+			if( bandsCount > 0 ){
+				avg /= bandsCount;
+				set( FFT_BANDS_AVG , avg );
 			}
 		}
 	}	

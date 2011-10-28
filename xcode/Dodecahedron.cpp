@@ -144,7 +144,7 @@ void Dodecahedron::draw()
 	
 	gl::rotate( quat ); 
 
-	console() << rotation << ",  "  << rotation2 << endl;
+	//console() << rotation << ",  "  << rotation2 << endl;
 	
 	/*
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
@@ -405,7 +405,8 @@ void Dodecahedron::popWallCoordinateSystem()
 void Dodecahedron::drawWall( int wall )
 {
 	Vec3f v;
-	
+	string wallId = DRAWABLE_DODECAHEDRON_VAR_WALL_ + boost::lexical_cast<string>( wall );
+
 	//draw the walls
 	/*
 	gl::color( ColorAf(0.5f,0.5f,0.5f,0.25f) );
@@ -421,7 +422,7 @@ void Dodecahedron::drawWall( int wall )
 	glEnable(GL_LINE_SMOOTH);	
 	glLineWidth(1.0f);
 	
-	gl::color( ColorAf(1.0,1.0,1.0,1.0f) );	
+	gl::color( ColorAf(1.0,1.0,1.0, 0.4f + 0.6f * get(wallId) ) );	
 	glBegin(GL_LINE_LOOP);		
 	for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 		v = vertices[ wallVerticeIds[wall][i] ];
@@ -454,13 +455,14 @@ void Dodecahedron::drawWall( int wall )
 void Dodecahedron::drawSonicCones( int wall )
 {	
 	transformToWallCoordinateSystem(wall);
-	
-	glLineWidth(1.3);
+
+	glLineWidth(1.0f);
 	glEnable(GL_LINE_SMOOTH);
 	
 	string wallId = DRAWABLE_DODECAHEDRON_VAR_WALL_ + boost::lexical_cast<string>( wall );
+	//string wallId = "wall" + boost::lexical_cast<string>( wall );
 	float radius,minRadius = 1.0f, maxRadius=minRadius + 64 * get(wallId);
-	int step = 13,circlePoints = 16;
+	int step = 10,circlePoints = 32;
 	int length = 1000.0 * get(wallId);
 	float idx= 0.0f,idxCircle=0.0f;
 	Vec3f v;
@@ -468,10 +470,10 @@ void Dodecahedron::drawSonicCones( int wall )
 		idx = ring/(float)length;
 		
 		//increasing radius
-		radius = minRadius + pow(idx,2) * (maxRadius-minRadius);
+		radius = minRadius;// + pow(idx,2) * (maxRadius-minRadius);
 		
 		//fade out
-		gl::color( ColorAf(0.6,0.7,1.0f,0.5f-0.3f*idx) );
+		gl::color( ColorAf(0.6,0.7,1.0f,0.6f-0.3f*idx) );
 		
 		//draw a circle
 		glBegin(GL_LINE_LOOP);
@@ -483,6 +485,7 @@ void Dodecahedron::drawSonicCones( int wall )
 		glEnd();
 	}
 	
+	glLineWidth(1.0f);
 	popWallCoordinateSystem();
 }
 
@@ -492,7 +495,9 @@ void Dodecahedron::drawSonicCones( int wall )
 void Dodecahedron::drawEye( int wall )
 { 
 	
-	string wallId = "wall" + boost::lexical_cast<string>( wall );
+	//string wallId = "wall" + boost::lexical_cast<string>( wall );
+	string wallId = DRAWABLE_DODECAHEDRON_VAR_WALL_ + boost::lexical_cast<string>( wall );
+	
 	int verticesPerEyelid = 16;
 	float idx,x,y;
 	float width=60.0f,height,heightMin = 1.0,heightMax = 10;// * (1+get( wallId ));

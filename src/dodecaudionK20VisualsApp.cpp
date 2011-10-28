@@ -123,12 +123,12 @@ void dodecaudionK20Visuals::setup()
 	//
 	cam.setup();
 	visualObjects.push_back( &cam );
-	jkDrawer.setup();
-	visualObjects.push_back( &jkDrawer );
-	fftVis.setup();
-	visualObjects.push_back( &fftVis );	
+	//fftVis.setup();
+	//visualObjects.push_back( &fftVis );	
 	//grid.setup();
 	//visualObjects.push_back( &grid );	
+	jkDrawer.setup();
+	visualObjects.push_back( &jkDrawer );
 	dode.setup();
 	visualObjects.push_back( &dode );
 
@@ -192,7 +192,6 @@ void dodecaudionK20Visuals::setup()
  */
 void dodecaudionK20Visuals::update()
 {
-	console() << "Update" << endl;
 	//update inputs
 	for( vector<Controller *>::iterator ctrl = controllers.begin() ; ctrl != controllers.end() ; ++ctrl ){			
 		(*ctrl)->update();
@@ -232,6 +231,7 @@ void dodecaudionK20Visuals::draw()
 {
 	gl::clear( Color(0,0,0) );
 
+	
 	mBg.enableAndBind();
 	gl::draw( mBg , getWindowBounds() );
 	mBg.unbind();	
@@ -240,10 +240,10 @@ void dodecaudionK20Visuals::draw()
 	//draw scene to FBO for later filter processing
 	fbo.bindFramebuffer();
 		
-	//gl::enableDepthRead();
-	//gl::enableDepthWrite();
 	gl::clear( ColorAf( 0, 0, 0, 0 ) ); 
 
+	//gl::enableDepthRead();
+	//gl::enableDepthWrite();
 	//glEnable(GL_DEPTH_TEST);
 	//glEnable(GL_BLEND);
 	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
@@ -266,11 +266,13 @@ void dodecaudionK20Visuals::draw()
 	gl::enableAdditiveBlending();
 	gl::enableAlphaBlending();
 	glLoadIdentity();
-		
+	
+	//glEnable(GL_DEPTH_TEST);		
 	for( vector<Drawable *>::iterator vis = visualObjects.begin() ; vis != visualObjects.end() ; ++vis ){
 		(*vis)->draw();
 	}	
-	
+	//glDisable(GL_DEPTH_TEST);
+
 	fbo.unbindFramebuffer();
 
 
@@ -281,11 +283,12 @@ void dodecaudionK20Visuals::draw()
 	}	
 	
 	
+
+	
 	//draw the filtered output on the screen
 	tex.enableAndBind();
 	gl::setViewport( getWindowBounds() );
 	gl::setMatricesWindow( getWindowSize() );
-	glTranslated(0, 0, 1);
 	gl::color( ColorAf( 1,1,1,1 ) );
 	gl::drawSolidRect( getWindowBounds() );
 	tex.unbind();
@@ -319,11 +322,14 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		}
 		if( vis->getId() == "dodecahedron" ){
 			//for testing only
+			/*
 			string wallId;
 			for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
 				wallId = "wall" + boost::lexical_cast<string>( wall );
 				vis->set( wallId , ( (getElapsedFrames() - wall * 10) % 120 ) / 120.0f );
 			}
+			*/
+			 
 		}
 	}
 	//
@@ -347,13 +353,12 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 		if( vis->getId() == "fftVisualiser" ){
 			vis->set( "blockSize" , ctrl->get( "slider4" ) );
 		}
-		if( vis->getId() == "JKDrawer" ){
-			vis->set( DRAWABLE_JKDRAWER_TORUS_FREQ , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
-			vis->set( DRAWABLE_JKDRAWER_TORUS_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
-
-		}
+		//if( vis->getId() == "JKDrawer" ){
+//			vis->set( DRAWABLE_JKDRAWER_TORUS_OFFSET , ctrl->get( TOUCH_OSC_SLIDER_1_1 ) );
+//			vis->set( DRAWABLE_JKDRAWER_TORUS_AMPLITUDE , ctrl->get( TOUCH_OSC_SLIDER_1_2 ) );
+//
+//		}
 		if( vis->getId() == "camera" ){
-			
 			//START:: THIS IS FOR TESTING WITOUT MIDI
 			if( ctrl->get( TOUCH_OSC_PUSH_BUTTON_1_1 , true ) > 0 ){
 				vis->set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_NEXT , 1 );
@@ -402,6 +407,11 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 				vis->set( *it , ctrl->get( *it ) );
 			}
 		}
+		if( vis->getId() == "JKDrawer" ){
+			vis->set( DRAWABLE_JKDRAWER_SPHERE_RADIUS , 0.003f * ctrl->get( FFT_BANDS_AVG ) + 0.997f * ctrl->get( FFT_BANDS_AVG ) );
+			vis->set( DRAWABLE_JKDRAWER_TORUS_AMPLITUDE , 0.3f * ctrl->get( FFT_BANDS_AVG ) + 0.7f * ctrl->get( FFT_BANDS_AVG ) );
+			vis->set( DRAWABLE_JKDRAWER_TORUS_OFFSET , 0.8f * ctrl->get( FFT_BANDS_AVG ) + 0.2f * ctrl->get( FFT_BANDS_AVG ) );		
+		}
 	}
 	//Midi slider mapping
 	if( ctrl->getId() == "midi:nanoKONTROL SLIDER/KNOB" ){
@@ -437,6 +447,27 @@ void dodecaudionK20Visuals::updateDrawableByController(Drawable *vis , Controlle
 			vis->set( "param1" , ctrl->get( MIDI_KORG_NANO_KONTROL_KNOB_1_7 ) );
 			
 			vis->set( "debugWall" , ctrl->get( MIDI_KORG_NANO_KONTROL_SLIDER_1_7 ));
+		}
+	}
+	
+	if( ctrl->getId() == "dodecaudionOsc" ){
+		if( vis->getId() == "dodecahedron" ){
+			float ease1=0.6f,ease2=0.4f;
+			//vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_1 , ( getElapsedFrames() % 100 ) / 100.0f );
+			
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_1 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_1) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_1) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_2 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_2) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_2) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_3 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_3) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_3) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_4 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_4) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_4) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_5 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_5) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_5) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_6 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_6) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_6) );
+
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_7 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_7) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_7) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_8 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_8) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_8) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_9 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_9) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_9) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_10 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_10) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_10) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_11 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_11) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_11) );
+			vis->set( DRAWABLE_DODECAHEDRON_VAR_WALL_12 , ease1 * vis->get(DRAWABLE_DODECAHEDRON_VAR_WALL_12) + ease2 * ctrl->get(DODECAUDION_OSC_WALL_12) );
 		}
 	}
 	

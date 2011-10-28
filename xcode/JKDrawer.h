@@ -25,7 +25,7 @@
 
 #define DRAWABLE_JKDRAWER_SPHERE_RADIUS "sphereRadius"
 
-#define DRAWABLE_JKDRAWER_TORUS_FREQ "torusFreq"
+#define DRAWABLE_JKDRAWER_TORUS_OFFSET "torusOffset"
 #define DRAWABLE_JKDRAWER_TORUS_AMPLITUDE "torusAmplitude"
 
 //work in the cinder's namespace
@@ -61,7 +61,8 @@ private:
 	std::vector<Tri>mTris;	
 	float particlesDensity;
 	
-	float torusFrequency,torusAmplitude;
+	float torusAngleOffset,torusAmplitude;
+	float sphereRadius;
 };
 
 #endif

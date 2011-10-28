@@ -43,7 +43,7 @@ void Tri::draw(){
 	
 	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	glColor4f( mColor.r, mColor.g, mColor.b, mColor.a );
-	glColor4f( 0.0, 0.85, 1.0, 0.5 );
+	glColor4f( 0.0, 0.85, 1.0, 0.4 );//* (round(mRotation.z)%360)/360.0f);
 	
 	glBegin(GL_TRIANGLES);								// Drawing Using Triangles
 		glVertex3f( 0.0f, mSize, 0.0f);					// Top

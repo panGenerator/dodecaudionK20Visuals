@@ -19,6 +19,8 @@
 
 #define BANDS_COUNT_KEY "bands"
 
+#define FFT_BANDS_AVG "bandsAvg"
+
 using namespace std;
 using namespace ci;
 using namespace ci::app;

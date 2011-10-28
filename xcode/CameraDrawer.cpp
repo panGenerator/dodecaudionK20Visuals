@@ -61,9 +61,9 @@ void CameraDrawer::setup()
 	set( "cameraFarClip" , 2500 );
 		
 	//set up predefined camera positions
-	predefinedCamPositions.push_back( Vec3f( 0,0,-750) );
-	predefinedCamPositions.push_back( Vec3f( -200,0,750) );
-	predefinedCamPositions.push_back( Vec3f( -200,500,-950) );
+	predefinedCamPositions.push_back( Vec3f( 0,20,-750) );
+	predefinedCamPositions.push_back( Vec3f( 302.935,263.682,-298.499 ) );
+	predefinedCamPositions.push_back( Vec3f( -271.013,343.642,-242.616 ) );
 	predefinedCamPositions.push_back( Vec3f( 500,500,-500) );
 
 	//init defaults
@@ -97,7 +97,6 @@ void CameraDrawer::update()
 	
 	//go to prev predefined position flag set
 	if( get( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV ) == 1 ){
-		//console() << "PrevPos" << endl;
 		setCameraTargetToPredefinedPosition( currentPredefinedCamPositionIndex - 1 );
 		isAutonomous = false;
 		set( DRAWABLE_CAMERA_FLAG_PREDEFINED_POS_PREV , 0 );
@@ -115,7 +114,7 @@ void CameraDrawer::update()
 	
 	camShakeFactor = get( DRAWABLE_CAMERA_VAR_CAM_SHAKE_FACTOR );
 	
-	camPredefinedPositionLerpSpeed = 0.001 + 0.01 * get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
+	camPredefinedPositionLerpSpeed = 0.0001 + 0.01 * get( DRAWABLE_CAMERA_VAR_CAM_MOVEMENT_SPEED );
 
 	cam.setAspectRatio( get( "aspectRatio" ) );
 	cam.setFarClip( get( "cameraFarClip" ) );
@@ -138,8 +137,7 @@ void CameraDrawer::update()
 		camShakeLerpIndex = 0.0f;
 	}
 	
-	//TMP
-	//camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition ) + camShakeOffset;
+	camPosition = camPosition.lerp( camPredefinedPositionLerpIndex , targetCamPosition ) + camShakeOffset;
 	
 	//for manual camera 
 	Quatf quat,camRotationX,camRotationY;
@@ -156,11 +154,10 @@ void CameraDrawer::update()
 		
 	//console() << "Cam rotation: " << "x: " << rotationAngleX << ", y:" << rotationAngleY << ", dst: " << distance << endl;
 	
-	camPosition = predefinedCamPositions[0];
-	camPosition.z = distance;
-	camPosition = camPosition * quat;
-	
-	console() << "Cam position" << camPosition << endl;
+	//camPosition = predefinedCamPositions[0];
+	//camPosition.z = distance;
+	//camPosition = camPosition * quat;
+	//console() << "Cam position" << camPosition << endl;
 	
 	//update camera target
 	//TODO

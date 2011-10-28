@@ -42,7 +42,7 @@ string MIDINanoPadController::getId()
 void MIDINanoPadController::processMessage( midi::Message* msg )
 {
 	//console() << "Pad" << std::endl;
-	__logMessage( msg );	
+	//__logMessage( msg );	
 	
 	int keyId = (int)msg->byteOne;
 	float val = (float)msg->byteTwo;
