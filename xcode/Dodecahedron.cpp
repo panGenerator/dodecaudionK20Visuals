@@ -150,14 +150,14 @@ void Dodecahedron::draw()
 	 * @see: http://www.cs.umbc.edu/~squire/reference/polyhedra.shtml#dodecahedron
 	 */
 	for( int wall = 0 ; wall < WALL_COUNT ; wall++ ){
-		if( wall == 0 || wall == __debugSelectedWall ){
+		//if( wall == 0 || wall == __debugSelectedWall ){
 			int wallMapped = wallsToDodecahedronFacesMap[wall];		
 			drawWall( wallMapped );
-			__drawWallCenter( wallMapped );
-			__drawWallCoordinateSystem( wallMapped );
+		//	__drawWallCenter( wallMapped );
+		//	__drawWallCoordinateSystem( wallMapped );
 			drawSonicCones( wallMapped );
 			drawEye( wallMapped );
-		}
+		//}
 	}
 	
 	glPopMatrix();
@@ -430,6 +430,7 @@ void Dodecahedron::drawWall( int wall )
 	
 	glEnd();	
 
+	/*
 	if( wall == __debugSelectedWall || wall == 0 ){
 		for( int i = 0 ; i < VERTICES_PER_WALL ; i++ ){
 			v = vertices[ wallVerticeIds[wall][i] ];
@@ -442,7 +443,7 @@ void Dodecahedron::drawWall( int wall )
 			}
 		}
 	}
-	
+	*/
 	
 	glLineWidth(1.0f);
 }
@@ -494,17 +495,18 @@ void Dodecahedron::drawEye( int wall )
 	string wallId = "wall" + boost::lexical_cast<string>( wall );
 	int verticesPerEyelid = 16;
 	float idx,x,y;
-	float width=60.0f,height,heightMin = 1.0,heightMax = 10 * (1+get( wallId ));
+	float width=60.0f,height,heightMin = 1.0,heightMax = 10;// * (1+get( wallId ));
 	
+	float alpha = 0.1f + 0.9 * get( wallId );
 	transformToWallCoordinateSystem(wall);
 	
 	glBegin(GL_LINE_LOOP);
-	gl::color( ColorAf(1,1,1) );
+	gl::color( ColorAf(1,1,1,alpha) );
+	//top lid
 	for( int i = 0 ; i <= verticesPerEyelid ; i++ ){
 		idx = i/(float)verticesPerEyelid;
 		x = -width/2.0 + width * idx; 
 		y = heightMin + heightMax * sin( idx * 3.14 ); 
-		
 		glVertex3f( x, y, 1);
 	}
 	
@@ -513,11 +515,323 @@ void Dodecahedron::drawEye( int wall )
 		idx = 1.0f - i/(float)verticesPerEyelid;
 		x = -width/2.0 + width * idx; 
 		y = heightMin + heightMax * sin( idx * 3.14 ); 
-		
 		glVertex3f( x, -y, 1);		
 	}
 	
 	glEnd();
+	
+	//
+	//draw eyelashes
+	int lashesCount = wall+1;
+	int lashesCountTop,lashesCountBottom;
+	bool isEven = (lashesCount % 2 != 0);
+	if( isEven ){
+		lashesCountTop = round(lashesCount / 2.0f);
+		lashesCountBottom = round(lashesCount / 2.0f);
+	}else{
+		lashesCountTop = floor(lashesCount / 2.0f);
+		lashesCountBottom = ceil(lashesCount / 2.0f);
+	}
+	
+	float y1;
+	float maxY = 4.0f;
+	y1 = heightMin + heightMax * 1.3f;
+
+	float eyelashHeightNormal = maxY * 0.5f + maxY;
+	float eyelashHeightMax = maxY * 0.5f + 2.0f * maxY;
+	float angle;
+	float thickness = 0.3f;
+	gl::color( ColorAf( 1.0,1.0,1.0 , alpha ) );
+	
+	switch( wall ){
+		case 0:
+			glPushMatrix();
+			height = eyelashHeightNormal;
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glPopMatrix();
+			break;
+		case 1:
+			glPushMatrix();
+			height = eyelashHeightNormal;
+			glRotated(180, 0, 0, 1);
+			glRotated(-45, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glRotated(90, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glPopMatrix();		
+			break;
+		case 2:
+			glPushMatrix();
+			height = eyelashHeightMax;
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(180, 0, 0, 1);
+			glRotated(-45, 0, 0, 1);
+			
+			height = eyelashHeightNormal;
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glRotated(90, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glPopMatrix();		
+			break;
+		case 3:
+			glPushMatrix();
+			height = eyelashHeightNormal;
+			
+			glRotated(-45, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glRotated(90, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();			
+			
+			glRotated(-45, 0, 0, 1);
+
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			glRotated(90, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glPopMatrix();		
+			break;
+		case 4:
+			glPushMatrix();
+			
+			height = eyelashHeightNormal;
+			glRotated(-30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			height = eyelashHeightMax;
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+
+			height = eyelashHeightNormal;
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			height = eyelashHeightNormal;
+			glRotated(-45, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(90, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+						
+			glPopMatrix();
+			
+			break;
+		case 5:
+			glPushMatrix();
+			
+			height = eyelashHeightNormal;
+			glRotated(-30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( thickness , height , thickness ) );
+			
+			glPopMatrix();
+			
+			break;
+		case 6:	//7
+			glPushMatrix();
+			
+			height = eyelashHeightNormal;
+			glRotated(-30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			
+			height = eyelashHeightMax;
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			
+			height = eyelashHeightNormal;
+			glRotated(30, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-18.0/2.0f, 0, 0, 1);
+			glRotated(-18, 0, 0, 1);
+			for( int i = 0 ; i < 4 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(18, 0, 0, 1);
+			}
+			
+			
+			glPopMatrix();
+			
+			break;	
+		case 7:	//8
+			glPushMatrix();
+			angle = 18.0f;
+			height = eyelashHeightNormal;
+			
+			glRotated(-angle/2.0f, 0, 0, 1);
+			glRotated(-angle, 0, 0, 1);
+			for( int i = 0 ; i < 4 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-angle/2.0f, 0, 0, 1);
+			glRotated(-angle, 0, 0, 1);
+			for( int i = 0 ; i < 4 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			
+			break;
+		case 8:	//9
+			glPushMatrix();
+			angle = 18.0f;
+			height = eyelashHeightNormal;
+			
+			glRotated(-angle/2.0f, 0, 0, 1);
+			glRotated(-angle*2, 0, 0, 1);
+
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			glRotated(angle, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			
+			height = eyelashHeightMax;
+			glRotated(angle, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+			
+			height = eyelashHeightNormal;
+			glRotated(angle, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+
+			glRotated(angle, 0, 0, 1);
+			gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );			
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-angle/2.0f, 0, 0, 1);
+			glRotated(-angle, 0, 0, 1);
+			for( int i = 0 ; i < 4 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			
+			break;
+		case 9:	//10
+			glPushMatrix();
+			angle = 15.0f;
+			height = eyelashHeightNormal;
+			
+			glRotated(-angle*2.5, 0, 0, 1);
+			for( int i = 0 ; i < 5 ; i++ ){
+				height = eyelashHeightNormal;
+				if( i/5.0f == 0.5f ){ 
+					height = eyelashHeightMax;					
+				}
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-angle*2, 0, 0, 1);
+			for( int i = 0 ; i < 5 ; i++ ){
+				height = eyelashHeightNormal;
+				if( i/5.0f == 0.5f ){ 
+					height = eyelashHeightMax;					
+				}
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			
+			break;
+		case 10: //11
+			glPushMatrix();
+			angle = 12.0f;
+			height = eyelashHeightNormal;
+			
+			glRotated(-angle*2.5, 0, 0, 1);
+			for( int i = 0 ; i < 5 ; i++ ){
+				height = eyelashHeightNormal;
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-angle/2.0f, 0, 0, 1);
+			glRotated(-angle*3, 0, 0, 1);
+			for( int i = 0 ; i < 6 ; i++ ){
+				height = eyelashHeightNormal;
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			
+			break;
+		case 11: //12
+			glPushMatrix();
+			angle = 6.0f;
+			height = eyelashHeightNormal;
+			
+			glRotated(-angle*3, 0, 0, 1);
+			for( int i = 0 ; i < 6 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			glRotated(180, 0, 0, 1);
+			glPushMatrix();
+			
+			glRotated(-angle*3, 0, 0, 1);
+			for( int i = 0 ; i < 6 ; i++ ){
+				gl::drawCube( Vec3f( 0 , y1+height/2.0f , 0 ) , Vec3f( 1 , height , 1 ) );
+				glRotated(angle, 0, 0, 1);
+			}
+			
+			glPopMatrix();
+			
+			break;			
+	}
+	
+	
 	popWallCoordinateSystem();
 }
 

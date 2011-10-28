@@ -2,9 +2,9 @@
 {
 	00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 6409}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 6604}}";
 			sepNavSelRange = "{7304, 0}";
-			sepNavVisRange = "{6624, 1351}";
+			sepNavVisRange = "{7057, 1434}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -660,6 +660,201 @@
 			9F3A7B3C145ACDB900D0FFA8 /* PBXTextBookmark */ = 9F3A7B3C145ACDB900D0FFA8 /* PBXTextBookmark */;
 			9F3A7B3D145ACDB900D0FFA8 /* PBXTextBookmark */ = 9F3A7B3D145ACDB900D0FFA8 /* PBXTextBookmark */;
 			9F3A7B3E145ACDB900D0FFA8 /* PBXTextBookmark */ = 9F3A7B3E145ACDB900D0FFA8 /* PBXTextBookmark */;
+			9F3A7B45145AD29200D0FFA8 /* PBXTextBookmark */ = 9F3A7B45145AD29200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B46145AD29200D0FFA8 /* PBXTextBookmark */ = 9F3A7B46145AD29200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B47145AD29200D0FFA8 /* PBXTextBookmark */ = 9F3A7B47145AD29200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B4B145AD2BF00D0FFA8 /* PBXTextBookmark */ = 9F3A7B4B145AD2BF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B4C145AD2BF00D0FFA8 /* PBXTextBookmark */ = 9F3A7B4C145AD2BF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B4D145AD2BF00D0FFA8 /* PBXTextBookmark */ = 9F3A7B4D145AD2BF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B55145AD2EB00D0FFA8 /* PBXTextBookmark */ = 9F3A7B55145AD2EB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B56145AD2EB00D0FFA8 /* PBXTextBookmark */ = 9F3A7B56145AD2EB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B57145AD2EB00D0FFA8 /* PBXTextBookmark */ = 9F3A7B57145AD2EB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B5B145AD31E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B5B145AD31E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B5C145AD31E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B5C145AD31E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B5D145AD31E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B5D145AD31E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B61145AD34500D0FFA8 /* PBXTextBookmark */ = 9F3A7B61145AD34500D0FFA8 /* PBXTextBookmark */;
+			9F3A7B62145AD34500D0FFA8 /* PBXTextBookmark */ = 9F3A7B62145AD34500D0FFA8 /* PBXTextBookmark */;
+			9F3A7B63145AD34500D0FFA8 /* PBXTextBookmark */ = 9F3A7B63145AD34500D0FFA8 /* PBXTextBookmark */;
+			9F3A7B67145AD39600D0FFA8 /* PBXTextBookmark */ = 9F3A7B67145AD39600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B68145AD39600D0FFA8 /* PBXTextBookmark */ = 9F3A7B68145AD39600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B69145AD39600D0FFA8 /* PBXTextBookmark */ = 9F3A7B69145AD39600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B6D145AD3C100D0FFA8 /* PBXTextBookmark */ = 9F3A7B6D145AD3C100D0FFA8 /* PBXTextBookmark */;
+			9F3A7B6E145AD3C100D0FFA8 /* PBXTextBookmark */ = 9F3A7B6E145AD3C100D0FFA8 /* PBXTextBookmark */;
+			9F3A7B6F145AD3C100D0FFA8 /* PBXTextBookmark */ = 9F3A7B6F145AD3C100D0FFA8 /* PBXTextBookmark */;
+			9F3A7B72145AD3C800D0FFA8 /* PBXTextBookmark */ = 9F3A7B72145AD3C800D0FFA8 /* PBXTextBookmark */;
+			9F3A7B75145AD3CD00D0FFA8 /* PBXTextBookmark */ = 9F3A7B75145AD3CD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B76145AD3CD00D0FFA8 /* PBXTextBookmark */ = 9F3A7B76145AD3CD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B77145AD3CD00D0FFA8 /* PBXTextBookmark */ = 9F3A7B77145AD3CD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B7A145AD3DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7B7A145AD3DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B7B145AD3DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7B7B145AD3DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B7D145AD3DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7B7D145AD3DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B81145AD40E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B81145AD40E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B82145AD40E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B82145AD40E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B83145AD40E00D0FFA8 /* PBXTextBookmark */ = 9F3A7B83145AD40E00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B87145AD43200D0FFA8 /* PBXTextBookmark */ = 9F3A7B87145AD43200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B88145AD43200D0FFA8 /* PBXTextBookmark */ = 9F3A7B88145AD43200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B89145AD43200D0FFA8 /* PBXTextBookmark */ = 9F3A7B89145AD43200D0FFA8 /* PBXTextBookmark */;
+			9F3A7B8D145AD47600D0FFA8 /* PBXTextBookmark */ = 9F3A7B8D145AD47600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B8E145AD47600D0FFA8 /* PBXTextBookmark */ = 9F3A7B8E145AD47600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B8F145AD47600D0FFA8 /* PBXTextBookmark */ = 9F3A7B8F145AD47600D0FFA8 /* PBXTextBookmark */;
+			9F3A7B93145AD49000D0FFA8 /* PBXTextBookmark */ = 9F3A7B93145AD49000D0FFA8 /* PBXTextBookmark */;
+			9F3A7B94145AD49000D0FFA8 /* PBXTextBookmark */ = 9F3A7B94145AD49000D0FFA8 /* PBXTextBookmark */;
+			9F3A7B95145AD49000D0FFA8 /* PBXTextBookmark */ = 9F3A7B95145AD49000D0FFA8 /* PBXTextBookmark */;
+			9F3A7B9D145AD59A00D0FFA8 /* PBXTextBookmark */ = 9F3A7B9D145AD59A00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B9E145AD59A00D0FFA8 /* PBXTextBookmark */ = 9F3A7B9E145AD59A00D0FFA8 /* PBXTextBookmark */;
+			9F3A7B9F145AD59A00D0FFA8 /* PBXTextBookmark */ = 9F3A7B9F145AD59A00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BA3145AD5B100D0FFA8 /* PBXTextBookmark */ = 9F3A7BA3145AD5B100D0FFA8 /* PBXTextBookmark */;
+			9F3A7BA4145AD5B100D0FFA8 /* PBXTextBookmark */ = 9F3A7BA4145AD5B100D0FFA8 /* PBXTextBookmark */;
+			9F3A7BA5145AD5B100D0FFA8 /* PBXTextBookmark */ = 9F3A7BA5145AD5B100D0FFA8 /* PBXTextBookmark */;
+			9F3A7BA8145AD5BA00D0FFA8 /* PBXTextBookmark */ = 9F3A7BA8145AD5BA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BAA145AD5BC00D0FFA8 /* PBXTextBookmark */ = 9F3A7BAA145AD5BC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BAB145AD5BC00D0FFA8 /* PBXTextBookmark */ = 9F3A7BAB145AD5BC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BAD145AD5BE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BAD145AD5BE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BAE145AD5BE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BAE145AD5BE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB0145AD5BE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BB0145AD5BE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB1145AD5BF00D0FFA8 /* PBXTextBookmark */ = 9F3A7BB1145AD5BF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB2145AD5C100D0FFA8 /* PBXTextBookmark */ = 9F3A7BB2145AD5C100D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB5145AD5DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7BB5145AD5DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB6145AD5DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7BB6145AD5DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BB7145AD5DC00D0FFA8 /* PBXTextBookmark */ = 9F3A7BB7145AD5DC00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BBB145AD61700D0FFA8 /* PBXTextBookmark */ = 9F3A7BBB145AD61700D0FFA8 /* PBXTextBookmark */;
+			9F3A7BBC145AD61700D0FFA8 /* PBXTextBookmark */ = 9F3A7BBC145AD61700D0FFA8 /* PBXTextBookmark */;
+			9F3A7BBD145AD61700D0FFA8 /* PBXTextBookmark */ = 9F3A7BBD145AD61700D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC1145AD67500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC1145AD67500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC2145AD67500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC2145AD67500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC3145AD67500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC3145AD67500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC7145AD6A500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC7145AD6A500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC8145AD6A500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC8145AD6A500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BC9145AD6A500D0FFA8 /* PBXTextBookmark */ = 9F3A7BC9145AD6A500D0FFA8 /* PBXTextBookmark */;
+			9F3A7BCF145AD72900D0FFA8 /* PBXTextBookmark */ = 9F3A7BCF145AD72900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BD0145AD72900D0FFA8 /* PBXTextBookmark */ = 9F3A7BD0145AD72900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BD1145AD72900D0FFA8 /* PBXTextBookmark */ = 9F3A7BD1145AD72900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BD7145AD76800D0FFA8 /* PBXTextBookmark */ = 9F3A7BD7145AD76800D0FFA8 /* PBXTextBookmark */;
+			9F3A7BD8145AD76800D0FFA8 /* PBXTextBookmark */ = 9F3A7BD8145AD76800D0FFA8 /* PBXTextBookmark */;
+			9F3A7BD9145AD76800D0FFA8 /* PBXTextBookmark */ = 9F3A7BD9145AD76800D0FFA8 /* PBXTextBookmark */;
+			9F3A7BDA145AD76800D0FFA8 /* PBXTextBookmark */ = 9F3A7BDA145AD76800D0FFA8 /* PBXTextBookmark */;
+			9F3A7BDE145AD7EE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BDE145AD7EE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BDF145AD7EE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BDF145AD7EE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BE0145AD7EE00D0FFA8 /* PBXTextBookmark */ = 9F3A7BE0145AD7EE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BE4145AD80900D0FFA8 /* PBXTextBookmark */ = 9F3A7BE4145AD80900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BE5145AD80900D0FFA8 /* PBXTextBookmark */ = 9F3A7BE5145AD80900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BE6145AD80900D0FFA8 /* PBXTextBookmark */ = 9F3A7BE6145AD80900D0FFA8 /* PBXTextBookmark */;
+			9F3A7BEA145AD83300D0FFA8 /* PBXTextBookmark */ = 9F3A7BEA145AD83300D0FFA8 /* PBXTextBookmark */;
+			9F3A7BEB145AD83300D0FFA8 /* PBXTextBookmark */ = 9F3A7BEB145AD83300D0FFA8 /* PBXTextBookmark */;
+			9F3A7BEC145AD83300D0FFA8 /* PBXTextBookmark */ = 9F3A7BEC145AD83300D0FFA8 /* PBXTextBookmark */;
+			9F3A7BF0145AD84D00D0FFA8 /* PBXTextBookmark */ = 9F3A7BF0145AD84D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BF1145AD84D00D0FFA8 /* PBXTextBookmark */ = 9F3A7BF1145AD84D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BF2145AD84D00D0FFA8 /* PBXTextBookmark */ = 9F3A7BF2145AD84D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BF8145AD8A200D0FFA8 /* PBXTextBookmark */ = 9F3A7BF8145AD8A200D0FFA8 /* PBXTextBookmark */;
+			9F3A7BF9145AD8A200D0FFA8 /* PBXTextBookmark */ = 9F3A7BF9145AD8A200D0FFA8 /* PBXTextBookmark */;
+			9F3A7BFA145AD8A200D0FFA8 /* PBXTextBookmark */ = 9F3A7BFA145AD8A200D0FFA8 /* PBXTextBookmark */;
+			9F3A7BFE145AD8BB00D0FFA8 /* PBXTextBookmark */ = 9F3A7BFE145AD8BB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7BFF145AD8BB00D0FFA8 /* PBXTextBookmark */ = 9F3A7BFF145AD8BB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C00145AD8BB00D0FFA8 /* PBXTextBookmark */ = 9F3A7C00145AD8BB00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C04145AD90600D0FFA8 /* PBXTextBookmark */ = 9F3A7C04145AD90600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C05145AD90600D0FFA8 /* PBXTextBookmark */ = 9F3A7C05145AD90600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C06145AD90600D0FFA8 /* PBXTextBookmark */ = 9F3A7C06145AD90600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C0A145AD93C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C0A145AD93C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C0B145AD93C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C0B145AD93C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C0C145AD93C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C0C145AD93C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C10145AD95C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C10145AD95C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C11145AD95C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C11145AD95C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C12145AD95C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C12145AD95C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C16145AD99700D0FFA8 /* PBXTextBookmark */ = 9F3A7C16145AD99700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C17145AD99700D0FFA8 /* PBXTextBookmark */ = 9F3A7C17145AD99700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C18145AD99700D0FFA8 /* PBXTextBookmark */ = 9F3A7C18145AD99700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C1C145AD9DA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C1C145AD9DA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C1D145AD9DA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C1D145AD9DA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C1E145AD9DA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C1E145AD9DA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C24145ADA1700D0FFA8 /* PBXTextBookmark */ = 9F3A7C24145ADA1700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C25145ADA1700D0FFA8 /* PBXTextBookmark */ = 9F3A7C25145ADA1700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C26145ADA1700D0FFA8 /* PBXTextBookmark */ = 9F3A7C26145ADA1700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C2A145ADA5800D0FFA8 /* PBXTextBookmark */ = 9F3A7C2A145ADA5800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C2B145ADA5800D0FFA8 /* PBXTextBookmark */ = 9F3A7C2B145ADA5800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C2C145ADA5800D0FFA8 /* PBXTextBookmark */ = 9F3A7C2C145ADA5800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C30145ADA8C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C30145ADA8C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C31145ADA8C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C31145ADA8C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C32145ADA8C00D0FFA8 /* PBXTextBookmark */ = 9F3A7C32145ADA8C00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C36145ADABD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C36145ADABD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C37145ADABD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C37145ADABD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C38145ADABD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C38145ADABD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C3C145ADAD500D0FFA8 /* PBXTextBookmark */ = 9F3A7C3C145ADAD500D0FFA8 /* PBXTextBookmark */;
+			9F3A7C3D145ADAD500D0FFA8 /* PBXTextBookmark */ = 9F3A7C3D145ADAD500D0FFA8 /* PBXTextBookmark */;
+			9F3A7C3E145ADAD500D0FFA8 /* PBXTextBookmark */ = 9F3A7C3E145ADAD500D0FFA8 /* PBXTextBookmark */;
+			9F3A7C42145ADB4D00D0FFA8 /* PBXTextBookmark */ = 9F3A7C42145ADB4D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C43145ADB4D00D0FFA8 /* PBXTextBookmark */ = 9F3A7C43145ADB4D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C44145ADB4D00D0FFA8 /* PBXTextBookmark */ = 9F3A7C44145ADB4D00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C4C145ADC4600D0FFA8 /* PBXTextBookmark */ = 9F3A7C4C145ADC4600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C4D145ADC4600D0FFA8 /* PBXTextBookmark */ = 9F3A7C4D145ADC4600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C4E145ADC4600D0FFA8 /* PBXTextBookmark */ = 9F3A7C4E145ADC4600D0FFA8 /* PBXTextBookmark */;
+			9F3A7C52145ADC6800D0FFA8 /* PBXTextBookmark */ = 9F3A7C52145ADC6800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C53145ADC6800D0FFA8 /* PBXTextBookmark */ = 9F3A7C53145ADC6800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C54145ADC6800D0FFA8 /* PBXTextBookmark */ = 9F3A7C54145ADC6800D0FFA8 /* PBXTextBookmark */;
+			9F3A7C58145ADCD200D0FFA8 /* PBXTextBookmark */ = 9F3A7C58145ADCD200D0FFA8 /* PBXTextBookmark */;
+			9F3A7C59145ADCD200D0FFA8 /* PBXTextBookmark */ = 9F3A7C59145ADCD200D0FFA8 /* PBXTextBookmark */;
+			9F3A7C5A145ADCD200D0FFA8 /* PBXTextBookmark */ = 9F3A7C5A145ADCD200D0FFA8 /* PBXTextBookmark */;
+			9F3A7C5E145ADD3000D0FFA8 /* PBXTextBookmark */ = 9F3A7C5E145ADD3000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C5F145ADD3000D0FFA8 /* PBXTextBookmark */ = 9F3A7C5F145ADD3000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C60145ADD3000D0FFA8 /* PBXTextBookmark */ = 9F3A7C60145ADD3000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C67145ADD7300D0FFA8 /* PBXTextBookmark */ = 9F3A7C67145ADD7300D0FFA8 /* PBXTextBookmark */;
+			9F3A7C68145ADD7300D0FFA8 /* PBXTextBookmark */ = 9F3A7C68145ADD7300D0FFA8 /* PBXTextBookmark */;
+			9F3A7C69145ADD7300D0FFA8 /* PBXTextBookmark */ = 9F3A7C69145ADD7300D0FFA8 /* PBXTextBookmark */;
+			9F3A7C6B145ADD7700D0FFA8 /* PBXTextBookmark */ = 9F3A7C6B145ADD7700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C6C145ADD7700D0FFA8 /* PBXTextBookmark */ = 9F3A7C6C145ADD7700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C6D145ADD7700D0FFA8 /* PBXTextBookmark */ = 9F3A7C6D145ADD7700D0FFA8 /* PBXTextBookmark */;
+			9F3A7C74145ADF7000D0FFA8 /* PBXTextBookmark */ = 9F3A7C74145ADF7000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C75145ADF7000D0FFA8 /* PBXTextBookmark */ = 9F3A7C75145ADF7000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C76145ADF7000D0FFA8 /* PBXTextBookmark */ = 9F3A7C76145ADF7000D0FFA8 /* PBXTextBookmark */;
+			9F3A7C7A145ADFBA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C7A145ADFBA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C7B145ADFBA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C7B145ADFBA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C7C145ADFBA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C7C145ADFBA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C80145ADFFA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C80145ADFFA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C81145ADFFA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C81145ADFFA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C82145ADFFA00D0FFA8 /* PBXTextBookmark */ = 9F3A7C82145ADFFA00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C86145AE04400D0FFA8 /* PBXTextBookmark */ = 9F3A7C86145AE04400D0FFA8 /* PBXTextBookmark */;
+			9F3A7C87145AE04400D0FFA8 /* PBXTextBookmark */ = 9F3A7C87145AE04400D0FFA8 /* PBXTextBookmark */;
+			9F3A7C88145AE04400D0FFA8 /* PBXTextBookmark */ = 9F3A7C88145AE04400D0FFA8 /* PBXTextBookmark */;
+			9F3A7C89145AE04400D0FFA8 /* PBXTextBookmark */ = 9F3A7C89145AE04400D0FFA8 /* PBXTextBookmark */;
+			9F3A7C95145AE1AD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C95145AE1AD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C96145AE1AD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C96145AE1AD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C97145AE1AD00D0FFA8 /* PBXTextBookmark */ = 9F3A7C97145AE1AD00D0FFA8 /* PBXTextBookmark */;
+			9F3A7C9B145AE21100D0FFA8 /* PBXTextBookmark */ = 9F3A7C9B145AE21100D0FFA8 /* PBXTextBookmark */;
+			9F3A7C9C145AE21100D0FFA8 /* PBXTextBookmark */ = 9F3A7C9C145AE21100D0FFA8 /* PBXTextBookmark */;
+			9F3A7C9D145AE21100D0FFA8 /* PBXTextBookmark */ = 9F3A7C9D145AE21100D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA1145AE26F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CA1145AE26F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA2145AE26F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CA2145AE26F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA3145AE26F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CA3145AE26F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA7145AE2A600D0FFA8 /* PBXTextBookmark */ = 9F3A7CA7145AE2A600D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA8145AE2A600D0FFA8 /* PBXTextBookmark */ = 9F3A7CA8145AE2A600D0FFA8 /* PBXTextBookmark */;
+			9F3A7CA9145AE2A600D0FFA8 /* PBXTextBookmark */ = 9F3A7CA9145AE2A600D0FFA8 /* PBXTextBookmark */;
+			9F3A7CAF145AE2CF00D0FFA8 /* PBXTextBookmark */ = 9F3A7CAF145AE2CF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CB0145AE2CF00D0FFA8 /* PBXTextBookmark */ = 9F3A7CB0145AE2CF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CB1145AE2CF00D0FFA8 /* PBXTextBookmark */ = 9F3A7CB1145AE2CF00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CB5145AE2E200D0FFA8 /* PBXTextBookmark */ = 9F3A7CB5145AE2E200D0FFA8 /* PBXTextBookmark */;
+			9F3A7CB6145AE2E200D0FFA8 /* PBXTextBookmark */ = 9F3A7CB6145AE2E200D0FFA8 /* PBXTextBookmark */;
+			9F3A7CB7145AE2E200D0FFA8 /* PBXTextBookmark */ = 9F3A7CB7145AE2E200D0FFA8 /* PBXTextBookmark */;
+			9F3A7CBB145AE31000D0FFA8 /* PBXTextBookmark */ = 9F3A7CBB145AE31000D0FFA8 /* PBXTextBookmark */;
+			9F3A7CBC145AE31000D0FFA8 /* PBXTextBookmark */ = 9F3A7CBC145AE31000D0FFA8 /* PBXTextBookmark */;
+			9F3A7CBD145AE31000D0FFA8 /* PBXTextBookmark */ = 9F3A7CBD145AE31000D0FFA8 /* PBXTextBookmark */;
+			9F3A7CC3145AE36F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CC3145AE36F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CC4145AE36F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CC4145AE36F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CC5145AE36F00D0FFA8 /* PBXTextBookmark */ = 9F3A7CC5145AE36F00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CC9145AE3A300D0FFA8 /* PBXTextBookmark */ = 9F3A7CC9145AE3A300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CCA145AE3A300D0FFA8 /* PBXTextBookmark */ = 9F3A7CCA145AE3A300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CCB145AE3A300D0FFA8 /* PBXTextBookmark */ = 9F3A7CCB145AE3A300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CCC145AE3A300D0FFA8 /* PBXTextBookmark */ = 9F3A7CCC145AE3A300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CCD145AE3A300D0FFA8 /* PBXTextBookmark */ = 9F3A7CCD145AE3A300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD1145AE5E300D0FFA8 /* PBXTextBookmark */ = 9F3A7CD1145AE5E300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD2145AE5E300D0FFA8 /* PBXTextBookmark */ = 9F3A7CD2145AE5E300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD3145AE5E300D0FFA8 /* PBXTextBookmark */ = 9F3A7CD3145AE5E300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD4145AE5E300D0FFA8 /* PBXTextBookmark */ = 9F3A7CD4145AE5E300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD5145AE5E300D0FFA8 /* PBXTextBookmark */ = 9F3A7CD5145AE5E300D0FFA8 /* PBXTextBookmark */;
+			9F3A7CD9145AE5FE00D0FFA8 /* PBXTextBookmark */ = 9F3A7CD9145AE5FE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CDA145AE5FE00D0FFA8 /* PBXTextBookmark */ = 9F3A7CDA145AE5FE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CDB145AE5FE00D0FFA8 /* PBXTextBookmark */ = 9F3A7CDB145AE5FE00D0FFA8 /* PBXTextBookmark */;
+			9F3A7CDF145AE63400D0FFA8 /* PBXTextBookmark */ = 9F3A7CDF145AE63400D0FFA8 /* PBXTextBookmark */;
+			9F3A7CE0145AE63400D0FFA8 /* PBXTextBookmark */ = 9F3A7CE0145AE63400D0FFA8 /* PBXTextBookmark */;
+			9F3A7CE1145AE63400D0FFA8 /* PBXTextBookmark */ = 9F3A7CE1145AE63400D0FFA8 /* PBXTextBookmark */;
 			9F533E9C145307FD0086D9D5 = 9F533E9C145307FD0086D9D5 /* PBXTextBookmark */;
 			9F533EA5145307FD0086D9D5 = 9F533EA5145307FD0086D9D5 /* PBXTextBookmark */;
 			9F533F5414531C030086D9D5 = 9F533F5414531C030086D9D5 /* PBXTextBookmark */;
@@ -875,7 +1070,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1120, 1079}}";
 			sepNavSelRange = "{1338, 0}";
-			sepNavVisRange = "{672, 1124}";
+			sepNavVisRange = "{672, 1075}";
 			sepNavWindowFrame = "{{15, 185}, {1179, 688}}";
 		};
 	};
@@ -1361,7 +1556,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 408";
 		rLen = 0;
-		rLoc = 11197;
+		rLoc = 11211;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 8026;
@@ -1391,7 +1586,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 1637;
@@ -1431,7 +1626,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 408";
 		rLen = 0;
-		rLoc = 11197;
+		rLoc = 11211;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 1539;
@@ -1471,7 +1666,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1531,7 +1726,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1561,7 +1756,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1591,7 +1786,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1621,7 +1816,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1691,7 +1886,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1761,7 +1956,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1821,7 +2016,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -1911,7 +2106,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2008,7 +2203,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2038,7 +2233,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2128,7 +2323,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 510";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2198,7 +2393,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 221";
 		rLen = 0;
-		rLoc = 4830;
+		rLoc = 4838;
 		rType = 0;
 		vrLen = 1368;
 		vrLoc = 3838;
@@ -2208,7 +2403,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 221";
 		rLen = 0;
-		rLoc = 4848;
+		rLoc = 4856;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 3838;
@@ -2218,7 +2413,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 534";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 1637;
@@ -2248,7 +2443,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 248";
 		rLen = 0;
-		rLoc = 5305;
+		rLoc = 5313;
 		rType = 0;
 		vrLen = 1250;
 		vrLoc = 4708;
@@ -2258,7 +2453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 226";
 		rLen = 0;
-		rLoc = 4958;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 1319;
 		vrLoc = 3916;
@@ -2268,7 +2463,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 525";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2288,7 +2483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 269";
 		rLen = 0;
-		rLoc = 7697;
+		rLoc = 7705;
 		rType = 0;
 		vrLen = 1319;
 		vrLoc = 3916;
@@ -2325,7 +2520,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 526";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2355,7 +2550,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 257";
 		rLen = 0;
-		rLoc = 7345;
+		rLoc = 7353;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 4681;
@@ -2402,7 +2597,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 526";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2432,7 +2627,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 526";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2469,7 +2664,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 238";
 		rLen = 0;
-		rLoc = 5340;
+		rLoc = 5348;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 4408;
@@ -2489,7 +2684,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9840;
+		rLoc = 9852;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 6862;
@@ -2499,7 +2694,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2519,7 +2714,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 367";
 		rLen = 0;
-		rLoc = 9927;
+		rLoc = 9939;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 6862;
@@ -2559,7 +2754,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2599,7 +2794,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1637;
@@ -2619,7 +2814,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 238";
 		rLen = 0;
-		rLoc = 5340;
+		rLoc = 5348;
 		rType = 0;
 		vrLen = 530;
 		vrLoc = 4349;
@@ -2679,7 +2874,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 3082;
+		rLoc = 3088;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 2002;
@@ -2689,7 +2884,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 540";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 1179;
@@ -2719,7 +2914,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 524";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 1180;
@@ -2749,7 +2944,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2789,7 +2984,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2819,7 +3014,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2849,7 +3044,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2879,7 +3074,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2909,7 +3104,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2939,7 +3134,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -2969,7 +3164,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 362";
 		rLen = 0;
-		rLoc = 9742;
+		rLoc = 9754;
 		rType = 0;
 		vrLen = 1370;
 		vrLoc = 6943;
@@ -2979,7 +3174,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 1179;
@@ -3029,7 +3224,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3079,7 +3274,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 1179;
@@ -3139,7 +3334,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3179,7 +3374,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3288,7 +3483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3358,7 +3553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3408,7 +3603,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 242";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 5549;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 1368;
@@ -3428,7 +3623,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 242";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 5549;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 1569;
@@ -3438,7 +3633,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 242";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 5549;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 1368;
@@ -3488,7 +3683,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 522";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3508,7 +3703,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 242";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 5549;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 1569;
@@ -3538,7 +3733,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 242";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 5549;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 1368;
@@ -3548,7 +3743,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 257";
 		rLen = 0;
-		rLoc = 7345;
+		rLoc = 7353;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 4387;
@@ -3558,7 +3753,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 257";
 		rLen = 0;
-		rLoc = 7345;
+		rLoc = 7353;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 4387;
@@ -3568,7 +3763,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 521";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3598,7 +3793,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 257";
 		rLen = 0;
-		rLoc = 7345;
+		rLoc = 7353;
 		rType = 0;
 		vrLen = 473;
 		vrLoc = 4643;
@@ -3648,7 +3843,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 521";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3668,7 +3863,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 257";
 		rLen = 0;
-		rLoc = 7345;
+		rLoc = 7353;
 		rType = 0;
 		vrLen = 473;
 		vrLoc = 4643;
@@ -3718,7 +3913,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9964;
+		rLoc = 9976;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 6657;
@@ -3728,7 +3923,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9964;
+		rLoc = 9976;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 6680;
@@ -3738,7 +3933,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3768,7 +3963,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9964;
+		rLoc = 9976;
 		rType = 0;
 		vrLen = 509;
 		vrLoc = 7295;
@@ -3778,7 +3973,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9961;
+		rLoc = 9973;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 6702;
@@ -3788,7 +3983,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3828,7 +4023,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9956;
+		rLoc = 9968;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 6702;
@@ -3838,7 +4033,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9957;
+		rLoc = 9969;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 6707;
@@ -3848,7 +4043,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 366";
 		rLen = 0;
-		rLoc = 9957;
+		rLoc = 9969;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 6707;
@@ -3858,7 +4053,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3878,7 +4073,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 9696;
+		rLoc = 9708;
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 7050;
@@ -3888,7 +4083,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 9696;
+		rLoc = 9708;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 6707;
@@ -3928,7 +4123,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 1179;
@@ -3948,7 +4143,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 9696;
+		rLoc = 9708;
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 7050;
@@ -3978,7 +4173,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 360";
 		rLen = 0;
-		rLoc = 9696;
+		rLoc = 9708;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 6707;
@@ -4008,7 +4203,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1001;
 		vrLoc = 1179;
@@ -4038,7 +4233,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 523";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1179;
@@ -4118,7 +4313,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 528";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 1205;
@@ -4178,7 +4373,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 530";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 1205;
@@ -4228,7 +4423,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 526";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 1205;
@@ -4248,7 +4443,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 141";
 		rLen = 0;
-		rLoc = 3022;
+		rLoc = 3028;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 1203;
@@ -4258,7 +4453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 528";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 1205;
@@ -4308,7 +4503,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 528";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 1205;
@@ -4338,7 +4533,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 159";
 		rLen = 0;
-		rLoc = 3078;
+		rLoc = 3084;
 		rType = 0;
 		vrLen = 1390;
 		vrLoc = 1754;
@@ -4348,7 +4543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 544";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 580;
 		vrLoc = 993;
@@ -4368,7 +4563,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2916;
+		rLoc = 2918;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 1754;
@@ -4378,7 +4573,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2916;
+		rLoc = 2918;
 		rType = 0;
 		vrLen = 1451;
 		vrLoc = 1754;
@@ -4388,7 +4583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 545";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 580;
 		vrLoc = 993;
@@ -4418,7 +4613,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 160";
 		rLen = 7;
-		rLoc = 3059;
+		rLoc = 3065;
 		rType = 0;
 		vrLen = 1451;
 		vrLoc = 1754;
@@ -4448,7 +4643,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4478,7 +4673,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 155";
 		rLen = 0;
-		rLoc = 2832;
+		rLoc = 2834;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 2071;
@@ -4488,7 +4683,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 155";
 		rLen = 0;
-		rLoc = 2832;
+		rLoc = 2834;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 2071;
@@ -4498,7 +4693,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4528,7 +4723,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 4527;
@@ -4538,7 +4733,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4558,7 +4753,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 2175;
@@ -4568,7 +4763,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4588,7 +4783,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 2175;
@@ -4598,7 +4793,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 438;
 		vrLoc = 2175;
@@ -4608,7 +4803,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1445;
 		vrLoc = 1720;
@@ -4618,7 +4813,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4638,7 +4833,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1445;
 		vrLoc = 1720;
@@ -4648,7 +4843,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 1445;
 		vrLoc = 1720;
@@ -4658,7 +4853,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 653;
 		vrLoc = 894;
@@ -4678,7 +4873,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2819;
+		rLoc = 2821;
 		rType = 0;
 		vrLen = 438;
 		vrLoc = 2175;
@@ -4708,7 +4903,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 544";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 821;
@@ -4738,7 +4933,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2916;
+		rLoc = 2918;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 2591;
@@ -4748,7 +4943,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 154";
 		rLen = 0;
-		rLoc = 2916;
+		rLoc = 2918;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 2591;
@@ -4758,7 +4953,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 821;
@@ -4778,7 +4973,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 153";
 		rLen = 0;
-		rLoc = 2857;
+		rLoc = 2859;
 		rType = 0;
 		vrLen = 583;
 		vrLoc = 2591;
@@ -4798,7 +4993,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 746;
@@ -4838,7 +5033,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 746;
@@ -4878,7 +5073,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 746;
@@ -4918,7 +5113,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 746;
@@ -4958,7 +5153,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -4998,7 +5193,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 543";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5028,7 +5223,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 266";
 		rLen = 0;
-		rLoc = 5595;
+		rLoc = 5603;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 5120;
@@ -5038,7 +5233,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 266";
 		rLen = 0;
-		rLoc = 5595;
+		rLoc = 5603;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 5120;
@@ -5048,7 +5243,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 542";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5068,7 +5263,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 266";
 		rLen = 0;
-		rLoc = 5595;
+		rLoc = 5603;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 5583;
@@ -5078,7 +5273,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 547";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5098,7 +5293,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 266";
 		rLen = 0;
-		rLoc = 5595;
+		rLoc = 5603;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 5430;
@@ -5108,7 +5303,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 547";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5128,7 +5323,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 271";
 		rLen = 0;
-		rLoc = 5595;
+		rLoc = 5603;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 5341;
@@ -5138,7 +5333,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 557";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5158,7 +5353,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 279";
 		rLen = 0;
-		rLoc = 5850;
+		rLoc = 5858;
 		rType = 0;
 		vrLen = 583;
 		vrLoc = 5676;
@@ -5168,7 +5363,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 299";
 		rLen = 0;
-		rLoc = 7264;
+		rLoc = 7272;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 3646;
@@ -5178,7 +5373,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 567";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5198,7 +5393,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 299";
 		rLen = 0;
-		rLoc = 7264;
+		rLoc = 7272;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 3646;
@@ -5208,7 +5403,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 299";
 		rLen = 0;
-		rLoc = 7264;
+		rLoc = 7272;
 		rType = 0;
 		vrLen = 377;
 		vrLoc = 4375;
@@ -5218,7 +5413,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 299";
 		rLen = 0;
-		rLoc = 7264;
+		rLoc = 7272;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 3646;
@@ -5228,7 +5423,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 567";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5248,7 +5443,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 216";
 		rLen = 0;
-		rLoc = 4371;
+		rLoc = 4379;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 3646;
@@ -5258,7 +5453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 567";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5278,7 +5473,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 1336;
 		vrLoc = 5938;
@@ -5288,7 +5483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 623;
 		vrLoc = 5938;
@@ -5298,7 +5493,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5387;
@@ -5308,7 +5503,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 623;
 		vrLoc = 5938;
@@ -5318,7 +5513,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5387;
@@ -5328,7 +5523,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 623;
 		vrLoc = 5938;
@@ -5338,7 +5533,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 333";
 		rLen = 0;
-		rLoc = 7881;
+		rLoc = 7889;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5387;
@@ -5348,7 +5543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 288";
 		rLen = 0;
-		rLoc = 6161;
+		rLoc = 6169;
 		rType = 0;
 		vrLen = 623;
 		vrLoc = 5938;
@@ -5358,7 +5553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 288";
 		rLen = 0;
-		rLoc = 6161;
+		rLoc = 6169;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 5387;
@@ -5388,7 +5583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 567";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5418,7 +5613,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 288";
 		rLen = 0;
-		rLoc = 6161;
+		rLoc = 6169;
 		rType = 0;
 		vrLen = 1527;
 		vrLoc = 5387;
@@ -5428,7 +5623,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1599;
 		vrLoc = 5430;
@@ -5438,7 +5633,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 5938;
@@ -5448,7 +5643,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1557;
 		vrLoc = 5430;
@@ -5458,7 +5653,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5478,7 +5673,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5488,7 +5683,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5508,7 +5703,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 295";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5518,7 +5713,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5538,7 +5733,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 292";
 		rLen = 0;
-		rLoc = 6297;
+		rLoc = 6305;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5548,7 +5743,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5568,7 +5763,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 292";
 		rLen = 0;
-		rLoc = 6297;
+		rLoc = 6305;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5578,7 +5773,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5598,7 +5793,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 291";
 		rLen = 0;
-		rLoc = 6254;
+		rLoc = 6262;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5608,7 +5803,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5628,7 +5823,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 295";
 		rLen = 0;
-		rLoc = 7104;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5638,7 +5833,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5658,7 +5853,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 295";
 		rLen = 0;
-		rLoc = 7000;
+		rLoc = 7008;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 5377;
@@ -5668,7 +5863,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5688,7 +5883,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 298";
 		rLen = 0;
-		rLoc = 7103;
+		rLoc = 7111;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5377;
@@ -5698,7 +5893,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5718,7 +5913,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 294";
 		rLen = 0;
-		rLoc = 6959;
+		rLoc = 6967;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5377;
@@ -5728,7 +5923,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5748,7 +5943,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7086;
+		rLoc = 7094;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5377;
@@ -5758,7 +5953,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5778,7 +5973,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 297";
 		rLen = 0;
-		rLoc = 7086;
+		rLoc = 7094;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 5377;
@@ -5788,7 +5983,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 572";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5808,7 +6003,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 295";
 		rLen = 0;
-		rLoc = 6373;
+		rLoc = 6381;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 5377;
@@ -5818,7 +6013,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 577";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5838,7 +6033,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 304";
 		rLen = 0;
-		rLoc = 6793;
+		rLoc = 6801;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5848,7 +6043,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5868,7 +6063,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5878,7 +6073,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5898,7 +6093,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 300";
 		rLen = 0;
-		rLoc = 6530;
+		rLoc = 6538;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5908,7 +6103,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5928,7 +6123,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5938,7 +6133,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5958,7 +6153,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 300";
 		rLen = 0;
-		rLoc = 6530;
+		rLoc = 6538;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5968,7 +6163,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -5988,7 +6183,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 301";
 		rLen = 0;
-		rLoc = 6573;
+		rLoc = 6581;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -5998,7 +6193,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6018,7 +6213,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6028,7 +6223,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6048,7 +6243,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 301";
 		rLen = 0;
-		rLoc = 6573;
+		rLoc = 6581;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6058,7 +6253,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6078,7 +6273,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 301";
 		rLen = 0;
-		rLoc = 6572;
+		rLoc = 6580;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6088,7 +6283,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6108,7 +6303,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 301";
 		rLen = 0;
-		rLoc = 6573;
+		rLoc = 6581;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6118,7 +6313,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6138,7 +6333,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 301";
 		rLen = 0;
-		rLoc = 6573;
+		rLoc = 6581;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6148,7 +6343,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6168,7 +6363,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6178,7 +6373,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6198,7 +6393,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6208,7 +6403,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6228,7 +6423,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 304";
 		rLen = 0;
-		rLoc = 6793;
+		rLoc = 6801;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6238,7 +6433,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6258,7 +6453,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 302";
 		rLen = 0;
-		rLoc = 6616;
+		rLoc = 6624;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 5377;
@@ -6268,7 +6463,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 583";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6288,7 +6483,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 305";
 		rLen = 0;
-		rLoc = 6793;
+		rLoc = 6801;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 5377;
@@ -6298,7 +6493,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 587";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6318,7 +6513,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 305";
 		rLen = 0;
-		rLoc = 6654;
+		rLoc = 6662;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 5377;
@@ -6328,7 +6523,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 587";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6348,7 +6543,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 305";
 		rLen = 0;
-		rLoc = 6690;
+		rLoc = 6698;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 5377;
@@ -6358,7 +6553,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 587";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6378,7 +6573,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 305";
 		rLen = 0;
-		rLoc = 6690;
+		rLoc = 6698;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 5377;
@@ -6388,7 +6583,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 587";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6408,7 +6603,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 305";
 		rLen = 0;
-		rLoc = 6690;
+		rLoc = 6698;
 		rType = 0;
 		vrLen = 1729;
 		vrLoc = 5377;
@@ -6418,7 +6613,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 587";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6438,7 +6633,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 309";
 		rLen = 0;
-		rLoc = 6802;
+		rLoc = 6810;
 		rType = 0;
 		vrLen = 1739;
 		vrLoc = 5377;
@@ -6448,7 +6643,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 592";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6468,7 +6663,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 324";
 		rLen = 1;
-		rLoc = 7261;
+		rLoc = 7269;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 6467;
@@ -6478,7 +6673,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 597";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6498,7 +6693,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2860;
 		rType = 0;
 		vrLen = 1397;
 		vrLoc = 2211;
@@ -6508,7 +6703,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 597";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6528,7 +6723,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2860;
 		rType = 0;
 		vrLen = 1397;
 		vrLoc = 2211;
@@ -6538,7 +6733,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2860;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 2211;
@@ -6548,7 +6743,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 156";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2860;
 		rType = 0;
 		vrLen = 1444;
 		vrLoc = 1781;
@@ -6558,7 +6753,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 597";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6578,7 +6773,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 159";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2860;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 2039;
@@ -6588,7 +6783,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 597";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6608,7 +6803,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 155";
 		rLen = 0;
-		rLoc = 2828;
+		rLoc = 2830;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 2039;
@@ -6618,7 +6813,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 597";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 746;
@@ -6638,7 +6833,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 323";
 		rLen = 0;
-		rLoc = 7261;
+		rLoc = 7269;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 6651;
@@ -6648,7 +6843,7 @@
 		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
 		name = "Dodecahedron.cpp: 592";
 		rLen = 0;
-		rLoc = 13628;
+		rLoc = 22327;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 746;
@@ -6661,6 +6856,1957 @@
 		rLoc = 1338;
 		rType = 0;
 		vrLen = 1124;
+		vrLoc = 672;
+	};
+	9F3A7B45145AD29200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 551";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1307;
+		vrLoc = 11387;
+	};
+	9F3A7B46145AD29200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 627";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B47145AD29200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B4B145AD2BF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 546";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1295;
+		vrLoc = 11387;
+	};
+	9F3A7B4C145AD2BF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 628";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B4D145AD2BF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B55145AD2EB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 546";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1327;
+		vrLoc = 11387;
+	};
+	9F3A7B56145AD2EB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 628";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B57145AD2EB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B5B145AD31E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 552";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 11690;
+	};
+	9F3A7B5C145AD31E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 630";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B5D145AD31E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B61145AD34500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 541";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1258;
+		vrLoc = 11690;
+	};
+	9F3A7B62145AD34500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 630";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B63145AD34500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B67145AD39600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 551";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 11690;
+	};
+	9F3A7B68145AD39600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 629";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B69145AD39600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B6D145AD3C100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 525";
+		rLen = 0;
+		rLoc = 12101;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 11690;
+	};
+	9F3A7B6E145AD3C100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 629";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B6F145AD3C100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B72145AD3C800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 525";
+		rLen = 0;
+		rLoc = 12101;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 11690;
+	};
+	9F3A7B75145AD3CD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 525";
+		rLen = 0;
+		rLoc = 12101;
+		rType = 0;
+		vrLen = 1241;
+		vrLoc = 11663;
+	};
+	9F3A7B76145AD3CD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 629";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B77145AD3CD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B7A145AD3DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 525";
+		rLen = 0;
+		rLoc = 12101;
+		rType = 0;
+		vrLen = 557;
+		vrLoc = 11744;
+	};
+	9F3A7B7B145AD3DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F3A7B7C145AD3DC00D0FFA8 /* asm DoApplyTransform  0x9a5ba335 */;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+		rType = 0;
+	};
+	9F3A7B7C145AD3DC00D0FFA8 /* asm DoApplyTransform  0x9a5ba335 */ = {
+		isa = PBXFileReference;
+		path = "asm DoApplyTransform  0x9a5ba335";
+		sourceTree = "<group>";
+	};
+	9F3A7B7D145AD3DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F3A7B7E145AD3DC00D0FFA8 /* asm DoApplyTransform  0x9a5ba335 */;
+		name = "asm DoApplyTransform  0x9a5ba335: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1111;
+		vrLoc = 2386;
+	};
+	9F3A7B7E145AD3DC00D0FFA8 /* asm DoApplyTransform  0x9a5ba335 */ = {
+		isa = PBXFileReference;
+		path = "asm DoApplyTransform  0x9a5ba335";
+		sourceTree = "<group>";
+	};
+	9F3A7B81145AD40E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 539";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1300;
+		vrLoc = 11694;
+	};
+	9F3A7B82145AD40E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 629";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B83145AD40E00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B87145AD43200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 539";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1298;
+		vrLoc = 11694;
+	};
+	9F3A7B88145AD43200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 629";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B89145AD43200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B8D145AD47600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 556";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1471;
+		vrLoc = 11918;
+	};
+	9F3A7B8E145AD47600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 647";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B8F145AD47600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B93145AD49000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 547";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1396;
+		vrLoc = 11918;
+	};
+	9F3A7B94145AD49000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 639";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B95145AD49000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7B9D145AD59A00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 535";
+		rLen = 0;
+		rLoc = 12342;
+		rType = 0;
+		vrLen = 1590;
+		vrLoc = 11914;
+	};
+	9F3A7B9E145AD59A00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 659";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7B9F145AD59A00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BA3145AD5B100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 1590;
+		vrLoc = 11914;
+	};
+	9F3A7BA4145AD5B100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 659";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BA5145AD5B100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BA8145AD5BA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 1590;
+		vrLoc = 11914;
+	};
+	9F3A7BAA145AD5BC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 11914;
+	};
+	9F3A7BAB145AD5BC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 1515;
+		vrLoc = 11494;
+	};
+	9F3A7BAD145AD5BE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 11914;
+	};
+	9F3A7BAE145AD5BE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 1515;
+		vrLoc = 11494;
+	};
+	9F3A7BB0145AD5BE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 11914;
+	};
+	9F3A7BB1145AD5BF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 1515;
+		vrLoc = 11494;
+	};
+	9F3A7BB2145AD5C100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 550";
+		rLen = 0;
+		rLoc = 13009;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 11914;
+	};
+	9F3A7BB5145AD5DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 554";
+		rLen = 0;
+		rLoc = 13144;
+		rType = 0;
+		vrLen = 1442;
+		vrLoc = 12258;
+	};
+	9F3A7BB6145AD5DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 661";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BB7145AD5DC00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BBB145AD61700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 531";
+		rLen = 0;
+		rLoc = 12297;
+		rType = 0;
+		vrLen = 1442;
+		vrLoc = 12258;
+	};
+	9F3A7BBC145AD61700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 661";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BBD145AD61700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BC1145AD67500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 563";
+		rLen = 0;
+		rLoc = 13516;
+		rType = 0;
+		vrLen = 1631;
+		vrLoc = 12205;
+	};
+	9F3A7BC2145AD67500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 672";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BC3145AD67500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BC7145AD6A500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 535";
+		rLen = 0;
+		rLoc = 12350;
+		rType = 0;
+		vrLen = 1556;
+		vrLoc = 12205;
+	};
+	9F3A7BC8145AD6A500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 674";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BC9145AD6A500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BCF145AD72900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 538";
+		rLen = 0;
+		rLoc = 12580;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 10838;
+	};
+	9F3A7BD0145AD72900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 689";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BD1145AD72900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BD7145AD76800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		rLen = 1;
+		rLoc = 404;
+		rType = 1;
+	};
+	9F3A7BD8145AD76800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 446";
+		rLen = 0;
+		rLoc = 10169;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 9209;
+	};
+	9F3A7BD9145AD76800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 690";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BDA145AD76800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BDE145AD7EE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 593";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1787;
+		vrLoc = 12808;
+	};
+	9F3A7BDF145AD7EE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 706";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BE0145AD7EE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BE4145AD80900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 590";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1787;
+		vrLoc = 12808;
+	};
+	9F3A7BE5145AD80900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 706";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BE6145AD80900D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BEA145AD83300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 588";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1788;
+		vrLoc = 12808;
+	};
+	9F3A7BEB145AD83300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 705";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BEC145AD83300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BF0145AD84D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 599";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1811;
+		vrLoc = 12808;
+	};
+	9F3A7BF1145AD84D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 706";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BF2145AD84D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BF8145AD8A200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 602";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1820;
+		vrLoc = 12526;
+	};
+	9F3A7BF9145AD8A200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 710";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7BFA145AD8A200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7BFE145AD8BB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 585";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1820;
+		vrLoc = 12526;
+	};
+	9F3A7BFF145AD8BB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 710";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C00145AD8BB00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C04145AD90600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 572";
+		rLen = 0;
+		rLoc = 14802;
+		rType = 0;
+		vrLen = 1788;
+		vrLoc = 12526;
+	};
+	9F3A7C05145AD90600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C06145AD90600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C0A145AD93C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 536";
+		rLen = 0;
+		rLoc = 12350;
+		rType = 0;
+		vrLen = 1608;
+		vrLoc = 12008;
+	};
+	9F3A7C0B145AD93C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C0C145AD93C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C10145AD95C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 568";
+		rLen = 0;
+		rLoc = 14802;
+		rType = 0;
+		vrLen = 1355;
+		vrLoc = 11200;
+	};
+	9F3A7C11145AD95C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C12145AD95C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C16145AD99700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 580";
+		rLen = 0;
+		rLoc = 14870;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 12653;
+	};
+	9F3A7C17145AD99700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C18145AD99700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C1C145AD9DA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 569";
+		rLen = 0;
+		rLoc = 14802;
+		rType = 0;
+		vrLen = 1685;
+		vrLoc = 12935;
+	};
+	9F3A7C1D145AD9DA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C1E145AD9DA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C24145ADA1700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 569";
+		rLen = 0;
+		rLoc = 14802;
+		rType = 0;
+		vrLen = 1661;
+		vrLoc = 13142;
+	};
+	9F3A7C25145ADA1700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C26145ADA1700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C2A145ADA5800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 581";
+		rLen = 0;
+		rLoc = 14870;
+		rType = 0;
+		vrLen = 1704;
+		vrLoc = 12907;
+	};
+	9F3A7C2B145ADA5800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C2C145ADA5800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C30145ADA8C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 600";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1623;
+		vrLoc = 13224;
+	};
+	9F3A7C31145ADA8C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C32145ADA8C00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C36145ADABD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 592";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1625;
+		vrLoc = 13224;
+	};
+	9F3A7C37145ADABD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C38145ADABD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C3C145ADAD500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 592";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1623;
+		vrLoc = 13224;
+	};
+	9F3A7C3D145ADAD500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 714";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C3E145ADAD500D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C42145ADB4D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 617";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1483;
+		vrLoc = 13929;
+	};
+	9F3A7C43145ADB4D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 713";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C44145ADB4D00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C4C145ADC4600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 539";
+		rLen = 0;
+		rLoc = 12392;
+		rType = 0;
+		vrLen = 1389;
+		vrLoc = 11391;
+	};
+	9F3A7C4D145ADC4600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 722";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C4E145ADC4600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C52145ADC6800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 577";
+		rLen = 0;
+		rLoc = 14690;
+		rType = 0;
+		vrLen = 1595;
+		vrLoc = 12652;
+	};
+	9F3A7C53145ADC6800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 722";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C54145ADC6800D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C58145ADCD200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 623";
+		rLen = 0;
+		rLoc = 16073;
+		rType = 0;
+		vrLen = 1561;
+		vrLoc = 13664;
+	};
+	9F3A7C59145ADCD200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 732";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C5A145ADCD200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C5E145ADD3000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 559";
+		rLen = 0;
+		rLoc = 13203;
+		rType = 0;
+		vrLen = 1659;
+		vrLoc = 12298;
+	};
+	9F3A7C5F145ADD3000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 735";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C60145ADD3000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C67145ADD7300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 559";
+		rLen = 0;
+		rLoc = 13186;
+		rType = 0;
+		vrLen = 1634;
+		vrLoc = 12539;
+	};
+	9F3A7C68145ADD7300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 737";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C69145ADD7300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C6B145ADD7700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 559";
+		rLen = 0;
+		rLoc = 13186;
+		rType = 0;
+		vrLen = 1634;
+		vrLoc = 12539;
+	};
+	9F3A7C6C145ADD7700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 737";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C6D145ADD7700D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C74145ADF7000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 685";
+		rLen = 0;
+		rLoc = 16966;
+		rType = 0;
+		vrLen = 1779;
+		vrLoc = 12611;
+	};
+	9F3A7C75145ADF7000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 815";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C76145ADF7000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C7A145ADFBA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 589";
+		rLen = 0;
+		rLoc = 14273;
+		rType = 0;
+		vrLen = 1747;
+		vrLoc = 12683;
+	};
+	9F3A7C7B145ADFBA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 819";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C7C145ADFBA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C80145ADFFA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 694";
+		rLen = 0;
+		rLoc = 17213;
+		rType = 0;
+		vrLen = 1471;
+		vrLoc = 16193;
+	};
+	9F3A7C81145ADFFA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 814";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C82145ADFFA00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C86145AE04400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		rLen = 1;
+		rLoc = 491;
+		rType = 1;
+	};
+	9F3A7C87145AE04400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 690";
+		rLen = 0;
+		rLoc = 17096;
+		rType = 0;
+		vrLen = 1404;
+		vrLoc = 15980;
+	};
+	9F3A7C88145AE04400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 814";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C89145AE04400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C95145AE1AD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 745";
+		rLen = 0;
+		rLoc = 18624;
+		rType = 0;
+		vrLen = 1567;
+		vrLoc = 17041;
+	};
+	9F3A7C96145AE1AD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 875";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C97145AE1AD00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7C9B145AE21100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 801";
+		rLen = 0;
+		rLoc = 19881;
+		rType = 0;
+		vrLen = 1360;
+		vrLoc = 18310;
+	};
+	9F3A7C9C145AE21100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 914";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7C9D145AE21100D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CA1145AE26F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 833";
+		rLen = 0;
+		rLoc = 20598;
+		rType = 0;
+		vrLen = 1167;
+		vrLoc = 19785;
+	};
+	9F3A7CA2145AE26F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 908";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CA3145AE26F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CA7145AE2A600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 748";
+		rLen = 0;
+		rLoc = 18676;
+		rType = 0;
+		vrLen = 1358;
+		vrLoc = 18231;
+	};
+	9F3A7CA8145AE2A600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 904";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CA9145AE2A600D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CAF145AE2CF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 794";
+		rLen = 0;
+		rLoc = 19742;
+		rType = 0;
+		vrLen = 1357;
+		vrLoc = 18231;
+	};
+	9F3A7CB0145AE2CF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 904";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CB1145AE2CF00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CB5145AE2E200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 780";
+		rLen = 0;
+		rLoc = 19451;
+		rType = 0;
+		vrLen = 1347;
+		vrLoc = 18231;
+	};
+	9F3A7CB6145AE2E200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 900";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CB7145AE2E200D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CBB145AE31000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 796";
+		rLen = 0;
+		rLoc = 19960;
+		rType = 0;
+		vrLen = 1378;
+		vrLoc = 18628;
+	};
+	9F3A7CBC145AE31000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 900";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CBD145AE31000D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CC3145AE36F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 730";
+		rLen = 0;
+		rLoc = 18257;
+		rType = 0;
+		vrLen = 1497;
+		vrLoc = 16747;
+	};
+	9F3A7CC4145AE36F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 903";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CC5145AE36F00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CC9145AE3A300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 543";
+		rLen = 0;
+		rLoc = 12578;
+		rType = 0;
+		vrLen = 1514;
+		vrLoc = 11704;
+	};
+	9F3A7CCA145AE3A300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 237";
+		rLen = 0;
+		rLoc = 7304;
+		rType = 0;
+		vrLen = 1328;
+		vrLoc = 6624;
+	};
+	9F3A7CCB145AE3A300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 237";
+		rLen = 0;
+		rLoc = 7304;
+		rType = 0;
+		vrLen = 1227;
+		vrLoc = 6624;
+	};
+	9F3A7CCC145AE3A300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 905";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CCD145AE3A300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CD1145AE5E300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* dodecaudionK20VisualsApp.cpp */;
+		name = "dodecaudionK20VisualsApp.cpp: 237";
+		rLen = 0;
+		rLoc = 7304;
+		rType = 0;
+		vrLen = 1434;
+		vrLoc = 7057;
+	};
+	9F3A7CD2145AE5E300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 543";
+		rLen = 0;
+		rLoc = 12578;
+		rType = 0;
+		vrLen = 1486;
+		vrLoc = 11704;
+	};
+	9F3A7CD3145AE5E300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 498";
+		rLen = 0;
+		rLoc = 11380;
+		rType = 0;
+		vrLen = 1466;
+		vrLoc = 10295;
+	};
+	9F3A7CD4145AE5E300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 905";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CD5145AE5E300D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CD9145AE5FE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 537";
+		rLen = 0;
+		rLoc = 12389;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 11305;
+	};
+	9F3A7CDA145AE5FE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 905";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CDB145AE5FE00D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 672;
+	};
+	9F3A7CDF145AE63400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 500";
+		rLen = 0;
+		rLoc = 11446;
+		rType = 0;
+		vrLen = 1376;
+		vrLoc = 10849;
+	};
+	9F3A7CE0145AE63400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */;
+		name = "Dodecahedron.cpp: 906";
+		rLen = 0;
+		rLoc = 22327;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 746;
+	};
+	9F3A7CE1145AE63400D0FFA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9F127AC814547390000C7F8F /* CameraDrawer.h */;
+		name = "CameraDrawer.h: 45";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1075;
 		vrLoc = 672;
 	};
 	9F533E8D1452FEBE0086D9D5 /* Filter.h */ = {
@@ -7580,9 +9726,9 @@
 	};
 	9FE7DCB01448A125006BA574 /* Dodecahedron.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1120, 8320}}";
-			sepNavSelRange = "{13628, 0}";
-			sepNavVisRange = "{746, 762}";
+			sepNavIntBoundsRect = "{{0, 0}, {1120, 13455}}";
+			sepNavSelRange = "{22327, 0}";
+			sepNavVisRange = "{746, 741}";
 			sepNavWindowFrame = "{{38, 164}, {1179, 688}}";
 		};
 	};
